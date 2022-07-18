@@ -48,8 +48,8 @@ extra:
 nav:
     - Notes:
         - 'NOTES/index.md'
-        - 'Stage1_Notes':
-            - 'Job Application': 'NOTES/Stage_1/1000/Job_Application.md'
+        - Stage1_Notes:
+            - Job Application: 'NOTES/Stage_1/1000/Job_Application.md'
 
 
 # [Extensions]
