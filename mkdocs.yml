@@ -46,10 +46,10 @@ extra:
 
 # [Navigation]
 nav:
-  - Notes:
+    - Notes:
     - NOTES/index.md
-  - Blogs: 
-  - Dev:
+    - Blogs: 
+    - Dev:
 
 
 # [Extensions]
