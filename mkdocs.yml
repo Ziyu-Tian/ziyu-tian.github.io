@@ -46,8 +46,7 @@ extra:
 
 # [Navigation]
 nav:
-    - Notes:
-    - NOTES/index.md
+    - Notes: NOTES/index.md
     - Blogs: 
     - Dev:
 
