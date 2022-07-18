@@ -46,9 +46,8 @@ extra:
 
 # [Navigation]
 nav:
-    - 'index.md'
     - Notes:
-        - 'index.md'
+        - 'NOTES/index.md'
 
 
 # [Extensions]
