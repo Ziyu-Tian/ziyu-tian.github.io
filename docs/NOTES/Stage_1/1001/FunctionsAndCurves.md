@@ -30,7 +30,7 @@
    * $(\cosh x)^2-(\sinh x)^2=1$
    * 
     $$
-\displaystyle\frac{d}{dx}\cosh x=\sinh x
+    \displaystyle\frac{d}{dx}\cosh x=\sinh x
     $$
     $$
     \displaystyle\frac{d}{dx}\sinh x=\cosh x
