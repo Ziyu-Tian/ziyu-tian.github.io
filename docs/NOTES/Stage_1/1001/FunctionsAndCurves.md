@@ -71,6 +71,7 @@ Using the first derivation to find the gradient each side.
    * $\displaystyle\frac{x+1}{x-3}=\displaystyle\frac{(x-3)+5}{x-3}=1+\displaystyle\frac{5}{x-3}$
 
 ## 7: Curve Sketching Examples
+
 ### 7.1: Example 1
   $$
   y=\displaystyle\frac{2x+1}{(x-1)(x+2)}
@@ -78,22 +79,24 @@ Using the first derivation to find the gradient each side.
   * Finding the roots of the denominator, which is the vertical asymptotes.
   * Finding the monotony of each parts of the function.
   * Finding the infinite of the function.
+
 ### 7.2: Example 2
-  $$
+$$
   y=\displaystyle\frac{x^3-2x^2+x-2}{1-x^2}
-  $$
-  * Separating the factors as $(x-2)(x^2+1)$.
-  * Following the example 1 to get the vertical asymptotes and the monopoly.
-  * Using the long division to separate the constant to find the slope asymptotes:
-  $$
-  y=\displaystyle\frac{(1-x^2)(2-x)}{1-x^2}
-  $$
-  i.e.:
-  $$
-  y=-x+2+\displaystyle\frac{2x-4}{1-x^2}
-  $$
+$$
+* Separating the factors as $(x-2)(x^2+1)$.
+* Following the example 1 to get the vertical asymptotes and the monopoly.
+* Using the long division to separate the constant to find the slope asymptotes:
+$$
+ y=\displaystyle\frac{(1-x^2)(2-x)}{1-x^2}
+$$
+i.e.:
+$$
+y=-x+2+\displaystyle\frac{2x-4}{1-x^2}
+$$
 As the last part of the term is really small, the slope asymptote is the $y=-x+2$.
-### Example 4 (modulus function)
+
+### 7.3: Example 3 (modulus function)
 * $y=|x+3|+|x-1|$
 * The graph can be drawn by apart the functions.
 
