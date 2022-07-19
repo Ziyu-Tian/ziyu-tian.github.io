@@ -69,6 +69,7 @@ Using the first derivation to find the gradient each side.
    * $\displaystyle\frac{x^2}{x+1}=\displaystyle\frac{(x-1)(x+1)+1}{x+1}=x-1+\displaystyle\frac{1}{x+1}$
     $\quad$
    * $\displaystyle\frac{x+1}{x-3}=\displaystyle\frac{(x-3)+5}{x-3}=1+\displaystyle\frac{5}{x-3}$
+
 ## 7: Curve Sketching Examples
 ### 7.1: Example 1
   $$
