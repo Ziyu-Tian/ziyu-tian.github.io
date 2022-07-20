@@ -120,9 +120,6 @@ A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
     \end{aligned}
     $$
 
-
-
-
 # IV Functions and Curves
 ## 1: Functions- general ideas
 ### 1.1 What is a function
