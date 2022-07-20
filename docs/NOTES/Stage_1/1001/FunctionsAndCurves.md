@@ -1,3 +1,128 @@
+# I: Matrix and Vector 
+## 1: Matrix 
+### 1.1: Definition and Notation 
+*  $\textcircled{1}$: A method of recording hundreds of equations in engineering.
+<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
+$$
+\begin{pmatrix}
+a&b&c\\
+d&e&f\\
+g&h&i
+\end{pmatrix}
+.
+\begin{pmatrix}
+x\\
+y\\
+z
+\end{pmatrix}=
+\begin{pmatrix}
+xa+yb+zc \\
+xd+ye+zf \\
+xg+yh+zi 
+\end{pmatrix}
+$$
+
+* $\textcircled{2}$ Order of matrices:
+A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
+* $\textcircled{3}$ Expression of matrices: Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
+- $\textcircled{4}$ Special Matrix
+  - (1): Diagonal Matrix
+  All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
+    - eg:
+      $$
+      \begin{pmatrix}
+      2&0&0\\
+      0&3&0\\
+      0&0&4
+      \end{pmatrix}
+      $$
+  - (2): Symmetric matrix 
+    - eg:
+      $$
+      \begin{pmatrix}
+      1&3&-7\\
+      3&0&2\\
+      -7&2&-5
+      \end{pmatrix}
+      $$  
+    - i.e: $a_{ij}=a_{ji}$
+  - (3): Antisymmetric matrix
+    - $a_{ij}=-a_{ji}$, $i\not ={j}$
+    - eg:
+      $$
+      \begin{pmatrix}
+      1&-3&7\\
+      3&0&2\\
+      -7&2&-5
+      \end{pmatrix}
+      $$    
+  - (4): Upper/Lower triangular matrix 
+    - Upper refer to $i>j$, $a_{ij}=0$
+      - eg:
+        $$
+        \begin{pmatrix}
+        a&b&c\\
+        0&d&e\\
+        0&0&f
+        \end{pmatrix}
+        $$ 
+    - Lower refer to $i<j$, $a_{ij}=0$
+      - eg:
+        $$
+        \begin{pmatrix}
+        a&0&0\\
+        b&c&0\\
+        d&e&f
+        \end{pmatrix}
+        $$  
+
+- $\textcircled{5}$ Matrix Transpose
+  - (1): Transpose means <font color=#87CEEB> swap </font>
+    - eg:
+    $$  
+    \begin{pmatrix}a&b&c\\d&e&f\\g&h&i\end{pmatrix}^T=\begin{pmatrix}a&d&g\\b&e&h\\c&f&i\end{pmatrix}
+    $$
+  - (2): $[A^T]^T$
+### 1.2: Matrices Algebra 
+- $\textcircled{1}$: Scalar multiply 
+  - (1): Do the calculation directly
+  - (2): Only same-size matrix can do
+- $\textcircled{2}$: Matrix Multiplication 
+  - eg:
+  $$
+  A=\begin{pmatrix}m&p\\n&q\end{pmatrix},\quad B=\begin{pmatrix}a&c\\b&d\end{pmatrix}
+  $$
+  $$
+  AB=\begin{pmatrix}am+bp&cm+dp\\an+bq&cn+dq\end{pmatrix}
+  $$
+  - Notes that $A.B\not ={B.A}$ (mostly)
+- $\textcircled{3}$ Identity Matrix 
+  - eg:
+  $$
+  \begin{pmatrix}1&2\\0&1\end{pmatrix}
+  $$
+  - The 'I' could be 'N x N' matrix
+  - $I.A=A=A.I$, whilst I is different 
+- $\textcircled{4}$ The properties & rules of matrices 
+  - (1): Equality 
+    - All the elements are same, $a_{ij}=b_{ij}$ means '='.
+  - (2): Properties of Transpose 
+    - $(A+B)^T=A^T+B^T$
+    - $(A^T)^T=A$
+### 1.3: Simultaneous equations & Matrices
+- $\textcircled{1}$ Transfer the Matrix and Simultaneous equations 
+  - eg: 
+    - Original equations:
+    $$
+    \begin{aligned}
+    2x-3y=4 \\
+    -x+2y=1
+    \end{aligned}
+    $$
+
+
+
+
 # IV Functions and Curves
 ## 1: Functions- general ideas
 ### 1.1 What is a function
@@ -31,7 +156,7 @@
     $$
     \displaystyle\frac{d}{dx}\cosh x=\sinh x
     $$
-    
+
     $$
     \displaystyle\frac{d}{dx}\sinh x=\cosh x
     $$
