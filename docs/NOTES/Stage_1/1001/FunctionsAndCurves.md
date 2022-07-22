@@ -38,30 +38,21 @@ $[A^T]^T=T$
 $A=\begin{pmatrix}m&p\\n&q\end{pmatrix},\quad B=\begin{pmatrix}a&c\\b&d\end{pmatrix}$
 - $AB=\begin{pmatrix}m&p\\n&q\end{pmatrix}.\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}am+bp&cm+dp\\an+bq&cn+dq\end{pmatrix}$
 - Notes that $A.B\not ={B.A}$ (mostly)
-- $\textcircled{3}$ Identity Matrix 
-  - eg:
-  $$
-  \begin{pmatrix}1&2\\0&1\end{pmatrix}
-  $$
-  - The 'I' could be 'N x N' matrix
-  - $I.A=A=A.I$, whilst I is different 
-- $\textcircled{4}$ The properties & rules of matrices 
-  - (1): Equality 
-    - All the elements are same, $a_{ij}=b_{ij}$ means '='.
-  - (2): Properties of Transpose 
-    - $(A+B)^T=A^T+B^T$
-    - $(A^T)^T=A$
-### 1.3: Simultaneous equations & Matrices
-- $\textcircled{1}$ Transfer the Matrix and Simultaneous equations 
-  - eg: 
-    - Original equations:
-    $$
-    \begin{aligned}
-    2x-3y=4 \\
-    -x+2y=1
-    \end{aligned}
-    $$
-
+### 1.3: Identity Matrix 
+- Example:
+$\begin{pmatrix}1&2\\0&1\end{pmatrix}$
+- The 'I' could be 'N x N' matrix
+- $I.A=A=A.I$, whilst I is different 
+### 1.4: The properties & rules of matrices 
+#### (1): Equality 
+All the elements are same, $a_{ij}=b_{ij}$ means '='.
+#### (2): Properties of Transpose 
+$(A+B)^T=A^T+B^T$, $(A^T)^T=A$
+### 1.5: Simultaneous equations & Matrices
+#### Transfer the Matrix and Simultaneous equations 
+Example:
+- Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
+- Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
 # IV Functions and Curves
 ## 1: Functions- general ideas
 ### 1.1 What is a function
