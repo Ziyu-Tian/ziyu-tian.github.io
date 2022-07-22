@@ -1,66 +1,66 @@
-# I: Matrix and Vector 
-## 1: Matrix 
-### 1.1: Definition and Notation 
+## I: Matrix and Vector 
+### 1: Matrix 
+#### 1.1: Definition and Notation 
 * A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
 * A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 * Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
 * $A=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ which is a 2x2 matrix.
 
-### 1.2: Special Matrix 
+#### 1.2: Special Matrix 
 
-#### (1): Diagonal Matrix
+##### (1): Diagonal Matrix
 All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
 e.g, $\begin{pmatrix}2&0&0\\0&3&0\\0&0&4\end{pmatrix}$
 
-#### (2): Symmetric matrix 
+##### (2): Symmetric matrix 
 $\begin{pmatrix}1&3&-7\\3&0&2\\-7&2&-5\end{pmatrix}$, $a_{ij}=a_{ji}$
 
-#### (3): Antisymmetric matrix
+##### (3): Antisymmetric matrix
 $\begin{pmatrix}1&-3&7\\3&0&2\\-7&2&-5\end{pmatrix}$ , $a_{ij}=-a_{ji}$, $i\not ={j}$
     
-#### (4): Upper/Lower triangular matrix 
+##### (4): Upper/Lower triangular matrix 
 $\begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}$, $i>j$, $a_{ij}=0$,which is **Upper** . 
 
 $\begin{pmatrix}1&0&0\\1&1&0\\1&1&1\end{pmatrix}$, $i>j$, $a_{ij}=0$, which is **Lower**.
 
-### 1.3: Matrix Transpose
-#### (1): Transpose means <font color=#87CEEB> swap </font>
+#### 1.3: Matrix Transpose
+##### (1): Transpose means <font color=#87CEEB> swap </font>
 $\begin{pmatrix}a&b&c \\ d&e&f\\ g&h&i \end{pmatrix}^T=\begin{pmatrix}a&d&g\\ b&e&h\\ c&f&i \end{pmatrix}$
-#### (2): The Transpose of transposed matrix
+##### (2): The Transpose of transposed matrix
 $[A^T]^T=T$
 
-### 1.2: Matrices Algebra 
-#### Scalar multiply 
+#### 1.2: Matrices Algebra 
+##### Scalar multiply 
 - (1): Do the calculation directly. 
 - (2): Only same-size matrix can do
-#### Matrix Multiplication 
+##### Matrix Multiplication 
 - Example:
 $A=\begin{pmatrix}m&p\\n&q\end{pmatrix},\quad B=\begin{pmatrix}a&c\\b&d\end{pmatrix}$
 - $AB=\begin{pmatrix}m&p\\n&q\end{pmatrix}.\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}am+bp&cm+dp\\an+bq&cn+dq\end{pmatrix}$
 - Notes that $A.B\not ={B.A}$ (mostly)
-### 1.3: Identity Matrix 
+#### 1.3: Identity Matrix 
 - Example:
 $\begin{pmatrix}1&2\\0&1\end{pmatrix}$
 - The 'I' could be 'N x N' matrix
 - $I.A=A=A.I$, whilst I is different 
-### 1.4: The properties & rules of matrices 
-#### (1): Equality 
+#### 1.4: The properties & rules of matrices 
+##### (1): Equality 
 All the elements are same, $a_{ij}=b_{ij}$ means '='.
-#### (2): Properties of Transpose 
+##### (2): Properties of Transpose 
 $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
-### 1.5: Simultaneous equations & Matrices
-#### Transfer the Matrix and Simultaneous equations 
+#### 1.5: Simultaneous equations & Matrices
+##### Transfer the Matrix and Simultaneous equations 
 - Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
 
-# IV: Functions and Curves
-## 1: Functions- general ideas
-### 1.1 What is a function
-### 1.2 Combining of functions
-### 1.3 Domain and Range
+## IV: Functions and Curves
+### 1: Functions- general ideas
+#### 1.1 What is a function
+#### 1.2 Combining of functions
+#### 1.3 Domain and Range
 * Domain is all the possible input values.
 * Range is all the possible output values.
-### 1.4 Inverse Functions
+#### 1.4 Inverse Functions
 * We use $f^{-1}$ to mean inverse.
 * Examples:
   * If $f(x)=1-2x$, we write $f=1-2x$
@@ -72,13 +72,13 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 * Other important functions and their inverses:
    * $e^x$ and $\ln{x}$
    * $\sin x$ and $sin^{-1} x$
-## 2: Exponential and Logarithmic functions
-### 2.1 Exponential function $e^x$ or exp$(x)$ 
-#### 2.1.1 The application of $e^x$
+### 2: Exponential and Logarithmic functions
+#### 2.1 Exponential function $e^x$ or exp$(x)$ 
+##### 2.1.1 The application of $e^x$
 * $e^{-x}$-the exponential decay
 * $e^{-x^2}$-the normal distribution
 * $xe^{-x}$-the Poisson distribution
-#### 2.1.2 The hyperbolic cosine and hyperbolic sine
+##### 2.1.2 The hyperbolic cosine and hyperbolic sine
 * $\cosh x=\displaystyle\frac{(e^x+e^{-x})}{2}$
 * $\sinh x=\displaystyle\frac{(e^x-e^{-x})}{2}$
 * Their properties:
