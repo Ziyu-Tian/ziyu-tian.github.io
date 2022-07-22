@@ -52,7 +52,8 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 #### Transfer the Matrix and Simultaneous equations 
 - Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
-# IV Functions and Curves
+
+# IV: Functions and Curves
 ## 1: Functions- general ideas
 ### 1.1 What is a function
 ### 1.2 Combining of functions
