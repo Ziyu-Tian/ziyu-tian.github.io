@@ -71,6 +71,17 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - To find the inverse matrix of 2x2 matrix,if $A=\begin{pmatrix}a&b \\ c&d\end{pmatrix}$, $A^{-1}=\frac{1}{|A|}\times A^{*}=\frac{1}{\det A}\times \begin{pmatrix}d&-b\\-c&a\end{pmatrix}$
 ##### (3): Determinant of 3x3 matrix 
 - For Example, $\left | \begin{array}{cccc}2&3&-1 \\ 4&1&2 \\ -1&0&3\end{array} \right |=2\left | \begin{array}{cccc}1&2 \\ 0&3 \end{array} \right |-(3)\left |\begin{array}{cccc}4&2 \\ -1&3 \end{array} \right |+(-1)\left | \begin{array}{cccc} 4&1 \\ -1&0 \end{array} \right |=-37$
+### 2: Vectors
+#### 2.1: Definition 
+- Cartesian form in right-hand set are (2,3,1) or $2\vec{i}+3\vec{j}+\vec{k}$
+#### 2.2: Scalar Product (Dot product)
+- Example: $W=\vec{F}.\cos\theta\vec{d}=|\vec{F}||\vec{d}|\cos\theta$, the result is a **scalar**.
+- $\vec{i}.\vec{j}=0$, two vectors are perpendicular.
+- $\cos\theta=\frac{\vec{a}.\vec{b}}{|\vec{a}||\vec{b}|}$
+- Unit vectors: $\hat{a}=\frac{\vec{a}}{|a|}$.
+- Component in one direction: $|\vec{F_1}|=\vec{F}.\hat{a}$, $\vec{F_1}=(\vec{F}.\hat{a})\hat{a}$
+#### 2.3: Vector Product (Cross Product)
+
 
 
 
