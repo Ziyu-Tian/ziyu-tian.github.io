@@ -36,7 +36,7 @@ $[A^T]^T=T$
 #### Matrix Multiplication 
 - Example:
 $A=\begin{pmatrix}m&p\\n&q\end{pmatrix},\quad B=\begin{pmatrix}a&c\\b&d\end{pmatrix}$
-- $AB=\begin{pmatrix}am+bp&cm+dp\\an+bq&cn+dq\end{pmatrix}$
+- $AB=\begin{pmatrix}m&p\\n&q\end{pmatrix}.\begin{pmatrix}a&c\\b&d\end{pmatrix}=\begin{pmatrix}am+bp&cm+dp\\an+bq&cn+dq\end{pmatrix}$
 - Notes that $A.B\not ={B.A}$ (mostly)
 - $\textcircled{3}$ Identity Matrix 
   - eg:
