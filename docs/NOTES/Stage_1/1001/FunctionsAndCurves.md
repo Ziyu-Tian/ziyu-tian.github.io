@@ -60,7 +60,7 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - To solve the equation $\vec{A}X=\vec{b}$, according to $A.I=I.A$, **$X=A^{-1}\vec{b}$**.
 #### 1.4: Solve the simulations equation by Gauss's Elimination 
 ##### Elementary Row Operations (ERO)
-- Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 \\ 2 & 5 & 3 \\ -1 & 2 & 1 \end{array}\right]$
+- Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 & 1 \\ 2 & 5 & 3 &24 \\ -1 & 2 & 1 &1 \end{array}\right]$
 
 
 
