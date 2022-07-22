@@ -69,7 +69,8 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - Change $A$ and $I$ to extended matrix form, $(A|I)=\left[\begin{array}{lcr|r}2&3&1&0 \\ -1&4&0&1 \end{array}\right]$.
 - Using EROs changing left-side to $I$, the right will be $A^{-1}$, $\left[\begin{array}{lcr|r} 1&0&4/11&-3/11 \\ 0&1&1/11&2/11\end{array}\right]$.
 - To find the inverse matrix of 2x2 matrix,if $A=\begin{pmatrix}a&b \\ c&d\end{pmatrix}$, $A^{-1}=\frac{1}{|A|}\times A^{*}=\frac{1}{\det A}\times \begin{pmatrix}d&-b\\-c&a\end{pmatrix}$
-
+##### (3): Determinant of 3x3 matrix 
+- For Example, $\left | \begin{array}{cccc}2&3&-1 \\ 4&1&2 \\ -1&0&3\end{array} \right |=2\left | \begin{array}{cccc}1&2 \\ 0&3 \end{array} \right |-(3)\left |\begin{array}{cccc}4&2 \\ -1&3 \end{array} \right |+(-1)\left | \begin{array}{cccc} 4&1 \\ -1&0 \end{array} \right |=-37$
 
 
 
