@@ -2,9 +2,9 @@
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
 * A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
-$$
-A=\begin{pmatrix}1&1 \\ 1&1 \end{pmatrix}
-$$
+
+$A=\begin{pmatrix}1&1 \\ 1&1 \end{pmatrix}$
+
 - Order of matrices:
 A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 - Expression of matrices: 
