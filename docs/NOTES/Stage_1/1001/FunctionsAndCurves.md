@@ -50,7 +50,6 @@ All the elements are same, $a_{ij}=b_{ij}$ means '='.
 $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 ### 1.5: Simultaneous equations & Matrices
 #### Transfer the Matrix and Simultaneous equations 
-Example:
 - Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
 # IV Functions and Curves
