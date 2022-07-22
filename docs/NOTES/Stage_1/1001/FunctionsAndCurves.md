@@ -54,7 +54,13 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
 ##### Determinant
 - If the matrix $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, written $\det A \left| \begin{array}{cccc}a&b\\ c&d 
-\end{array} \right |$
+\end{array} \right |=ad-bc$
+- If $\det A=0$, the matrix is singular.
+##### Inverse of a matrix 
+- To solve the equation $\vec{A}X=\vec{b}$, according to $A.I=I.A$, **$X=A^{-1}\vec{b}$**.
+#### 1.4: Solve the simulations equation by Gauss's Elimination 
+##### Elementary Row Operations (ERO)
+- Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 \\ 2 & 5 & 3 \\ -1 & 2 & 1 \end{array}\right]$
 
 
 
