@@ -12,14 +12,7 @@ e.g, $\begin{pmatrix}2&0&0\\0&3&0\\0&0&4\end{pmatrix}$
 
 
 #### (2): Symmetric matrix 
-$$
-  \begin{pmatrix}
-  1&3&-7\\
-  3&0&2\\
-  -7&2&-5
-  \end{pmatrix}
-$$  
-    - i.e: $a_{ij}=a_{ji}$
+$\begin{pmatrix}1&3&-7\\3&0&2\\-7&2&-5\end{pmatrix}$, i.e. $a_{ij}=a_{ji}$
   - (3): Antisymmetric matrix
     - $a_{ij}=-a_{ji}$, $i\not ={j}$
     - eg:
