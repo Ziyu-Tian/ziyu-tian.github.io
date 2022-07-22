@@ -2,12 +2,13 @@
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
 - A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
-  - $\begin{pmatrix}a & b &c\\d & e & f\\g&h&i\end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}$
+  - $\begin{pmatrix}a & b &c \\ d & e & f \\ g&h&i \end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}$
 
-* $\textcircled{2}$ Order of matrices:
-A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
-* $\textcircled{3}$ Expression of matrices: Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
-- $\textcircled{4}$ Special Matrix
+- Order of matrices:
+  - A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
+- Expression of matrices: 
+  - Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
+- Special Matrix:
   - (1): Diagonal Matrix
   All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
     - eg:
