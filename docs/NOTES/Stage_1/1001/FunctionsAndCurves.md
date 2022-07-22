@@ -8,14 +8,8 @@
 ### 1.2: Special Matrix 
 #### (1): Diagonal Matrix
 All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
-eg:
-$$
-  \begin{pmatrix}
-  2&0&0  \\
-  0&3&0  \\
-  0&0&4  \\
-  \end{pmatrix}
-$$
+e.g, $\begin{pmatrix}2&0&0\\0&3&0\\0&0&4\end{pmatrix}$
+
   
 (2): Symmetric matrix 
     - eg:
