@@ -26,15 +26,14 @@ $\begin{pmatrix}1&0&0\\1&1&0\\1&1&1\end{pmatrix}$, $i>j$, $a_{ij}=0$, which is *
 ### 1.3: Matrix Transpose
 #### (1): Transpose means <font color=#87CEEB> swap </font>
 $\begin{pmatrix}a&b&c \\ d&e&f\\ g&h&i \end{pmatrix}^T=\begin{pmatrix}a&d&g\\ b&e&h\\ c&f&i \end{pmatrix}$
-
-
 #### (2): $[A^T]^T$
+
 ### 1.2: Matrices Algebra 
-- $\textcircled{1}$: Scalar multiply 
-  - (1): Do the calculation directly
-  - (2): Only same-size matrix can do
-- $\textcircled{2}$: Matrix Multiplication 
-  - eg:
+#### Scalar multiply 
+(1): Do the calculation directly
+(2): Only same-size matrix can do
+#### Matrix Multiplication 
+Example:
   $$
   A=\begin{pmatrix}m&p\\n&q\end{pmatrix},\quad B=\begin{pmatrix}a&c\\b&d\end{pmatrix}
   $$
