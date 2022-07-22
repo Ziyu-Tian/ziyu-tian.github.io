@@ -1,8 +1,7 @@
 # I: Matrix and Vector 
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
-- A method of recording hundreds of equations in engineering.
-<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
+- A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
   - $\begin{pmatrix}a & b &c\\d & e & f\\g&h&i\end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}$
 
 * $\textcircled{2}$ Order of matrices:
