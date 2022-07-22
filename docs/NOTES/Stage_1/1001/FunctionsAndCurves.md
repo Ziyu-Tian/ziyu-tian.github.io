@@ -5,9 +5,11 @@
   - $\begin{pmatrix}a & b &c \\ d & e & f \\ g&h&i \end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}$
 
 - Order of matrices:
-  - A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
+
+A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 - Expression of matrices: 
-  - Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
+
+Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
 - Special Matrix:
   - (1): Diagonal Matrix
   All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
