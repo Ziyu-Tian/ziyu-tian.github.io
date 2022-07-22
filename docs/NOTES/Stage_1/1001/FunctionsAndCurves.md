@@ -52,15 +52,22 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 ##### Transfer the Matrix and Simultaneous equations 
 - Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
-##### Determinant
+##### (1): Determinant
 - If the matrix $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, written $\det A \left| \begin{array}{cccc}a&b\\ c&d 
 \end{array} \right |=ad-bc$
 - If $\det A=0$, the matrix is singular.
-##### Inverse of a matrix 
+##### (2): Inverse of a matrix 
 - To solve the equation $\vec{A}X=\vec{b}$, according to $A.I=I.A$, **$X=A^{-1}\vec{b}$**.
 #### 1.4: Solve the simulations equation by Gauss's Elimination 
-##### Elementary Row Operations (ERO)
-- Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 & 1 \\ 2 & 5 & 3 &24 \\ -1 & 2 & 1 &1 \end{array}\right]$
+##### (1): Elementary Row Operations (ERO)
+- Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 & 1 \\ 2 & 5 & 3 &24 \\ -1 & 2 & 1 &1 \end{array}\right]$.
+- Use 'add','minus','multiply' and 'divide' to change the left matrix into a upper-triangular matrix.
+- Follow the rule of 'from up to down' and 'from left to right', i.e '2'$\rightarrow$'-1'$\rightarrow$'2'.
+- Finally got $\left[\begin{array}{lcr|r}1&-3 1&-9\\ 0&1&2&-8 \\ 0&0&23&-46\end{array}\right]$, the solution can be solved easily.
+##### (2): Finding inverse matrix by EROs 
+- For Example, $A=\begin{pmatrix}2&3\\-1&4\end{pmatrix}$.
+- Change $A$ and $I$ to extended matrix form, $(A|I)=\left[\begin{array}{lcr|r}2&3&1&0 \\ -1&4&0&1 \end{array}\right]$.
+- Using EROs changing left-side to $I$, the right will be $A^{-1}$, $\left[\begin{array}{lcr|r} 1&0&4/11&-3/11 \\ 0&1&1/11&2/11\end{array}\right]$
 
 
 
