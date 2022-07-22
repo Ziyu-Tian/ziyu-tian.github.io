@@ -42,13 +42,15 @@
   - (4): Upper/Lower triangular matrix 
     - Upper refer to $i>j$, $a_{ij}=0$
       - eg:
-        $$
-        \begin{pmatrix}
-        a&b&c\\
-        0&d&e\\
-        0&0&f
-        \end{pmatrix}
-        $$ 
+  $$
+
+  \begin{pmatrix}
+  a&b&c\\
+  0&d&e\\
+  0&0&f
+  \end{pmatrix}
+
+  $$ 
     - Lower refer to $i<j$, $a_{ij}=0$
       - eg:
         $$
