@@ -19,26 +19,10 @@ $\begin{pmatrix}1&3&-7\\3&0&2\\-7&2&-5\end{pmatrix}$, $a_{ij}=a_{ji}$
 $\begin{pmatrix}1&-3&7\\3&0&2\\-7&2&-5\end{pmatrix}$ , $a_{ij}=-a_{ji}$, $i\not ={j}$
     
 #### (4): Upper/Lower triangular matrix 
- Upper refer to $i>j$, $a_{ij}=0$
- eg:
-  $$
+$\begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}$, $i>j$, $a_{ij}=0$,which is **Upper** . 
 
-  \begin{pmatrix}
-  a&b&c\\
-  0&d&e\\
-  0&0&f
-  \end{pmatrix}
+$\begin{pmatrix}1&0&0\\1&1&0\\1&1&1\end{pmatrix}$, $i>j$, $a_{ij}=0$, which is **Lower**.
 
-  $$ 
-    - Lower refer to $i<j$, $a_{ij}=0$
-      - eg:
-        $$
-        \begin{pmatrix}
-        a&0&0\\
-        b&c&0\\
-        d&e&f
-        \end{pmatrix}
-        $$  
 
 - $\textcircled{5}$ Matrix Transpose
   - (1): Transpose means <font color=#87CEEB> swap </font>
