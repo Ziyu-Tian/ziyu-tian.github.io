@@ -1,10 +1,13 @@
 # I: Matrix and Vector 
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
-- A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
-  - $\begin{pmatrix}a & b &c \\ d & e & f \\ g&h&i \end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}$
+ A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font>
+ eg:
+$$
+\begin{pmatrix}a & b &c \\ d & e & f \\ g&h&i \end{pmatrix}.\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}xa+yb+zc \\ xd+ye+zf \\ xg+yh+zi \end{pmatrix}
+$$
 
-- Order of matrices:
+ Order of matrices:
 
 A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 - Expression of matrices: 
