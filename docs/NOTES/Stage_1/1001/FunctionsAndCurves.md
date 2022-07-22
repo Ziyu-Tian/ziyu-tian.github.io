@@ -2,11 +2,12 @@
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
 * A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
-
-* Order of matrices:
+$$
+A=\begin{pmatrix}1&1\\1&1\end{pmatrix}
+$$
+- Order of matrices:
 A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 - Expression of matrices: 
-
 Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
 - Special Matrix:
   - (1): Diagonal Matrix
