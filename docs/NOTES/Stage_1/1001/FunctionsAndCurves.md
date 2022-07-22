@@ -5,27 +5,22 @@
 * A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
 * Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
 * $A=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ which is a 2x2 matrix.
+
 ### 1.2: Special Matrix 
+
 #### (1): Diagonal Matrix
 All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
 e.g, $\begin{pmatrix}2&0&0\\0&3&0\\0&0&4\end{pmatrix}$
 
-
 #### (2): Symmetric matrix 
-$\begin{pmatrix}1&3&-7\\3&0&2\\-7&2&-5\end{pmatrix}$, i.e. $a_{ij}=a_{ji}$
-  - (3): Antisymmetric matrix
-    - $a_{ij}=-a_{ji}$, $i\not ={j}$
-    - eg:
-      $$
-      \begin{pmatrix}
-      1&-3&7\\
-      3&0&2\\
-      -7&2&-5
-      \end{pmatrix}
-      $$    
-  - (4): Upper/Lower triangular matrix 
-    - Upper refer to $i>j$, $a_{ij}=0$
-      - eg:
+$\begin{pmatrix}1&3&-7\\3&0&2\\-7&2&-5\end{pmatrix}$, $a_{ij}=a_{ji}$
+
+#### (3): Antisymmetric matrix
+$\begin{pmatrix}1&-3&7\\3&0&2\\-7&2&-5\end{pmatrix}$ , $a_{ij}=-a_{ji}$, $i\not ={j}$
+    
+#### (4): Upper/Lower triangular matrix 
+ Upper refer to $i>j$, $a_{ij}=0$
+ eg:
   $$
 
   \begin{pmatrix}
