@@ -2,25 +2,22 @@
 ## 1: Matrix 
 ### 1.1: Definition and Notation 
 * A method of recording hundreds of equations in engineering.<font color=#87CEEB> (eg. infinite elements with 3D nodes)</font> 
-
-$A=\begin{pmatrix}1&1 \\ 1&1 \end{pmatrix}$, which is a 2x2 matrix.
-
-- Order of matrices:
-A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
-- Expression of matrices: 
-Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
-- Special Matrix:
-  - (1): Diagonal Matrix
-  All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
-    - eg:
-      $$
-      \begin{pmatrix}
-      2&0&0\\
-      0&3&0\\
-      0&0&4
-      \end{pmatrix}
-      $$
-  - (2): Symmetric matrix 
+* A matrix is called "lines by column", eg. 2x3 means 2 lines and 3 columns.
+* Capital letter 'A' for a matrix and lower case '$a_{ij}$' for the element of 'A', 'i' is the line and 'j' is the column.
+* eg.$A=\begin{pmatrix}1&1\\1&1\end{pmatrix}  $ which is a 2x2 matrix.
+### 1.2: Special Matrix 
+#### (1): Diagonal Matrix
+All elements are '0' except the '\' diagonal, but the diagonal can be '0'.
+eg:
+$$
+  \begin{pmatrix}
+  2&0&0  \\
+  0&3&0  \\
+  0&0&4  \\
+  \end{pmatrix}
+$$
+  
+(2): Symmetric matrix 
     - eg:
       $$
       \begin{pmatrix}
