@@ -367,7 +367,7 @@ f(t)=C+a_1\cos(t)+a_2\cos(2t)+.....+b_1sin(t)+b_2\sin(2t)...
 $$
 $$
 i.e:
-f(t)=\displaystyle\frac{a_0}{2}+\sum_{n=1}^{\inf}[a_n\cos(nt)+b_n\sin(nt)]
+f(t)=\displaystyle\frac{a_0}{2}+\sum_{n=1}^{\infty}[a_n\cos(nt)+b_n\sin(nt)]
 $$
 * The term C represent the mean value of the function (DC component in oscillation)
 #### 1.3 Finding the coefficient
