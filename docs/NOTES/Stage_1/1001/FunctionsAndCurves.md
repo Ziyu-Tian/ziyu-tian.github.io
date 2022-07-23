@@ -58,7 +58,7 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - If $\det A=0$, the matrix is singular.
 ##### (2): Inverse of a matrix 
 - To solve the equation $\vec{A}X=\vec{b}$, according to $A.I=I.A$, **$X=A^{-1}\vec{b}$**.
-#### 1.4: Solve the simulations equation by Gauss's Elimination 
+#### 1.6: Solve the simulations equation by Gauss's Elimination 
 ##### (1): Elementary Row Operations (ERO)
 - Firstly, change it to extended matrix form: $\left[\begin{array}{lcr|r} 1 & -3 & 1 & 1 \\ 2 & 5 & 3 &24 \\ -1 & 2 & 1 &1 \end{array}\right]$.
 - Use 'add','minus','multiply' and 'divide' to change the left matrix into a upper-triangular matrix.
@@ -116,7 +116,18 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - The equation like $\frac{dy}{dx}=Ay$, $A$ is a constant can be solved using $y=e^{mx}$,($m$ is unknown).
 - For example, $\frac{dp}{dt}=2.5p$, let $P=e^{mt}$, $m=2.5$, so solution is $P=Ae^{2.5t}$.
 ##### Separating variables 
-- If the ODE can be written as $\frac{dy}{dx}\not ={y(x)g(y)}$, 
+- If the ODE can be written as $\frac{dy}{dx} =y(x)g(y)$, it can be solved with separating variables.
+- For example:
+
+$$
+  \begin{aligned}
+  \frac{dy}{dx}=3y \\
+  \frac{1}{y}.\frac{dy}{dx}=3 \\
+  \int \frac{1}{y}\frac{dy}{dx}{\rm d}x=\int 3{\rm d}x
+  \end{aligned}
+$$
+
+
 
 
 
