@@ -399,7 +399,8 @@ $$
 * $b_n=\displaystyle\frac{8}{n\pi}$ if n is odd or =0 if n is even.
 * $f(x)=\displaystyle\frac{8}{\pi}\sum_{m=1}^{\infty}\displaystyle\frac{1}{(2m-1)}\sin(2m-1)t$
 * We look at the partial sum and the discontinuity of this function.
-##### 1.4.2 $f(t)=t^2$ on the interval $[-\pi,\pi]$
+##### 1.4.2 Quadratic Function 
+* $f(t)=t^2$ on the interval $[-\pi,\pi]$ 
 * $f(t)$ is a even, so only cosines are needed, and $b_n=0$
 * 
 $$
