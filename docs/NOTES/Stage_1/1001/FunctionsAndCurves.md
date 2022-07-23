@@ -95,6 +95,15 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - $|z|=|a+bi|=\sqrt{a^2+b^2}$, which is the **modulus** of $z$.
 ### 2: Argument 
 - $\arg(z_1)+\arg(z_2)=\arg(z_1z_2)$
+### 3: Exponential form and applications
+#### (1): Exponential Form / Polar Form 
+- $z=x+yi=re^{i\theta}$, <font color=#87CEEB> $\theta=\arg(z)$, $r=|z|$ </font>
+- <font color=#87CEEB> Euler's Identity:</font> $e^{i\pi}=-1$
+#### (2): Sine/cosine form 
+- $\cos\theta +i\sin\theta =e^{i\theta}$
+#### (3): Complex roots of equations
+- Try '0','$\pm 1$' and '$\pm 2$' to find a real root.
+- Use **long division** find the roots of the quadratic equation.
 
 
 
