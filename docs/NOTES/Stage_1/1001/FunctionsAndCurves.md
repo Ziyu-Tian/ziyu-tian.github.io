@@ -87,6 +87,17 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - $\vec{m}\times \vec{n}=\left|\begin{array}{cccc}\vec{i}&\vec{j}&\vec{k}\\ a&b&c \\ d&e&f\end{array} \right |=(ae-bd)-(af-dc)+(ae-bd)$
 
 
+## II: Complex numbers
+### 1: Basic Concepts
+- $i^2=-1$, use 'j' in electrical engineering
+- The coefficient of real number is the **real part**, the one of imaginary number is the **imaginary part**.
+- If $z=a+bi$, $\bar{z}=a-bi$, which is called **complex conjugate**.
+- $|z|=|a+bi|=\sqrt{a^2+b^2}$, which is the **modulus** of $z$.
+### 2: Argument 
+- $\arg(z_1)+\arg(z_2)=\arg(z_1z_2)$
+
+
+
 
 
 
