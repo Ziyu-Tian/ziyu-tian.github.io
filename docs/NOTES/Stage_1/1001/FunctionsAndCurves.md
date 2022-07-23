@@ -121,9 +121,9 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 
 $$
   \begin{aligned}
-  \frac{dy}{dx}=3y \\
-  \frac{1}{y}.\frac{dy}{dx}=3 \\
-  \int \frac{1}{y}\frac{dy}{dx}{\rm d}x=\int 3{\rm d}x
+  \frac{dy}{dx}&=3y \\
+  \frac{1}{y}.\frac{dy}{dx}&=3 \\
+  \int \frac{1}{y}\frac{dy}{dx}{\rm d}x&=\int 3{\rm d}x
   \end{aligned}
 $$
 
