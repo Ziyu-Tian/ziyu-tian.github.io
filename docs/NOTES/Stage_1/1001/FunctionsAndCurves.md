@@ -106,7 +106,17 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - Use **long division** find the roots of the quadratic equation.
 
 
-
+## III: Differential Equations 
+### 1: First order differential equations 
+#### (1): Definition
+- The equation relates an unknown function $T(t)$ and its derivatives.
+- The equation only have a first derivative called first-order diff-equation.
+#### (2): The solutions
+##### Using trial solution 
+- The equation like $\frac{dy}{dx}=Ay$, $A$ is a constant can be solved using $y=e^{mx}$,($m$ is unknown).
+- For example, $\frac{dp}{dt}=2.5p$, let $P=e^{mt}$, $m=2.5$, so solution is $P=Ae^{2.5t}$.
+##### Separating variables 
+- If the ODE can be written as $\frac{dy}{dx}\not ={y(x)g(y)}$, 
 
 
 
