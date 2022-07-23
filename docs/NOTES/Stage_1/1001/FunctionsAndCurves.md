@@ -125,7 +125,7 @@ $$
   \frac{1}{y}.\frac{dy}{dx}&=3 \\
   \int \frac{1}{y}\frac{dy}{dx}{\rm d}x&=\int 3{\rm d}x \\
   \ln{y}&=3x+C \\
-  y&=Ar^{3x}+B
+  y&=Ae^{3x}+B
   \end{aligned}
 $$
 
@@ -246,17 +246,6 @@ y=e^{Dx}[Acos(Cx)+Bsin(Cx)]
 $$
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## IV: Functions and Curves
 ### 1: Functions- general ideas
 #### 1.1 What is a function
@@ -283,8 +272,8 @@ $$
 * $e^{-x^2}$-the normal distribution
 * $xe^{-x}$-the Poisson distribution
 ##### 2.1.2 The hyperbolic cosine and hyperbolic sine
-* $\cosh x=\displaystyle\frac{(e^x+e^{-x})}{2}$
-* $\sinh x=\displaystyle\frac{(e^x-e^{-x})}{2}$
+* $\cosh x=\displaystyle\frac{(e^x+e^{-x})}{2}=\displaystyle\frac{e^{ix}+e^{-ix}}{2}$
+* $\sinh x=\displaystyle\frac{(e^x-e^{-x})}{2}=\displaystyle\frac{e^{ix}-e^{-ix}}{2i}$
 * Their properties:
    * $(\cosh x)^2-(\sinh x)^2=1$
     $$
