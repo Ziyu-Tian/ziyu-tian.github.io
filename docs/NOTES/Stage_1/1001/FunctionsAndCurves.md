@@ -276,6 +276,7 @@ $$
 * $\sinh x=\displaystyle\frac{(e^x-e^{-x})}{2}=\displaystyle\frac{e^{ix}-e^{-ix}}{2i}$
 - Their properties:
    - $(\cosh x)^2-(\sinh x)^2=1$
+
     $$
     \displaystyle\frac{d}{dx}\cosh x=\sinh x
     $$
@@ -283,9 +284,10 @@ $$
     $$
     \displaystyle\frac{d}{dx}\sinh x=\cosh x
     $$
-  - $\cosh (ix)= \cos(x)$
-  - $\sinh (ix)= i\sin(x)$
-  - $\sin (x)=-i\sin(ix)$
+
+- $\cosh (ix)= \cos(x)$
+- $\sinh (ix)= i\sin(x)$
+- $\sin (x)=-i\sin(ix)$
 #### 2.2 Logarithm and powers
 ### 3: Sine and Cosine functions 
 #### 3.1 Combination of sine and cosine functions
