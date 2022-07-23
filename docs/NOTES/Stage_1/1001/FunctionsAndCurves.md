@@ -81,7 +81,10 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - Unit vectors: $\hat{a}=\frac{\vec{a}}{|a|}$.
 - Component in one direction: $|\vec{F_1}|=\vec{F}.\hat{a}$, $\vec{F_1}=(\vec{F}.\hat{a})\hat{a}$
 #### 2.3: Vector Product (Cross Product)
-
+- In 2D, $\vec{M}=|\vec{d}||\vec{F}|\sin\theta$
+- In 3D, $\vec{M}=\vec{d}\times\vec{F}=|\vec{d}||\vec{F}|\sin\theta\hat{n}$
+- Corkscrew rule can justify the direction.
+- $\vec{m}\times \vec{n}=\left|\begin{array}{cccc}\vec{i}&\vec{j}&\vec{k}\\ a&b&c \\ d&e&f\end{array} \right |=(ae-bd)-(af-dc)+(ae-bd)$
 
 
 
