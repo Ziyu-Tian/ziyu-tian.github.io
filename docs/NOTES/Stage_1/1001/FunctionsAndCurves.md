@@ -285,50 +285,53 @@ $$
     $$
   * $\cosh (ix)= \cos(x)$
   * $\sinh (ix)= i\sin(x)$
-### 2.2 Logarithm and powers
-## 3: Sine and Cosine functions 
-### 3.1 Combination of sine and cosine functions
+  * $\sin (x)=-i\sin(ix)$
+#### 2.2 Logarithm and powers
+### 3: Sine and Cosine functions 
+#### 3.1 Combination of sine and cosine functions
 The combination of the sine and cosine produce more complicated shapes, such as Fourier Series.
-## 4: Transformation
-### 4.1 Translation and Magnifications
-### 4.2 Plotting a quadratic graph
-### 4.4 Odd,even and periodic functions
+### 4: Transformation
+#### 4.1 Translation and Magnifications
+#### 4.2 Plotting a quadratic graph
+#### 4.4 Odd,even and periodic functions
 * Even function:$f(-x)=f(-x)$ 
 * Odd function:$f(-x)=-f(-x)$
 * Periodic function: like $\sin x$
-## 5: Curve sketching
-### 5.1 Aims and strategy
+### 5: Curve sketching
+#### 5.1 Aims and strategy
 * Cross or touch the axes.
 * Max, min and inflection points
-### 5.2 Stationary points- First derivation
+#### 5.2 Stationary points- First derivation
 Using the first derivation to find the gradient each side.
-### 5.3 Stationary points- Secondary derivation
-* The inflection points means the $\displaystyle\frac{dy}{dx}\not ={}0$ and $\displaystyle\frac{d^2y}{dx^2}=0$.
+#### 5.3 Stationary points- Secondary derivation
+* The inflection points means if $y''=0$ at this point and $y''$ have different signs in double sides.
 * The gradient of the function reach a max or min at the infection points.
 * It is useful only if the $\displaystyle\frac{dy}{dx}\not ={0}$
-## 6: Asymptotes and Rational Functions
-### 6.1 Definitions
+### 6: Asymptotes and Rational Functions
+#### 6.1 Definitions
 * The function that is a quotient of two polynomial functions
 * As the denominator of the fraction takes the value zero, the function becomes infinite, we get a vertical line called vertical asymptote. The function may have horizontal , sloping and vertical asymptote.
 * Theses lines may cross.
-### 6.2 Rewriting the functions by long division
+#### 6.2 Rewriting the functions by long division
  * This is a way to separate the function to make to curves graphing easier.
  * Examples:
    * $\displaystyle\frac{x^2}{x+1}=\displaystyle\frac{(x-1)(x+1)+1}{x+1}=x-1+\displaystyle\frac{1}{x+1}$
     $\quad$
    * $\displaystyle\frac{x+1}{x-3}=\displaystyle\frac{(x-3)+5}{x-3}=1+\displaystyle\frac{5}{x-3}$
 
-## 7: Curve Sketching Examples
+### 7: Curve Sketching Examples
 
-### 7.1: Example 1
-  $$
+#### 7.1: Example 1
+
+$$
   y=\displaystyle\frac{2x+1}{(x-1)(x+2)}
-  $$
-  * Finding the roots of the denominator, which is the vertical asymptotes.
-  * Finding the monotony of each parts of the function.
-  * Finding the infinite of the function.
+$$
 
-### 7.2: Example 2
+* Finding the roots of the denominator, which is the vertical asymptotes.
+* Finding the monotony of each parts of the function.
+* Finding the infinite of the function.
+
+#### 7.2: Example 2
 $$
   y=\displaystyle\frac{x^3-2x^2+x-2}{1-x^2}
 $$
@@ -336,7 +339,7 @@ $$
 * Following the example 1 to get the vertical asymptotes and the monopoly.
 * Using the long division to separate the constant to find the slope asymptotes:
 $$
- y=\displaystyle\frac{(1-x^2)(2-x)}{1-x^2}
+ y=\displaystyle\frac{(1-x^2)(2-x)+2x-4}{1-x^2}
 $$
 i.e.:
 $$
@@ -344,7 +347,7 @@ y=-x+2+\displaystyle\frac{2x-4}{1-x^2}
 $$
 As the last part of the term is really small, the slope asymptote is the $y=-x+2$.
 
-### 7.3: Example 3 (modulus function)
+#### 7.3: Example 3 (modulus function)
 * $y=|x+3|+|x-1|$
 * The graph can be drawn by apart the functions.
 
