@@ -331,12 +331,17 @@ $$
 * Finding the infinite of the function.
 
 #### 7.2: Example 2
+
 $$
   y=\displaystyle\frac{x^3-2x^2+x-2}{1-x^2}
 $$
+
 * Separating the factors as $(x-2)(x^2+1)$.
+
 * Following the example 1 to get the vertical asymptotes and the monopoly.
+
 * Using the long division to separate the constant to find the slope asymptotes:
+
 $$
  y=\displaystyle\frac{(1-x^2)(2-x)+2x-4}{1-x^2}
 $$
