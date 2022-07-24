@@ -220,8 +220,7 @@ $$
 \frac{d^2y}{dt^2}+2\frac{dy}{dt}+2y=0  
 $$
 
-Try $y=e^{mt}
-$
+Try $y=e^{mt}$
 
 We can find that m=$-1\pm i$
 
