@@ -584,20 +584,8 @@ $$
     * $\ddot{y_1}=\omega ^2 y_1$
     * Same for $y_2=\omega ^2 y_2$
     * Any oscillation will got same answer.
-    * If we treat that $2\times 2$ matrix as $A$:
-    $$
-    \omega ^2
-    \begin{pmatrix}
-    y_1 \\
-    y_2 
-    \end{pmatrix}
-    =
-    A
-    \begin{pmatrix}
-    y_1 \\
-    y_2
-    \end{pmatrix}
-    $$
+    * If we treat that $2\times 2$ matrix as $A$:$\omega ^2 \begin{pmatrix}y_1\\y_2 \end{pmatrix}=A\begin{pmatrix}y_1 \\y_2\end{pmatrix}$
+
 * It is same as the $Ax=\lambda x$, and the answer of these equations is $x$, which is the eigenvectors.
 #### 2.5: Systems of ODESs II
 $$
