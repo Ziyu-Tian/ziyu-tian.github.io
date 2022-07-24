@@ -496,7 +496,7 @@ m\displaystyle\frac{d^2x}{dt^2}=F
 $$
 ### 1.2: Second order,linear,homogeneous ODEs
 #### 1.2.1 The common format of the second order ODEs
-$$ a\displaystyle\frac{d^2y}{dx^2}+b\displaystyle\frac{dy}{dx}+cy=0$$
+$ a\displaystyle\frac{d^2y}{dx^2}+b\displaystyle\frac{dy}{dx}+cy=0$
 #### 1.2.2 The solution
 * Let $y=e^{mt}$ as the trial solution, so the equations can be expressed as $am^2+bm+c=0$, and we can find the value of $m_1$ and $m_2$.
 * For three cases:
