@@ -591,16 +591,7 @@ $$
 - For example, $\begin{aligned}\displaystyle\frac{dx}{dt}&=-4x+y \\ \displaystyle\frac{dy}{dt}&=-5x+2y \end{aligned}$
 - $\displaystyle\frac{d}{dt}\begin{pmatrix}x \\y \end{pmatrix}=\begin{pmatrix} -4 && 1 \\-5 && 2 \end{pmatrix}\begin{pmatrix}x \\y \end{pmatrix}$
     
-* Let $\begin{pmatrix}
-x \\
-y
-\end{pmatrix}
-=
-\begin{pmatrix}
-x_0 \\
-y_0
-\end{pmatrix}
-$ $e^{\lambda t}$ 
+- Let $\begin{pmatrix}x \\y\end{pmatrix}=\begin{pmatrix}x_0 \\y_0\end{pmatrix}e^{\lambda t}$
 * $x_0$ and $y_0$ are constant. 
 * Then we get: $\lambda \begin{pmatrix}x_0 \\y_0 \end{pmatrix}=\begin{pmatrix}-4 && 1 \\-5 && 2\end{pmatrix}\begin{pmatrix}x_0 \\y_0\end{pmatrix}$
 
