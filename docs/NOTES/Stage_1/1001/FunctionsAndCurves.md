@@ -604,67 +604,18 @@ $$
 * Just find the E-vector, the equations can be solved.
 
 ### 3: Diagonalisation of matrices and decoupling of systems of equations
-* Example:
-    $$
-    \displaystyle\frac{dx}{dt}=-4x+y
-    $$
-    $$
-    \displaystyle\frac{dy}{dt}=-5x+2y
-    $$
-* Then:
-    $$
-    \displaystyle\frac{d}{dt}
-    \begin{pmatrix}
-    x\\
-    y
-    \end{pmatrix}=\begin{pmatrix}
-    -4&&1\\
-    -5&&2
-    \end{pmatrix}
-    \begin{pmatrix}
-    x\\
-    y
-    \end{pmatrix}
-    $$
+- $\begin{aligned}\displaystyle\frac{dx}{dt}&=-4x+y \\ \displaystyle\frac{dy}{dt}&=-5x+2y \end{aligned}$
 
-* If we assumed $y=Pz$
-* It is found that $\lambda_1=1$, $x_1=\begin{pmatrix}
-1\\
-5
-\end{pmatrix}$ and $\lambda_2=-3$, $x_2=\begin{pmatrix}
-1\\
-1
-\end{pmatrix}$.
-* So $P=\begin{pmatrix}
-1&&1\\
-5&&1
-\end{pmatrix}$ 
-* The diagonalisation $Z=P^{-1}AP^{-1}$
-* $Z=\begin{pmatrix}
-1&&0\\
-0&&-3
-\end{pmatrix}$
-* $\begin{pmatrix}
-\dot{z_1}\\
-\dot{z_2}
-\end{pmatrix}
-=Z\begin{pmatrix}
-z_1\\
-z_2
-\end{pmatrix}$
+- Then, $\displaystyle\frac{d}{dt}\begin{pmatrix} x\\ y\end{pmatrix}=\begin{pmatrix}-4&&1\\-5&&2\end{pmatrix}\begin{pmatrix}x\\ y\end{pmatrix}$
+
+- If we assumed $y=Pz$
+- It is found that $\lambda_1=1$, $x_1=\begin{pmatrix} 1\\ 5\end{pmatrix}$ and $\lambda_2=-3$, $x_2=\begin{pmatrix}1\\1\end{pmatrix}$.
+- So $P=\begin{pmatrix}1&1\\5&1\end{pmatrix}$ 
+- The diagonalisation $Z=P^{-1}AP^{-1}$
+- $Z=\begin{pmatrix}1&&0\\0&&-3\end{pmatrix}$
+* $\begin{pmatrix}\dot{z_1}\\ \dot{z_2}\end{pmatrix}=Z\begin{pmatrix}z_1\\z_2 end{pmatrix}$
 * It is easy to find $z_1=Ae^t$ and $z_2=Be^{-3t}$.
-* $y=Pz\Rightarrow\begin{pmatrix}
-x\\
-y
-\end{pmatrix}=
-\begin{pmatrix}
-1&&1\\
-5&&1
-\end{pmatrix}
-\begin{pmatrix}
-z_1\\
-z_2
-\end{pmatrix}$
+* $y=Pz\Rightarrow\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1&1\\ 5&1\end{pmatrix}\begin{pmatrix}z_1\\z_2\end{pmatrix}$
 * Then the expression of $x$ and $y$ can be found.
 
     
