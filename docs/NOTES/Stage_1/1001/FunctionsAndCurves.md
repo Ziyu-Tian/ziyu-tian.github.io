@@ -442,7 +442,8 @@ as we move in the $x$ direction, we can find $\frac{\partial h}{\partial x}=2yx$
    * $\frac{\partial^2 z }{\partial x \partial y }=\frac{\partial }{\partial x}(\frac{\partial z}{\partial y})=\frac{\partial }{\partial y}(\frac{\partial z}{\partial x})$(The order doesn't matter)
 #### 2.2 Stationary points
 * There is a variety of behavior of such functions called saddle points and local max or min points.
-![](image/2022-07-24-07-16-25.png)
+![](image/2022-07-24-07-16-25.png){width="300"}
+
 * At a stationary point, all first derivation are 0:
 $\frac{\partial f}{\partial x}=0$ and $\frac{\partial f}{\partial y}=0$.
 * What's more, we need all second derivatives.(The mixed derivation needed to ensure a correct conclusion).
