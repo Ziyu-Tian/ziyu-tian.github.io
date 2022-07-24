@@ -620,12 +620,10 @@ Example_1:
 * It is same as the $Ax=\lambda x$, and the answer of these equations is $x$, which is the eigenvectors.
 #### 2.5: Systems of ODESs II
 $$
-    \displaystyle\frac{dx}{dt}=-4x+y
-$$
-$$
-    \displaystyle\frac{dy}{dt}=-5x+2y
-$$
-$$
+    \begin{aligned}
+     \displaystyle\frac{dx}{dt}&=-4x+y \\ 
+    \displaystyle\frac{dy}{dt}&=-5x+2y 
+    \end{aligned}
     \displaystyle\frac{d}{dt}
     \begin{pmatrix}
     x \\
