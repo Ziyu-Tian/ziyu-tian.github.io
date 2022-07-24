@@ -577,21 +577,7 @@ $$
 
 #### 2.4:Systems of ODE I
 - For example, $\begin{aligned}m_1y''_1&=-k_1y_1+k_2(y_2-y_1)\\ m_2y''_2&=-k_2(y_2-y_1) \end{aligned}$
-     $$
-     \begin{pmatrix}
-     \ddot{y_1} \\
-     \ddot{y_2}
-     \end{pmatrix}
-     =
-     \begin{pmatrix}
-     -\frac{(k_1+k_2)}{m_1} & \frac{k_2}{m_1} \\
-     \frac{k_2}{m_1} & -\frac{k_2}{m_2} 
-     \end{pmatrix}
-     \begin{pmatrix}
-     y_1 \\
-     y_2
-     \end{pmatrix}
-    $$
+- $\begin{pmatrix} \ddot{y_1} \\ \ddot{y_2}\end{pmatrix}=\begin{pmatrix}-\frac{(k_1+k_2)}{m_1} & \frac{k_2}{m_1} \\ \frac{k_2}{m_1} & -\frac{k_2}{m_2} \end{pmatrix}\begin{pmatrix}y_1 \\ y_2\end{pmatrix}$
 
 * We can take the oscillation (for the second order) :
     * $y_1=c\cos(\omega t-\alpha _1)$
