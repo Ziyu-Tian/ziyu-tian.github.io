@@ -678,8 +678,8 @@ $\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
 * In that case, the numerator and denominator both tend to infinity, we re-arrange and get the answer.
 ##### How to get the limit of p(t)/q(t)
 - $p(t)$ and $q(t)$ are polynomials.
-- Try to separate factors: <font color=#00FFFF> Such as $\lim\frac{\sqrt{x^2+3}}{x+3}$, try to separate "x", $\lim \frac{\sqrt{x^2(1+3/x^2)}}{x(1+3/x)}$, then find the limit. </font>
-- Using L'Hopital's Rule: <font color=#00FFFF> Note that "$\frac{\sqrt{()}}{kx+b}$" or inverse cannot be should be solved it.</font>
+- Try to separate factors: <font color=#082E54> Such as $\lim\frac{\sqrt{x^2+3}}{x+3}$, try to separate "x", $\lim \frac{\sqrt{x^2(1+3/x^2)}}{x(1+3/x)}$, then find the limit. </font>
+- Using L'Hopital's Rule: <font color=#082E54> Note that "$\frac{\sqrt{()}}{kx+b}$" or inverse cannot be should be solved it.</font>
 ### 2: Integration
 #### 2.1: The Definite Integration and Indefinite integration
 * The integration that produces a value not merely a formula is called a **definite integration**.
