@@ -597,26 +597,9 @@ $$
 
 * Use the way of E-value and E-vectors can find the solution.
 #### 2.6: Systems of ODEs III
-$$
-\dot{x}=x+y-2z
-$$
-$$
-\dot{y}=-x+2y+z
-$$
-$$
-\dot{z}=-y-z
-$$
-$$
-\displaystyle\frac{d}{dt}=\begin{pmatrix}
-1&&1&&-2\\
--1&&2&&1\\
-0&&-1&&-1
-\end{pmatrix}\begin{pmatrix}
-x\\
-y\\
-z
-\end{pmatrix}
-$$
+- For example, $\begin{aligned}\dot{x}&=x+y-2z\\ \dot{y}=-x+2y+z \\ \dot{z}&=-y-z \end{aligned}$
+- The matrix form: $\displaystyle\frac{d}{dt}=\begin{pmatrix}1&1&-2 \\-1&2&1 \\0&-1&-1\end{pmatrix}\begin{pmatrix}x\\ y\\ z\end{pmatrix}$
+
 * Just find the E-vector, the equations can be solved.
 ### 3: Diagonalisation of matrices and decoupling of systems of equations
 * Example:
