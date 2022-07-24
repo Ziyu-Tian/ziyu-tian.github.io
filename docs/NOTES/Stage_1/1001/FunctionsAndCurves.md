@@ -540,18 +540,14 @@ The $F(t)$ is what we called the forced.
         *  The  $y_{GS}=Ae^{-2t}+Be^{-3t}+\displaystyle\frac{1}{15}e^{-t}$   
 ### 1.4: Oscillations & Resonance
 #### 1.4.1: Resonance
-* If forcing “matches” natural/free   behavior of the system we get a “bigger” response -
-we call this resonance.
+* If forcing “matches” natural/free   behavior of the system we get a “bigger” response - we call this resonance.
 * In maths, the resonance means that the force **F(x)** will be applied on both CF and PI.
 #### 1.4.2: Find the PI of Resonance
 * Resonance is most relevant to oscillatory forcing but the same mathematical idea can be applied on other force.
 * The PI of resonance should be multiply a 't' of the ordinary PI.
 ### 1.5: First order, linear ODEs
 #### 1.5.1: The Standard form 
-$$
-\displaystyle\frac{dy}{dt}+p(t)y=q(t)
-$$
-
+$\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
 - $p(t)$ and $q(t)$ are for function of $t$.
 - The methods to solve the equations including **integrating factors, separation of variables and substitution.**
 
