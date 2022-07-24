@@ -547,8 +547,8 @@ we call this resonance.
 $$
 \displaystyle\frac{dy}{dt}+p(t)y=q(t)
 $$
-* $p(t)$ and $q(t)$ are for function of $t$.
-* The methods to solve the equations including **integrating factors, separation of variables and substitution.**
+- $p(t)$ and $q(t)$ are for function of $t$.
+- The methods to solve the equations including **integrating factors, separation of variables and substitution.**
 #### 1.5.2: Integrating Factors
 * Firstly, the function should be converted to he standard form.
 * $\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
