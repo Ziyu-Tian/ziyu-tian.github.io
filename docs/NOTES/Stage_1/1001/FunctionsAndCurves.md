@@ -573,15 +573,10 @@ $$
 #### 2.3: Finding the Eigenvalues and Eigenvectors
 * The scalar $\lambda$ is called the **eigenvalue**, while the vector $x$ is called the **eigenvector**.
 * In order to solve $Ax=\lambda x$, we can change it to $(A-\lambda I)x=0\Rightarrow |A-\lambda I|=0$
--->
+
+
 #### 2.4:Systems of ODE I
-Example_1:
-     $$
-     m_1y''_1=-k_1y_1+k_2(y_2-y_1)
-     $$
-     $$
-     m_2y''_2=-k_2(y_2-y_1)
-     $$
+- For example, $\begin{aligned}m_1y''_1&=-k_1y_1+k_2(y_2-y_1)\\ m_2y''_2&=-k_2(y_2-y_1) \end{aligned}$
      $$
      \begin{pmatrix}
      \ddot{y_1} \\
