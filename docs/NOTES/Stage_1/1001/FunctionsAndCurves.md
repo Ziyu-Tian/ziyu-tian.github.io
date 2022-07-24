@@ -613,10 +613,10 @@ $$
 - So $P=\begin{pmatrix}1&1\\5&1\end{pmatrix}$ 
 - The diagonalisation $Z=P^{-1}AP^{-1}$
 - $Z=\begin{pmatrix}1&&0\\0&&-3\end{pmatrix}$
-* $\begin{pmatrix}\dot{z_1}\\ \dot{z_2}\end{pmatrix}=Z\begin{pmatrix}z_1\\z_2 end{pmatrix}$
-* It is easy to find $z_1=Ae^t$ and $z_2=Be^{-3t}$.
-* $y=Pz\Rightarrow\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1&1\\ 5&1\end{pmatrix}\begin{pmatrix}z_1\\z_2\end{pmatrix}$
-* Then the expression of $x$ and $y$ can be found.
+- $\begin{pmatrix}\dot{z_1}\\ \dot{z_2}\end{pmatrix}=Z\begin{pmatrix}z_1\\z_2 \end{pmatrix}$
+- It is easy to find $z_1=Ae^t$ and $z_2=Be^{-3t}$.
+- $y=Pz\Rightarrow\begin{pmatrix}x\\ y\end{pmatrix}=\begin{pmatrix}1&1\\ 5&1\end{pmatrix}\begin{pmatrix}z_1\\z_2\end{pmatrix}$
+- Then the expression of $x$ and $y$ can be found.
 
     
 
