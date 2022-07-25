@@ -783,6 +783,20 @@ eg: $\int \sqrt{a^2-x^2}{\rm d}x$, $a>0$, let $x=a\sin \theta$, $\theta\in (-\fr
 
 $\begin{aligned}\int\sqrt{a^2-x^2}&=\int\sqrt{a^2-a^2\sin^2\theta} da\sin\theta \\&=\int a\cos\theta(a\cos\theta){\rm d}\theta \\&= a^2\int \frac{1}{2}(1+\cos(2\theta)){\rm d}\theta \\&= \frac{a^2}{2}(t+\frac{1}{2}\sin 2\theta)+C \end{aligned}$
 
+Note the integration range should be changed to the range of '$\theta$'.
+
+##### 2: Area, surface area, volume and length calculation 
+- (1): Area calculation - $A=\int y{\rm d}x$
+eg: Find the area enabled by $y=3x-x^2$ and x-axis: $A=\int_ 0^3 (3x-x^2){\rm d}x$
+
+- (2): Revolution volume - $V=\int \pi y^2{\rm d}x$
+eg: Find the revelation volume of $y=\sqrt{4-x^2}$ between x=0 and x=2 around x-axis, the volume should be $\int _0^2 \pi \sqrt{4-x^2}{\rm d}x$.
+
+- (3): Length of the curve - $S=\int _a^b\sqrt{1+(\frac{dy}{dx})^2}{\rm d}x$.
+eg: Find the length given by $y=\cosh x$ between x=0 and x=2, $S=\int _0^2 \sqrt{1+\sinh ^2x}{\rm d}x$, $\because \frac{\sinh(xi)}{i}=\sin x$, $\therefore S=\int _0^2 \sqrt{1+\sinh ^2x}{\rm d}x= \sinh 2$.
+
+
+
 
 
 
