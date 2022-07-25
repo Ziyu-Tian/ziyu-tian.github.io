@@ -765,7 +765,11 @@ eg:$\int 3x\sqrt{1-5x^2}{\rm d}x$.let $u(x)=1-5x^2$, $\frac{du}{dx}=-10x$, $dx=-
 $\begin{aligned}\therefore \int 3x\sqrt{1-5x^2}{\rm d}x&=\int 3x(-\frac{1}{10x}\sqrt{u}){\rm d}u\\ &=\frac{-3}{10}\int \sqrt{u}du\\  &=-\frac{1}{5}(1-5x^2)^{3/2}\end{aligned}$
 
 - (3): By part, as $[\int u'v=uv-\int uv']$
-eg: $\int 3x\cos(1-3x){\rm d}x$, let $v(x)=2x$, $u'(x)=\cos(1-3x)$, $v'(x)=2$, $u(x)=-\frac{1}{3}\sin (1-3x)=2x(-\frac{1}{3})\sin (1-3x)-\int -\frac{1}{3}\sin (1-3x).2{\rm d}x$
+eg: $\int 3x\cos(1-3x){\rm d}x$, let $v(x)=2x$, $u'(x)=\cos(1-3x)$, $v'(x)=2$, $u(x)=-\frac{1}{3}\sin (1-3x)$.
+
+$\begin{aligned}\int 3x\cos(1-3x){\rm d}x&=2x(-\frac{1}{3})\sin (1-3x)-\int -\frac{1}{3}\sin (1-3x).2{\rm d}x \\ &=-\frac{2}{3}x\sin (1-3x)+\frac{2}{3}[\frac{1}{3}\cos(1-3x)] \end{aligned}$
+
+
 
 - (4): By partial fraction, as $\int \frac{p(x)}{q(x)}{\rm d}x$
 eg: $\int \frac{3x-1}{2x^2-x}{\rm d}x=\int \frac{3x-1}{x(2x-1)}{\rm d}x=\int (\frac{A}{x}-\frac{B}{2x-1}){\rm d}x$.
