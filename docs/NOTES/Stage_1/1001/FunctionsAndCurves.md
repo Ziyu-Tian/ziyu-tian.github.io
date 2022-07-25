@@ -795,9 +795,14 @@ eg: Find the revelation volume of $y=\sqrt{4-x^2}$ between x=0 and x=2 around x-
 - (3): Length of the curve - $S=\int _a^b\sqrt{1+(\frac{dy}{dx})^2}{\rm d}x$.
 eg: Find the length given by $y=\cosh x$ between x=0 and x=2, $S=\int _0^2 \sqrt{1+\sinh ^2x}{\rm d}x$, $\because \frac{\sinh(xi)}{i}=\sin x$, $\therefore S=\int _0^2 \sqrt{1+\sinh ^2x}{\rm d}x= \sinh 2$.
 
+- (4): Centre of mass (Uniform density)
+eg: Find the c.o.m of the triangular plate enclosed by $y=\pm \frac{1}{2}x$ and $x=4$.
 
+$\begin{aligned}m&=2\int _0^4\rho (\frac{1}{2}){\rm d}x\\ &=2\rho [\frac{1}{4}x^2]_0^4 \\ &=8\rho  \end{aligned}$
 
+$M_x&=2\int _0^4\rho (\frac{1}{2}x){\rm d}x\\ &=\rho \int _0^4 x^2{\rm d}x\\ &=\frac{64}{3}\rho $
 
+$\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{\8}{3}\end{aligned}$, $Y=0$.
 
 
 
