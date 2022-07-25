@@ -828,13 +828,15 @@ $\begin{aligned}
 m&=\int _0^{1-x}\int _0^1 \rho {\rm d}x{\rm d}y\\ &=\int _0^{1-x}\int _0^1 y{\rm d}y{\rm d}x\\ &=\frac{1}{6}\end{aligned}$
 
 $\begin{aligned}
-\int _0^1\int _0^{1-x}\rho x{\rm d}y{\rm d}x\\ &=\frac{1}{24}\end{aligned}$
+\int _0^1\int _0^{1-x}\rho x{\rm d}y{\rm d}x&= \int _0 ^2[\frac{1}{2}xy^2]_0^{1-x}{\rm d}x\\ &=\frac{1}{24}\end{aligned}$
 
 - (6): Area of surface of revolution - $A=\int _a^b2\pi y\sqrt{1+(\frac{dy}{dx})^2}{\rm d}x$
 eg. Find the area of revolution of $y=\cosh x$, $x\in (0,2)$.
 
 $\begin{aligned}A&= \int _0 ^2 2\pi \cosh(x)\sqrt{1+\sinh ^2(x)}{\rm d}x \\ &= \frac{1}{2}\pi \sinh(4)+2\pi 
 \end{aligned}$
+
+- 
 
 
 
