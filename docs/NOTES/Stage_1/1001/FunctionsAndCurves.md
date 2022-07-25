@@ -694,13 +694,19 @@ $\delta A\approx f(x)\delta x$, and $\displaystyle\frac{dA}{dx}=f(x)$ in the lim
 * And the volume between $x=a$ and $x=b$ is given by:
 $\lim_{\delta x\to 0}\Sigma^{x=b}_{x=a}\pi f(x)^2\delta x$
 * So $V=\displaystyle\int _a^b\pi y^2dx$
+![](image/2022-07-25-12-57-26.png){width="300"}
+
+
 #### 2.4: Arc-length
+![](image/2022-07-25-12-58-34.png){width="300"}
+
 * To find the length of a curve expressed as $y=f(x)$.
 * $\delta s^2\approx \delta x^2+\delta y^2$, so $\delta s\approx \sqrt{\delta x^2+\delta y^2}=\sqrt{1+(\displaystyle\frac{\delta y}{\delta x})}dx$
 * Then we take a limit: 
 $$
 s=\lim_{\delta x\to 0}\sum\delta s=\lim_{\delta x\to 0}\sqrt{1+(\displaystyle\frac{\delta y}{\delta x})^2}\delta x=\int_a^b\sqrt{1+(\displaystyle\frac{dy}{dx})^2}dx
 $$
+
 #### 2.5: Surface area or revolution
 * The volume of revolution has a curved surface, which may be regarded as a sum of thin circular bands. 
 * For each, the area is approximately the circumference multiplied by the length of the small piece of arc.
@@ -718,6 +724,7 @@ $I\approx \sum (w\delta y)(y)(y)$,hence $I=\int_{-d/2}^{d/2}wy^2dy$.
 ### 3: Centre of Mass and Multiple Integrals
 #### 3.1: Centre of Mass in 1D 
 ![](image/2022-03-24-13-02-51.png){width="300"}
+
 * For two objects, we calculate the *centre of mass* by looking at total mass and the total moment.Take the moment about $O$, with $X$ as the coordinate of the c.o.m:
 $$
 m_1x_1+m_2x_2=(m_1+m_2)X,X=\displaystyle\frac{m_1x_1+m_2x_2}{m_1+m_2}=\displaystyle\frac{total moment}{total mass}
