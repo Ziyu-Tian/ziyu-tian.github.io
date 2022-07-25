@@ -767,7 +767,10 @@ eg: $\int 3x\cos(1-3x){\rm d}x$, let $v(x)=2x$, $u'(x)=\cos(1-3x)$, $v'(x)=2$, $
 
 - (4): By partial fraction, as $\int \frac{p(x)}{q(x)}{\rm d}x$
 eg: $\int \frac{3x-1}{2x^2-x}{\rm d}x=\int \frac{3x-1}{x(2x-1)}{\rm d}x=\int (\frac{A}{x}-\frac{B}{2x-1}){\rm d}x$.
-$\Thus A(2x-1)-Bx=3x-1$, $\therefore A=B=1$, $\int(\frac{A}{x}-\frac{B}{2x-1}){\rm d}x=\int \frac{1}{x}-\int \frac{1}{2x-1}$
+$\because A(2x-1)-Bx=3x-1$, $\therefore A=B=1$, $\int(\frac{A}{x}-\frac{B}{2x-1}){\rm d}x=\int \frac{1}{x}-\int \frac{1}{2x-1}$
+
+- (5): By sin/cos substitution, as $\int \sqrt{a^2-x^2}{\rm d}x$
+eg: $\int \sqrt{a^2-x^2}{\rm d}x$, $a>0$, let $x=a\sin \theta$, $\theta\in (-\frac{\pi}{2},\frac{\pi}{2})$.$\begin{aligned}\int\sqrt{a^2-x^2}&=\int\sqrt{a^2-a^2\sin^2\theta} da\sin\theta \\&=\int a\cos\theta(a\cos\theta){\rm d}\theta \\&= a^2\int \frac{1}{2}(1+\cos(2\theta)){\rm d}\theta \\&= \frac{a^2}{2}(t+\frac{1}{2}\sin 2\theta)+C \end{aligned}$
 
 
 
