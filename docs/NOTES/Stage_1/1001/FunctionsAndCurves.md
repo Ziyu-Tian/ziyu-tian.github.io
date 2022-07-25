@@ -741,7 +741,7 @@ $$
 * Integration in 2D or 3D uses the same concept - the limit of a sum of small contributions.**For example**, to find the mass of a rectangular plate with density $\rho=3+x+2y$, extending from $x=0\to 2$ and $y=0\to 3$
 ![](image/2022-03-24-13-38-49.png){width="300"}
 
-##### <font color=#082E54> Two ways to do the 2D Integrals
+##### <font color=#87CEEB> Two ways to do the 2D Integrals
 - Use 1-D integration (uniform $\rho$): $m=\int_a^b\rho y{\rm d}x$
 - Use Double integration ($\rho (x,y)$): $m=\int_a^b\int_0^y \rho {\rm d}y{\rm d}x$, note that "$\int_0^y$" is the range of $y(x)$
 </font>
