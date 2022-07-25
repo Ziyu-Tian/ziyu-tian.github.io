@@ -813,7 +813,22 @@ M_x&= \rho \int_0 ^a x2y{\rm d}x \\ &=\frac{2}{3}\rho a^3\end{aligned}$
 
 $\begin{aligned} X&=\frac{M_x}{m}\\ &=\frac{4a}{3\pi} \end{aligned}$
 
+- (5): Centre of mass ($\rho =\rho (x,y)$)
+eg1: Find the c.o.m, $0<x<3$, $0<y<2$, $\rho =x^2y-xy^2$ (per unit area), $m=\int _0 ^3\int _0^2 (x^2y-xy^2){\rm d}x{\rm d}y$.
 
+$\begin{aligned}m&=\int _0 ^3\int _0^2 (x^2y-xy^2){\rm d}x{\rm d}y\\ &= \int _0^2 [\frac{1}{3}yx^2-\frac{1}{2}y^2x^2]_0^3{\rm d}y\\ &=6 \end{aligned}$
+
+$\begin{aligned} M_x&=\int _0^2\int _0^3x(x^2y-xy^2){\rm d}x{\rm d}y \\ &=\frac{33}{2}\end{aligned}$
+
+$\begin{aligned}M_Y&= \int _0^2 \int _0 ^3 y(x^2y-xy^2){\rm d}x{\rm d}y\\ &=6 \end{aligned}$
+
+eg2: A triangular plate has corner at (0,0),(0,1), (1,0). Find its centre of mass, $\rho =y$.
+
+$\begin{aligned}
+m&=\int _0^{1-x}\int _0^1 \rho {\rm d}x{\rm d}y\\ &=\int _0^{1-x}\int _0^1 y{\rm d}y{\rm d}x\\ &=\frac{1}{6}\end{aligned}$
+
+$\begin{aligned}
+\int _0^1\int _0^{1-x}\rho x{\rm d}y{\rm d}x\\ &=\frac{1}{24}\end{aligned}$
 
 
 
