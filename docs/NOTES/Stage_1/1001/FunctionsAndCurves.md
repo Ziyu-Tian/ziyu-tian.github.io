@@ -800,9 +800,9 @@ eg: Find the c.o.m of the triangular plate enclosed by $y=\pm \frac{1}{2}x$ and 
 
 $\begin{aligned}m&=2\int _0^4\rho (\frac{1}{2}){\rm d}x\\ &=2\rho [\frac{1}{4}x^2]_0^4 \\ &=8\rho  \end{aligned}$
 
-$M_x&=2\int _0^4\rho (\frac{1}{2}x){\rm d}x\\ &=\rho \int _0^4 x^2{\rm d}x\\ &=\frac{64}{3}\rho $
+$\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{8}{3}\end{aligned}$;
 
-$\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{\8}{3}\end{aligned}$, $Y=0$.
+$\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{8}{3}\end{aligned}$, $Y=0$.
 
 
 
