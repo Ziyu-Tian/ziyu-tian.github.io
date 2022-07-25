@@ -804,7 +804,14 @@ $\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{8}{3}\end{aligned}$;
 
 $\begin{aligned}X&=\frac{M_x}{m}\\ &=\frac{8}{3}\end{aligned}$, $Y=0$.
 
+eg2: Find the centre of mass of $x^2+y^2=a^2$, for $x>=0$, the semi-circle:
 
+$\begin{aligned}m&=2\int _0^a\rho \sqrt{a^2-x^2}{\rm d}x\\ &= 2\rho \frac{1}{4}\pi a^2 \\ &=\frac{1}{2}\rho \pi a^2\end{aligned}$
+
+$\begin{aligned}
+M_x&= \rho \int_0 ^a x2y{\rm d}x \\ &=\frac{2}{3}\rho a^3\end{aligned}$
+
+$\begin{aligned} X&=\frac{M_x}{m}\\ &=\frac{4a}{3\pi} \end{aligned}
 
 
 
