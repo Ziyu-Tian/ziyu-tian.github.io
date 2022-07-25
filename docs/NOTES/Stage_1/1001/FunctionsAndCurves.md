@@ -918,14 +918,10 @@ $$
 #### 4.1: Combining series
 * If we have a function composed of two or more standard series, we can combined, if we correctly identify the overall domain of convergence for the final series.
 * For example: 
-$$
-\begin{aligned}
-f(x) &=\displaystyle\frac{ln(1-2x)}{\sqrt{1-3x}} \\
-&=ln(1-2x)(1-3x)^{-1/2} \\
-&=[-2x-2x^2-\frac{8}{3} x^3-...]\times[1+\frac{3}{2}x+\frac{27}{8}x^2+... ] \\  
-&=(-2)x+(3-2)x^2+(-\frac{27}{4}+3-\frac{8}{3})x^3+... \\  
-\end{aligned}
-$$
+
+$\begin{aligned}f(x) &=\frac{ln(1-2x)}{\sqrt{1-3x}} \\&=ln(1-2x)(1-3x)^{-1/2} \\&=[-2x-2x^2-\frac{8}{3} x^3-...]\times[1+\frac{3}{2}x+\frac{27}{8}x^2+... ] \\ &=(-2)x+(3-2)x^2+(-\frac{27}{4}+3-\frac{8}{3})x^3+... \\  
+\end{aligned}$
+
 * The combined series will converge if both series converge, so we must satisfy both convergence conditions:
 $$
 -1<-2x\neq 1\qquad -1<-3x<1
