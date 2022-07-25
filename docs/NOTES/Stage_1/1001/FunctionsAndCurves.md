@@ -756,7 +756,17 @@ $M_X=\displaystyle\iint x\rho dxdy$ (About the y-axis), $M_Y=\displaystyle\iint 
 * It is possible to adapt this approach to find the c.o.m, of non-rectangular regions.
 * Other applications includes the case of a 2D or 3D body with internal heat sources or heat sinks. If there is equilibrium, then the heat crossing the boundary of the region must equal to the total heat source or sink within it.
 * Thus we can equate the **volume integral** of heat produced with the **surface integral** of heat crossing a boundary.
-    
+#### <font color=#87CEEB>The sample exercise of Integrations 
+##### 1: The integration Methods 
+- (1): Normal integral - use anti-derivate and chains rules 
+- (2): Substitution: as $\int p(x)f(g(x))$
+
+eg: $\int 3x\sqrt{1-5x^2}{\rm d}x$, let $u(x)=1-5x^2$, $\frac{du}{dx}=-10x$, $dx=-\frac{du}{10x}$.Let $u(x)=1-5x^2$, $\frac{du}{dx}=-10x$, $dx=-\frac{du}{10x}$, $\therefore \int 3x\sqrt{1-5x^2}{\rm d}x=\int 3x(-\frac{1}{10x}\sqrt{u}{\rm d}u=\frac{-3}{10}\int \sqrt{u}du=-\frac{1}{5}(1-5x^2)^{3/2}$
+</font>
+
+
+
+
 
 
 
