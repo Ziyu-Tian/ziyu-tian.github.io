@@ -765,6 +765,10 @@ eg:$\int 3x\sqrt{1-5x^2}{\rm d}x$, let $u(x)=1-5x^2$, $\frac{du}{dx}=-10x$, $dx=
 - (3): By part, as $[\int u'v=uv-\int uv']$
 eg: $\int 3x\cos(1-3x){\rm d}x$, let $v(x)=2x$, $u'(x)=\cos(1-3x)$, $v'(x)=2$, $u(x)=-\frac{1}{3}\sin (1-3x)=2x(-\frac{1}{3})\sin (1-3x)-\int -\frac{1}{3}\sin (1-3x).2{\rm d}x$
 
+- (4): By partial fraction, as $\int \frac{p(x)}{q(x)}{\rm d}x$
+eg: $\int \frac{3x-1}{2x^2-x}{\rm d}x=\int \frac{3x-1}{x(2x-1)}{\rm d}x=\int (\frac{A}{x}-\frac{B}{2x-1}){\rm d}x$.
+$\Thus A(2x-1)-Bx=3x-1$, $\therefore A=B=1$, $\int(\frac{A}{x}-\frac{B}{2x-1}){\rm d}x=\int \frac{1}{x}-\int \frac{1}{2x-1}$
+
 
 
 
