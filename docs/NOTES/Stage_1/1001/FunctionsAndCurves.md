@@ -740,6 +740,12 @@ $$
 #### 3.2: Multiple integrals
 * Integration in 2D or 3D uses the same concept - the limit of a sum of small contributions.**For example**, to find the mass of a rectangular plate with density $\rho=3+x+2y$, extending from $x=0\to 2$ and $y=0\to 3$
 ![](image/2022-03-24-13-38-49.png){width="300"}
+
+##### <font color=#082E54> Two ways to do the 2D Integrals
+- Use 1-D integration (uniform $\rho$): $m=\int_a^b\rho y{\rm d}x$
+- Use Double integration ($\rho (x,y)$): $m=\int_a^b\int_0^y \rho {\rm d}y{\rm d}x$, note that "$\int_0^y$" is the range of $y(x)$
+</font>
+
 * For one small piece, $\delta m\approx \rho x\delta y$. For a strip parallel to the x-axis, mass $\approx[\sum \rho \delta x]\delta y$.
 * Overall,$m\approx\sum [\sum \rho \delta x]\delta y$, and in the limit $\delta x\to 0$, $\delta y\to 0$.
 * $m=\displaystyle\int_{y=0}^3[\displaystyle\int_{x=0}^2\rho(x,y)dx]dy=\int_0^3\int_0^2\rho(x,y)dxdy$
