@@ -608,7 +608,7 @@ $\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
 -  Substitute $x',x$ to original equation, find the x,y.</font>
 #### 2.6: Systems of ODEs III
 - For example, $\begin{aligned}\dot{x}&=x+y-2z\\ \dot{y}&=-x+2y+z \\ \dot{z}&=-y-z \end{aligned}$
-- The matrix form: $\displaystyle\frac{d}{dt}=\begin{pmatrix}1&1&-2 \\-1&2&1 \\0&-1&-1\end{pmatrix}\begin{pmatrix}x\\ y\\ z\end{pmatrix}$
+- The matrix form: $\displaystyle\frac{d}{dt}\begin{pmatrix}x\\ y\\ z\end{pmatrix}=\begin{pmatrix}1&1&-2 \\-1&2&1 \\0&-1&-1\end{pmatrix}\begin{pmatrix}x\\ y\\ z\end{pmatrix}$
 
 * Just find the E-vector, the equations can be solved.
 
