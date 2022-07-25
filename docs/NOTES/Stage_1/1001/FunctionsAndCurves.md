@@ -836,7 +836,19 @@ eg. Find the area of revolution of $y=\cosh x$, $x\in (0,2)$.
 $\begin{aligned}A&= \int _0 ^2 2\pi \cosh(x)\sqrt{1+\sinh ^2(x)}{\rm d}x \\ &= \frac{1}{2}\pi \sinh(4)+2\pi 
 \end{aligned}$
 
-- 
+- (7): Centre of mass of revelation 
+eg: Find the centre of mass of the revolution body of $x^2+y^2=a^2$, ($x>=0$)
+
+$\begin{aligned}m&=\int _0 ^a \pi y^2\rho {\rm d}x \\ &=\pi \rho \int _0 ^a (a^2-x^2){\rm d}x\\ &= \frac{2}{3}a^3\pi \rho \end{aligned}$
+
+$\begin{aligned}
+M_x&=\int _0 ^a x\pi y^2\rho {\rm d}x \\
+&= \frac{1}{4}a^4\pi \rho \end{aligned}$
+
+$\begin{aligned}
+ X&=\frac{M_x}{m} \\
+ &=\frac{3}{8}a 
+\end{aligned}$
 
 
 
