@@ -54,7 +54,10 @@ nav:
             - Engineering Mathematics: 'NOTES/Stage_1/1001/EngineeringMath.md'
             - C Programing Basic: 'NOTES/Stage_1/Coding/C.md'
             - MATLAB Basic: 'NOTES/Stage_1/Coding/Matlab.md'
-
+    - Dev:
+        - 'DEV/index.md'
+    - Blog:
+        - 'BLOG/index.md'    
 
 
 # [Extensions]
@@ -63,7 +66,7 @@ plugins:
     # insider已经支持中文的分词搜索了 https://squidfunk.github.io/mkdocs-material/blog/2022/chinese-search-support/
       lang:
         - en
-        - ja
+        - zh
   - tags # 给单篇文章添加标签 https://squidfunk.github.io/mkdocs-material/setup/setting-up-tags/?h=tags
 markdown_extensions:
   - pymdownx.arithmatex: # latex支持
