@@ -54,6 +54,7 @@ nav:
             - Engineering Mathematics: 'NOTES/Stage_1/1001/EngineeringMath.md'
             - C Programing Basic: 'NOTES/Stage_1/Coding/C.md'
             - MATLAB Basic: 'NOTES/Stage_1/Coding/Matlab.md'
+            - Python: 'NOTES/Stage_1/Coding/Python.md'
     - Dev:
         - 'DEV/index.md'
     - Blog:
