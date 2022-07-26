@@ -8,14 +8,18 @@ scanf("%c",&character);//%c for characters
 scanf("%f",&floatnumber);//%f for floatnumbers
 scanf("%a%b",&a,&b);//input two numbers
 ```
+
 * Note that scanf cannot recognize the "space".
+
 ### 1.2: fgets()
 ```cpp
 fgets(name,sizeof(name),stdin);
 ```
+
 * fgets() can be use to input the string.
 * Notes that it can accept the "space", but there will be an additional "return" in the end.
 * A pointer can be use to delete the final "return":
+
 ```cpp
 char *find;//a pointer of the string
 fgets(name,sizeof(name),stdin);
