@@ -1,6 +1,7 @@
-# I: C Programming Basics and Input and Output
-## 1: Input
-### 1.1: Scanf
+# C Programming Basic 
+## I: C Programming Basics and Input and Output
+### 1: Input
+#### 1.1: Scanf
 ```cpp
 scanf("%s",&name);//%s for string
 scanf("%d",&number);//%d for intrigue
@@ -11,7 +12,7 @@ scanf("%a%b",&a,&b);//input two numbers
 
 * Note that scanf cannot recognize the "space".
 
-### 1.2: fgets()
+#### 1.2: fgets()
 ```cpp
 fgets(name,sizeof(name),stdin);
 ```
@@ -26,39 +27,39 @@ fgets(name,sizeof(name),stdin);
 find = strchr(name,'\n');//a function in string.h which can be used to return the address of the first place of '\n'
 *find = '\0';
 ```
-## 2: Output
+### 2: Output
 ```cpp
 printf("this is the output");
 printf("%d",&a);// output intrigue
 printf("%d %d",&a,&b);//output with space between them
 ```
-# II: Data Types
-## 1: Introduction
+## II: Data Types
+### 1: Introduction
 ![](image/2022-04-02-22-17-15.png)
-## 2: Variables
+### 2: Variables
 * Variables are names used to refer a **location in memory** that holds a value.
 * Formally, a variable is a symbol or name associated with a fixed **physical address (L- VALUE)**, which denotes a value **(R-VALUE)**.
-### 2.1: Type: Int
+#### 2.1: Type: Int
 * The int type differs from the intrigues in maths.
 * It can be short int (16 bits) or long int (32 bits).
 * The highest bit used to save the sign. (minus or plus)
 * Note that the result of '/' between int will also be an int.
 * Note that 'a=++i' means 'a=(++i)' while 'a=i++' means '(a=i)++'.
-### 2.2: Type: Float and double
+#### 2.2: Type: Float and double
 * Float: Single precision, 32-bits
 * Double: Double precision, 64-bits
 * Note that the result of '/' between float and double will be float and double.
-### 2.3: Type: Char
+#### 2.3: Type: Char
 * In the C language (unlike other languages) the type char does not denote a new data type, but it is equivalent to the domain of values represented in one byte (range 0-255);
 * The integer value is the numeric value of the character in the code ASCII.
-### 2.4: Type: Boolean
+#### 2.4: Type: Boolean
 * In C programming value 0 means FALSE and Non-zero means TRUTH.
 ```cpp
 x||y;// or
 x&&y;// and
 !x;// not
 ```
-### 2.5: Type: String (=character arrays)
+#### 2.5: Type: String (=character arrays)
 * Strings (chunks of text) are represented through an array of chars - structured pre-
 defined data type.
 * The first place of the array is '0' instead of '1'.
@@ -74,13 +75,13 @@ printf("%s",a);// the output will be 'Hello' cause it ended in advance.
 #include<string.h>
 strcmp("a","b");//which can return a number show the '>','<','=' relation
 ```
-### 2.6: Symbolic names and Constant
+#### 2.6: Symbolic names and Constant
 ```cpp
 #define a 100;//define global constant
 constant int N = 10;//define local constant
 ```
-# III: Conditional statement
-## 1: If-else statement
+## III: Conditional statement
+### 1: If-else statement
 ```cpp
 if (result==0)//only one if to make the condition
 {
@@ -108,7 +109,7 @@ else
     printf("Unknown");
 }
 ```
-## 2: Switch statement
+### 2: Switch statement
 * Switch-case statement can be use to do multiple choices.
 ```cpp
 switch(getchar())
@@ -124,8 +125,8 @@ switch(getchar())
     default: printf("No\n");
 }
 ```
-# IV: Loop
-## 1: while Loop
+## IV: Loop
+### 1: while Loop
 ```cpp
 while(scanf("%d",&a)==1)//add the inputs continually
 {
@@ -153,7 +154,7 @@ do
 } 
 while(count<10);//the loop can only do 10 times
 ```
-## 2: For Loops
+### 2: For Loops
 ```cpp
 for(i = 0; i < count; i++)//initial,condition and increments
 {
@@ -162,8 +163,8 @@ for(i = 0; i < count; i++)//initial,condition and increments
     sum += a; 
 }
 ```
-# V：Functions
-## 1: Define a function
+## V：Functions
+### 1: Define a function
 ```cpp
 void example(char str[])//non-return function
 {
@@ -173,8 +174,8 @@ int sum(int x,int y){//type,name,parameters
     return a+b;//the return value
 }
 ```
-## 2: Standard Library Function
-### 2.1: ctype.h
+### 2: Standard Library Function
+#### 2.1: ctype.h
 ```cpp
 isdigit();//check if is a decimal digit
 isalpha();//check if is a letter
@@ -185,14 +186,14 @@ ispunct();//check if a character is a punctuation character.
 tolower();//convert a letter to lowercase
 toupper();//convert a letter to uppercase
 ```
-### 2.2: string.h
+#### 2.2: string.h
 ```cpp
 strlen();//return the length of string
 strcmp();//compare the two strings
 strstr("hello","ello");//return the position where the second string in the first one
 strcpy(first,second);// same as "first" = "second"
 ```
-### 2.3: math.h
+#### 2.3: math.h
 ```cpp
 sqrt();
 pow();
@@ -202,7 +203,7 @@ fabs();
 ceil();//round up to the closest int
 floor();//round down to the closest
 ```
-### 2.4: Recursive function
+#### 2.4: Recursive function
 * Function in C allowed to all themselves which is known as recursion.
 ```cpp
 int numberOfDigits(int x)
@@ -213,8 +214,8 @@ if (x < 10) return 1;
     return numberOfDigits(x / 10) + 1;
 }
 ```
-# VI: Arrays and application
-## 1: Array
+## VI: Arrays and application
+### 1: Array
 ```cpp
 char a[3];//a[1],a[1],a[2], note that the index from '0'
 int a[2][2];//two-dimension array
@@ -223,7 +224,7 @@ int c[2]={1,2};//initial directly
 int a[2]={1};//is equal to {1,0}
 int c[]={1,2};//the initialism will define its size
 ```
-## 2: Linear search
+### 2: Linear search
 * How to find the position of a given value in an array
 ```cpp
 int linearsearch(const int a[],int size,int value)
@@ -238,7 +239,7 @@ int linearsearch(const int a[],int size,int value)
     }
 }
 ```
-## 3: Binary search
+### 3: Binary search
 * Find the position of the value of a sorted array.
 ```cpp
 int binarySearch(const int a[],int start, int end, int value)
@@ -260,7 +261,7 @@ else
     return binarySearch(a, middle + 1, end, value);//find the left part
 }
 ```
-## 4: Sorting
+### 4: Sorting
 * Sorting a certain size array.
 ```cpp
 void SwapSort(int a[],int size)
@@ -281,9 +282,9 @@ void SwapSort(int a[],int size)
     }
 }
 ```
-# VII: Files and Pointers
-## 1: Files
-### 1.1: Input and Output of files
+## VII: Files and Pointers
+### 1: Files
+#### 1.1: Input and Output of files
 ```cpp
 FILE *f = fopen("numbers.txt", "r");//use a pointer to open the file, 'r' for read
 fscanf(f, "%d", &a);//fscanf for input
@@ -297,7 +298,7 @@ FILE *out = fopen("sum.txt" , "w");
 //'w' for write
 fprintf(out, "%d\n", sum);//fprintf for output
 ```
-### 1.2: fgets()
+#### 1.2: fgets()
 ```cpp
 FILE *f = fopen("modules.txt", "r");
 fgets(s, size, f);//note that fgets() will end the input at '\n' and can only read size-1, cause the last digit is '\0'.
@@ -312,8 +313,8 @@ if (strlen(s) == MAX - 1 && s[MAX - 2] != '\n')
     count++; 
 }
 ```
-## 2: Pointers
-### 2.1: Operation of Pointers
+### 2: Pointers
+#### 2.1: Operation of Pointers
 ```cpp
 int x=5;
 int *p;//define a pointer
@@ -324,7 +325,7 @@ x--;//now the value of x is 41
 int *q;
 q=p+1;//if the address of p is 100, then q address will be 104(+1 means plus 4 bytes)
 ```
-### 2.2: Relationship between array and pointers
+#### 2.2: Relationship between array and pointers
 ```cpp
 int vet[10];//define an array
 printf("%p %p",vet,&vet[0]);//will print two same address
