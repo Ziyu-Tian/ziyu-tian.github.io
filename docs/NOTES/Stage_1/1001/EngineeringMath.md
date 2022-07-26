@@ -1003,10 +1003,10 @@ $$
 * If we want to solve the equation like $\frac{dy}{dx}=f(x,y)$, with initial condition $y(x_0)=y_0$.
 * Over a short distance, we can use $\delta y\approx\frac{dy}{dx}\delta x$. Instead we use $h$ replace $\delta x$:
 $$
-\begin{align*}
+\begin{aligned}
 y_1&=y_0+h\frac{dy}{dx}(0) \\
 &=y_0+hf(x_0,y_0) \\
-\end{align*}
+\end{aligned}
 $$
 * Then we get a general formula:
 $$
