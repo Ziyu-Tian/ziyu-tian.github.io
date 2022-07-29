@@ -57,6 +57,7 @@ nav:
             - Python Data Analysis: 'NOTES/Stage_1/Coding/PythonDataAnalysis.md'
     - Dev:
         - 'DEV/index.md'
+        - Time & Space Complexity: 'DEV/TimeComplexity.md'
     - Blog:
         - 'BLOGS/index.md'    
 
