@@ -58,6 +58,7 @@ nav:
     - Dev:
         - 'DEV/index.md'
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
+        - Static modifier in C: 'DEV/StaticInC.md'
     - Blog:
         - 'BLOGS/index.md'    
 
