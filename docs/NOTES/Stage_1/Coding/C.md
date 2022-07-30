@@ -224,6 +224,8 @@ int c[2]={1,2};//initial directly
 int a[2]={1};//is equal to {1,0}
 int c[]={1,2};//the initialism will define its size
 ```
+* Use 'size_t' to define the loop variable 'i' which could avoid array overflow. (mostly '%u' or '%lu').
+
 ### 2: Linear search
 * How to find the position of a given value in an array
 ```cpp
