@@ -20,7 +20,7 @@ The *pass-by-value* means when passing by the parameters, the function only pass
 
 In order to operate the original value, we have to use *pass-by-reference*, which can simply treated as **'use pointers'** at beginning.
 
-# Pass-by-Reference 
+## Pass-by-Reference 
 
 Still focus on the swap function, if we use the pointers (pass-by-value) as the parameter of function, the code will be:
 
@@ -37,7 +37,7 @@ swap(&a,&b);
 
 In fact, the pointers are also kind of *pass-by-value*, but the type of the value is pointer.
 
-# Summary 
+## Summary 
 
 * The parameters in function are only 'copy', which cannot be changed inside the function.
 * The only way to change the parameters in function is to **input the address (pointer) of the parameter**, use indirection to change what it points to.
