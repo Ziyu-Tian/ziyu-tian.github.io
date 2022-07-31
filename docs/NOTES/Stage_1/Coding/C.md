@@ -332,7 +332,7 @@ q=p+1;//if the address of p is 100, then q address will be 104(+1 means plus 4 b
 int vet[10];//define an array
 printf("%p %p",vet,&vet[0]);//will print two same address
 int *pi;
-pi=vet;//is equal to
+pi=vet;//is equal to 
 pi=&vet[0];
 *(pi+3)=28;//the fourth of the array is defined as 28
 pi++;//change that pi takes the second place of the array
