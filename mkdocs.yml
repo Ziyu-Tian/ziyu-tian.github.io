@@ -59,6 +59,7 @@ nav:
         - 'DEV/index.md'
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
         - Static modifier in C: 'DEV/StaticInC.md'
+        - Pass-by-Value & Pass-by-Reference: 'DEV/ValueRefPass.md'
     - Blog:
         - 'BLOGS/index.md'    
 
