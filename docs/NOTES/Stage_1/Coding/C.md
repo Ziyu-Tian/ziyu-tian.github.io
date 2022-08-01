@@ -192,6 +192,7 @@ strlen();//return the length of string
 strcmp();//compare the two strings
 strstr("hello","ello");//return the position where the second string in the first one
 strcpy(first,second);// same as "first" = "second"
+sizeof(); //return the length of string or array, for the pointer will return '8' in Mac (windows/linux '4')
 ```
 #### 2.3: math.h
 ```cpp
