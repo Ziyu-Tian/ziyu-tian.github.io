@@ -340,6 +340,91 @@ pi++;//change that pi takes the second place of the array
 
 
 ```
+#### 2.3: The way using '&' and '*'
+
+The '&' is a binary operator which used to **return the address** of its operand. The '*' is the **dereference operator**, return  the object to which its operand points to.
+
+For example:
+
+```cpp
+int x=5;
+int *xPr;
+xPr=&x;// The pointer 'xPr' points to address of 'x'
+printf("%d",xPr);// Print the value stored in address of xPr (same as 'x')
+```
+
+#### 2.4: Using the 'const' qualifier with Pointers 
+
+Use the qualifier 'const' can avoid the parameters being changed when used by pass-by-reference. (The modification of parameters will lead to complier error)
+
+When pass a pointer to a function, the pointer and data can be 'const' or 'non-const', so will provide four situations.
+
+- Non-const Pointer to non-const data:
+
+```cpp
+#include<ctype.h>
+void convertToUppercase(char *sPtr) 
+{
+ while (*sPtr != '\0')
+    {
+    *sPtr = toupper(*sPtr);
+    ++sPtr;
+    }
+}
+convertToUppercase(string);
+```
+When defining a non-const character in function, so we can use toupper() to change what the pointer points to, then use '++' to move the location of the pointer.
+
+- Non-const Pointer to const data: 
+
+```cpp
+void printCharacters(const char *sPtr)
+ {
+    for (; *sPtr != '\0'; ++sPtr) //no initialize
+    { 
+        printf("%c", *sPtr);
+    }
+ }
+```
+In this case, the const pointer 'sPtr' points to cannot be changed, so we can't operate the '*Ptr', but can change the location of 'sPtr' using '++'.
+
+- Const Pointer to non-const data:
+
+```cpp
+#include <stdio.h>
+int main(void)
+{
+ int x; 
+ int y;
+ // ptr is a constant pointer to an integer that can be modified
+ // through ptr, but ptr always points to the same memory location
+ int * const ptr = &x;
+
+ *ptr = 7; // allowed: *ptr is not const
+ ptr = &y; // error: ptr is const; cannot assign new address
+}
+```
+The non-const data means the value pointer points to can be changed '*ptr=7', but the location (address) cannot be changed (line 404 will be a complier error).
+
+- Const Pointer to const data:
+
+```cpp
+int main(void)
+{
+ int x = 5; // initialize x
+ int y; // define y
+ // ptr is a constant pointer to a constant integer. ptr always
+ // points to the same location; the integer at that location
+ // cannot be modified
+ const int *const ptr = &x; // initialization is OK
+ printf("%d\n", *ptr);
+ *ptr = 7; // error: *ptr is const; cannot assign new value
+ ptr = &y; // error: ptr is const; cannot assign new address
+ }
+ 
+```
+
+Both the data and pointer are const type, so neither the value nor the location can be changed, or else will produce the error.
 
 
 
