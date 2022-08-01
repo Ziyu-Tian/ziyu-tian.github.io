@@ -427,5 +427,38 @@ int main(void)
 
 Both the data and pointer are const type, so neither the value nor the location can be changed, or else will produce the error.
 
+#### 2.5: Array of Pointers 
+
+The elements of array can be composed of **pointers** in C, the most common situation is using the **strings of array.** As the type string is actually a pointer points to the beginning of the string. 
+
+For example:
+
+```cpp
+const char *suit[4] = {"Hearts", "Diamonds", "Clubs", "Spades"};
+```
+
+In this way, we define the array with four strings as elements.
+
+#### 2.6: Pointers to functions 
+
+We can also use the pointers which point to functions in function parameters. (pass-by-reference)
+
+Such as: 
+
+```cpp
+void bubble(int work[], size_t size, int (*compare)(int a, int b) );
+```
+In this example, the pointer 'compare' being used to call another outside function 'compare'.
+
+#### 2.7: Function Pointers in Array 
+
+As the string array we have talked about above, we can also store the pointers to function in array.
+
+```cpp
+void (*f[3])(int) ={function1,function2,function3};
+```
+In this way, an array with three function-pointers is defined. 
+
+
 
 
