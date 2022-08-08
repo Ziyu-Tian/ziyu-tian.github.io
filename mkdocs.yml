@@ -61,7 +61,8 @@ nav:
         - Static modifier in C: 'DEV/StaticInC.md'
         - Pass-by-Value & Pass-by-Reference: 'DEV/ValueRefPass.md'
     - Blog:
-        - 'BLOGS/index.md'    
+        - 'BLOGS/index.md'
+        - Blogs_Zero: 'BLOGS/BlogsZero.md'    
 
 
 # [Extensions]
