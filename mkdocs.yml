@@ -62,8 +62,7 @@ nav:
         - Pass-by-Value & Pass-by-Reference: 'DEV/ValueRefPass.md'
     - Blog:
         - 'BLOGS/index.md'
-        - Blogs_Zero: 'BLOGS/BlogsZero.md' 
-        - Personal Journal:  
+        - Blogs_Zero: 'BLOGS/BlogsZero.md'  
 
 
 # [Extensions]
