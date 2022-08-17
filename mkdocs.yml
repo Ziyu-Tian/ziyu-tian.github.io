@@ -55,7 +55,9 @@ nav:
             - C Programing Basic: 'NOTES/Stage_1/Coding/C.md'
             - MATLAB Basic: 'NOTES/Stage_1/Coding/Matlab.md'
             - Python Data Analysis: 'NOTES/Stage_1/Coding/PythonDataAnalysis.md'
-    - Dev:
+        - Electronics Notes:
+            - Fundamentals of Electric Circuits: 'NOTES/Electronics/FundamentalElectricCircuits.md'
+    - Dev: 
         - 'DEV/index.md'
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
         - Static modifier in C: 'DEV/StaticInC.md'
