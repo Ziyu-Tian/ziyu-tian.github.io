@@ -84,3 +84,12 @@
 |![](image/2022-08-18-17-11-28.png)|![](image/2022-08-18-17-18-16.png)|
 |----|----|
 
+### Mesh Analysis 
+
+- Mesh analysis is also known as *loop analysis*, which focus on the *mesh*, (i.e.a independent loop). The mesh analysis is only available to a circuit that is a *planar* (a topology term, means can be redraw with non branches crossing one another).
+- For example, there are two meshes on the picture below.
+
+![](image/2022-08-18-17-33-42.png)
+
+- The step of mesh analysis:
+
