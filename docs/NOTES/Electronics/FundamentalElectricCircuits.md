@@ -51,3 +51,18 @@
 
 |![](image/2022-08-18-14-10-58.png)|![](image/2022-08-18-14-21-20.png)|
 |  ----  |  ----  |
+
+- Normally we use the graph below to do the conversion between 'Wye' and 'delta'.
+
+![](image/2022-08-18-16-44-35.png)
+
+- Note the rule that $R_1$ faces to the $R_a$ and same for other two resisters.(use alphas for 'delta' and digits for 'Wye')
+- For the Delta to Wye conversion:
+    - $R_1=\frac{R_bR_c}{R_1+R_b+R_c}$
+    - $R_2=\frac{R_cR_a}{R_a+R_b+R_c}$
+    - $R_3=\frac{R_aR_b}{R_a+R_b+R_c}$
+- For the Wye to Delta conversion:
+    - $R_a=\frac{R_1R_2+R_2R_3+R_3R_1}{R_1}$
+    - $R_b=\frac{R_1R_2+R_2R_3+R_3R_1}{R_2}$
+    - $R_c=\frac{R_1R_2+R_2R_3+R_3R_1}{R_3}$
+- When $R_1=R_2=R_3$, we say the network is **balanced**.
