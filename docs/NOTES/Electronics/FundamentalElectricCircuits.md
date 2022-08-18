@@ -34,3 +34,20 @@
 - A **node** is the point of the connection between two or more branches.(the point with same electric potential).
 - A **Loop** is a closed path formed by starting at a node. A loop is said to be independent if it is a single circle which doesn't contain another loop. (a brief understanding) The circuit in the graph have 3 independent loops for example.
 - According to the topology, we have $*b=l+n-1*$.
+
+### Series and parallel
+
+- Two or more elements are in **series** if they exclusively share a single node and consequently carry the same current.
+- Two or more elements are in **parallel** if they are connected to the same two nodes and consequently have the same voltage across them.
+
+### Kirchhoff's Laws 
+
+- **Kirchhoff's current Law** states that the algebraic sum of currents entering a node is zero.
+- **Kirchhoff's voltage Law** states that the algebraic sum of all voltages around a closed loop is zero.
+
+### Wye-Delta Transformations 
+
+- **Wye-Delta Transformation** is used to convert 'Y' or 'T' networks and '$\Delta$' or '$\Pi$' each other. 
+
+|![](image/2022-08-18-14-10-58.png)|![](image/2022-08-18-14-21-20.png)|
+|  ----  |  ----  |
