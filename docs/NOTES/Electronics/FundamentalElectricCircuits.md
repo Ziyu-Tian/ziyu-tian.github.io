@@ -5,12 +5,12 @@
 
 ## 1: Basic Concepts 
 
-### 1.1: Passive sign convention
+### Passive sign convention
 - Passive sign convention is the convention we commonly used, which is satisfied when the current enters through the *positive terminal (+)*of an element. For the voltage analysis (eg. mesh analysis), if we follow a vested direction (mostly clockwise) of a loop, if the direction arrow enter the *positive terminal (+)* of a element, that voltage will be marked as *'+'* and vice versa.
 - For example, the 5 V source in the Loop 1 should be marked as '-' as the following image.
 ![](image/2022-08-17-18-10-38.png)
 
-### 1.2: Type of the Sources 
+### Type of the Sources 
 - **Ideal Independent sources** is an active elements(could generate power) that provides a specified voltage or current is *completely independent* of other elements. We use the 'circled sources' refer to **independent sources**.
 
 ![](image/2022-08-17-18-23-51.png)
@@ -66,3 +66,21 @@
     - $R_b=\frac{R_1R_2+R_2R_3+R_3R_1}{R_2}$
     - $R_c=\frac{R_1R_2+R_2R_3+R_3R_1}{R_3}$
 - When $R_1=R_2=R_3$, we say the network is **balanced**.
+
+## 3: Methods of Analysis 
+
+### Nodal Analysis 
+
+- Nodal Analysis is a general method to analyze the circuits which using the nodal voltages as variables, so it is also known as *node-voltage method*.
+- The Step of nodal analysis:
+    - Determine a *reference node* which could be treated as ground.
+    - Apply KCL to each of the non-reference nodes, then use Ohm's Law to express the current in nodal voltages.
+    - Solve the Simultaneous Equations.
+- Nodal analysis with voltage sources:
+    - When voltage source is connected between the reference node and a non-reference node, simply set the voltage at the no-reference node equal to the voltage of the voltage source as the '10 V' source in the picture below.
+    - When voltage source is between two non-reference nodes, which form a *supernode*(as the '5 V' source below) we use both KCL and KVL on the supernode: $i_1-i_2+i_4-i_3=0$, then use the KVL between the supernode and the ground (a loop): $-v_2+5+v_3=0$.
+
+
+|![](image/2022-08-18-17-11-28.png)|![](image/2022-08-18-17-18-16.png)|
+|----|----|
+
