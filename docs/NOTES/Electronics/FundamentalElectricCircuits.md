@@ -91,5 +91,4 @@
 
 ![](image/2022-08-18-17-33-42.png)
 
-- The step of mesh analysis:
 
