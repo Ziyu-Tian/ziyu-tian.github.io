@@ -91,4 +91,21 @@
 
 ![](image/2022-08-18-17-33-42.png)
 
+- Steps to determine the mesh current:
+    - Assign mesh current of the each mesh as the picture above. (Note that the direction of the current is arbitrary)
+    - Apply KVL to the meshes, use Ohm's Law to express the voltage in terms of the mesh current.
+    - Solve the equations. 
+- Mesh Analysis with Current Sources:
+    - The presence of the current sources will reduce the equations. 
+    - When a current source exists only in one mesh, such as the left picture below, set $i_2=5$ A and write the other mesh in usual way.
+    - When a current source exists between the two meshes, such as the right picture below, we will create a *supermesh*, which means two meshes have a (dependent or independent) current source in common.
+
+|![](image/2022-08-19-09-41-37.png)|![](image/2022-08-19-09-41-52.png)|
+|----|----|
+
+- When dealing with the *supermesh*, we can omit the branch with the current source, as the picture below, then apply the KVL of the new loop as $-20+6i_1+10i_2+4i_2=0$ and KCL to node in the branch when two meshes intersect as $i_2=i_1+6$, the answer will be apparent.
+- Three meshes can also create a large *supermesh*.(the right schematic)
+
+|![](image/2022-08-19-09-46-24.png)|![](image/2022-08-19-09-47-27.png)|
+|----|----|
 
