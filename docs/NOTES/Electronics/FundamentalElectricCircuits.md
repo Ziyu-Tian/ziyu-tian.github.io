@@ -109,3 +109,8 @@
 |![](image/2022-08-19-09-46-24.png)|![](image/2022-08-19-09-47-27.png)|
 |----|----|
 
+### Nodal and Mesh Analysis by inspection 
+
+- When all the sources in a circuit are independent current sources, we have a easier way to get the matrix form of the equations
+
+

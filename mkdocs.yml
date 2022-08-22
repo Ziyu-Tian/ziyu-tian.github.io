@@ -64,7 +64,8 @@ nav:
         - Pass-by-Value & Pass-by-Reference: 'DEV/ValueRefPass.md'
     - Blog:
         - 'BLOGS/index.md'
-        - Blogs_Zero: 'BLOGS/BlogsZero.md'  
+        - Blogs_Zero: 'BLOGS/BlogsZero.md' 
+        - Thoughts 22/08/22: 'BLOGS/Thoughts_220822.md' 
 
 
 # [Extensions]
