@@ -115,23 +115,17 @@
 - We can use the formula $Gv=i$ to generate the *conductance matrix*, such as:
 
 $
-\begin{pmatrix}
+\left(\begin{array}{cccc}
 G_{11} & G_{12} & \cdots & G_{1N} \\
 G_{21} & G_{22} & \cdots & G_{2N} \\
 \vdots & \vdots & \vdots & \vdots \\
 G_{N1} & G_{n2} & \vdots & G_{NN}
-\end{pmatrix}
-\begin{pmatrix}
-v_1 \\
-v_2 \\
-\vdots \\
-v_N
-\end{pmatrix}=\begin{pmatrix}
-i_1 \\
-i_2 \\
-\vdots \\
-i_N
-\end{pmatrix}
+\end{array}\right)
 $
+
+- In the formula above:
+    - $G_{kk}$= Sum of the conductances connected to node k.
+    - $G_{kj}=G_{jk}=$ Negative of the sum of the conductances of directly connecting nodes $k$ and $j$.
+    - 
 
 
