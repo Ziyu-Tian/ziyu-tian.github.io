@@ -167,3 +167,18 @@ $$
     - $R_{kj}=R_{jk}=$ Negative of the resistances **in common** with meshes $k$ and $j$.
     - $i_k$ = Unknown mesh current for mesh $k$ in the clockwise direction.
     - $v_k$ = Sum taken clockwise of all independent voltages sources in mesh $k$, with voltage rise treated as positive.
+
+
+### Analysis Methods of BJT 
+
+- The structure of a NPN BJT (left) and the current direction (right):
+
+|![](image/2022-08-23-22-23-10.png)|![](image/2022-08-23-22-23-23.png)|
+|----|----|
+
+- The basic rules of BJT: $I_C=\beta I_B$
+- To use the nodal analysis method on BJT, we can change it to the equivalent model below:
+
+![](image/2022-08-23-22-37-34.png)
+  
+
