@@ -120,12 +120,16 @@ G_{11} & G_{12} & \cdots & G_{1N} \\
 G_{21} & G_{22} & \cdots & G_{2N} \\
 \vdots & \vdots & \vdots & \vdots \\
 G_{N1} & G_{n2} & \vdots & G_{NN}
+\end{array}\right)\left(\begin{array}{cccc}
+v_1 \\
+v_2 \\
+\vdots \\
+v_N
 \end{array}\right)
 $$
 
 - In the formula above:
     - $G_{kk}$= Sum of the conductances connected to node k.
     - $G_{kj}=G_{jk}=$ Negative of the sum of the conductances of directly connecting nodes $k$ and $j$.
-    - 
-
-
+    - $v_k$= Unknown voltage at node $k$
+    - $i_k=$ Sum of all independent current sources directly connected to node $k$, with current entering the node treated as positive.
