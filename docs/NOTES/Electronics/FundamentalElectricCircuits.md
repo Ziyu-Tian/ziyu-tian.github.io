@@ -139,4 +139,25 @@ $$
     - $G_{kj}=G_{jk}=$ Negative of the sum of the conductances of directly connecting nodes $k$ and $j$.
     - $v_k$= Unknown voltage at node $k$
     - $i_k=$ Sum of all independent current sources directly connected to node $k$, with current entering the node treated as positive.
-    - 
+
+- When a linear resistive circuit **has only independent voltage sources**, we can obtain the mesh equations by inspections.
+- We can generate the *resistance matrix* using the formula $Ri=v$, such as:
+
+$$
+\left[\begin{array}{cccc}
+R_{11} & R_{12} & \cdots & R_{1N} \\
+R_{21} & R_{21} & \cdots & R_{2N} \\
+\vdots & \vdots & \vdots & \vdots \\
+R_{N1} & R_{N2} & \cdots & R_{NN}
+\end{array}\right] \left[\begin{array}{cccc}
+i_1 \\
+i_2 \\
+\vdots \\
+v_N
+\end{array}\right]=\left[\begin{array}{cccc}
+v_1 \\
+v_2 \\
+\vdots \\
+v_N
+\end{array}\right]
+$$
