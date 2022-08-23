@@ -114,14 +114,14 @@
 - When **all the sources in a circuit are independent current sources**, we have a easier way to get the matrix form of the equations.
 - We can use the formula $Gv=i$ to generate the *conductance matrix*, such as:
 
-$
+$$
 \left(\begin{array}{cccc}
 G_{11} & G_{12} & \cdots & G_{1N} \\
 G_{21} & G_{22} & \cdots & G_{2N} \\
 \vdots & \vdots & \vdots & \vdots \\
 G_{N1} & G_{n2} & \vdots & G_{NN}
 \end{array}\right)
-$
+$$
 
 - In the formula above:
     - $G_{kk}$= Sum of the conductances connected to node k.
