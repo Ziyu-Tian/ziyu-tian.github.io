@@ -111,6 +111,27 @@
 
 ### Nodal and Mesh Analysis by inspection 
 
-- When all the sources in a circuit are independent current sources, we have a easier way to get the matrix form of the equations
+- When **all the sources in a circuit are independent current sources**, we have a easier way to get the matrix form of the equations.
+- We can use the formula $Gv=i$ to generate the *conductance matrix*, such as:
+
+$
+\begin{pmatrix}
+G_{11} & G_{12} & \cdots & G_{1N} \\
+G_{21} & G_{22} & \cdots & G_{2N} \\
+\vdots & \vdots & \vdots & \vdots \\
+G_{N1} & G_{n2} & \vdots & G_{NN}
+\end{pmatrix}
+\begin{pmatrix}
+v_1 \\
+v_2 \\
+\vdots \\
+v_N
+\end{pmatrix}=\begin{pmatrix}
+i_1 \\
+i_2 \\
+\vdots \\
+i_N
+\end{pmatrix}
+$
 
 
