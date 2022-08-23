@@ -161,3 +161,9 @@ v_2 \\
 v_N
 \end{array}\right]
 $$
+
+- In the formula above:
+    - $R_kk$= Sum of the resistances in mesh $k$.
+    - $R_{kj}=R_{jk}=$ Negative of the resistances **in common** with meshes $k$ and $j$.
+    - $i_k$ = Unknown mesh current for mesh $k$ in the clockwise direction.
+    - $v_k$ = Sum taken clockwise of all independent voltages sources in mesh $k$, with voltage rise treated as positive.
