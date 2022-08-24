@@ -71,6 +71,45 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 - To find the inverse matrix of 2x2 matrix,if $A=\begin{pmatrix}a&b \\ c&d\end{pmatrix}$, $A^{-1}=\frac{1}{|A|}\times A^{*}=\frac{1}{\det A}\times \begin{pmatrix}d&-b\\-c&a\end{pmatrix}$
 ##### (3): Determinant of 3x3 matrix 
 - For Example, $\left | \begin{array}{cccc}2&3&-1 \\ 4&1&2 \\ -1&0&3\end{array} \right |=2\left | \begin{array}{cccc}1&2 \\ 0&3 \end{array} \right |-(3)\left |\begin{array}{cccc}4&2 \\ -1&3 \end{array} \right |+(-1)\left | \begin{array}{cccc} 4&1 \\ -1&0 \end{array} \right |=-37$
+#### * 1.7: Simultaneous Equations & Matrix Inversion Extension 
+
+##### Revisions 
+- For the matrix generate from the simultaneous equations:
+
+$$
+\left[\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1N} \\
+a_{21} & a_{21} & \cdots & a_{2N} \\
+\vdots & \vdots & \vdots & \vdots \\
+a_{N1} & a_{N2} & \cdots & a_{NN}
+\end{array}\right] \left[\begin{array}{cccc}
+x_1 \\
+x_2 \\
+\vdots \\
+x_N
+\end{array}\right]=\left[\begin{array}{cccc}
+b_1 \\
+b_2 \\
+\vdots \\
+b_N
+\end{array}\right]
+$$
+
+- The matrix can be put in the form $AX=B$.
+
+##### Cramer's Rule 
+
+We can use the rule below to solve simultaneous equations:
+
+$$
+\begin{aligned}
+x_1 &= \frac{\Delta _1}{\Delta} \\
+x_2 &= \frac{\Delta _2}{\Delta} \\
+&\vdots \\
+x_n &= \frac{\Delta_n}{\Delta}
+\end{aligned}
+$$
+
 ### 2: Vectors
 #### 2.1: Definition 
 - Cartesian form in right-hand set are (2,3,1) or $2\vec{i}+3\vec{j}+\vec{k}$
