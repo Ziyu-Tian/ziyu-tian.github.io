@@ -124,7 +124,7 @@ b_1 & a_{12} & \cdots & a_{1n} \\
 b_2 & a_{22} & \cdots & a_{2n} \\
 \vdots & \vdots & \cdots & \vdots \\
 b_n & a_{n2} & \cdots & a_{nn} \\
-\end{array}|\right$
+\end{array}\right|$
 
 $\Delta _2=\left|\begin{array}
 {cccc}
@@ -132,7 +132,7 @@ a_{11} & b_1 & \cdots & a_{1n} \\
 a_{21} & b_2 & \cdots & a_{2n} \\
 \vdots & \vdots & \cdots & \vdots \\
 a_{n1} & a_{n2} & \cdots & a_{nn} \\
-\end{array}|\right$.
+\end{array}\right|$.
 
 ##### The General Methods to find Determinants 
 
