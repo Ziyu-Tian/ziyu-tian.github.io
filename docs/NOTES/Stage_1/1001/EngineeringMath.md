@@ -99,7 +99,7 @@ $$
 
 ##### Cramer's Rule 
 
-We can use the rule below to solve simultaneous equations:
+- We can use the rule below to solve simultaneous equations:
 
 $$
 \begin{aligned}
@@ -109,6 +109,46 @@ x_2 &= \frac{\Delta _2}{\Delta} \\
 x_n &= \frac{\Delta_n}{\Delta}
 \end{aligned}
 $$
+
+- Where the $\Delta$ can be expressed as :
+
+$\Delta = \left|\begin{array}{cccc}
+a_{11} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \cdots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} 
+\end{array}\right|$, 
+$\Delta _1=\left|\begin{array}
+{cccc}
+b_1 & a_{12} & \cdots & a_{1n} \\
+b_2 & a_{22} & \cdots & a_{2n} \\
+\vdots & \vdots & \cdots & \vdots \\
+b_n & a_{n2} & \cdots & a_{nn} \\
+\end{array}|\right$
+
+$\Delta _2=\left|\begin{array}
+{cccc}
+a_{11} & b_1 & \cdots & a_{1n} \\
+a_{21} & b_2 & \cdots & a_{2n} \\
+\vdots & \vdots & \cdots & \vdots \\
+a_{n1} & a_{n2} & \cdots & a_{nn} \\
+\end{array}|\right$.
+
+##### The General Methods to find Determinants 
+
+For example, the Determinant such as:
+
+$$
+\Delta= \left |\begin{array}
+{cccc}
+a_{11} & a_{12} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \\
+\vdots & \vdots & \vdots & \cdots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}
+\end{array}\right|
+$$
+
 
 ### 2: Vectors
 #### 2.1: Definition 
