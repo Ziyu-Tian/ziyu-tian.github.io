@@ -159,6 +159,53 @@ $$
 
 ![](image/2022-08-25-13-05-56.png)
 
+##### Matrix Inversion 
+
+- If we mark $I$ is an **identity matrix**, $A^{-1}$ is given by: $A^{-1}=\frac{adj A}{\det A}$
+- The 'adj' means the **adjoint matrix** of $A$, which can be expressed as the transpose of the **cofactors** of $A$. 
+- For the matrix $A$:
+
+$$
+A=\left [\begin{array}
+{cccc}
+a_{11} & a_{12} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \\
+\vdots & \vdots & \vdots & \cdots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}
+\end{array}\right]
+$$
+
+- The cofactors of $A$ are defined as:
+
+$C=cof(A)=\left [\begin{array}
+{cccc}
+c_{11} & c_{12} & c_{12} & \cdots & c_{1n} \\
+c_{21} & c_{22} & c_{23} & \cdots & c_{2n} \\
+c_{31} & c_{32} & c_{33} & \cdots & c_{3n} \\
+\vdots & \vdots & \vdots & \cdots & \vdots \\
+c_{n1} & c_{n2} & c_{n3} & \cdots & c_{nn}
+\end{array}\right]$
+
+- The cofactor $c_{ij}$ is the product of $(-1)^{i+j}$ and the determinant of the (n-1) x (n-1) matrix which obtained by deleting the $i$th row and $j$th column from $A$, such as $c_{11}$:
+
+$$
+c_{11}=(-1)^2\left |\begin{array}
+{cccc}
+a_{11} & a_{12} & a_{12} & \cdots & a_{1n} \\
+a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
+a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \\
+\vdots & \vdots & \vdots & \cdots & \vdots \\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}
+\end{array}\right|
+$$
+
+- Then we can find adj(A)= $C^T$. So:
+
+$$
+A^{-1}=\frac{C^T}{|A|}
+$$
+
 
 
 ### 2: Vectors
