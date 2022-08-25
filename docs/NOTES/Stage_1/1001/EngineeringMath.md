@@ -208,6 +208,8 @@ $$
 
 
 
+
+
 ### 2: Vectors
 #### 2.1: Definition 
 - Cartesian form in right-hand set are (2,3,1) or $2\vec{i}+3\vec{j}+\vec{k}$
