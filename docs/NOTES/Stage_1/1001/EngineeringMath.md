@@ -117,7 +117,7 @@ a_{11} & a_{12} & \cdots & a_{1n} \\
 a_{21} & a_{22} & \cdots & a_{2n} \\
 \vdots & \vdots & \cdots & \vdots \\
 a_{n1} & a_{n2} & \cdots & a_{nn} 
-\end{array}\right|$, 
+\end{array}\right|$,
 $\Delta _1=\left|\begin{array}
 {cccc}
 b_1 & a_{12} & \cdots & a_{1n} \\
@@ -136,18 +136,29 @@ a_{n1} & a_{n2} & \cdots & a_{nn} \\
 
 ##### The General Methods to find Determinants 
 
-For example, the Determinant such as:
+- For example, the Determinant such as:
 
 $$
-\Delta= \left |\begin{array}
+\begin{aligned}
+\Delta & = \left |\begin{array}
 {cccc}
 a_{11} & a_{12} & a_{12} & \cdots & a_{1n} \\
 a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
 a_{31} & a_{32} & a_{33} & \cdots & a_{3n} \\
 \vdots & \vdots & \vdots & \cdots & \vdots \\
 a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}
-\end{array}\right|
+\end{array}\right|  \\
+& = a_{11}M_{11}-a_{21}M_{21}+a_{13}M_{13}+\cdots + (-1)^{1+n}a_{1n}M_{1n}
+\end{aligned}
 $$
+
+
+- Where the minor $M_{ij}$ is an (n-1) $\times$ (n-1) determinant , **which is pointed diagonally by the elements in the first row.**
+
+##### An Alternative method to obtain the 3 x 3 matrix 
+
+![](image/2022-08-25-13-05-56.png)
+
 
 
 ### 2: Vectors
