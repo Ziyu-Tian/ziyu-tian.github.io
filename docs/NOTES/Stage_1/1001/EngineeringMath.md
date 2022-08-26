@@ -25,6 +25,9 @@ $\begin{pmatrix}1&0&0\\1&1&0\\1&1&1\end{pmatrix}$, $i>j$, $a_{ij}=0$, which is *
 
 #### 1.3: Matrix Transpose
 ##### (1): Transpose means <font color=#87CEEB> swap </font>
+<!--
+Note that the Markdown supports the embedded HTML language. The 'font' can be used to config the font size or color.
+!-->
 $\begin{pmatrix}a&b&c \\ d&e&f\\ g&h&i \end{pmatrix}^T=\begin{pmatrix}a&d&g\\ b&e&h\\ c&f&i \end{pmatrix}$
 ##### (2): The Transpose of transposed matrix
 $[A^T]^T=T$
@@ -51,7 +54,14 @@ $(A+B)^T=A^T+B^T$, $(A^T)^T=A$
 #### 1.5: Simultaneous equations & Matrices
 ##### Transfer the Matrix and Simultaneous equations 
 - Original equations: $\begin{aligned} 2x-3y=4 \\-x+2y=1\end{aligned}$
+<!--
+The \begin with {aligned} can be used to write the simultaneous equations.
+!-->
 - Matrix form: $\begin{pmatrix}2&-3\\-1&2\end{pmatrix} . \begin{pmatrix} x \\ y\end{pmatrix}=\begin{pmatrix} 4 \\ 1\end{pmatrix}$
+
+<!--
+\begin with {pmatrix} or simple {p22matrix} can modify the matrix lines and rows
+!-->
 ##### (1): Determinant
 - If the matrix $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, written $\det A \left| \begin{array}{cccc}a&b\\ c&d 
 \end{array} \right |=ad-bc$
