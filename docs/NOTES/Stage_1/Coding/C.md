@@ -33,6 +33,8 @@ printf("this is the output");
 printf("%d",&a);// output intrigue
 printf("%d %d",&a,&b);//output with space between them
 ```
+### 3: Reorient the input/output
+/
 ## II: Data Types
 ### 1: Introduction
 ![](image/2022-04-02-22-17-15.png)
@@ -185,6 +187,9 @@ isspace();//check if a character is white-space (space, tab, newline, etc.)
 ispunct();//check if a character is a punctuation character.
 tolower();//convert a letter to lowercase
 toupper();//convert a letter to uppercase
+iscrtrl();//check if it is control character
+ispunct();//check if it is a printing character rather than space, digit or a letter
+isprint();//check if it is the character visitable on screen
 ```
 #### 2.2: string.h
 ```cpp
@@ -193,6 +198,14 @@ strcmp();//compare the two strings
 strstr("hello","ello");//return the position where the second string in the first one
 strcpy(first,second);// same as "first" = "second"
 sizeof(); //return the length of string or array, for the pointer will return '8' in Mac (windows/linux '4')
+strtod();//convert string to double
+strtol();//convert string to long
+stroul();//convert the string to unsigned long and its second parameter (pointer) return the part cannot be converted
+fgets();//read the line of the text
+puts();//print the string with a '\n'
+
+
+
 ```
 #### 2.3: math.h
 ```cpp
