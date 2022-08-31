@@ -34,7 +34,27 @@ printf("%d",&a);// output intrigue
 printf("%d %d",&a,&b);//output with space between them
 ```
 ### 3: Reorient the input/output
-/
+
+#### 3.1: Use 'fopen'
+```cpp
+FILE *f = fopen("PATH","r")// The file path and "r" means read only
+fgets(string,length,f);
+fscanf(f,"%d",&x);
+//same for fprintf()
+fclose(f);
+
+```
+
+#### 3.2: Use 'freopen'
+
+```cpp
+freopen("PATH","r",stdin);//use the standard input 
+freopen("PATH","w",stdout);
+fclose(stdin);
+fclose(stdout);
+```
+
+
 ## II: Data Types
 ### 1: Introduction
 ![](image/2022-04-02-22-17-15.png)
