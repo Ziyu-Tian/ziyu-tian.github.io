@@ -104,7 +104,7 @@ if(result==0)//nested if-else
 else
 {
     if(result==1)
-    {
+    { 
         printf("No");
     }
     else
@@ -196,17 +196,28 @@ isprint();//check if it is the character visitable on screen
 strlen();//return the length of string
 strcmp();//compare the two strings
 strstr("hello","ello");//return the position where the second string in the first one
-strcpy(first,second);// same as "first" = "second"
+strcpy(first,second,n);// same as "first" = "second" (n is the byte number)
 sizeof(); //return the length of string or array, for the pointer will return '8' in Mac (windows/linux '4')
 strtod();//convert string to double
 strtol();//convert string to long
 stroul();//convert the string to unsigned long and its second parameter (pointer) return the part cannot be converted
 fgets();//read the line of the text
 puts();//print the string with a '\n'
+strcat(first.second);//append the second one at the end of the first one
+strchr(*s1,c);//Located the first occurrence of c in the first string and returned a pointer to c
+strcspn();//Return the length of string 1 containing no characters from string 2
+strpbrk();//Search the first string argument for the first occurrence of any character in its second string argument.
+strrchr();// Search the last occurrence of the specified character in a string.
+strspn();// determine the length of initial part of the string in its first string taht contain only characters from second arguments
+strtok(string," ");//used to separate the sentence into words (tokens).
+memcpy();//copy a specified number of bytes from second pointer into the first pointer.
+memove();//like memcpy, but allows bytes from one part of a string to be copied into another part of the same string even if overlap.
+memset();//copies the value of the byte in its second argument into the first n bytes of the objects,can be used to initialize the array with '0' more efficiently
 
 
 
 ```
+
 #### 2.3: math.h
 ```cpp
 sqrt();
