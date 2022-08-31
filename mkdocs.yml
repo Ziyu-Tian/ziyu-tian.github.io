@@ -62,6 +62,7 @@ nav:
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
         - Static modifier in C: 'DEV/StaticInC.md'
         - Pass-by-Value & Pass-by-Reference: 'DEV/ValueRefPass.md'
+        - Bit Operation: 'DEV/BitOperation.md'
     - Blog:
         - 'BLOGS/index.md'
         - Blogs_Zero: 'BLOGS/BlogsZero.md' 
