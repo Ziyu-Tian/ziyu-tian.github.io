@@ -51,7 +51,10 @@
 int x=11; // binary '1011'
 int y=7; // '0111'
 x=x^y;
-        // x=1011^0111=1100. Note that in the EX-OR operation, the 'same part' will be set as '0', only if one is '0' and another is '1', the result will be '1'. If we 'EX-OR' the 'different-part', that digit will be exchange to other's digit. If we 'EX-OR' the 'same-part', the result will keep unchanged.
+        // x=1011^0111=1100.
+        // Note that in the EX-OR operation, the 'same part' will be set as '0', only if one is '0' and another is '1', the result will be '1'.
+        // If we 'EX-OR' the 'different-part', that digit will be exchange to other's digit.
+        //If we 'EX-OR' the 'same-part', the result will keep unchanged.
 y=x^y;
         // y=1100^0111=1011, we can find the 'y' has already exchanged to 'x'
 
