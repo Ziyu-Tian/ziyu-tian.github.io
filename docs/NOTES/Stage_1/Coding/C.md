@@ -17,6 +17,17 @@ scanf("%.4f",a);// if a = 123.45678, the result will be 123.4568
 scanf("%4.4f",a);// The combination of above
 scanf("%*.*f",4,4,a);// Same as the last line
 
+// Using the scan set in scanf can terminated the input at specified character
+scanf("%8[aeiou]", z); // The string input will be stopped if the letter is not one of 'aeiou'
+scanf("%8[^aeiou]", z); // inverted scan set
+
+// It is available to skip certain characters in the input stream:
+
+scanf("%d-%d-%d", &month, &day, &year);
+// For the input 02-22-2003, the '-' will be discorded
+scanf("%d%*c%d%*c%d", &month, &day, &year);
+//For the 02/22/2003, use '* can ensure the input cannot be stored will be discorded.
+
 ```
 
 * Note that scanf cannot recognize the "space".
@@ -427,7 +438,7 @@ pi++;//change that pi takes the second place of the array
 ```
 #### 2.3: The way using '&' and '*'
 
-The '&' is a binary operator which used to **return the address** of its operand. The '*' is the **dereference operator**, return  the object to which its operand points to.
+The '&' is a binary operator which used to **return the address** of its operand. The * is the *dereference operator*, return  the object to which its operand points to.
 
 For example:
 
