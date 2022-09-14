@@ -7,7 +7,10 @@ scanf("%s",&name);//%s for string
 scanf("%d",&number);//%d for intrigue
 scanf("%c",&character);//%c for characters
 scanf("%f",&floatnumber);//%f for floatnumbers
-scanf("%a%b",&a,&b);//input two numbers
+scanf("%i",&signedDecimalInt);//%i for signed decimal intrigue
+scanf("%o",&unsignedOctalInt);//%o for signed octal int
+scanf("%x",&unsignedHexdecinmal);// X for upper hexadecimal,x for lower hex
+scanf("%a %b",&a,&b);//input two numbers
 ```
 
 * Note that scanf cannot recognize the "space".
@@ -29,9 +32,16 @@ find = strchr(name,'\n');//a function in string.h which can be used to return th
 ```
 ### 2: Output
 ```cpp
-printf("this is the output");
+// Print the intrigue
 printf("%d",&a);// output intrigue
 printf("%d %d",&a,&b);//output with space between them
+// Print the float number
+printf("%e",123.456);// The result will be 1.23456e+002
+printf("%f",123.456);//Print 123.456000, six digits in the right side of point
+// Print the String and characters
+printf("%s\n","hello world");//The conversion specifier 's' will terminated at '\0'.
+printf("%p\n",ptr);// The '\p' can be used to print the address of a pointer points to.
+ 
 ```
 ### 3: Reorient the input/output
 
