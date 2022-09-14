@@ -37,6 +37,9 @@ find = strchr(name,'\n');//a function in string.h which can be used to return th
 *find = '\0';
 ```
 ### 2: Output
+
+#### 2.1: Common use of printf()
+
 ```cpp
 // Print the intrigue
 printf("%d",&a);// output intrigue
@@ -47,8 +50,29 @@ printf("%f",123.456);//Print 123.456000, six digits in the right side of point
 // Print the String and characters
 printf("%s\n","hello world");//The conversion specifier 's' will terminated at '\0'.
 printf("%p\n",ptr);// The '\p' can be used to print the address of a pointer points to.
- 
 ```
+
+#### 2.2: Using Flags in the printf format control string
+
+```cpp
+printf("%10s%10d%10c%10f\n\n", "hello", 7, 'a', 1.23);
+// Using the right justifying 
+printf("%-10s%-10d%-10c%-10f\n", "hello", 7, 'a', 1.23);
+// Add a '-' can make it to left justifying
+printf("%+d\n%+d\n", 786, -786);
+// Add '+' to the positive number in the result 
+printf("% d\n% d\n", 547, -547);
+// Add' ' to the result 
+printf("%#o\n", c);
+// Add prefix 0 to the octal value
+printf("%#x\n", c);
+// Add prefix 0x to the hexadecimal numbers
+printf("%09d\n", 452);
+// Add prefix '0' to the numbers
+
+
+```
+
 ### 3: Reorient the input/output
 
 #### 3.1: Use 'fopen'
