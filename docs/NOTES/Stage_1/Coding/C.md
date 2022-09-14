@@ -11,6 +11,12 @@ scanf("%i",&signedDecimalInt);//%i for signed decimal intrigue
 scanf("%o",&unsignedOctalInt);//%o for signed octal int
 scanf("%x",&unsignedHexdecinmal);// X for upper hexadecimal,x for lower hex
 scanf("%a %b",&a,&b);//input two numbers
+scanf("%4d",a);// right specifying the result up to 4 digit (all the result to the right side)
+scanf("%.4d",a);// if a = 123 , the result will be 0123
+scanf("%.4f",a);// if a = 123.45678, the result will be 123.4568
+scanf("%4.4f",a);// The combination of above
+scanf("%*.*f",4,4,a);// Same as the last line
+
 ```
 
 * Note that scanf cannot recognize the "space".
