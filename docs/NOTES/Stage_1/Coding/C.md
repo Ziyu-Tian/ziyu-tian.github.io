@@ -546,6 +546,14 @@ In this way, we define the array with four strings as elements.
 
 #### 2.6: Pointers to functions 
 
+We can use pointers that point to a function (actually the beginning address of function),
+
+such as:
+```cpp
+int (*pf)(int a,char b);
+// pf is the name of pointer
+```
+
 We can also use the pointers which point to functions in function parameters. (pass-by-reference)
 
 Such as: 
