@@ -281,9 +281,12 @@ strpbrk();//Search the first string argument for the first occurrence of any cha
 strrchr();// Search the last occurrence of the specified character in a string.
 strspn();// determine the length of initial part of the string in its first string taht contain only characters from second arguments
 strtok(string," ");//used to separate the sentence into words (tokens).
+
+// Below is memory operation functions
+
 memcpy();//copy a specified number of bytes from second pointer into the first pointer.
 memove();//like memcpy, but allows bytes from one part of a string to be copied into another part of the same string even if overlap.
-memset();//copies the value of the byte in its second argument into the first n bytes of the objects,can be used to initialize the array with '0' more efficiently
+memset(void * string,char 'ch',int n);//copies the value of the byte in its second argument into the first n bytes of the objects,can be used to initialize the array with '0' more efficiently
 
 
 
@@ -571,5 +574,14 @@ pp=*p;// the pp points to *p
 printf("%d",*(*pp));// *(*pp) is n
 ```
 
+#### 2.9: Void Pointer
+
+```cpp
+double d = 3.14;
+void *p = &d;// void can be initialized or assigned by any type of variables
+// Note that for the void * type pointer p, '*p','++p','--p','p-n' have no meaning.
+
+
+```
 
 
