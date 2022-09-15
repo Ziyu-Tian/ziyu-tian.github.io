@@ -365,7 +365,8 @@ else
 }
 ```
 ### 4: Sorting
-* Sorting a certain size array.
+
+#### 4.1: Swap Sort 
 ```cpp
 void SwapSort(int a[],int size)
 {
@@ -385,6 +386,45 @@ void SwapSort(int a[],int size)
     }
 }
 ```
+
+#### 4.2: QuickSort in C
+
+* The prototype of qsort function:
+
+```cpp
+void qsort(void *base,int nelem,unsigned int width,int(* pfCompare)(const void *, const void *));
+// base: the beginning address of unsorted array
+// nelem: the numbers of array
+// width: the bit size of each element
+// pfCompare: the beginning address of compare function
+```
+
+* The rule of compare function:
+
+```cpp
+int compare(const void * elem1,const void * elem2);
+// If * elem1 should before the elem2, the return value is minus int.
+// If * elem1 should after the elem2, the return value should be plus int.
+// If each of them in the first is acceptable, the return value is 0.
+
+```
+
+* The example of compare function:
+
+```cpp
+int compare(const *void elem1,const void * elem2)
+{
+    unsigned int * p1, * p2;
+    p1 = (unsigned int *) elem1;
+    // Note that "*elem1" unavailable
+    p2 = (unsigned int *) elem2;
+    return (*p1 % 10)-(*p2 % 10);
+    // the sorting rule is the first digit 
+} 
+```
+
+
+
 ## VII: Files and Pointers
 ### 1: Files
 #### 1.1: Input and Output of files
