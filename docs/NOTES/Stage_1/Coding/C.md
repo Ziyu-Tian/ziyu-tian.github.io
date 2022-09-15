@@ -435,6 +435,11 @@ pi=&vet[0];
 *(pi+3)=28;//the fourth of the array is defined as 28
 pi++;//change that pi takes the second place of the array
 //Note that vet is a constant pointer
+int a[]; int *p;
+// The name of array 'a' is a constant pointer, which points to a[0], the type of a[] is 'TYPE *'
+p=a;// point 'p' to the a[0]
+*p=10;// a[0] = 10
+*(p+1)=20;// a[1] = 20;
 
 
 ```
@@ -556,17 +561,15 @@ void (*f[3])(int) ={function1,function2,function3};
 ```
 In this way, an array with three function-pointers is defined. 
 
-#### 2.8: The relation of array and pointer
+#### 2.8: Pointer to a pointer
 
 ```cpp
-int a[]; int *p;
-// The name of array 'a' is a constant pointer, which points to a[0], the type of a[] is 'TYPE *'
-p=a;// point 'p' to the a[0]
-*p=10;// a[0] = 10
-*(p+1)=20;// a[1] = 20;
-
+int *p;
+int **pp;//define a pointer points to a pointer
+p=&n;
+pp=*p;// the pp points to *p
+printf("%d",*(*pp));// *(*pp) is n
 ```
-
 
 
 
