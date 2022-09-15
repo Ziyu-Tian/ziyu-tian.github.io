@@ -319,6 +319,8 @@ printf("%d",a[1][1]);//output as a variable
 int c[2]={1,2};//initial directly
 int a[2]={1};//is equal to {1,0}
 int c[]={1,2};//the initialism will define its size
+// The address of two-dimension array a[M][N] can be expressed as a[i] = a[0]+ i x N x sizeof(TYPE)
+
 ```
 * Use 'size_t' to define the loop variable 'i' which could avoid array overflow. (mostly '%u' or '%lu').
 
