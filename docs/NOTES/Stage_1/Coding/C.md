@@ -554,6 +554,17 @@ void (*f[3])(int) ={function1,function2,function3};
 ```
 In this way, an array with three function-pointers is defined. 
 
+#### 2.8: The relation of array and pointer
+
+```cpp
+int a[]; int *p;
+// The name of array 'a' is a constant pointer, which points to a[0], the type of a[] is 'TYPE *'
+p=a;// point 'p' to the a[0]
+*p=10;// a[0] = 10
+*(p+1)=20;// a[1] = 20;
+
+```
+
 
 
 
