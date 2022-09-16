@@ -632,4 +632,13 @@ void *p = &d;// void can be initialized or assigned by any type of variables
 
 ```
 
+## VIII: Structure in C
+
+### 1: Introduction 
+
+* A kind of aggregates of many different type of variables, commonly usd to define the *record* in file.
+
+
+
+
 
