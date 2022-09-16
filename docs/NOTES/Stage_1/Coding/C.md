@@ -638,6 +638,54 @@ void *p = &d;// void can be initialized or assigned by any type of variables
 
 * A kind of aggregates of many different type of variables, commonly usd to define the *record* in file.
 
+### 2: Structure Definitions
+
+* This a prototype of structure:
+
+```cpp
+struct employee 
+// The employee is the structure tag
+{
+char firstName[20];
+char lastName[20]; 
+unsigned int age;
+char gender;
+double hourlySalary;
+// All the variables in the braces are the members of the structure, which can be different types
+};
+```
+
+#### 2.1: Self-referential structures
+
+* The only to reference the structure in itself is using the pointer points to itself:
+
+```cpp
+struct employee2 {
+char firstName[20];
+char lastName[20];
+unsigned int age;
+char gender;
+double hourlySalary;
+struct employee2 teamLeader; // ERROR struct employee2 *teamLeaderPtr; // pointer
+};
+```
+#### 2.2: Defining the variables of structures types
+
+* The definition of structures creates a new type that used to define variables of other types:
+
+```cpp
+struct card acard, deck[52], *cardPtr;
+// aCard is a variable of type struct card
+// deck[52] is an array in the struct
+// * cardPtr is a pointer in this struct
+```
+
+* The another way to define a structure is using comma after the braces:
+
+```cpp
+
+
+```
 
 
 
