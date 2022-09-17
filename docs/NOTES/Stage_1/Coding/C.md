@@ -683,9 +683,66 @@ struct card acard, deck[52], *cardPtr;
 * The another way to define a structure is using comma after the braces:
 
 ```cpp
-
+struct card {
+    char *face;
+    char *suit;
+} aCard, deck[52], *cardPtr;
 
 ```
+
+#### 2.3: Operations that can be performed on structures
+
+* Assign struct variables to struct variables of the same type.
+
+* Taking the address of a struct variable.
+
+* Accessing the members of a struct members
+
+* Using the sizeof operator.
+
+* NOTE that '==' or '!=' can not be used, cause the size of data of particular type is *machine dependent*.
+
+### 3: Initializing structures
+
+* Structures can be initialized using intializer lists as with array.
+
+```cpp
+struct card {
+    char *face;
+    char *suit;
+};
+struct card aCard = {"Three","Hearts"};
+```
+* The other members uninitialized will be set as '0' or 'NULL' for pointers.
+
+### 4: Accessing Structure Members with . and ->
+
+* '.' is called the dot operator which can access member; '->' is called the pointer operator which can access the member by reference.
+
+```cpp
+struct card {
+    char *face;
+    char *suit;
+};
+int main(void)
+{
+    struct card aCard;// define a 'card' structure named 'aCard'
+    aCard.face = "Ace";
+    aCard.suit = "Spades";
+    struct card *cardPtr = &aCard;
+    // assign address of aCard to a pointer
+    printf("%s\n",aCard.face);
+    // using '.' print the member
+    printf("%s\n",cardPtr->face);
+    // using '->' print the member
+    printf("%s\n",(*cardPtr).face);
+    // using '*' print the member
+}
+```
+
+### 5: Using Structures with Functions
+
+
 
 
 
