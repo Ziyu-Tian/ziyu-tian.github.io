@@ -742,6 +742,39 @@ int main(void)
 
 ### 5: Using Structures with Functions
 
+Structures may be passed to functions by:
+
+* Passing individuals structures members.
+* passing an entire structures.
+* Passing a pointer to a structure.
+
+### 6: Typeof 
+
+* The keyword *typedef* provides a mechanism for creating alias for previously defined data types.
+* Names for structure types are often defined with typeof to create shorter type names.
+
+* For example, the statement:
+
+```cpp
+typedef struct card Card;
+// defines the new type name Card as a synonym for the type struct card
+
+typedef struct {
+    char *face;
+    char *suit;
+}Card;
+// In this way we can create the structure type Card without the need for a separate typedef statement.
+```
+
+* After that, 'Card' can now be used to declare variables pf type struct card as:
+
+```cpp
+Card deck[52];
+```
+
+
+
+
 
 
 
