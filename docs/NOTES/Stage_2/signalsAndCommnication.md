@@ -82,5 +82,18 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ### 8: DSB-SC from a Balanced Modulator (Used in AM experiment)
 
+![](image/2022-09-26-13-33-11.png)
+
+### 9: Bandwidth Requirement for DSB-AM 
+
+
+![](image/2022-09-26-13-35-36.png)
+
+![](image/2022-09-26-13-35-57.png)
+
+
+### 10: Power Considerations in DSB-AM 
+
+
 
 
