@@ -95,5 +95,101 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 ### 10: Power Considerations in DSB-AM 
 
 
+![](image/2022-09-26-17-31-33.png)
 
+* $P_T=\frac{V_{DC}^2}{R_L}(1+\frac{m^2}{2})$
+
+* If we note $P_C=\frac{v_{DC}^2}{2R_L}$
+
+$$
+\frac{P_{USB}}{P_T}=\frac{P_c\frac{m^2}{4}}{P_c(1+\frac{m^2}{2})}=\frac{m^2}{4+2m}^2
+$$
+
+### 11: Single Sideband Amplitude Modulation 
+
+![](image/2022-09-26-18-09-57.png)
+
+![](image/2022-09-26-18-11-43.png)
+
+![](image/2022-09-26-18-11-58.png)
+
+* The BP filter removes the LSB then the SSB-AM will be:
+
+$$
+v_s(t)=V_{DC}\cos{(2\pi f_ct)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}
+$$
+
+* For SSB-SC, output signal will be:
+
+$$
+v_s(t)=\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}
+$$
+
+
+
+
+### 12: Bandwidth Requirement for SSB-AM 
+
+![](image/2022-09-26-18-17-11.png)
+
+
+### 13: Power in SSB 
+
+Same as the DSB Power 
+
+### 14: Demodulation of AM Signals
+
+#### 14.1: Envelope or Non-coherent Detection 
+
+![](image/2022-09-26-18-45-53.png)
+
+![](image/2022-09-26-18-48-58.png)
+
+
+#### 14.2: Synchronous or Coherent Demodulation 
+
+![](image/2022-09-26-18-50-38.png)
+
+##### 14.2.1: Coherent Local Oscillator 
+
+![](image/2022-09-26-18-53-40.png)
+
+If DSB-AM input = $(V_{DC}+m(t))\cos{(2\pi f_ct)}$
+
+$$
+\begin{align*}
+V_x &= (V_{DC}+m(t))\cos{(2\pi f_ct)}\cos{(2\pi f_ct)} \\
+&= \frac{V_{DC}}{2}+\frac{V_{DC}}{2}\cos{(4\pi f_C t)}+\frac{m(t)}{2}+\frac{m(t)}{2}\cos{(4\pi f_ct)}
+\end{align*}
+$$
+
+![](image/2022-09-26-19-11-46.png)
+
+![](image/2022-09-26-19-12-00.png)
+
+
+##### 14.2.2: Frequency and Phrase Errors in Synchronous Demodulation: DSB-SC 
+
+![](image/2022-09-26-19-49-40.png)
+
+The equation for DSB-SC:
+
+$v_s(t)=m(t)\cos{(2\pi f_ct)}$, where $V_{DC}=0$
+
+LPF remove the $2f_c$ component. 
+
+$ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
+
+##### 14.2.3: Frequency and Phrase Errors in Synchronous Demodulation: SSB-SC 
+
+![](image/2022-09-26-19-59-49.png)
+
+### 15: Comparison of DSB and SSB 
+
+
+
+
+<!--
+MATLAB Simulink Lab need to be finished 
+!-->
 
