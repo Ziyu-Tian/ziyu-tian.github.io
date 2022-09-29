@@ -1,6 +1,14 @@
 # Computer Systems and Microprocessors 
 
-## 1: Introduction 
+# Other Things 
+<!--
+
+Coffee-hangouts: 10am Wed 
+
+!-->
+
+## I: Introduction 
+
 
 
 
