@@ -6,23 +6,50 @@
 
 ![](image/2022-09-26-10-19-07.png)
 
+- Noise in the systems: external noise and circuits noise reduces the quality of the output. 
+
 ### 2: General Digital Communication System Model 
 
 ![](image/2022-09-26-10-20-32.png)
+
+- Source coding: compressing the signals 
+- Error control coding: add extra bits (randoms)
+
 
 #### 2.1: Coder/Decoder (CODEC)
 
 ![](image/2022-09-26-10-21-53.png)
 
+- Sampling: signals at the particular time 
+- Quantitation: reducing the binary code 
+
+
+
 #### 2.2: Modulator/Demodulator (MODEM)
+
+- Made of modulator and demodulator 
+
 
 ### 3: Radio Transmission 
 
+-  Aerial dimensions are of the same order as the wavelength $\lambda$ of the signal.
+-  $\lambda = \frac{c}{f}$, for $c=3\times 10^8$ m/s in free space. 
+
+
+
 ### 4: Modulation 
+
+- A message information contains the control parameters of carrier signal.
+
 
 #### 4.1: The Message 
 
+- The message can be digital, analogue or multiple.
+
+
 #### 4.2: The Carrier 
+
+- The carrier can be a 'sin' or a 'pulse train': $$
 
 
 ## II: Amplitude Modulation 
@@ -30,6 +57,11 @@
 ### 1: Schematic Diagram of AM 
 
 ![](image/2022-09-26-10-26-19.png)
+
+- $v_s(t)=(V_{DC}+m(t))\cos {(2\pi f_c t)}$
+- $V_{DC}$ is a variable voltage, which can be 0 to V+ volts.
+
+
 
 ### 2: Equations for DSB-AM 
 
