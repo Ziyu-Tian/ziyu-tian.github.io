@@ -184,7 +184,7 @@ $ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 
 ![](image/2022-09-26-19-59-49.png)
 
-### 15: Comparison of DSB and SSB 
+### 15: Comparison of DSB and SSB 　
 
 
 
