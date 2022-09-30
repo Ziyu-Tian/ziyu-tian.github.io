@@ -39,17 +39,28 @@
 
 ### 4: Modulation 
 
-- A message information contains the control parameters of carrier signal.
+- A message information contains the control parameters of carrier signal of a carrier signal, so as to impress the information onto the carrier.
 
 
 #### 4.1: The Message 
 
 - The message can be digital, analogue or multiple.
+- Analogue message, demoted by $*m(t)*$.
+- Digital message, denoted by $d(t)$.
 
 
 #### 4.2: The Carrier 
 
-- The carrier can be a 'sin' or a 'pulse train': $$
+- The carrier can be a 'sin' or a 'pulse train'.
+- If we use a 'cosine' carrier:
+
+$$
+v_s(t) = V_c\cos{(2\pi f_c t+\phi _c)}
+$$
+
+- The message can varies in amplitude, frequency and  phase, i.e the AM, FM and PM.
+
+
 
 
 ## II: Amplitude Modulation 
@@ -67,7 +78,13 @@
 
 * **Double Sideband Amplitude Modulation - DSBAM**:
 
+- If we note the message: $m(t)=V_m\cos{(2\pi f_m t)}$.
+- The trigonometric way can be usd to expand:
+
+
 $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}{2}\cos{(2\pi (f_c-f_m)t)}$
+
+
 
 ![](image/2022-09-26-10-31-04.png)
 
@@ -77,11 +94,12 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ![](image/2022-09-26-10-47-16.png)
 
+- It can be found that the message is stored twice in the double **envelope**.
+
 ### 4: Modulation Depth 
 
 - The $\frac{V_{m}}{V_{DC}}$ is defined as the **modulation depth**.
 - Modulation Depth $m=\frac{Message}{Carrier}$.
-
 
 
 ### 5: Double Sideband Modulation Types 
@@ -103,7 +121,14 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ![](image/2022-09-26-10-56-27.png)
 
+- The phase shift may exist, while the information is stored.
+
+
+
 ### 7: Trapezoid Method of Measuring Modulation Depth 
+
+- For the multiple message signals instead of only one 'sin' single tone, it is difficult to determine the modulation depth.
+- So we use the X-Y mode in the oscilloscope 
 
 #### 7.1: Trapezoid when m < 1 
 
