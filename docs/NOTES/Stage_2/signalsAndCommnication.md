@@ -61,8 +61,6 @@ $$
 - The message can varies in amplitude, frequency and  phase, i.e the AM, FM and PM.
 
 
-
-
 ## II: Amplitude Modulation 
 
 ### 1: Schematic Diagram of AM 
@@ -71,8 +69,6 @@ $$
 
 - $v_s(t)=(V_{DC}+m(t))\cos {(2\pi f_c t)}$
 - $V_{DC}$ is a variable voltage, which can be 0 to infinite volts.
-
-
 
 ### 2: Equations for DSB-AM 
 
@@ -128,7 +124,9 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 ### 7: Trapezoid Method of Measuring Modulation Depth 
 
 - For the multiple message signals instead of only one 'sin' single tone, it is difficult to determine the modulation depth.
-- So we use the X-Y mode in the oscilloscope 
+- So we use the X-Y mode in the oscilloscope, connecting the message signals
+to the x-input and AM signals to y-input.
+- The trapezoid can be used to justify the modulation depth.
 
 #### 7.1: Trapezoid when m < 1 
 
@@ -148,6 +146,7 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ### 9: Bandwidth Requirement for DSB-AM 
 
+- The message signals $m(t)$ will not be a single sine, but a band of frequencies extending up to $B$ Hz as shown.
 
 ![](image/2022-09-26-13-35-36.png)
 
@@ -156,6 +155,13 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 - Bandwidth is two times of the highest frequency in the message.
 
 ### 10: Power Considerations in DSB-AM 
+
+- For the AM: 
+
+$$
+v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}{2}\cos{(2\pi (f_c-f_m)t)}
+
+$$
 
 
 ![](image/2022-09-26-17-31-33.png)
@@ -174,11 +180,13 @@ $$
 
 ![](image/2022-09-26-18-09-57.png)
 
+- We use BPF to filter one of the sideband.
+
 ![](image/2022-09-26-18-11-43.png)
 
 ![](image/2022-09-26-18-11-58.png)
 
-* The BP filter removes the LSB then the SSB-AM will be:
+* The BPF filter removes the LSB then the SSB-AM will be:
 
 $$
 v_s(t)=V_{DC}\cos{(2\pi f_ct)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}
