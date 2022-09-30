@@ -20,4 +20,8 @@
     - Analog - eg. Amplification 
     - Digital: ON or OFF
 
-## II: 
+## II: Electrical Conduction in Solid 
+
+### 1: Conduction in Solid
+
+#### 1.1: Bond and Band Models 

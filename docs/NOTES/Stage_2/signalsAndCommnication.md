@@ -59,7 +59,7 @@
 ![](image/2022-09-26-10-26-19.png)
 
 - $v_s(t)=(V_{DC}+m(t))\cos {(2\pi f_c t)}$
-- $V_{DC}$ is a variable voltage, which can be 0 to V+ volts.
+- $V_{DC}$ is a variable voltage, which can be 0 to infinite volts.
 
 
 
@@ -79,14 +79,19 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ### 4: Modulation Depth 
 
+- The $\frac{V_{m}}{V_{DC}}$ is defined as the **modulation depth**.
+- Modulation Depth $m=\frac{Message}{Carrier}$.
+
+
 
 ### 5: Double Sideband Modulation Types 
 
 - Double Sideband Amplitude Modulation, DSB-AM, with carrier 
 
-- Double Sideband Diminished (Pilot) Carrier, DSB-DimC
+- Double Sideband Diminished (Pilot) Carrier, DSB-DimC ($V_{DC}$ is small)
 
-- Double Sideband Suppressed Carrier, DSB-SC 
+- Double Sideband Suppressed Carrier, DSB-SC (no $V_{DC}$, no carrier).
+
 
 ### 6: Graphical Representation of Modulation Depth and Modulation Types 
 
@@ -123,18 +128,21 @@ $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}
 
 ![](image/2022-09-26-13-35-57.png)
 
+- Bandwidth is two times of the highest frequency in the message.
 
 ### 10: Power Considerations in DSB-AM 
 
 
 ![](image/2022-09-26-17-31-33.png)
 
+- Noted that the $P_{RMS}=(\frac{V}{\sqrt{2}})^2\times \frac{1}{R_L}$ is only suitable for sin (cos) functions.
+
 * $P_T=\frac{V_{DC}^2}{R_L}(1+\frac{m^2}{2})$
 
 * If we note $P_C=\frac{v_{DC}^2}{2R_L}$
 
 $$
-\frac{P_{USB}}{P_T}=\frac{P_c\frac{m^2}{4}}{P_c(1+\frac{m^2}{2})}=\frac{m^2}{4+2m}^2
+\frac{P_{USB}}{P_T}=\frac{P_c\frac{m^2}{4}}{P_c(1+\frac{m^2}{2})}=\frac{m^2}{4+2m}
 $$
 
 ### 11: Single Sideband Amplitude Modulation 
