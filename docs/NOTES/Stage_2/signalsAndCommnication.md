@@ -184,6 +184,8 @@ $$
 
 ![](image/2022-09-26-18-11-43.png)
 
+- After the BPF:
+
 ![](image/2022-09-26-18-11-58.png)
 
 * The BPF filter removes the LSB then the SSB-AM will be:
@@ -205,10 +207,22 @@ $$
 
 ![](image/2022-09-26-18-17-11.png)
 
+For the SSB-SC the bandwidth is reduced since there is no carrier component.
 
 ### 13: Power in SSB 
 
-Same as the DSB Power 
+For the SSB signal $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos {(2\pi (f_m +f_c))t}$ 
+
+the power is:
+
+$$
+
+P_{SSB}=\frac{v_{DC}^2}{2R_L}+\frac{V_m ^2}{8R_L}
+
+$$
+
+
+
 
 ### 14: Demodulation of AM Signals
 
@@ -216,12 +230,30 @@ Same as the DSB Power
 
 ![](image/2022-09-26-18-45-53.png)
 
+* The capacitor charges rapidly and thereby follows the applied voltages up to the positive peak when the diode is conducting, so: 
+
+$$
+
+R_s C<< 1/f_c
+
+$$
+
+* After the positive peak, the voltage reduced so that the diode switched off and the capacitor begin to discharging in $R_L$. The discharging continue slowly between the positives peaks of the carrier voltage but no longer than the message period:
+
+$$
+
+\frac{1}{f_c} << R_L C << \frac{1}{W}
+
+$$
+
 ![](image/2022-09-26-18-48-58.png)
 
 
 #### 14.2: Synchronous or Coherent Demodulation 
 
 ![](image/2022-09-26-18-50-38.png)
+
+* The local oscillator must be coherent in both frequency and phrase with the carrier wave.
 
 ##### 14.2.1: Coherent Local Oscillator 
 
@@ -259,10 +291,8 @@ $ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 
 ### 15: Comparison of DSB and SSB 　
 
-
-
-
-<!--
-MATLAB Simulink Lab need to be finished 
-!-->
+- DSB-AM signals can be demodulated with envelope detector simply.
+- DSB-SC and SSB-SC require much less power than DSB-AM and SSB-AM, but more complicated receiver.
+- SSB-AM use half the bandwidth of DSB-AM.
+- SSB-SC can cope better with small changes in frequencies and phases caused by local oscillator.
 
