@@ -183,7 +183,7 @@ $$
 * The depletion width can also be calculated using:
 
 $$
-W=\sqrt{\frac{2\epsilon _0 \epsilon _r \phi b}{e}(\frac{N_d N_a}{N_c N_v})}
+W=\sqrt{\frac{2\varepsilon _0 \varepsilon _r \phi _b}{e}(\frac{N_d N_a}{N_c N_v})}
 $$
 
 * Then the electric field $E$ can be estimated. 
