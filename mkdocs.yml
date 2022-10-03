@@ -60,6 +60,7 @@ nav:
         - Stage2_Notes:
             - Semiconductors Devices: 'NOTES/Stage_2/semiconductor.md'
             - Signals and Communication: 'NOTES/Stage_2/signalsAndCommunication.md'
+            
     - Dev: 
         - 'DEV/index.md'
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
