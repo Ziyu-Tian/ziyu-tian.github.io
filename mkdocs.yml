@@ -57,6 +57,8 @@ nav:
             - Python Data Analysis: 'NOTES/Stage_1/Coding/PythonDataAnalysis.md'
         - Electronics Notes:
             - Fundamentals of Electric Circuits: 'NOTES/Electronics/FundamentalElectricCircuits.md'
+        - Stage2_Notes:
+            - Semiconductors Devices: 'NOTES/Stage_2/semiconductor.md'
     - Dev: 
         - 'DEV/index.md'
         - Time & Space Complexity: 'DEV/TimeComplexity.md'
