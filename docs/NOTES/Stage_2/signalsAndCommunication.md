@@ -233,18 +233,19 @@ $$
 * The capacitor charges rapidly and thereby follows the applied voltages up to the positive peak when the diode is conducting, so: 
 
 $$
-
-R_s C<< 1/f_c
-
+R_sC << 1/f_c
 $$
 
-* After the positive peak, the voltage reduced so that the diode switched off and the capacitor begin to discharging in $R_L$. The discharging continue slowly between the positives peaks of the carrier voltage but no longer than the message period:
+
+
+
+* After the positive peak, the voltage reduced so that the diode switched off and the capacitor begin to discharging in $R_L$. The discharging continue slowly between the positives peaks of the carrier voltage but no longer than the message period.
+
 
 $$
-
 \frac{1}{f_c} << R_L C << \frac{1}{W}
-
 $$
+
 
 ![](image/2022-09-26-18-48-58.png)
 
