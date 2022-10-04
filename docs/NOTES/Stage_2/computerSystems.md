@@ -69,8 +69,61 @@
 
 - '0' for reset and '1' for set when clock is '1'.
 
+## II: Computer Systems 
+
+### 1: Modern Computing Systems 
+
+* High Performance Computing 
+
+* General Purpose Computing
+
+* Embedded Computing 
+
+* Ubiquitous Computing 
+
+### 2: Computer Architecture 
+
+![](image/2022-10-04-11-34-40.png)
+
+* Core to the computation is the processors and memory organization.
+
+* IO devices allow various user-interfaced.
+
+* Modulation keeps the things simple.
 
 
+- Key components of a Microprocessor:
+    - Memories 
+    - Busses / Interconnects
+    - Processors (CPU,etc.)
+    - IOs and controllers.
+
+### 3: Memory 
+
+* Provides the temporary or permanent storage needed by the processors/ IOs.
+
+#### 3.1: Type of Memory 
+
+
+#### 3.2: Memory Trade-offs 
+
+![](image/2022-10-04-11-45-57.png)
+
+#### 3.3: Memory Hierarchy 
+
+- The memory elements close to CPU are generally the fastest and costliest.
+
+![](image/2022-10-04-11-58-04.png)
+
+
+#### 3.4: Register 
+
+- A register is a parallel set of N flip-flops, with all clock lines connected with the CPU clock.
+
+- Size N is equal to the CPU word length. In 32-bits CPU, you can find 32-bits registers.
+
+
+![](image/2022-10-04-12-01-46.png)
 
 
 
