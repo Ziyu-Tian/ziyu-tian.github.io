@@ -310,14 +310,87 @@ $ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 
 ### 2: Frequency Modulation 
 
-- The frequency modulated frequency can be expressed as:
+- In FM, if we note the carrier as 
 
 $$
-f_i = f_c + frequency \quad deviation 
+v_s (t) = V_c\cos{(2\pi f)}
 $$
 
-- The carrier will be $v_s (t) = V_c \cos{(2 \pi f_i t)}$
+- A frequency modulated carrier can be expressed as:
 
-- If we let $\varphi _i = 2\pi f_i t$, then $v_s(t)=V_ c \cos{(\varphi _i)}$.
+$$
+v_s(t)=V_c\cos{(2\pi (f_c+ frequency \quad deviation)t)}
+$$
+
+where the frequency deviation depend on the *m(t)*.
 
 
+- As the carrier frequency may change so a instantaneous carrier signal is needed. We note:
+
+$$
+V_c\cos{(2\pi f_i t)} = V_c\cos{(\varphi_i)}
+$$
+
+where $\varphi _i$ is the instantaneous angle which is $2\pi f_i t$ and $f_i$ is the instantaneous frequency,
+$f_i = f_c + frequency \quad deviation$.
+
+- Now we need some re-arranges of the angle $\varphi$. 
+
+- As $\varphi _i= 2\pi f_i t$, the $\varphi_i$ is a instantaneous value, so we can get $\frac{d\varphi _i}{dt}=2\pi f_i$, or $f_i = \frac{1}{2\pi}\frac{d\varphi _i}{dt}$
+
+We can find that frequency is proportional to the rate of change of angle.
+
+- If we note the $f_c$ is the unmodulated carrier and $f_m$ is the modulating frequency, then we may deduce:
+
+$$
+\begin{align*}
+f_i &=f_c +frequency\quad deviation \\
+ &= f_c +\Delta f_c\cos{(2\pi f_m t)}  \\
+ &= f_c +f_i \\
+ &= \frac{1}{2\pi}\frac{d\varphi _i}{dt}  
+\end{align*}
+$$
+
+Where the $\Delta f_c$ called the **peak deviation** of the carrier.
+
+- Then we can get the equation:
+
+$$
+\displaystyle\frac{d\varphi_i}{dt} = 2\pi f_c + 2\pi \Delta f_c\cos{(2\pi f_m t)}
+$$
+
+- Integrate the both side:
+
+$$
+\int{\frac{d\varphi _i}{dt}}{\rm d}t = \int{[2\pi f_c + 2\pi \Delta f_c\cos{(2\pi f_m t)}]}{\rm d}t
+$$
+
+- Therefore:
+
+$$
+\varphi _i = 2\pi f_c t + \displaystyle\frac{2\pi \Delta f_c\sin{2\pi f_m t}}{2\pi f_m}
+$$
+
+- Get back to the carrier signal:
+
+$$
+v_s (t) = V_c \cos{(2\pi f_c t+\displaystyle\frac{\Delta f_c\sin{2\pi f_m t}}{f_m})}
+$$
+
+- The ratio $\displaystyle\frac{\Delta f_c}{f_m}$ is called the **Modulation Index** denoted $\beta$.
+
+$$
+\beta = \displaystyle\frac{Peak\quad frequency\quad Deviation}{Modulating\quad frequency}
+$$
+
+- $m(t)$ is usually considered as 'a single tone modulating signal' of the form:
+
+$$
+m(t) = V_m \cos{(2\pi f_m t)}
+$$
+
+- The equation of $v_s(t)$ can be expressed as a **Bessel Series**：
+
+$$
+v_s(t) = V_c\int 
+$$
