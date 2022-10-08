@@ -383,7 +383,7 @@ $$
 \beta = \displaystyle\frac{Peak\quad frequency\quad Deviation}{Modulating\quad frequency}
 $$
 
-- $m(t)$ is usually considered as 'a single tone modulating signal' of the form:
+- $m(t)$ is usually considered as 'a single tone modulating signal of the form:
 
 $$
 m(t) = V_m \cos{(2\pi f_m t)}
@@ -392,5 +392,52 @@ $$
 - The equation of $v_s(t)$ can be expressed as a **Bessel Series**：
 
 $$
-v_s(t) = V_c\int 
+v_s(t) = V_c\int V_c \displaystyle\Sigma_{-\infin}^{\infin}J_n(\beta)\cos{(2\pi (f_c+nf_m)t)}
 $$
+
+- $J(\beta)$ are the Bessel Function of the first kind.
+
+The expand of the equations can be:
+
+![](image/2022-10-08-19-19-47.png)
+
+
+### 3: FM Signal Spectrum
+
+The Spectrum should be like:
+
+![](image/2022-10-08-19-21-50.png)
+
+### 4: Bessel coefficient
+
+![](image/2022-10-08-19-23-46.png)
+
+- For n = 0, the curve is the carrier component.
+- The frequency varies in amplitude with different $\beta$.
+- The carrier component suppressed at $\beta =2.4$.(coefficient is 0, no carrier amplitude)
+
+![](image/2022-10-08-19-29-00.png)
+
+### 5: Bessel Function Table 
+
+![](image/2022-10-08-19-27-05.png)
+
+### 6: Band-Limited FM Signals 
+
+- The common FM signal contain an infinite number of sidebands, which is not suitable for transfer.
+
+- Thus we have to fit the signal spectrum into available channel bandwidth.
+
+![](image/2022-10-08-19-32-43.png)
+
+
+### 7: Significant Sidebands
+
+- In FM the sidebands are considered to be significant if $J_n(\beta) \ge 0.01$.
+
+- We deemed the components which $J_n(\beta)$ is less than 0.01.
+
+- For example, for $\beta =1$, the spectrum is finite:
+
+![](image/2022-10-08-19-44-26.png)
+
