@@ -146,7 +146,7 @@
 - First, enable the word line to read or write 
 
 
-
+- Second, 
 
 
 
