@@ -126,6 +126,27 @@
 ![](image/2022-10-04-12-01-46.png)
 
 
+- Registers can be different types:
+    - *Accumulators*: register that directly stories/retrieves from memory.
+    - *General purpose*: store data during execution.
+    - *Special purpose*: used by the computer systems instead of the user:
+
+- Different architectures have different number of registers depend on the **Instruction Set Architecture**.
+
+#### 3.5: Cache Memory 
+
+- Cache memories are usually static random memory (SRAM).
+
+![](image/2022-10-04-12-27-28.png)
+
+- Back to back inverters in the red circles.
+
+- M4 and M5 are access transistors as switches.
+
+- First, enable the word line to read or write 
+
+
+
 
 
 

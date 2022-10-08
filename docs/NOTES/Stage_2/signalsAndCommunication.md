@@ -297,3 +297,27 @@ $ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 - SSB-AM use half the bandwidth of DSB-AM.
 - SSB-SC can cope better with small changes in frequencies and phases caused by local oscillator.
 
+
+## III: Frequency Modulation and Demodulation
+
+### 1: Angle Modulation - FM
+
+* Consider the general carrier $v_s(t) = V_c\cos{(2\pi f_c t + \phi _c)}$
+
+* $2\pi f_c t + \phi _C$ is the angle of the carrier.
+
+* Frequency Modulation by varying f_c$, or phase modulation by varying $\varphi _c$.
+
+### 2: Frequency Modulation 
+
+- The frequency modulated frequency can be expressed as:
+
+$$
+f_i = f_c + frequency \quad deviation 
+$$
+
+- The carrier will be $v_s (t) = V_c \cos{(2 \pi f_i t)}$
+
+- If we let $\varphi _i = 2\pi f_i t$, then $v_s(t)=V_ c \cos{(\varphi _i)}$.
+
+

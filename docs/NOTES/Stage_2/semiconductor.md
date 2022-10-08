@@ -187,3 +187,129 @@ W=\sqrt{\frac{2\varepsilon _0 \varepsilon _r \phi _b}{e}(\frac{N_d N_a}{N_c N_v}
 $$
 
 * Then the electric field $E$ can be estimated. 
+
+## II: P-N Junction
+
+### 1: Relation between carrier concentration and potential difference
+
+The drift and diffusion current are almost equal and opposite for a p-n junction, so the current of the junction for electrons will be:
+
+$$
+J_n \approx en\mu _n E_n + eD_n\frac{dn}{dx} = 0
+$$
+
+Using the Einstein Relation $\mu _n = D_n \frac{e}{k_B T}$:
+
+$$
+-\frac{e}{k_B T}n E_n = \frac{dn}{dx}
+$$
+
+Since $E=-=\frac{dV}{dx}$ ('-' as for electrons), we can get:
+
+$$
+\frac{e}{k_B T}(\frac{dV}{dx}) = \frac{1}{n}(\frac{dn}{dx})
+$$
+
+If we integrate over all of the junction:
+
+$$
+\begin{align*}
+\int{\frac{e}{k_B T}\frac{dV}{dx}}{\rm d}x &= \int{\frac{1}{n}\frac{dn}{dx}}{\rm d}x \\
+\int_{V(x_1)}^{V(x_2)}{\frac{e}{k_B T}}{\rm d}V &= \int_{n(x_1)}^{n(x_2)}{\frac{1}{n}}{\rm d}n 
+\end{align*}
+$$
+
+|![](image/2022-10-07-08-58-33.png)|![](image/2022-10-07-08-58-44.png)|
+|---|---|
+
+- The left picture is the voltage drop across the junction.
+- The right one is the carrier concentration varies from p-side to n-side at the zero bias.
+
+if no applied voltage (the difference of voltage will be initial $\phi _{bi}$):
+
+$$
+
+\int_{n(x_1)}^{n(x_2)}{\frac{1}{n}}{\rm d}n = \frac{e}{k_B T}\phi_{bi}
+
+$$
+
+So we can get: 
+
+$$
+
+
+\frac{e}{k_B T}\phi_{bi} = \ln{\frac{n_{no}}{n_{po}}}
+
+$$
+
+- $n_{po}$ and $n_{no}$ means the initial concentration of electrons in p-side and n-side.
+
+So that we can get:
+
+$$
+
+\frac{n_{no}}{n_{po}} = \exp{(\frac{e\phi _{bi}}{k_B T})}
+
+$$
+
+Same for the holes:
+
+$$
+
+\frac{p_{po}}{p_{no}} = \exp{(\frac{e \phi_{bi}}{k_B T})}
+
+$$
+
+We can combine the result and get:
+
+$$
+\frac{n_{no}}{n_{po}} = \frac{p_{po}}{p_{no}}
+$$
+
+- Now if we apply an external bias on the p-n junction:
+
+$$
+\begin{align*}
+\frac{n_n}{n_p} &= \exp(\frac{e}{k_B T}(\phi _{bi} -V_A)) \\
+\frac{p_p}{p_n} &= \exp(\frac{e}{k_B T}(\phi _{bi}-V_A))
+\end{align*}
+$$
+
+![](image/2022-10-07-10-21-47.png)
+
+- This graph shows the condition of the reverse bias and forward bias.
+
+Combine the formula above, we can get:
+
+$$
+np=n_i^2 = N_cN_v \exp(\frac{-E_g}{k_BT})
+$$
+
+- While 'n' ,'p' can be both n-side or p-side, $n_i$ is the concentration of the intrinsic semiconductor.
+
+
+### 2: Current flow in p-n junctions 
+
+If we neglect the effects of recombination, the electrons current in the n-side is equal to that in the p-side and for holes are the same.
+
+There are two possible types of current flow:
+
+- Drift: $e\mu _n En$
+- Diffusion: $eD_n\frac{dn}{dx}$
+
+* For electrons, according to the calculation result, the minority carrier diffusion current control the conduction mechanism.
+
+### 3: Current-Voltage Relationship 
+
+![](image/2022-10-07-10-47-20.png)
+
+Hole diffusion in the n-type is given:
+
+$$
+\begin{align*}
+I_p &= AeD_p \frac{dp}{dx} \\
+&= AeD_p (\frac{p_n-p_{no}}{l_p})
+\end{align*}
+$$
+
+And same for 
