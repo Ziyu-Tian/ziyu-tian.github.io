@@ -441,3 +441,82 @@ The Spectrum should be like:
 
 ![](image/2022-10-08-19-44-26.png)
 
+- The bandwidth is the length between the highest and lowest frequency.
+
+
+### 8: Carson's Rule for FM bandwidth 
+
+- An approximation for the bandwidth of the FM signal is given by:
+
+$$
+Bandwidth \approx 2(\Delta f_c+f_m)
+$$
+
+- This is based on the fact that at least 98% of the total power in FM will be in this bandwidth.
+
+
+### 9: Narrowband and Wideband FM
+
+#### 9.1: Norrowband FM (NBFM)
+
+For small $\beta$ ($\beta$ $\le 0.3$), which are referred as *narrowband FM*.
+
+There are only carrier and 2 significant sidebands, i.e. BW=2$f_m$.
+
+#### 9.2: Wideband FM (WBFM)
+
+For $\beta >0.3$ there are more than 2 significant sidebands. This is referred as *wideband FM*.
+
+
+### 10: Generation of FM Signals - Frequency modulation 
+
+An FM modulator is:
+
+- a voltage-to-frequency converter V/f
+- a voltage controlled oscillator VCO 
+  
+In these device (V/F or VCO), the output frequency is dependant on the input voltage.
+
+![](image/2022-10-08-20-23-59.png)
+
+#### 10.1: V/F Characteristics
+
+- Apply $V_{IN}$ and measure the frequency output, it is found that V/F characteristic is a straight line.
+
+![](image/2022-10-08-20-28-37.png) 
+
+- $f_c$, the frequency output when the input is zero is called the **undeviated or norminal carrier frequency**.
+
+- The gradient of $\displaystyle\frac{\Delta f}{\Delta V}$ is called the **Frequency Conversion Factor**,denoted by $\alpha$, with unit hertz per volt.
+
+- If an analogue message input, $m(t)=V_m\cos{(2\pi f_m t)}$
+- As the input $m(t)$ varies from $+V_m \rightarrow 0 \rightarrow - V_m$, the output frequency will vary from a maximum frequency, through $f_c$ to a minimum frequency.
+
+![](image/2022-10-08-20-40-58.png)
+
+- For a straight line we may say:
+
+$$
+f_{OUT} = f_c+\alpha V_{IN}
+$$
+
+When $V_{IN}=m(t)$, $f_{OUT}=f_c +\alpha m(t)$,i.e. the deviation depend on $m(t)$.
+
+- We can find the max and min of the frequency:
+
+$$
+\begin{align*}
+f_{max} &= f_c +\alpha V_m \\
+f_{min} &= f_c -\alpha V_m 
+\end{align*}
+$$
+
+
+- According to the definition of **Peak Deviation**, $\Delta f_c = \alpha V_m$, hence the **modulation index** $\beta = \displaystyle\frac{\Delta f_c}{f_m}=\displaystyle\frac{\alpha V_m}{f_m}$.
+
+![](image/2022-10-08-21-38-23.png)
+
+
+### 11: Power in FM Signals
+
+- $v_s(t) = V_c\int_{n=-\infin}^{\infin}{J_n(\beta)\cos{(2\pi (f_c + nf_m)t)}}$
