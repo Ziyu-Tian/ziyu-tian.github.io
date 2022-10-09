@@ -312,4 +312,62 @@ I_p &= AeD_p \frac{dp}{dx} \\
 \end{align*}
 $$
 
-And same for 
+And same for p-type:
+
+$$
+\begin{align*}
+I_n &= AeD_n \frac{dn}{dx} \\
+&= AeD_n (\frac{n_p-n_{po}}{l_n})
+\end{align*}
+$$
+
+So that we can get:
+
+$$
+\frac{n_p}{n_{po}} = \exp{(\frac{e}{k_B T}V_A)}
+$$
+
+If we add the $I_n$ and $I_p$, the Shockley's Equation will be got:
+
+$$
+I = I_o(\exp{(\frac{eV_A}{nk_B T})}-1)
+$$
+
+$n$ is a non-ideal fiddle factor.
+
+![](image/2022-10-09-21-42-29.png)
+
+This analysis is valid only for thin p and n bulk regions. Or else (bulk length > diffusion length) the length of layers has to be replaced by $l=\sqrt{D\tau}$.
+
+### 4: Junction Breakdown 
+
+When the sufficient high field is applied to a p-n junction, the junction may break down and conducts a very large current.
+
+#### 4.1: Thermal Instability 
+
+At high reverse bias the reverse current cause considerable heat dissipation. The effect is known as thermal instability and occurs at the turn over voltage $V_n$.
+
+#### 4.2: Tunneling (Zener Breakdown)
+
+For a p-n junction under reverse bias:
+
+![](image/2022-10-09-21-57-20.png)
+
+both electrons and holes need significant barrier so the current is low.
+
+At sufficiently large applied bias, the picture changes:
+
+![](image/2022-10-09-21-58-23.png)
+
+The electrons may tunnel from valence band to conduction band if the junction is heavily doped.
+
+The band gap in Si and GaAs decreases with increasing temperatures, the negative temp coefficient can be used to recognize this mechanism.
+
+#### 4.3: Avalanche Multiplication (Impact Ionization)
+
+If the electric field in the depletion region is high enough, current gain enough energy to ionize collisions which create electron-hole pairs.
+
+The avalanche breakdown voltage imposes an upper limit on reverse bias for diodes, collector voltage of BJT and drain voltage for MOSFET.
+
+Avalanche breakdown has a positive temp coefficient.
+
