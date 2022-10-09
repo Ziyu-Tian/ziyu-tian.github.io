@@ -614,4 +614,5 @@ Tuned to a higher frequency than the carrier frequency.
 
 ![](image/2022-10-09-07-53-02.png)
 
-- Balanced discriminator have a characteristic 'S-shaped' frequency response. Two common typ 
+- Balanced discriminator have a characteristic 'S-shaped' frequency response.
+- This method will provide larger linear region to demodulate the narrow-band and wide-band signals. 
