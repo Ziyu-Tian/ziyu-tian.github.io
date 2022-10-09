@@ -228,18 +228,13 @@ $$
 if no applied voltage (the difference of voltage will be initial $\phi _{bi}$):
 
 $$
-
 \int_{n(x_1)}^{n(x_2)}{\frac{1}{n}}{\rm d}n = \frac{e}{k_B T}\phi_{bi}
-
 $$
 
 So we can get: 
 
 $$
-
-
 \frac{e}{k_B T}\phi_{bi} = \ln{\frac{n_{no}}{n_{po}}}
-
 $$
 
 - $n_{po}$ and $n_{no}$ means the initial concentration of electrons in p-side and n-side.
@@ -247,17 +242,13 @@ $$
 So that we can get:
 
 $$
-
 \frac{n_{no}}{n_{po}} = \exp{(\frac{e\phi _{bi}}{k_B T})}
-
 $$
 
 Same for the holes:
 
 $$
-
 \frac{p_{po}}{p_{no}} = \exp{(\frac{e \phi_{bi}}{k_B T})}
-
 $$
 
 We can combine the result and get:
