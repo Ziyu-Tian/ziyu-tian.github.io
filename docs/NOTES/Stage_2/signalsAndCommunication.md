@@ -391,7 +391,7 @@ $$
 - The equation of $v_s(t)$ can be expressed as a **Bessel Series**：
 
 $$
-v_s(t) = V_c\int V_c \displaystyle\Sigma_{-\infin}^{\infin}J_n(\beta)\cos{(2\pi (f_c+nf_m)t)}
+v_s(t) = V_c\int V_c \displaystyle\Sigma_{-\infty}^{\infty}J_n(\beta)\cos{(2\pi (f_c+nf_m)t)}
 $$
 
 - $J(\beta)$ are the Bessel Function of the first kind.
@@ -518,7 +518,7 @@ $$
 
 ### 11: Power in FM Signals
 
-- $v_s(t) = V_c\displaystyle\int_{n=-\infin}^{\infin}{J_n(\beta)\cos{(2\pi (f_c + nf_m)t)}}$, the peak value is $V_cJ_n(\beta)$.
+- $v_s(t) = V_c\displaystyle\int_{n=-\infty}^{\infty}{J_n(\beta)\cos{(2\pi (f_c + nf_m)t)}}$, the peak value is $V_cJ_n(\beta)$.
 - we use RMS value to determine the average power:
 
 $$
@@ -534,7 +534,7 @@ $$
 - The total power $P_T$ is the integration of infinite components:
 
 $$
-P_T = \displaystyle\frac{1}{R_L}(\frac{V_c}{\sqrt{2}})^2 =\displaystyle\int_{n=-\infin}^{\infin}{\displaystyle\frac{(V_cJ_n(\beta))^2}{2R_L}}
+P_T = \displaystyle\frac{1}{R_L}(\frac{V_c}{\sqrt{2}})^2 =\displaystyle\int_{n=-\infty}^{\infty}{\displaystyle\frac{(V_cJ_n(\beta))^2}{2R_L}}
 $$
 
 ### 12: Distortion in FM Signals 
