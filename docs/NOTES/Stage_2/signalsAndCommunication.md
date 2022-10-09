@@ -160,7 +160,6 @@ to the x-input and AM signals to y-input.
 
 $$
 v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos{(2\pi (f_c+f_m)t)}+\frac{V_m}{2}\cos{(2\pi (f_c-f_m)t)}
-
 $$
 
 
@@ -519,4 +518,91 @@ $$
 
 ### 11: Power in FM Signals
 
-- $v_s(t) = V_c\int_{n=-\infin}^{\infin}{J_n(\beta)\cos{(2\pi (f_c + nf_m)t)}}$
+- $v_s(t) = V_c\displaystyle\int_{n=-\infin}^{\infin}{J_n(\beta)\cos{(2\pi (f_c + nf_m)t)}}$, the peak value is $V_cJ_n(\beta)$.
+- we use RMS value to determine the average power:
+
+$$
+V_{RMS} = \displaystyle\frac{V_{pk}}{\sqrt{2}}
+$$
+
+- The power in sideband $P_{SB}$:
+
+$$
+P_{SB} = \displaystyle\frac{1}{R_L}(\displaystyle\frac{V_cJ_n(\beta)}{\sqrt{2}})^2= \displaystyle\frac{(V_cJ_n(\beta))^2}{2R_L}
+$$
+
+- The total power $P_T$ is the integration of infinite components:
+
+$$
+P_T = \displaystyle\frac{1}{R_L}(\frac{V_c}{\sqrt{2}})^2 =\displaystyle\int_{n=-\infin}^{\infin}{\displaystyle\frac{(V_cJ_n(\beta))^2}{2R_L}}
+$$
+
+### 12: Distortion in FM Signals 
+
+- The distortion can be defined as:
+
+![](image/2022-10-08-21-52-58.png)
+
+$$
+D = \displaystyle\frac{P_T-P_{BL}}{P_T} = 1-\displaystyle\frac{P_{BL}}{P_T}
+$$
+
+- For a band-limited FM, let $a$ = the number of sideband pairs:
+
+$$
+P_{BL} = \displaystyle\frac{1}{R_L}\displaystyle\int_{n=-a}^{a}\displaystyle\frac{(V_cJ_n(\beta))^2}{2}
+$$
+
+which is the carrier power + significant sideband power.
+
+
+### 13: FM Demodulation - General Principles 
+
+- An FM demodulator is essentially a frequency to voltage converter (F/V).
+
+![](image/2022-10-08-22-05-22.png)
+
+- We define $V_o$ as the output when $f_{IN}=f_c$, the nominal input frequency.
+
+![](image/2022-10-08-22-09-10.png)
+
+- The gradient $\frac{\Delta V}{\Delta f}$ is called the voltage factor, $K$ V/Hz:
+
+$$
+V_{OUT} = V_0 + K\alpha V_{IN}
+$$
+
+where $V_0$ represents a DC offset in $V_{OUT}$.
+
+- This DC offset may be removed by level-shifting or AC coupling.
+
+![](image/2022-10-08-22-14-29.png)
+
+Often but bot always, a system is designed so that $K\alpha =1$.
+
+![](image/2022-10-08-22-16-18.png)
+
+### 14: Slope Detection 
+
+- One method is to use the slope of a tuned circuit in conjunction with an envelope detector, known as a **slope detector**.
+
+![](image/2022-10-08-22-19-16.png)
+
+Tuned to a higher frequency than the carrier frequency.
+
+- The tuned circuit is tuned so $f_c$ is on th e slope of the frequency response, not at the peak.
+- As the FM signal deviate about $f_c$ on the tuned circuit slope, the amplitude of the output varies linearly to the deviation from $f_c$.
+- Thus the FM signal is effectively converted to AM. Then the envelope detector recover the message signal.
+
+#### 14.1: Frequency Response of the Slope detector
+
+![](image/2022-10-08-22-29-24.png)
+
+- The linear region on slope of the frequency response is small.
+- This means FM signal with larger peak deviations $\Delta f_c$ and larger modulation index $\beta$, will extend beyond the linear region, which result in distortion of the demodulated signals.
+- Hence the slope detector can only be used for NBFM.
+
+### 15: Balanced Discriminator 
+
+![](image/2022-10-08-22-39-02.png)
+
