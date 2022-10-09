@@ -391,7 +391,7 @@ $$
 - The equation of $v_s(t)$ can be expressed as a **Bessel Series**：
 
 $$
-v_s(t) = V_c\int V_c \displaystyle\Sigma_{-\infty}^{\infty}J_n(\beta)\cos{(2\pi (f_c+nf_m)t)}
+v_s(t) = V_c\int \displaystyle\Sigma_{-\infty}^{\infty}J_n(\beta)\cos{(2\pi (f_c+nf_m)t)}
 $$
 
 - $J(\beta)$ are the Bessel Function of the first kind.
