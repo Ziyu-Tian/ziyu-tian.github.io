@@ -606,3 +606,12 @@ Tuned to a higher frequency than the carrier frequency.
 
 ![](image/2022-10-08-22-39-02.png)
 
+- The balanced discriminator is split into two halves, tuned into $f_1$ and $f_2$ which are either side of the $f_c$.
+- The linearity region of the frequency response provides that the difference between $f_1$ and $f_2$ is large.
+- When the instantaneous frequency of the FM is $f_c$, both diodes conduct which cancel each out resulting in no output.
+- However, when the frequency of FM signal moves away from $f_c$, one diode conducts more than the other resulting in one of the resistors having a larger voltage.
+- The output is then the modulating signal.
+
+![](image/2022-10-09-07-53-02.png)
+
+- Balanced discriminator have a characteristic 'S-shaped' frequency response. Two common typ 
