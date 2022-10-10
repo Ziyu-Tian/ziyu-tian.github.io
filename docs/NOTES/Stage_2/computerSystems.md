@@ -104,6 +104,21 @@
 
 #### 3.1: Type of Memory 
 
+- A. Register:
+    - Small and fast; consists of a number of flip-flops
+    - Flashed out when powered off.
+- B. Cache Memory:
+    - Large but slower memories, usually Static Random Access Memories (SRAMs)
+    - Flashed out when powered off.
+- C. Main Memory:
+    - Even larger and slower.
+    - Usually Dynamic Random Access Memories (DRAMs)
+- D. Secondary Storage:
+    - Larger and even slower.
+    - Usually disk drives.
+- E. Other Memories: Offline/Flash Memories
+    - Used to store offline information.
+
 
 #### 3.2: Memory Trade-offs 
 
@@ -135,19 +150,60 @@
 
 #### 3.5: Cache Memory 
 
-- Cache memories are usually static random memory (SRAM).
+- Cache memories are usually static random memory (SRAM) (6 transistors)
 
-![](image/2022-10-04-12-27-28.png)
+![](image/2022-10-10-07-48-17.png)
+
+- SRAMs have three operations:
+    - Hold (WL = 0), Write and Read (WL = 1)
+- BL: bit line feeds data into the cell.
+- WL: word select line
+
+- BL/WL basically feed two inverters.
 
 - Back to back inverters in the red circles.
 
 - M4 and M5 are access transistors as switches.
 
-- First, enable the word line to read or write 
+#### 3.6: Cache Memory: SRAM basics
+
+![](image/2022-10-10-07-52-28.png)
+
+- Hold
+    - WL=Low, M5 and M6 (access transistors) are OFF.
+    - data held in latch.(back to back inverter)
+- Write: (BL = High and WL = High, write 1)
+    - M5 and M6 are switched on.
+    - M6 allows the current through (High) and feeds the inverter $I_2$.
+    - $I_2$ generates Low output; then the output is fed back to $I_1$; $I_1$ generate High output.
+    - The high and low loop between the inverters remember the logic ($I_1$ output).
+
+- Read: (WL = High select the word line)
+    - M5 and M6 are switched on.
+    - If $I_1$ is high - M4 is on, causes current ($V_{dd}$) to flow through M4 to the BL.
+    - The current and its direction is read by a current sense amp (detect logic high).
+
+#### 3.7: Cache Memory Operation 
 
 
-- Second, 
+- Cache exploits the **principle of locality**: programs tends to execute the same small set of instructions and data repeatedly.
+
+- When the processor needs data for execution, first checks the cache:
+    - If the data in the cache, it is called a HIT.
+    - If else, it is called a MISS.
 
 
+![](image/2022-10-10-09-14-30.png)
+
+- Size and Performance trade-offs:
+    - Larger cache may increase HIT ratio, but the overall access time may increase.
+    - Smaller cache may increase MISS ratio, which may affect the performance.
+
+- The first write is slow and the following writes are faster as you just need to write or update cache.
+- The speed-up factor using cache is almost 10.
+- When the cache becomes full, 'old' entries can be overwritten by randomly chosen.
+- When cache entries are more updated than main memory, the entries marked as **dirty entries**.
+    - Dirty lines are updated in the main memory soon.
+    - The process of ensuring integrity of data is called **cache coherence**.
 
 
