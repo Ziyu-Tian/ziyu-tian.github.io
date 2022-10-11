@@ -207,3 +207,10 @@
     - The process of ensuring integrity of data is called **cache coherence**.
 
 
+#### 3.8: Cache Size Tradeoff 
+
+- Effective Latency = Hit ratio * Hit Latency + Miss Ratio * Miss Latency
+(the average time required for memory access)
+
+![](image/2022-10-11-11-16-00.png)
+
