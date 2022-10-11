@@ -214,3 +214,28 @@
 
 ![](image/2022-10-11-11-16-00.png)
 
+![](image/2022-10-11-11-25-16.png)
+
+- Caches contains several blocks.
+- For the same caches size, larger block size lead to good temporal locality.
+
+#### 3.9: Main Memory 
+
+![](image/2022-10-11-11-34-11.png)
+
+- Generally DRAMs:
+    - Dynamic: refreshed needed (high voltage in and discharge before the discharging)
+
+#### 3.10: The Memory Wall
+
+
+![](image/2022-10-11-12-02-24.png)
+
+#### 3.11: Other Memories: ROM 
+
+#### 3.12: Secondary Storage: Magnetic Disks
+
+#### 3.13: Off-line Storage: CD-ROM, DVD 
+
+#### 3.14: Tertiary Storages: Flash memories 
+
