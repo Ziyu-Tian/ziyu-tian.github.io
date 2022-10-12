@@ -209,10 +209,16 @@
 
 #### 3.8: Cache Size Tradeoff 
 
+- The word 'latency' means the latency time for the computer to read the data.
 - Effective Latency = Hit ratio * Hit Latency + Miss Ratio * Miss Latency
 (the average time required for memory access)
+- If the caches missed in the L1 Cache, then it will come to L2 cache.
 
 ![](image/2022-10-11-11-16-00.png)
+
+- 'Temporal locality' refers to the reuse of the data which are time relatively.
+- 'Spatial locality' refers to use of the data within close storage locations.
+
 
 ![](image/2022-10-11-11-25-16.png)
 
@@ -224,7 +230,40 @@
 ![](image/2022-10-11-11-34-11.png)
 
 - Generally DRAMs:
-    - Dynamic: refreshed needed (high voltage in and discharge before the discharging)
+    - Dynamic: refreshed needed (the electrons may discharge when time past)
+    - Volatile: loses data when power is removed.
+- Comparison to SRAMs:
+    - Smaller but more expansive.
+    - Not fast as SRAMs.(more refreshing circuitry)
+- Main memory is the primary storage - all changes in registers and caches must be coherent with the mai memory.
+
+- In theory, when the word line is '0', the electrons in the capacitor may keep. However the electrons may leap, if the original voltage is 1 V, the electrons will not be detected when V = 0.5. So we need a charging after the 0.5 point, which is the freshing.
+
+##### 3.9.1: The DRAM basics
+
+- Write:
+  - BL = '1' and WL = '1':
+  - Access transistor ON, C charge to Vdd (HI).
+  - After refresh period, rewrite the data.
+- Read:
+  - WL = HI
+  - Access transistor is ON, assume C has ~Vdd(HI) charge.
+  - Bit line read the voltage across C.
+- Hold:
+  - C will retain the charge.
+  - The leakage current cause the discharge.
+  - Refresh needed.
+
+##### 3.9.2: DRAM Read: Sense Amplifier 
+![](image/2022-10-12-14-45-34.png)
+![](image/2022-10-12-14-52-52.png)
+- To read '1':
+    - WL = '0', the up and down BL keep 0.5 V.
+    - WL = '1', the BL (HI) connected with C, the discharging begin.
+    - In the side with BL, the voltage increased and other side decreased.
+    - Then the signal '1' in BL side can be detected.
+    - As the BL is '1', the voltage will soon charge the C again.
+- 
 
 #### 3.10: The Memory Wall
 
