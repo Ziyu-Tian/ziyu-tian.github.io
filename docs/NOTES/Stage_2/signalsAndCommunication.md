@@ -712,3 +712,19 @@ $$
 
 ![](image/2022-10-13-10-35-58.png)
 
+![](image/2022-10-13-10-43-14.png)
+
+- The result after the I&D will be:
+
+$$
+\bar{V} = \displaystyle\frac{V_{DC}+V}{2T}(T+\displaystyle\frac{\sin{(4\pi f_c T)}}{4\pi f_c T})
+$$
+
+As $f = \frac{1}{T}$, if we choose 'n'(integer) times f is $f_c$:
+
+$$
+f_c = \frac{n}{T}
+$$
+
+So $\bar{V} = \frac{V_{DC}+V}{2}$ is for the signal '1', while $\bar{V} = \frac{V_{DC}-V}{2}$ for the signal '0'.
+
