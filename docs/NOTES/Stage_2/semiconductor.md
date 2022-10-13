@@ -442,3 +442,5 @@ If $I_E$ is not 0 but defined by $\alpha I_E$. $I_{SC}$ is called the collector 
 
 
 
+
+

@@ -728,3 +728,29 @@ $$
 
 So $\bar{V} = \frac{V_{DC}+V}{2}$ is for the signal '1', while $\bar{V} = \frac{V_{DC}-V}{2}$ for the signal '0'.
 
+If the ASK signal the demo received as below:
+
+![](image/2022-10-13-16-13-18.png)
+
+
+The signal is then mixed with the local oscillator set at the same frequency as the carrier.
+
+![](image/2022-10-13-16-18-01.png)
+
+For the PSK signal, it is also mixed with the local oscillator as the same frequency.
+
+![](image/2022-10-13-16-29-52.png)
+
+The result will be below:
+
+![](image/2022-10-13-16-30-21.png)
+
+### 7: FSK Demodulator
+
+![](image/2022-10-13-16-35-40.png)
+
+The mixed signals are integrated over $T$ resulting in two average $r_0$ and $r_1$, which is known as **correlation demodulator**.
+
+![](image/2022-10-13-16-39-19.png) 
+
+
