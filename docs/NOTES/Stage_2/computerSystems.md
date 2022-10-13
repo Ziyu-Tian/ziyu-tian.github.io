@@ -356,5 +356,25 @@
     - For higher electron biasing hot electrons injection needed.
 - ![](image/2022-10-13-11-26-51.png)
 
-- Test
+- Two charge states:
+    - By default non charge in the float gate means '1'.
+    - If the electrons injected to float gate, means '0'.
 
+![](image/2022-10-13-12-22-22.png)
+
+- Operations (NOR-based flash)
+    - Reading:
+        - For the '0', higher CG bias ($V_{T0}>5V$) required.
+        - For the '1', lower CG bias ($V_{T1}<V_{T0$) required.
+    - Writing:
+        - Need hot electrons injection (HEI)
+        - HEI follow the quantum tunnelling.
+        - Write '0': HEI applies HI (+ve) across the gate-source to allow FG to be charged negatively with low bit line.
+        - Write '1': HEI applies HI (-ve) across gate-source to allow FG data to be erased with low bit line.
+    - Hold:
+        - The FG dictates the hold operation.
+        - Negative charge for bit value = 0
+        - No FG charge for bit value = 1
+        - HEI causes oxide layer damage and this limit the lifetime of flash memories.
+        - SLC have ~100k write cycles.
+        - 
