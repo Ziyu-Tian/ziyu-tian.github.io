@@ -317,7 +317,42 @@
 ![](image/2022-10-13-09-17-02.png)
 ![](image/2022-10-13-10-00-57.png)
 
+- The magnetic disks are consisted of:
+    - Head: the head detector to read the magnetic direction.(hovering)
+    - Track: the circle track drawn by head.
+    - Cylinder: consist of different surface located in same radium circle, is a cylinder surface.
+    - Sector: the different sector area divided by gap.
+- Total disk capacity = sector size x sector per track x number of tracks per cylinder x number of cylinder.
+
+- The sector is the actual data container:
+
+![](image/2022-10-13-11-15-23.png)
+
+
 #### 3.13: Off-line Storage: CD-ROM, DVD 
 
+- Optical non-volatile, for long-term storage.
+- Coated in metal with the area reflect light differently.
+- Normal surface called the 'land'.
+- Surface affects by laser is called the 'pit'.
+- The pit and land can be read by weak laser beam.
+- From inside to outside.
+![](image/2022-10-13-11-19-47.png)
+
+
 #### 3.14: Tertiary Storages: Flash memories 
+
+- Non-volatile; can be electronically erased and reprogrammed.
+    - Modern solid-state drives (SSD) for secondary storage.
+    - Secure Digital (SD) Cards.
+- Semiconductor non-volatile, non-rotary devices.
+    - Faster than HDDs.
+- Flash memories are made of storage cells:
+    - Eg. Single-level cell (SLC)
+    - Control Gate is the MOS gate.
+    - Floating Gate electrically isolate the channel.
+    - Higher threshold  voltage need to charge FG for write.
+    - A voltage lower than threshold for reading.
+    - For higher electron biasing hot electrons injection needed.
+- ![](image/2022-10-13-11-26-51.png)
 
