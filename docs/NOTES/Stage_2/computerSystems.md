@@ -259,20 +259,63 @@
 ![](image/2022-10-12-14-52-52.png)
 - To read '1':
     - WL = '0', the up and down BL keep 0.5 V.
-    - WL = '1', the BL (HI) connected with C, the discharging begin.
+    - WL = '1', the BL connected with C (HI), the discharging begin.
     - In the side with BL, the voltage increased and other side decreased.
     - Then the signal '1' in BL side can be detected.
-    - As the BL is '1', the voltage will soon charge the C again.
-- 
+    - The voltage will soon charge the C again.
+- To read '0':
+    - WL = '0', the up and down keep 0.5 V.
+    - WL = '1', the BL connected with C (LOW), the charging begin.
+    - In the side with BL, the voltage decreased and other side decreased.
+    - Then the signal '0' in BL side can be detected.
+    - The voltage will soon discharge the C again.
+- To write dada:
+    - The double side pre-charged to 0.5 V.
+    - Activate the WL, set BL to '0' or '1'.
+    - Data wrote to cell.
+
+![](image/2022-10-13-07-57-20.png)
+
+##### 3.9.3: DRAM Array 
+
+- Several memory cell consist the memory array.
+
+![](image/2022-10-13-08-00-02.png)
 
 #### 3.10: The Memory Wall
 
+- Faster and parallel processor reducing CPI (clocks per Instruction).
+
+- Complicated memory hierarchy is increasing the memory latency.
+
+- The memory will limit the core efficiency.
 
 ![](image/2022-10-11-12-02-24.png)
 
+
 #### 3.11: Other Memories: ROM 
 
+- Read-only Memory
+    - No capability for memory write.
+    - Data programmed
+    - Stable storage even when power is off
+- Example: NOR-based ROM 
+    - 8 bits words
+    - Address selects active (HI) row 
+    - The row selects lines program which line is HI, so teh data stored is fixed.
+
+![](image/2022-10-13-08-32-57.png)
+
+
 #### 3.12: Secondary Storage: Magnetic Disks
+
+- Non-volatile memory, large and slower
+- The disc is coated with magnetic material。
+- Data is written serially in CW direction.
+- Magnetise for '1', demagntise for '0'.
+
+![](image/2022-10-13-09-17-02.png)
+![](image/2022-10-13-10-00-57.png)
 
 #### 3.13: Off-line Storage: CD-ROM, DVD 
 
