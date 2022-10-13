@@ -363,3 +363,58 @@ The avalanche breakdown voltage imposes an upper limit on reverse bias for diode
 
 Avalanche breakdown has a positive temp coefficient.
 
+## III: Bipolar Transistor
+
+### 1: Bipolar Transistors
+- PNP and NPN depend on the base material.
+
+![](image/2022-10-13-13-14-24.png)
+
+- The majority of the emitter current flows through to the collector, rather than the base ($I_B$), so we have a small base current.
+
+- $\frac{I_C}{I_E}$ Common Base DC Current Gain $\alpha \approx 1$
+- $\frac{I_C}{I_B}$ Common Emitter DC Current Gain $\beta \approx 50$
+
+![](image/2022-10-13-13-23-31.png)
+
+
+### 2: BJT: Principle of Operation 
+
+For a NPN device, the majority carrier will be: emitter heavily doping (with e), base moderate doping and collector low doping.
+
+For the minority carrier densities will be:
+
+![](image/2022-10-13-13-28-09.png)
+
+($n_{pe}$ the 'e' means the emitter side)
+
+
+If we forward bias the emitter-base junction and apply no bias to the collector-base junction (short circuit):
+
+![](image/2022-10-13-13-36-23.png)
+
+which we can get:
+
+$$
+\frac{n_p}{n_{po}} = \frac{p_n}{p_{no}}=\exp{(\frac{eV_{EB}}{k_B T})}
+$$
+
+Ignore the recombination, this hole current due to $p_{ne}$ is the only base current cause holes cannot pass the reverse c-b junction. So by controlling the doping ratio
+$\frac{N_e}{N_b}$ we can control the current gain $\beta$.
+
+For the collector current, we can get:
+
+$$
+I_C = AeD_n(\frac{n_{pe}-n_{po}}{W})
+$$
+
+The emitter efficiency $\gamma$ can be defined as:
+
+$$
+\displaystyle\frac{Electron\quad Current\quad in\quad Emitter}{Total\quad Emitter\quad Current} = \displaystyle\frac{I_{En}}{I_{En}+I_{Ep}}=\gamma
+$$
+
+Note that for no-recombination $\alpha = \gamma$
+
+
+
