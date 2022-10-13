@@ -400,10 +400,10 @@ $$
 $$
 
 Ignore the recombination, this hole current due to $p_{ne}$ is the only base current cause holes cannot pass the reverse c-b junction. So by controlling the doping ratio
-$\frac{N_e}{N_b}$ we can control the current gain $\beta$.
+$\frac{N_e}{N_b}$ we can control the current gain $\beta = \frac{I_C}{I_B}\approx \frac{I_E}{I_B}$. (the most effective situation is all the electrons from emitter move to the collector)
 
 For the collector current, we can get:
-
+(Same as the diffusion current)
 $$
 I_C = AeD_n(\frac{n_{pe}-n_{po}}{W})
 $$
@@ -414,7 +414,31 @@ $$
 \displaystyle\frac{Electron\quad Current\quad in\quad Emitter}{Total\quad Emitter\quad Current} = \displaystyle\frac{I_{En}}{I_{En}+I_{Ep}}=\gamma
 $$
 
-Note that for no-recombination $\alpha = \gamma$
+$I_{En} is the $I_C$ and $I_{Ep} = I_B$
+
+Note that for no-recombination $\alpha = \gamma$.
+
+Now if we apply a bias to the C-B junction:
+
+![](image/2022-10-13-14-12-14.png)
+
+So we have a proportion of the emitter current reaching the collector, $\alpha I_E$. And the total collector current can be:
+
+$$
+-I_{SC} = I_{SC}(\exp{(\frac{eV_{CB}}{k_B T})-1})-\alpha I_{SE} = I_{SC}(\exp{(\frac{eV_{EB}}{k_B T})-1})
+$$
+
+Note that the sign convention follow the $V_{CB}$.
+
+### 2: DC Characteristic 
+
+For the $I_E = 0$, we got a diode characteristic:
+
+![](image/2022-10-13-14-20-40.png)
+
+If $I_E$ is not 0 but defined by $\alpha I_E$. $I_{SC}$ is called the collector cut-off current.
+
+![](image/2022-10-13-14-22-43.png)
 
 
 
