@@ -616,3 +616,99 @@ Tuned to a higher frequency than the carrier frequency.
 
 - Balanced discriminator have a characteristic 'S-shaped' frequency response.
 - This method will provide larger linear region to demodulate the narrow-band and wide-band signals. 
+
+## IV: Digital Modulation 
+
+### 1: Introduction
+
+- Digital modulation is the mapping of binary data to sin carrier signals.
+
+- The digital message can vary the amplitude, frequency and phase of the carrier.
+    - Amplitude Shift keying.
+    - Frequency Shift Keying.
+    - Phase shift Keying
+
+### 2: Digital Modulator 
+
+![](image/2022-10-13-10-08-47.png)
+
+### 3: Amplitude Shift Keying (ASK)
+
+- We generate the ASK from the DSB-AM modulator and the input $d(t)$ is encoded signal.
+
+![](image/2022-10-13-10-12-04.png)
+
+$$
+v_s(t) = (V_{DC}\pm V)\cos{(2\pi f_c t)}
+$$
+
+-  If $V_{DC}> V$, then the carrier will have two amplitude, $V_1 = V_{DC}+V$ and $V_0 = V_{DC} -V$.
+
+$$
+v_s(t) = \begin{case}
+    V_1\cos{(2\pi f_c t},& for\quad 1 \\
+    V_0\cos{(2\pi f_c t)}, & for\quad 0 
+\end{case}
+$$
+
+![](image/2022-10-13-10-20-19.png)
+
+#### 3.1: On-off Keying 
+
+- Use a DSB-SC to generate the OOK.(make sure $V = V_{DC}$).
+
+
+![](image/2022-10-13-10-22-47.png)
+
+$$
+v_s(t) = \begin{case}
+   (2V)\cos{(2\pi f_c t)},& bit\quad 1 \\
+   0,& bit\quad 0 
+\end{case} 
+$$
+
+![](image/2022-10-13-10-24-20.png)
+
+### 4: Phase Shift Keying 
+
+- Using a DSB-SC modulator:
+
+![](image/2022-10-13-10-26-56.png)
+
+- More easier way:
+
+![](image/2022-10-13-10-29-37.png)
+
+$$
+v_s(t) = \begin{case}
+    V\cos{(2\pi f_c t)},& 1 \\
+    -V\cos{(2\pi f_c t)},& 0
+\end{case}
+$$
+
+![](image/2022-10-13-10-28-10.png)
+
+
+### 5: Frequency Shift Keying 
+
+- An FSK signal can be generated using an FM modulator:
+
+![](image/2022-10-13-10-30-33.png)
+
+- Or:
+
+![](image/2022-10-13-10-33-11.png)
+
+$$
+v_s(t) = \begin{case}
+    V_c \cos{(2\pi f_1 t)}, & 1\quad,f_1 = f_c +\Delta f_c \\
+    V_c \cos{(2\pi f_0 t)}, & 1\quad,f_0 = f_c -\Delta f_c 
+\end{case}
+$$
+
+![](image/2022-10-13-10-33-31.png)
+
+### 6: ASK and PSK Demodulation
+
+![](image/2022-10-13-10-35-58.png)
+
