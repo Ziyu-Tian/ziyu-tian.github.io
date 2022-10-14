@@ -806,3 +806,8 @@ $$
 P(0\le x \le g) = \displaystyle\frac{1}{\sqrt{{2\pi \sigma ^2}}}\displaystyle\int _{0} ^g {e^{-\frac{x^2}{2\sigma ^2}{\rm d}x}}
 $$
 
+- Q function 
+
+
+#### 8.2: PSK on the AWGN Channel 
+

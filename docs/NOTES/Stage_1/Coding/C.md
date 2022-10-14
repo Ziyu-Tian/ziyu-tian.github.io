@@ -104,7 +104,17 @@ freopen("PATH","w",stdout);
 fclose(stdin);
 fclose(stdout);
 ```
+#### 3.3: Use 'ifstream' or 'ofstream'
 
+```cpp
+ifstream name; // 'i' for input or read
+name.open("PATH");
+name >> a; // read the name file to variable 'a'
+name.close();// close the file
+ofstream write;//'o' for output or write
+write.write("PATH");
+write << a; // write the output into file
+```
 
 ## II: Data Types
 ### 1: Introduction
