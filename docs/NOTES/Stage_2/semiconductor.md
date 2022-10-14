@@ -372,8 +372,10 @@ Avalanche breakdown has a positive temp coefficient.
 
 - The majority of the emitter current flows through to the collector, rather than the base ($I_B$), so we have a small base current.
 
-- $\frac{I_C}{I_E}$ Common Base DC Current Gain $\alpha \approx 1$
-- $\frac{I_C}{I_B}$ Common Emitter DC Current Gain $\beta \approx 50$
+- $\displaystyle\frac{I_C}{I_E}$ Common Base DC Current Gain $\alpha \approx 1$
+
+
+- $\displaystyle\frac{I_C}{I_B}$ Common Emitter DC Current Gain $\beta \approx 50$
 
 ![](image/2022-10-13-13-23-31.png)
 
@@ -396,17 +398,37 @@ If we forward bias the emitter-base junction and apply no bias to the collector-
 which we can get:
 
 $$
-\frac{n_p}{n_{po}} = \frac{p_n}{p_{no}}=\exp{(\frac{eV_{EB}}{k_B T})}
+\frac{n_p}{n_{po}} = \frac{p_n}{p_{no}}=\displaystyle\exp{(\frac{eV_{EB}}{k_B T})}
 $$
 
-Ignore the recombination, this hole current due to $p_{ne}$ is the only base current cause holes cannot pass the reverse c-b junction. So by controlling the doping ratio
-$\frac{N_e}{N_b}$ we can control the current gain $\beta = \frac{I_C}{I_B}\approx \frac{I_E}{I_B}$. (the most effective situation is all the electrons from emitter move to the collector)
+- Under the forward bias, the *electrons* in the emitter moving to the base *according to the diffusion* (large concentration gradient).
+
+
+- As the base wide is thin, only little electrons will come to base (this electron-current can be ignored), most of the $I_e$ will come and become $I_c$.
+
+
+- Ignore the recombination, the holes in base will move to emitter according to diffusion.This hole current due to $p_{ne}$ is the only base current cause holes cannot pass the reverse c-b junction. So by controlling the doping ratio $\displaystyle\frac{N_e}{N_b}$ we can control the current gain $\beta = \displaystyle\frac{I_C}{I_B}\approx \frac{I_E}{I_B}$. (the most effective situation is all the electrons from emitter move to the collector)
 
 For the collector current, we can get:
 (Same as the diffusion current)
 $$
 I_C = AeD_n(\frac{n_{pe}-n_{po}}{W})
 $$
+
+$n_{pe}$ is the electron from emitter finally reach the collector *bypassing the base*, while $n_{po}$ is the original electrons in base. Note that the $W$ means the diffusion distance of the concentration gradient, so it is the length of base. (which should be minimize)
+
+- We can find that **electrons concentration gradient in base** determine the $I_C$.
+
+
+For the base current:
+$$
+I_B = AeD_p(\displaystyle\frac{P_{ne}-P_{no}}{l_e})
+$$
+
+- The concentration gradient determine the size of $I_B$.
+
+
+
 
 The emitter efficiency $\gamma$ can be defined as:
 
@@ -439,6 +461,7 @@ For the $I_E = 0$, we got a diode characteristic:
 If $I_E$ is not 0 but defined by $\alpha I_E$. $I_{SC}$ is called the collector cut-off current.
 
 ![](image/2022-10-13-14-22-43.png)
+
 
 
 
