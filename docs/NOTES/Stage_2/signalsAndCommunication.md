@@ -762,4 +762,47 @@ Then the final result of $f_0$ will be 0.
 
 When $f_1-f_0 = \frac{1}{2\pi}$, the sin() become 0, so it is called the **minium shift keying (MSK)**.
 
+### 8: Theoretical Performance
+
+- We can define the bit-error rate performance as a function of a signal-to-noise ratio.
+- It is assumed that the modulated signal is corrupted with the addition of noise, the white Gaussian distributed, which is known as Additive White Gaussian Noise (AWGN) channel.
+  
+![](image/2022-10-14-11-34-51.png)
+
+- Bit-error rate "BER" $P_b$ is defined as:
+![](image/2022-10-14-11-36-28.png)
+
+#### 8.1: Probability Density Function 
+
+- The most common one in engineering - The Gaussian Distribution (normal distribution)
+
+- The equation is given by:
+
+$$
+p(x) = \displaystyle\frac{1}{\sqrt{2\pi \sigma ^2}} e^{-\frac{(x-\mu)^2}{2\sigma ^2}}
+$$
+
+- The $\mu$ is the *mean* and the $\sigma ^2$ is the *variance*.
+
+![](image/2022-10-14-11-42-43.png)
+
+- Cause we cannot integrate directly, we express it into the error function $erf(x)$.
+
+$$
+erf(x) = \displaystyle\frac{2}{\sqrt{\pi}}\int _0 ^x e^{-t^2}{\rm d}t
+$$
+
+- We also use the complimentary function $erfc(X)$:
+
+$$
+erfc(x) = 1-erf(x)
+$$
+
+- We can use the substitution to make the target p(x) to erf(x), for example:
+
+For the function:
+
+$$
+P(0\le x \le g) = \displaystyle\frac{1}{\sqrt{{2\pi \sigma ^2}}}\displaystyle\int _{0} ^g {e^{-\frac{x^2}{2\sigma ^2}{\rm d}x}}
+$$
 

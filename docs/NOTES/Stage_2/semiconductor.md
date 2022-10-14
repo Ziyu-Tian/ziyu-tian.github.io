@@ -436,13 +436,15 @@ $$
 \displaystyle\frac{Electron\quad Current\quad in\quad Emitter}{Total\quad Emitter\quad Current} = \displaystyle\frac{I_{En}}{I_{En}+I_{Ep}}=\gamma
 $$
 
-$I_{En} is the $I_C$ and $I_{Ep} = I_B$
+$I_{En}$ is the $I_C$ and $I_{Ep} = I_B$
 
 Note that for no-recombination $\alpha = \gamma$.
 
-Now if we apply a bias to the C-B junction:
+Now if we apply a reverse bias to the C-B junction:
 
 ![](image/2022-10-13-14-12-14.png)
+
+The minority carrier concentration 
 
 So we have a proportion of the emitter current reaching the collector, $\alpha I_E$. And the total collector current can be:
 
