@@ -216,8 +216,10 @@
 
 ![](image/2022-10-11-11-16-00.png)
 
+- Note if we treat the miss ratio is fixed in every level as p, then the hit ratio will be 1-p.
+
 - 'Temporal locality' refers to the reuse of the data which are time relatively.
-- 'Spatial locality' refers to use of the data within close storage locations.
+- 'Spatial locality' refers to use of the data within close storage locations. When am instruction or a data is repeated a number of time it manifests spatial locality.
 
 
 ![](image/2022-10-11-11-25-16.png)
@@ -364,7 +366,7 @@
 
 - Operations (NOR-based flash)
     - Reading:
-        - For the '0', higher CG bias ($V_{T0}>5V$) required.
+        - For the '0', higher CG bias ($V_{T0}>5V$) required. (high voltage required to overcome the channel potential and the trapped charged impact)
         - For the '1', lower CG bias ($V_{T1}<V_{T0$) required.
     - Writing:
         - Need hot electrons injection (HEI)
@@ -377,4 +379,3 @@
         - No FG charge for bit value = 1
         - HEI causes oxide layer damage and this limit the lifetime of flash memories.
         - SLC have ~100k write cycles.
-        - 
