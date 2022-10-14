@@ -751,6 +751,15 @@ The result will be below:
 
 The mixed signals are integrated over $T$ resulting in two average $r_0$ and $r_1$, which is known as **correlation demodulator**.
 
-![](image/2022-10-13-16-39-19.png) 
+![](image/2022-10-13-16-39-19.png)
+
+#### 7.1: Minimum Shift Keying (MSK)
+
+
+If $f_1 - f_0 = \frac{n}{T}$ and $f_1 +f_0 = \frac{m}{T}$, m and n are all integers, we call $f_1$ and $f_0$ are **orthogonal** to each other.
+
+Then the final result of $f_0$ will be 0.
+
+When $f_1-f_0 = \frac{1}{2\pi}$, the sin() become 0, so it is called the **minium shift keying (MSK)**.
 
 
