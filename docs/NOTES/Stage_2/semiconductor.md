@@ -444,7 +444,7 @@ Now if we apply a reverse bias to the C-B junction:
 
 ![](image/2022-10-13-14-12-14.png)
 
-The minority carrier concentration 
+The minority carrier concentration should be decreased under the reverse bias (the input from other side will reduced according to voltage)
 
 So we have a proportion of the emitter current reaching the collector, $\alpha I_E$. And the total collector current can be:
 
