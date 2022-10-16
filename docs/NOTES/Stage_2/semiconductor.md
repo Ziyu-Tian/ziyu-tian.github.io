@@ -188,8 +188,9 @@ $$
 
 * Then the electric field $E$ can be estimated. 
 * The $\phi$ is the build-in voltage generated in the depletion area.
+* The build-in electric field can be : $E = \frac{\phi }{W}$
 
-## II: P-N Junction
+## III: P-N Junction
 
 ### 1: Relation between carrier concentration and potential difference
 
@@ -366,7 +367,7 @@ The avalanche breakdown voltage imposes an upper limit on reverse bias for diode
 
 Avalanche breakdown has a positive temp coefficient.
 
-## III: Bipolar Transistor
+## IV: Bipolar Transistor
 
 ### 1: Bipolar Transistors
 - PNP and NPN depend on the base material.
