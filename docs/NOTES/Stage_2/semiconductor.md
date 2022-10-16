@@ -446,11 +446,19 @@ Now if we apply a reverse bias to the C-B junction:
 
 The minority carrier concentration should be decreased under the reverse bias (the input from other side will reduced according to voltage)
 
-So we have a proportion of the emitter current reaching the collector, $\alpha I_E$. And the total collector current can be:
+In addition, the majority carrier may be limited by the reverse bias, while the minority carrier form the current due to the bias, which is defined as:
 
 $$
--I_{SC} = I_{SC}(\exp{(\frac{eV_{CB}}{k_B T})-1})-\alpha I_{SE} = I_{SC}(\exp{(\frac{eV_{EB}}{k_B T})-1})
+I_{SC}(\exp(\frac{eV_{CB}}{k_B T})-1) 
 $$
+
+The total collector current can be expressed as: 
+
+$$
+-I_C = I_{SC}(\exp(\frac{eV_{CB}}{k_B T})-1)-\alpha I_{SE}(\exp(\frac{e V_{EB}}{k_B T})-1)
+$$
+
+![](image/2022-10-16-16-49-50.png)
 
 Note that the sign convention follow the $V_{CB}$.
 
