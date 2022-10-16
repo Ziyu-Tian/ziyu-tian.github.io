@@ -110,6 +110,7 @@ fclose(stdout);
 ifstream name; // 'i' for input or read
 name.open("PATH");
 name >> a; // read the name file to variable 'a'
+name.flush();//clear the buff area
 name.close();// close the file
 ofstream write;//'o' for output or write
 write.write("PATH");
@@ -142,7 +143,7 @@ x||y;// or
 x&&y;// and
 !x;// not
 ```
-#### 2.5: Type: String (=character arrays)
+#### 2.5: Type: String and character arrays
 * Strings (chunks of text) are represented through an array of chars - structured pre-
 defined data type.
 * The first place of the array is '0' instead of '1'.
@@ -158,6 +159,32 @@ printf("%s",a);// the output will be 'Hello' cause it ended in advance.
 #include<string.h>
 strcmp("a","b");//which can return a number show the '>','<','=' relation
 ```
+
+* In C++, we use an advanced type 'string', which no longer need to define the size.
+
+```cpp
+#include<string>
+string s;//define the string
+string s_1;
+int size = s.length();//get the length of string
+int i;// string 's' can also be set using s[i]
+s_1.append(1,s[i]);//append can be used to append
+```
+
+* For the 'string' type, we can use 'stringstream' type to do type change:
+
+```cpp
+stringstream string_stream;
+string s = "2333";
+int a;
+string_stream << s;// write the s to the string_stream
+string_stream >> a;// write the string_stream to int a;
+string_stream.clear();// clear the stringstream after usage
+
+
+```
+
+
 #### 2.6: Symbolic names and Constant
 ```cpp
 #define a 100;//define global constant
@@ -323,6 +350,30 @@ if (x < 10) return 1;
     return numberOfDigits(x / 10) + 1;
 }
 ```
+### 3: Main function 
+- We can also define the arguments of main function:
+
+```cpp
+int main(int argc, char *argv[]){}
+// 'argc' is the number of arguments passed in command line (cmd)
+//'argv' is an array storing pointers, each pointer is the string you input in cmd mode
+// The argv[0] will be the address of the file
+```
+- Using the main function arguments, we can pass the value when executing the code file:
+
+```cpp
+string s = string(argv[1]);
+if(s == "-a")
+{
+    cout<<"The number you pass is :"<<s<<endl;
+}
+```
+In cmd mode, after the compile with g++, type in:
+```cmd
+./example.out -a 100
+```
+The result will be 100.
+
 ## VI: Arrays and application
 ### 1: Array
 ```cpp
