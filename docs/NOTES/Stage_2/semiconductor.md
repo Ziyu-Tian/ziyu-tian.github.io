@@ -329,7 +329,10 @@ $n$ is a non-ideal fiddle factor.
 
 ![](image/2022-10-09-21-42-29.png)
 
-This analysis is valid only for thin p and n bulk regions. Or else (bulk length > diffusion length) the length of layers has to be replaced by $l=\sqrt{D\tau}$.
+This analysis is valid only for thin p and n bulk regions. Or else (bulk length > diffusion length) the length of layers has to be replaced by $l=\sqrt{D\tau}$.(The $\tau$ is called the carrier lifetime)
+
+If the PN-junction without external voltage, the $\frac{dn}{dx}$ can only consider the minority carrier to '0'. Note that the saturation current should be sum of p-type and n-type.
+
 
 ### 4: Junction Breakdown 
 
