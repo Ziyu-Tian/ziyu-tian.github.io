@@ -468,10 +468,30 @@ For the $I_E = 0$, we got a diode characteristic:
 
 ![](image/2022-10-13-14-20-40.png)
 
-If $I_E$ is not 0 but defined by $\alpha I_E$. $I_{SC}$ is called the collector cut-off current.
+If $I_E$ is not 0 but defined by $\alpha I_E$. $I_{SC}$ is called the collector cut-off current.(for the cut-off current or saturation current of C-B, the increasing of inverse bias will not increase the current)
 
-![](image/2022-10-13-14-22-43.png)
+|![](image/2022-10-13-14-22-43.png)|![](image/2022-10-16-16-57-31.png)|
+|---|---|
 
+The straight line parts (active region) have a small gradient due to the base narrowing effect.
+
+As $V_{CE} = V_{CB} + V_{BE}$, we can get the $V_{CE}$ graph:
+
+![](image/2022-10-16-17-38-59.png)
+
+For the equation of collector current:
+
+$$
+-I_C = I_{SC}(\exp(\frac{eV_{CB}}{k_B T})-1)-\alpha I_{SE} (\exp(\frac{eV_{EB}}{k_B T})-1)
+$$
+
+For the reverse version:
+
+$$
+-I_E = I_{SE}(\exp(\frac{eV_{EB}}{k_B T})-1)-\alpha I_{SC} (\exp(\frac{eV_{CB}}{k_B T})-1)
+$$
+
+- These equations are called Ebers Moll equations which are useful to derive the DC circuits.
 
 
 
