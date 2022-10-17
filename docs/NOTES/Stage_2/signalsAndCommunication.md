@@ -806,8 +806,13 @@ $$
 P(0\le x \le g) = \displaystyle\frac{1}{\sqrt{{2\pi \sigma ^2}}}\displaystyle\int _{0} ^g {e^{-\frac{x^2}{2\sigma ^2}{\rm d}x}}
 $$
 
-- Q function 
+- Q function is the positive side of the standard normal distribution, which is used sometimes.
 
 
 #### 8.2: PSK on the AWGN Channel 
 
+If we transmitted x = $\sqrt{E_b}$ then the probability of an error is:
+
+$$
+P(e|x=\sqrt{E_b}) = \displaystyle\int_{-\infty}^{0}{p(r|x=\sqrt{E_b}){\rm d}r}
+$$
