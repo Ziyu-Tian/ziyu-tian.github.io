@@ -426,7 +426,7 @@ $n_{pe}$ is the electron from emitter finally reach the collector *bypassing the
 
 For the base current:
 $$
-I_B = AeD_p(\displaystyle\frac{P_{ne}-P_{no}}{l_e})
+I_B = AeD_p(\displaystyle\frac{p_{ne}-p_{no}}{l_e})
 $$
 
 - The concentration gradient determine the size of $I_B$.
