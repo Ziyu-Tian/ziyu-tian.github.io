@@ -816,3 +816,4 @@ If we transmitted x = $\sqrt{E_b}$ then the probability of an error is:
 $$
 P(e|x=\sqrt{E_b}) = \displaystyle\int_{-\infty}^{0}{p(r|x=\sqrt{E_b}){\rm d}r}
 $$
+
