@@ -379,3 +379,28 @@
         - No FG charge for bit value = 1
         - HEI causes oxide layer damage and this limit the lifetime of flash memories.
         - SLC have ~100k write cycles.
+
+#### 3.15: NOR Multi-Level Cells
+
+- Multi-level Cell (MLC)
+    - Popular and high packing density
+    - Multiple SLC in parallel give multiple logic levels.
+    - MLC have typically ~10k cycles
+- REading 
+    - SImilar to the SLC, but with different biasing for different cells and configuration.
+
+#### 3.16: Emerging Non-volatile Memories: Memristors
+
+- Also called RRAM or register-RAM.
+- T
+
+- Two terminal element with variable doping:
+    - The width and resistance of doped region varies with biasing.
+    - When biasing makes w=D (device width) it is ON with $R_{ON}$
+    - When biasing makes w=0 it is OFF with $R_{OFF}$.
+    - The resistance cannot change without biasing.
+- Resistive Memory: Meristor
+- Current-Mode In-Memory Circuits: A *multiplier*
+    - ![](2022-10-18-12-03-07.png)
+
+
