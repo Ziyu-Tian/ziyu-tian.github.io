@@ -404,3 +404,32 @@
     - ![](2022-10-18-12-03-07.png)
 
 
+### 4: Interconnects
+
+#### 4.1: Computer Interconnect
+
+- Interconnect is a critical component in modern computer systems as it defines the underlying performance of the systems.
+- Interconnects are used to connect various components in the system.
+
+#### 4.2: The Importance of Interconnects
+
+- Affects performance and energy efficiency
+- Affect the scalability of a system.
+
+#### 4.3: Managing Interconnects
+
+- Driving an interconnect is hard for devices, which contain lots of buffers and wiring.
+
+- Every system has an interconnect topology and protocol to manage how to:
+    - **accessed**:(IO pin counts, and handshakes)
+    - **shared**
+    - **power managed**
+
+#### 4.4: Interconnect Skew
+
+#### 4.5: Interconnect Types
+
+
+
+#### 4.6: Asynchronous interconnects
+
