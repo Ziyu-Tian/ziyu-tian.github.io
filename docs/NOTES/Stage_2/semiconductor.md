@@ -496,7 +496,156 @@ $$
 
 - These equations are called Ebers Moll equations which are useful to derive the DC circuits.
 
+## V: MOSFET
+
+### 1: Inversion Layer 
+
+- The electron energy is $-ve$, so a -ve voltage is shown as a $+ve$ shift on energy.
+- The depletion region is shown as a region where $E_C-E_F$ is larger than the bulk.
+- If we put a positive bias on the n type, the electrons will be attracted so the conduction band will be up :
+
+![](image/2022-10-20-13-43-28.png)
+
+- If we put a negative voltage, the result will be:
 
 
+![](image/2022-10-20-13-44-26.png)
+
+- The surface region is called an accumulation layer, which is more complicated than the depletion width as we consider the free carriers.
+
+- As we increase the voltage:
+
+![](image/2022-10-20-13-47-30.png)
+
+![](image/2022-10-20-13-47-51.png)
+
+- The Fermi level is more closer to valence band than conduction band, so we call it is more p-type than n-type. This surface is called an **inversion layer**.
+
+### 2: Metal-Oxide-Semiconductor Field Effect Transistor (MOSFET)
+
+![](image/2022-10-20-13-55-17.png)
+
+- The MOSFET have 4 terminals, source, gate , drain and substrate (earthed).
+- The idea is to modulate the current flow between source and drain by changing the bias voltage on the gate.
+- The $n^+$ regions are highly doped to give ohmic contacts to metal.
+- The substantial current will only flow between source and drain if there is a n-ype layer (surface inversion layer) connecting them.
+- The oxide layer prevents the electrons in the inversion layer crossing the gate. The conduction band and valence band in the oxide are linear, so no change in E.
+- To create the inversion layer, the gate voltage must be $+ve$ relative to the source (earthed), while the p-type must be $-ve$ between source and drain, so that the p-n junction will be reverse biased and only leakage current will flow when no inversion layer is present.
+
+### 3: Mode of Operation
+
+- For an enhancement mode device, i.e. no drain current for $V_{GS} = 0$, the current flows when the $+v$ applied.
+
+- The drain current increases (drift current) when increasing the $V_{DS}$  but the potential between the drain and gate decreases.
+
+- This reduce the electrons in drain side and finally the inversion layer lost and the channel is said to be 'pinch off'. For higher $V_{DS}$ the drain current saturates (remain constant).
+- There is just sufficient channel beyond pinch off to allow the saturation current.
+
+![](image/2022-10-20-14-11-37.png)
+
+
+- The minimum gate voltage $V_{GS}$ at which a channel current can be sustained is called the **threshold voltage $V_T$**.
+- Thus the pinch off will begin when $V_{DS} = V_{GS}-V_T$.
+
+- The DC characteristic for a MOSFET will be:
+
+![](image/2022-10-20-14-17-44.png)
+
+- When $V_T$ is '+' and a '+' gate voltage enhances the channel the device is called the enhancement mode. But MOSFET cannot be designed to have ?$V_T$ negative. Then a negative gate voltage depletes the channel of electrons and the devices switches off.
+And these are depletion mode devices.
+
+- P-channel enhancement an depletion devices is possible.
+
+#### 3.1: Analysis of Operation (n-channel device)
+
+- We assume long gate and channel.
+
+![](image/2022-10-20-14-22-47.png)
+
+- The channel-oxide-gate forms a capacitor with $C_{ox}$ per unit area. $Q = CV$ followed.
+
+- For a small length of channel dy:
+    - $Q_y$ = Capacitance x (Voltage across the oxide in excess of $V_T$)
+    - $Q_y = -C_{ox}Wdy(V_{GS}-V_y-V_T)$
+
+- Where $Q_y$ is the volume density of charge in the channel, $W$ is the gate length and $V_y$ is the chnanel voltage at position $y$ along the channel.
+- The electron charge density in the channel is:
+
+$$
+en = \frac{Q_y}{Wddy}
+$$
+
+- Where $d$ is the depth of the inversion layer:
+
+$$
+en = \frac{C_{ox}}{d}(V_{GS}-V_y-V_T)
+$$
+
+- Assuming diffusion current, the current density in y-direction:
+
+$$
+\begin{aligned}
+J &= en\mu _n E_y \\
+J &= -\frac{\mu _n C_{ox}}{d}(V_{GS}-V_y-V_T)E_x
+\end{aligned}
+$$
+
+As $E_y = -\frac{dV}{dy}$:
+
+$$
+\begin{aligned}
+    I_{SD} &= \displaystyle\int{J}{\rm ds\\
+    &= JWd \\
+    &= \mu _n [-\displaystyle\frac{C_{ox}}{d}(V_{GS}-V_y-V_T)][-\displaystyle\frac{dV}{dy}Wd] \\
+    &= W\mu _n C_{ox}(V_{GS}-V_y-V_T)\frac{dV}{dy}
+\end{aligned}
+$$
+
+The gradual channel approximation allows us to sum along the whole channel. $I_{SD}$ is a constant at each point:
+
+$$
+I_{SD}L = W\mu _n C_{ox}\int_0^{V_{DS}}(V_{GS}-V_y-V_T){\rm d}V
+$$
+
+or
+
+$$
+I_{SD} = \beta [(V_{GS}-V_T)V_{DS}-\frac{V_{DS}^2}{2}]
+$$
+
+where $\beta = \frac{W\mu _n C_{ox}}{L}$
+
+- $\beta$ is the gain factor and is determined by $\frac{W}{L}$ and the gate capacitance $C_{ox}$. This equation is valid for $V_{DS} << V_{GS}-V_T$, i.e. the region below pinch off. For higher values of $V_{DS}$.
+- For higher values of $V_{DS}$ $I_{SD}$ saturates. So we set $V_{DS} = V_{GS}-V_T$.
+and obtain:
+
+$$
+I_{SD}=\frac{\beta}{2}(V_{GS}-V_T)^2
+$$
+
+- In real device, increasing $V_{DS$ above pinch off actually reduces the effective channel length, by increasing the depletion region around the drain and so there is a slight increase in $I_{SD}$.
+
+#### 3.2: Transistor Delay Time 
+
+This can be estimated form the time taken for 1 transistor to supply sufficient current to change the gate on the next, as $Q=It$ and $Q=CV$:
+$$
+t = \frac{CV}{I} = \frac{C_{GS}}{g_m}
+$$
+
+- $g_m$ is the transconductance.
+
+The capacitance us $C_{ox}WL$, at saturation, this can be estimated:
+
+$$
+g_m = \frac{dI_{DS}}{dV_{GS}} = \beta V_{DS} = \frac{W}{L}\MU _N C_{ox}(V_{GS}-V_T)
+$$
+
+So $t = \displaystyle\frac{L^2}{\mu _n (V_{GS}-V_T)}$
+
+This is related to the transistor cut off frequency, $f_t$, 
+
+$$
+t = \frac{C_{GS}}{g_m} = \frac{1}{w} = \frac{1}{2\pi f_t}
+$$
 
 
