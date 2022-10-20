@@ -833,4 +833,62 @@ $$
 ![](image/2022-10-20-15-33-50.png)
 
 - Now if $r>\frac{\sqrt{E_b}}{2}$ then the OOK demodulator will make the decision that $ x=\sqrt{E_b}$.
-- Else if $r<\frac{\sqrt{E_b}}{2}$ 
+- Else if $r<\frac{\sqrt{E_b}}{2}$, then the demodulator decides that $x=0$ was transmitted:
+$$
+P(e|x=\sqrt{E_b}) = \displaystyle\int _{-\infty} ^{\frac{\sqrt{E_b}}{2}}{p(r|x=\sqrt{E_b}){\rm d}r}
+$$
+
+![](image/2022-10-20-18-19-20.png)
+
+Similarly
+$$
+P(e|x=-\sqrt{E_b}=\frac{1}{2}erfc((\sqrt{\frac{\sqrt{E_b}}{4N_0}}))
+$$
+
+- So the average BER is:
+$$
+P_b = \displaystyle\frac{P(e|x=-\sqrt{E_b}+P(e|x=\sqrt{E_b}))}{2}=\displaystyle\frac{1}{2}erfc((\sqrt{\displaystyle\frac{E_b}{4N_0}}))
+$$
+- Compare this with the PSK BER:
+$$
+ P_b = \displaystyle\frac{1}{2}erfc((\frac{E_b}{N_0}))
+$$
+
+- The OOK perform **worse** than PSK.
+
+#### 8.4: FSK on the AWGN Channel 
+
+- We first assume the separation between the two frequencies $f_0$ and $f_1$ is sufficient so that both FSK signals are orthogonal. The constellation diagram for orthogonal FSK is shown below.
+
+![](image/2022-10-20-18-30-35.png)
+
+- The FSK demodulator output compares two received values, $r_0$ and $r_1$.
+- Assume that noise samples $n_0$ and $n_1$, which are both Gaussian distributed with zero mean and variance $\sigma ^2$. The two received output will be: 
+
+$r_0 = \sqrt{E_b}+n_0$ and $r_1 = \sqrt{E_b}+n_1$
+
+- If assumes that we transmitted $x_1$. The output at the FSK demodulator will be:
+
+$r_1 = \sqrt{E_b}+n_1$ and $r_0 = n_0$
+
+- An error occurs if the FSK demodulator decides that $r_0>r_1$, or $n_0>\sqrt{E_b}+n_1$:
+
+![](image/2022-10-20-19-44-20.png)
+
+- The average BER for orthogonal FSK is then:
+
+$$
+P_b = \displaystyle\frac{1}{2}erfc((\sqrt{\frac{E_b}{2N_0}}))
+$$
+
+#### 8.5: Performance Comparison of OOK, PSK and FSK on AWGN channel 
+
+![](image/2022-10-20-19-48-11.png)
+
+**The Notation of dB**
+
+- For a value of 'x' is its original unit, 'x' in dB will be $10\lg{x}$.
+- For a value in dB, its original value will be $10^{\frac{x}{10}}$
+
+
+
