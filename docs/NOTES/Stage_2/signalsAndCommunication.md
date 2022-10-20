@@ -283,7 +283,7 @@ $v_s(t)=m(t)\cos{(2\pi f_ct)}$, where $V_{DC}=0$
 
 LPF remove the $2f_c$ component. 
 
-$ V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
+$V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 
 ##### 14.2.3: Frequency and Phrase Errors in Synchronous Demodulation: SSB-SC 
 
