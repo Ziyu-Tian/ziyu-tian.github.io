@@ -4,7 +4,7 @@
 
 ### 1: Silicon Electronic Devices 
 
-- Si is teh workhorse technology. (-99% of the market)
+- Si is the workhorse technology. (-99% of the market)
 - Cheap.
 - High Performance. 
 - Challenges ahead,
