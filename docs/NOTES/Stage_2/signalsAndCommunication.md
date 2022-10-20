@@ -845,6 +845,8 @@ $$
 P(e|x=-\sqrt{E_b})=\frac{1}{2}erfc((\sqrt{\frac{E_b}{4N_0}}))
 $$
 
+($N_0$ is $2 \sigma ^2$)
+
 - So the average BER is:
 $$
 P_b = \displaystyle\frac{P(e|x=-\sqrt{E_b})+P(e|x=\sqrt{E_b})}{2}=\displaystyle\frac{1}{2}erfc(\sqrt{\displaystyle\frac{E_b}{4N_0}})
