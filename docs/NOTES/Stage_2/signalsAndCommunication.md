@@ -645,10 +645,10 @@ $$
 -  If $V_{DC}> V$, then the carrier will have two amplitude, $V_1 = V_{DC}+V$ and $V_0 = V_{DC} -V$.
 
 $$
-v_s(t) = \begin{case}
+v_s(t) = \begin{cases}
     V_1\cos{(2\pi f_c t},& for\quad 1 \\
     V_0\cos{(2\pi f_c t)}, & for\quad 0 
-\end{case}
+\end{cases}
 $$
 
 ![](image/2022-10-13-10-20-19.png)
