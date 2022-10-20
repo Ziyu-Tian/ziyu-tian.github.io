@@ -89,7 +89,6 @@ $$
 We also found the relation below:
 
 $$
-
 \sigma = ne\nu 
 $$
 
