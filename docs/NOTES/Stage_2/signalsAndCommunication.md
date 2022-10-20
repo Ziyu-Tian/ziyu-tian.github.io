@@ -833,4 +833,4 @@ $$
 ![](image/2022-10-20-15-33-50.png)
 
 - Now if $r>\frac{\sqrt{E_b}}{2}$ then the OOK demodulator will make the decision that $ x=\sqrt{E_b}$.
-- Else if $r<\frac{\sqrt{E_b}}{2}$
+- Else if $r<\frac{\sqrt{E_b}}{2}$ 
