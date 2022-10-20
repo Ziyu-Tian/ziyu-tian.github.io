@@ -646,7 +646,7 @@ $$
 
 $$
 v_s(t) = \begin{cases}
-    V_1\cos{(2\pi f_c t},& for\quad 1 \\
+    V_1\cos{(2\pi f_c t)},& for\quad 1 \\
     V_0\cos{(2\pi f_c t)}, & for\quad 0 
 \end{cases}
 $$
@@ -661,10 +661,10 @@ $$
 ![](image/2022-10-13-10-22-47.png)
 
 $$
-v_s(t) = \begin{case}
+v_s(t) = \begin{cases}
    (2V)\cos{(2\pi f_c t)},& bit\quad 1 \\
    0,& bit\quad 0 
-\end{case} 
+\end{cases} 
 $$
 
 ![](image/2022-10-13-10-24-20.png)
@@ -680,10 +680,10 @@ $$
 ![](image/2022-10-13-10-29-37.png)
 
 $$
-v_s(t) = \begin{case}
+v_s(t) = \begin{cases}
     V\cos{(2\pi f_c t)},& 1 \\
     -V\cos{(2\pi f_c t)},& 0
-\end{case}
+\end{cases}
 $$
 
 ![](image/2022-10-13-10-28-10.png)
@@ -700,10 +700,10 @@ $$
 ![](image/2022-10-13-10-33-11.png)
 
 $$
-v_s(t) = \begin{case}
+v_s(t) = \begin{cases}
     V_c \cos{(2\pi f_1 t)}, & 1\quad,f_1 = f_c +\Delta f_c \\
     V_c \cos{(2\pi f_0 t)}, & 1\quad,f_0 = f_c -\Delta f_c 
-\end{case}
+\end{cases}
 $$
 
 ![](image/2022-10-13-10-33-31.png)
