@@ -832,7 +832,7 @@ $$
 
 ![](image/2022-10-20-15-33-50.png)
 
-- Now if $r>\frac{\sqrt{E_b}}{2}$ then the OOK demodulator will make the decision that $ x=\sqrt{E_b}$.
+- Now if $r>\frac{\sqrt{E_b}}{2}$ then the OOK demodulator will make the decision that $x=\sqrt{E_b}$.
 - Else if $r<\frac{\sqrt{E_b}}{2}$, then the demodulator decides that $x=0$ was transmitted:
 $$
 P(e|x=\sqrt{E_b}) = \displaystyle\int _{-\infty} ^{\frac{\sqrt{E_b}}{2}}{p(r|x=\sqrt{E_b}){\rm d}r}
@@ -842,16 +842,16 @@ $$
 
 Similarly
 $$
-P(e|x=-\sqrt{E_b}=\frac{1}{2}erfc((\sqrt{\frac{\sqrt{E_b}}{4N_0}}))
+P(e|x=-\sqrt{E_b})=\frac{1}{2}erfc((\sqrt{\frac{E_b}{4N_0}}))
 $$
 
 - So the average BER is:
 $$
-P_b = \displaystyle\frac{P(e|x=-\sqrt{E_b}+P(e|x=\sqrt{E_b}))}{2}=\displaystyle\frac{1}{2}erfc((\sqrt{\displaystyle\frac{E_b}{4N_0}}))
+P_b = \displaystyle\frac{P(e|x=-\sqrt{E_b})+P(e|x=\sqrt{E_b})}{2}=\displaystyle\frac{1}{2}erfc(\sqrt{\displaystyle\frac{E_b}{4N_0}})
 $$
 - Compare this with the PSK BER:
 $$
- P_b = \displaystyle\frac{1}{2}erfc((\frac{E_b}{N_0}))
+ P_b = \displaystyle\frac{1}{2}erfc(\frac{E_b}{N_0})
 $$
 
 - The OOK perform **worse** than PSK.
