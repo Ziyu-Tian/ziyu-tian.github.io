@@ -811,9 +811,26 @@ $$
 
 #### 8.2: PSK on the AWGN Channel 
 
-If we transmitted x = $\sqrt{E_b}$ then the probability of an error is:
+![](image/2022-10-20-15-24-21.png)
+
+- If x was transmitted then received symbol will be $r = x + n$, where $n$ is AWGN with zero mean and variance $\sigma ^2$.
+- If $r>0$ then the receiver will make the decision that $x = \sqrt{E_b}$ was transmitted, else if $r<0$ then the receiver will decide that $x = -\sqrt{E_b}$ was transmitted.
+
+![](image/2022-10-20-15-28-54.png)
+
+![](image/2022-10-20-15-29-48.png)
+
+- If we transmitted $x = \sqrt{E_b}$:
 
 $$
-P(e|x=\sqrt{E_b}) = \displaystyle\int_{-\infty}^{0}{p(r|x=\sqrt{E_b}){\rm d}r}
+P(e|x = \sqrt{E_b}) = \displaystyle\int _0^{\infty}{p(r|x = \sqrt{E_b}){\rm d}r}
 $$
 
+![](image/2022-10-20-15-32-31.png)
+
+#### 8.3: OOK on the AWGN Channel 
+
+![](image/2022-10-20-15-33-50.png)
+
+- Now if $r>\frac{\sqrt{E_b}}{2}$ then the OOK demodulator will make the decision that $ x=\sqrt{E_b}$.
+- Else if $r<\frac{\sqrt{E_b}}{2}$
