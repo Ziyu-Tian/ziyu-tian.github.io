@@ -798,6 +798,8 @@ $$
 erfc(x) = 1-erf(x)
 $$
 
+![](image/2022-10-20-22-13-42.png)
+
 - We can use the substitution to make the target p(x) to erf(x), for example:
 
 For the function:
