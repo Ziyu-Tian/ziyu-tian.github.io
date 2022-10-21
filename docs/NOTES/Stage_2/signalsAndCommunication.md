@@ -907,7 +907,133 @@ $$
 - The binary symmetric channel (BSC) is an example of a **discrete memoryless source**.
 This means that each received bit is independent of other bits.
 
-- THe BSC is commonly used as a simplified model of a communication system
+- The BSC is commonly used as a simplified model of a communication system.
+
+![](2022-10-21-11-07-56.png)
+
+![](2022-10-21-11-09-06.png)
+
+- Using Bayes's theorem we can also calculate the conditional possibility as $P(X|Y)$:
+
+$$
+P(X|Y) = \displaystyle\frac{P(X)P(Y|X)}{P(Y)}
+$$
+
+- The joint probabilities P(X,Y) of BSC can be:
+
+$$
+P(X,Y) = P(Y)P(X|Y) = P(X)P(Y|X)
+$$
+
+### 3: Binary Erasure Channel 
+
+- An **erasure** e, is a bit has been labelled as unreliable (i.e.not certain about '0' or '1')
+
+- The Binary Erasure Channel (BEC) can be used to model many systems, such as compact disc players and the transmission packets over a wireless network.
+
+- ![](2022-10-21-11-19-10.png)
+
+### 4: Information 
+
+-  A source outputs messages comprising symbols that occurs varying probabilities.
+-  If we assume the symbols outputted are statically independent, then the source is called **discrete memoryless source** (DMS).
+
+- Shannon defined a measure of information in a symbol $X$, as:
+
+$$
+I(X_i) = \log_{2}{\frac{1}{P(X_i)}}
+$$
+
+- The unit of $I$ is bit.
+
+- We can see if $P(X_i)$ then $I(X_i)=0$ bits, there is no information received =. This is because we already know the symbol and no uncertainty.
+
+- Information has the following properties:
+
+![](2022-10-21-11-28-59.png)
+
+#### 5: Entropy 
+
+- Entropy is the average amount of information carried by a message $X$ defined by $M$, $X_1,X_2,X_M$.
+
+![](2022-10-21-11-33-03.png)
+
+![](2022-10-21-11-34-08.png)
+
+- The entropy of a binary source $H(p)$ is plotted below:
+
+![](2022-10-21-11-35-50.png)
+
+- The entropy of a source $H(X)$ is the average of uncertainty about the source input before the output is observed.
+
+##### 5.1: Conditional Entropy 
+
+- The conditional entropy of a source input selected from an alphabet $X$ given that we observed an output symbol $Y$ is given by:
+$$
+H(X|Y=y_i) = \displaystyle\Sigma _{j=1}^N{P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_i)}}}
+$$
+
+- Since $H(X|Y=y_i)$ can values from $y_1$ to $y_M$, then the mean conditional entropy is:
+
+$$
+\begin{aligned}
+    H(X|Y) &= \displaystyle\Sigma_{i=1}^N {P(Y_i)H(X|Y=y_i)} \\
+    &= \displaystyle\Sigma _{i=1}^N \Sigma _{j=1} ^M P(y_i)P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
+\end{aligned}
+$$
+
+- From Bayes's theorem, $P(y_i)P(x_i|y_i) = P(x_j,y_i)$
+
+So the conditional entropy can be:
+
+$$
+H(X|Y) = displaystyle\Sigma _{i=1}^N \Sigma _{j=1} ^M P(X_j,Y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
+$$
+
+- H(X|Y) represents the uncertainty of the source input after the output is observed.
+
+- Since $H(X)$ is the uncertainty of the source input before observed and $H(X|Y)$ is the after one, then the difference between them must be the average amount of information about $X$ after observing $Y$.
+
+- This is called the **mutual information**.
+
+#### 6: Mutual Information 
+
+- The difference between the H(X) and H(X|Y) is called the average **mutual information I(X,Y)**.
+
+$$
+I(X,Y) = H(X)- H(X|Y)
+$$
+
+- The relation between entropy, conditional entropy and mutual information can be expressed:
+
+![](2022-10-21-13-17-21.png)
+
+- Mutual information indicates how much the output Y can tell us about the input X. It is a measure of the quality of the channel.
+
+- The formula of I(X,Y) will be:
+
+![](2022-10-21-13-22-31.png)
+
+- Mutual information has the following properties:
+  - I(X,Y) = H(X) - H(X|Y)
+  - I(Y,X) = H(Y) - H(Y|X)
+  - I(X,Y) = I(Y,X)
+  - I(X,Y) $\le$ 0
+
+#### 7： Capacity
+
+- The capacity of a channel is the max rate at which information can be transmitted error free and is measured in **bits per second (bps)**.
+- The average mutual information is dependent on the input probability distribution and the channel.
+- We define the channel capacity, C, of a discrete memoryless channel as the max average mutual information, where the max is over all possible input probabilities:
+
+![](2022-10-21-13-39-33.png)
+
+- We will now determine the capacity of two simple channels: the binary symmetric channel and the binary erasure channel.
+
+
+##### 7.1: Capacity of the Binary Symmetric Channel 
+
+
 
 
 
