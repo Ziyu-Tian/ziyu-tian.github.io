@@ -895,4 +895,19 @@ $$
 - For a value in dB, its original value will be $10^{\frac{x}{10}}$
 
 
+## V: Information Theory
+
+### 1: Introduction to Information Theory
+
+- Information theory was presented by Claude Shannon in 1948.
+- Using information theory we can determine how much we can compress a signal and the max transmission rate over a noise channel to achieve reliable communication.
+
+### 2: Binary Symmetric Channel 
+
+- The binary symmetric channel (BSC) is an example of a **discrete memoryless source**.
+This means that each received bit is independent of other bits.
+
+- THe BSC is commonly used as a simplified model of a communication system
+
+
 
