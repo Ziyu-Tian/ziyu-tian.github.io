@@ -161,8 +161,7 @@ $$
 * If drift current < diffusion, it will be 
 **Forward Biased**:
 
-![](image/2022-10-02-22-26-37.png)
-
+![](image/2022-10-20-22-55-09.png)
 * If drift current > diffusion, it will be **Reverse Biased**:
 
 ![](image/2022-10-02-22-27-28.png)
@@ -205,7 +204,7 @@ $$
 -\frac{e}{k_B T}n E_n = \frac{dn}{dx}
 $$
 
-Since $E=-=\frac{dV}{dx}$ ('-' as for electrons), we can get:
+Since $E=-\frac{dV}{dx}$ ('-' as for electrons), we can get:
 
 $$
 \frac{e}{k_B T}(\frac{dV}{dx}) = \frac{1}{n}(\frac{dn}{dx})
