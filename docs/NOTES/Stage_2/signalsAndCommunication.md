@@ -1033,6 +1033,52 @@ $$
 
 ##### 7.1: Capacity of the Binary Symmetric Channel 
 
+![](image/2022-10-21-19-07-08.png) 
+
+- To calculate the capacity of the binary symmetric channel we need to determine the mutual information.
+
+![](image/2022-10-21-19-08-34.png)
+
+![](image/2022-10-21-19-09-36.png)
+
+To maximize $I(X,Y)$ we set $\alpha =1/2 $ and the capacity of the BSC is:
+
+![](image/2022-10-21-19-11-03.png)
+
+![](image/2022-10-21-19-11-27.png)
+
+- So the capacity of the BSC is $C = 1-H(p)$
+
+##### 7.2: Capacity of the Binary Erasure Channel 
+
+![](image/2022-10-21-19-14-01.png)
+
+![](image/2022-10-21-19-14-15.png)
+
+##### 7.3: Comparison of BSC and BEC Channel Capacity
+
+![](image/2022-10-21-19-15-08.png)
+
+##### 7.4: Capacity of a Gaussian Channel 
+
+- The capacity of a channel affected by Gaussian noise is dependant on the channel bandwidth $B$ and the signal-to-noise ratio $S/N$, where $S$is average signal power and $N$ is average noise power.
+
+- In this case the input alphabet is still discrete, but the output is analogue.
+
+- The capacity of the binary input Gaussian channel is given by the Shannon-Hartley channel capacity theorem.
+
+$$
+C = B\log_{2}{(1+\frac{S}{N})},bps
+$$
+
+- We can express $S$ in terms of bit energy by $S=E_b C$ and $N=N_0 B$, where $N_0$ is the noise power spectral density, W/Hz. 
+- Then we define the bandwidth efficiency in terms of the bit-energy-to-noise power spectral density ratio:
+
+$$
+\frac{C}{B} = \log_{2}{(1+\frac{E_b}{N_0}\frac{C}{B})}
+$$
+
+![](image/2022-10-21-19-32-32.png)
 
 
 
