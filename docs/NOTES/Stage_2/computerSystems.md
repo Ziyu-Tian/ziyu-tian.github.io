@@ -420,12 +420,25 @@
 
 - Driving an interconnect is hard for devices, which contain lots of buffers and wiring.
 
+![](image/2022-10-22-15-42-44.png)
+
 - Every system has an interconnect topology and protocol to manage how to:
     - **accessed**:(IO pin counts, and handshakes)
     - **shared**
     - **power managed**
+- Different vendors like different bus architectures and protocols
+    - ARM: AMBA 
+    - Freescale: VME 
+    - Intel: QuickPath
 
 #### 4.4: Interconnect Skew
+
+- All interconnects suffer from interconnect or bus **skew**, because the differences in wire length.
+- Consider the following interconnect:
+
+![](image/2022-10-22-16-09-51.png)
+
+
 
 #### 4.5: Interconnect Types
 
