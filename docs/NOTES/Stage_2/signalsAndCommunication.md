@@ -952,7 +952,7 @@ $$
 
 ![](2022-10-21-11-28-59.png)
 
-#### 5: Entropy 
+### 5: Entropy 
 
 - Entropy is the average amount of information carried by a message $X$ defined by $M$, $X_1,X_2,X_M$.
 
@@ -966,7 +966,7 @@ $$
 
 - The entropy of a source $H(X)$ is the average of uncertainty about the source input before the output is observed.
 
-##### 5.1: Conditional Entropy 
+#### 5.1: Conditional Entropy 
 
 - The conditional entropy of a source input selected from an alphabet $X$ given that we observed an output symbol $Y$ is given by:
 $$
@@ -996,7 +996,7 @@ $$
 
 - This is called the **mutual information**.
 
-#### 6: Mutual Information 
+### 6: Mutual Information 
 
 - The difference between the H(X) and H(X|Y) is called the average **mutual information I(X,Y)**.
 
@@ -1020,7 +1020,7 @@ $$
   - I(X,Y) = I(Y,X)
   - I(X,Y) $\le$ 0
 
-#### 7： Capacity
+### 7： Capacity
 
 - The capacity of a channel is the max rate at which information can be transmitted error free and is measured in **bits per second (bps)**.
 - The average mutual information is dependent on the input probability distribution and the channel.
@@ -1031,7 +1031,7 @@ $$
 - We will now determine the capacity of two simple channels: the binary symmetric channel and the binary erasure channel.
 
 
-##### 7.1: Capacity of the Binary Symmetric Channel 
+#### 7.1: Capacity of the Binary Symmetric Channel 
 
 ![](image/2022-10-21-19-07-08.png) 
 
@@ -1049,13 +1049,13 @@ To maximize $I(X,Y)$ we set $\alpha =1/2 $ and the capacity of the BSC is:
 
 - So the capacity of the BSC is $C = 1-H(p)$
 
-##### 7.2: Capacity of the Binary Erasure Channel 
+#### 7.2: Capacity of the Binary Erasure Channel 
 
 ![](image/2022-10-21-19-14-01.png)
 
 ![](image/2022-10-21-19-14-15.png)
 
-##### 7.3: Comparison of BSC and BEC Channel Capacity
+#### 7.3: Comparison of BSC and BEC Channel Capacity
 
 ![](image/2022-10-21-19-15-08.png)
 
@@ -1080,6 +1080,60 @@ $$
 
 ![](image/2022-10-21-19-32-32.png)
 
+- The bandwidth shows that as bandwidth $B\rightarrow \infty$, $E_b/N_0\rightarrow -1.6dB$. This is the minimum value of the signal-to-noise ratio $E_b/N_0$ where it is possible to ensure error free transmission.
+
+### 8: Source Coding 
+
+- Sourcing coding involves representing each symbol in an alphabet as unique binary codewords.
+
+- The aim is to minimize the average length of the binary codewords.
+
+- Usually, some symbols are more likely to occur. In this case, those symbols that occurs less often are assigned longer words.
+
+- Mores code is an example of a source code where the length of codeword where the length of codeword depends on the frequency of the letters.
 
 
+![](image/2022-10-22-14-35-32.png)
+
+### 9: Code efficiency
+
+- A discrete memoryless source generates $N$ symbols, $s_1$ to $s_N$ with corresponding probability $P(s_1)$ to $P(s_N)$. The source encoder then assigns a binary codeword to each symbol with lengths $l_1$ to $l_N$ (The length could be fixed or variable)
+
+- Therefore the average length of the codewords is:
+
+$$
+\bar{L} = \displaystyle\Sigma_{i=1}^N P(s_i)l_i
+$$
+
+- We define a ratio called **code efficiency** $\eta$ as:
+
+$$
+\eta = \frac{L_{min}}{\bar{L}}
+$$
+
+where $L_{min}$ is the minimum average length of the codewords.
+
+- The value of $L_{min}$ id given in Shannon's **source-coding theorem**.
+
+- Given a discrete memoryless source of entropy $H(X)$, the average codeword length is bounded as:
+
+$$
+\bar{L} \le H(X)
+$$
+
+- The code efficiency can vary between 0 and 1. Ideally we would like the efficiency to be 1.
+
+![](image/2022-10-22-15-06-05.png)
+
+![](image/2022-10-22-15-08-11.png)
+
+- In order to increase the source efficiency, we need to reduce the average length of the source codewords.
+
+#### 9.1: Variable Length 
+
+We must ensure that the code can be decoded. The following code I cannot be uniquely, as the '00' have the same prefix as '0'.
+
+![](image/2022-10-22-15-15-59.png)
+
+Code II do not have same prefix so that can be used. This is known as a **prefix code**.
 
