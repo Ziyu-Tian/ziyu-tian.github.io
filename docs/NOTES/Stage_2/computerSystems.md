@@ -438,11 +438,88 @@
 
 ![](image/2022-10-22-16-09-51.png)
 
+- Uneven wire lengths between send and receive nodes.
+- Bound to cause skew between them.
+- Designer need to design protocols addressing worst case skew times.
+- Also affects the interconnect clock frequency.
 
 
 #### 4.5: Interconnect Types
 
+There are two fundamentally different bus protocols:
+
+- Synchronous:
+    - Includes a clock in the control lines.
+    - A fixed protocol for communication relative to the clock.
+    - Advantage: involves very little logic and can run fast.
+    - Disadvantages: every device on the bus must run at the same clock rate to avoid clock skew, it cannot be very long.
+
+- Asynchronous:
+    - It is not clocked.
+    - It can accommodate a wide range of device.
+    - It can be lengthened without worrying about clock skew.
+    - It requires a (rather complicated) handshaking protocol with overhands.
 
 
-#### 4.6: Asynchronous interconnects
+#### 4.6: Synchronous interconnects
 
+- Having a clock line, which drives the interconnect transactions based on cycles.
+- Interconnect cycles = several CPU cycles (typically 4-10)
+- Example timing diagram: CPU reads data from device 
+- Slanted line mean the possible change.
+
+![](image/2022-10-23-09-30-11.png)
+
+- At T0, the CPU sets the address lines and sets the mode bits to "read".
+- The clock pulse width (T1-T0) must be long enough to:
+    - accommodate propagation delay (skew)
+    - allow the receiver to read the address 
+- The receiver is ready to receive at T1. It sets the data lines.
+- The data is read into the interconnect. At A2, the CPU reads the data.
+- All lines are cleared for a new bus cycles at T3.
+
+#### 4.7: Asynchronous interconnects
+
+- Do not have a global/master clock, BUS cycles can have any length, depending upon the master/slave.
+
+- Transfer is achieved by means of **handshaking**.
+
+- Input (i.e.Read) operation:
+
+![](image/2022-10-23-09-57-55.png)
+
+- (T5-T0) is one interconnect cycle. At T0, the CPU sets the address and mode lines.
+
+- The CPU allows until T1 for bus skew. It then sets the Ready signal. The addressed device receives the Ready signal shortly before T2. It sets the data line, and raises the Accept line to **acknowledge**  receipt.
+
+- When the CPU sees the Accept, it allows for skew. At T3, it lowers Ready and read the data. After a bus skew delay, the CPU removes the address T4.
+
+- At T5, the addressed device sees Ready going down. It lowers Accept and removes the data.
+
+- The bus cycle is then finished.
+
+- Output (Write) operation form CPU to device
+
+![](image/2022-10-23-18-38-43.png)
+
+- The CPU provides the data, so this is made immediately.
+
+#### 4.8: Interconnect Topology 
+
+- Topology: Specifies the way interconnect are wired.
+
+- Different Topologies:
+    - Shared bus:
+        - Simplest, State-of-the-art 
+        - Simpler arbitration protocols 
+        - Scalability issues 
+    - Point-to-point
+        - ideal but high cost 
+        - lots of wires 
+        - Poor scalability
+    - Cross bar or Network-on-chip 
+        - emerging modular architectures
+        - Packet switching based
+    - Irregular interconnect 
+        - Highly customized for given application 
+        - not good scalability
