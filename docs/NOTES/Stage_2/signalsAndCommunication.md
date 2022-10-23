@@ -1044,7 +1044,7 @@ $$
 
 ![](image/2022-10-21-19-09-36.png)
 
-To maximize $I(X,Y)$ we set $\alpha =1/2 $ and the capacity of the BSC is:
+To maximize $I(X,Y)$ we set $\alpha =1/2$ and the capacity of the BSC is:
 
 ![](image/2022-10-21-19-11-03.png)
 
