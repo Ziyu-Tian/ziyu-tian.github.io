@@ -969,9 +969,12 @@ $$
 #### 5.1: Conditional Entropy 
 
 - The conditional entropy of a source input selected from an alphabet $X$ given that we observed an output symbol $Y$ is given by:
+
+
 $$
-H(X|Y=y_i) = \displaystyle\Sigma _{j=1}^N{P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_i)}}}
+H(X|Y=y_i) =\displaystyle\Sigma_{j=1}^N{P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_i)}}}
 $$
+
 
 - Since $H(X|Y=y_i)$ can values from $y_1$ to $y_M$, then the mean conditional entropy is:
 
