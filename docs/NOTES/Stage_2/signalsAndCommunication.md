@@ -981,7 +981,7 @@ $$
 $$
 \begin{aligned}
     H(X|Y) &= \displaystyle\Sigma_{i=1}^N {P(Y_i)H(X|Y=y_i)} \\
-    &= \displaystyle\Sigma _{i=1}^N \Sigma _{j=1} ^M P(y_i)P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
+    &= \displaystyle\Sigma_{i=1}^N \Sigma_{j=1} ^M P(y_i)P(x_j|y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
 \end{aligned}
 $$
 
@@ -990,7 +990,7 @@ $$
 So the conditional entropy can be:
 
 $$
-H(X|Y) = displaystyle\Sigma _{i=1}^N \Sigma _{j=1} ^M P(X_j,Y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
+H(X|Y) = \displaystyle\Sigma_{i=1}^N\Sigma _{j=1} ^M P(X_j,Y_i)\log_{2}{\frac{1}{P(x_j|y_1)}}
 $$
 
 - H(X|Y) represents the uncertainty of the source input after the output is observed.
