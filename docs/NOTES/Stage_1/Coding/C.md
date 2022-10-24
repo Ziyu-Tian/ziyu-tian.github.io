@@ -285,7 +285,7 @@ int sum(int x,int y){//type,name,parameters
     return a+b;//the return value
 }
 ```
-### 2: Standard Library Function
+### 2: Library Function
 #### 2.1: ctype.h
 ```cpp
 isdigit();//check if is a decimal digit
@@ -351,6 +351,14 @@ if (x < 10) return 1;
     return numberOfDigits(x / 10) + 1;
 }
 ```
+
+#### 2.5: Libraries 
+
+
+
+
+
+
 ### 3: Main function 
 - We can also define the arguments of main function:
 
@@ -447,7 +455,6 @@ double integerPower(double, int = 2);
 ### 8: Lambda functions 
 
 ![](2022-10-24-10-47-17.png)
-
 
 
 ## VI: Arrays and application
