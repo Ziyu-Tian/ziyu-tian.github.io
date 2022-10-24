@@ -412,6 +412,43 @@ double var = 5;
 half(var);
 }
 ```
+### 6: The array as function input
+
+```cpp
+int sum(int arr[],int size){}
+// the dimension can be empty
+double print(const int array[][5][10]) {}
+// the multi-dimension arrays can only leave one empty
+
+
+```
+
+### 7: Function overloading
+
+- Possible to create multiple functions with the same name but different argument list (number of parameters, type of parameters, order of parameters).
+
+```cpp
+double norm(double a, double b)
+{
+return a*a + b*b;
+}
+double norm(double a, double b, double c)
+{
+return a*a + b*b + c*c;
+}
+```
+
+- A variant of function overload is given the arguments default values.
+
+```cpp
+double integerPower(double, int = 2);
+```
+
+### 8: Lambda functions 
+
+![](2022-10-24-10-47-17.png)
+
+
 
 ## VI: Arrays and application
 ### 1: Array
