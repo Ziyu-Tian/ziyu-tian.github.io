@@ -639,7 +639,7 @@ $$
 g_m = \frac{dI_{DS}}{dV_{GS}} = \beta V_{DS} = \frac{W}{L}\MU _N C_{ox}(V_{GS}-V_T)
 $$
 
-So $t = \displaystyle\frac{L^2}{\mu _n (V_{GS}-V_T)}$
+So $t = \displaystyle\frac{L^2}{\mu_n (V_{GS}-V_T)}$
 
 This is related to the transistor cut off frequency, $f_t$, 
 
