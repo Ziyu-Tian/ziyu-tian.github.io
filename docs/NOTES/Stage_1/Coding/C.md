@@ -277,6 +277,7 @@ for(i = 0; i < count; i++)//initial,condition and increments
 ### 1: Define a function
 ```cpp
 void example(char str[])//non-return function
+// The function Signature
 {
 //the main part
 }
@@ -381,6 +382,36 @@ The result will be 100.
 - One variable can also overshadow names in nested scopes.
 - A variable only takes up memory while it is in scope, and deleted when it goes out of the scope.
 - Blocks $\approx$ Scope
+
+### 5: Call-by-value and Call-by-reference
+
+- Call-by-value
+```cpp
+double half(double input)
+// function can not manipulate the parameters and it is copied in memory
+{
+return input/2;
+}
+int main()
+{
+double var = 5;
+double half_of_var = half(var);
+}
+```
+- Call-by-reference
+
+```cpp
+void half(double & input)
+// the function can manipulate the arguments
+{
+input /= 2;
+}
+int main()
+{
+double var = 5;
+half(var);
+}
+```
 
 ## VI: Arrays and application
 ### 1: Array
