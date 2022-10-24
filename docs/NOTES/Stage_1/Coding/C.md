@@ -374,6 +374,14 @@ In cmd mode, after the compile with g++, type in:
 ```
 The result will be 100.
 
+### 4: Scope of variables 
+
+- A scope is an area of visibility of a defined name.
+- Scope can also be nested.
+- One variable can also overshadow names in nested scopes.
+- A variable only takes up memory while it is in scope, and deleted when it goes out of the scope.
+- Blocks $\approx$ Scope
+
 ## VI: Arrays and application
 ### 1: Array
 ```cpp
