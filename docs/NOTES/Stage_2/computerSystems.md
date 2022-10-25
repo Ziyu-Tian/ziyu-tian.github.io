@@ -523,3 +523,5 @@ There are two fundamentally different bus protocols:
     - Irregular interconnect 
         - Highly customized for given application 
         - not good scalability
+
+#### 4.9: 
