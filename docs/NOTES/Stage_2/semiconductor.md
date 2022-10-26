@@ -636,7 +636,7 @@ $$
 The capacitance us $C_{ox}WL$, at saturation, this can be estimated:
 
 $$
-g_m = \frac{dI_{DS}}{dV_{GS}} = \beta V_{DS} = \frac{W}{L}\MU _N C_{ox}(V_{GS}-V_T)
+g_m = \frac{dI_{DS}}{dV_{GS}} = \beta V_{DS} = \frac{W}{L}\mu _N C_{ox}(V_{GS}-V_T)
 $$
 
 So $t = \displaystyle\frac{L^2}{\mu_n (V_{GS}-V_T)}$
