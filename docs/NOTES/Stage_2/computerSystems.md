@@ -259,22 +259,23 @@
 ##### 3.9.2: DRAM Read: Sense Amplifier 
 ![](image/2022-10-12-14-45-34.png)
 ![](image/2022-10-12-14-52-52.png)
+
 - To read '1':
-    - WL = '0', the up and down BL keep 0.5 V.
-    - WL = '1', the BL connected with C (HI), the discharging begin.
-    - In the side with BL, the voltage increased and other side decreased.
-    - Then the signal '1' in BL side can be detected.
-    - The voltage will soon charge the C again.
+  - WL = '0', the up and down BL keep 0.5 V.
+  - WL = '1', the BL connected with C (HI), the discharging begin.
+  - In the side with BL, the voltage increased and other side decreased.
+  - Then the signal '1' in BL side can be detected.
+  - The voltage will soon charge the C again.
 - To read '0':
-    - WL = '0', the up and down keep 0.5 V.
-    - WL = '1', the BL connected with C (LOW), the charging begin.
-    - In the side with BL, the voltage decreased and other side decreased.
-    - Then the signal '0' in BL side can be detected.
-    - The voltage will soon discharge the C again.
+  - WL = '0', the up and down keep 0.5 V.
+  - WL = '1', the BL connected with C (LOW), the charging begin.
+  - In the side with BL, the voltage decreased and other side decreased.
+  - Then the signal '0' in BL side can be detected.
+  - The voltage will soon discharge the C again.
 - To write dada:
-    - The double side pre-charged to 0.5 V.
-    - Activate the WL, set BL to '0' or '1'.
-    - Data wrote to cell.
+  - The double side pre-charged to 0.5 V.
+  - Activate the WL, set BL to '0' or '1'.
+  - Data wrote to cell.
 
 ![](image/2022-10-13-07-57-20.png)
 

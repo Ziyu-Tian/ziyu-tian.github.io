@@ -1140,3 +1140,8 @@ We must ensure that the code can be decoded. The following code I cannot be uniq
 
 Code II do not have same prefix so that can be used. This is known as a **prefix code**.
 
+
+### 10: Huffman Coding 
+
+## VI: Introduction to Signals 
+
