@@ -532,8 +532,6 @@ There are two fundamentally different bus protocols:
 
 ![](image/2022-11-01-11-06-46.png)
 
-#### 4.10: Shared Bus 
-
 - A bus transaction or bus cycle includes two parts:
     - Issuing the command and address.
     - Transferring the data.
@@ -546,13 +544,13 @@ There are two fundamentally different bus protocols:
 
 ![](image/2022-11-01-11-22-01.png)
 
-#### 4.11: Shared Bus Example: ARM AMBA 
+##### 4.9.1: Shared Bus Example: ARM AMBA 
 
 - AMBA: Advanced Microprocessor Bus Architecture。
 
 ![](image/2022-11-01-16-59-35.png)
 
-#### 4.12: AHB Architecture
+##### 4.9.2: AHB Architecture
 
 ![](image/2022-11-01-17-01-12.png)
 
@@ -562,7 +560,7 @@ There are two fundamentally different bus protocols:
 
 - The three masters and slaves shared one bandwidth.
 
-#### 4.13: AHB Basic Transfer 
+##### 4.9.3: AHB Basic Transfer 
 
 - The transfer is divided into two parts: Address phase and Data phase.
 
@@ -576,7 +574,7 @@ There are two fundamentally different bus protocols:
 
 ![](image/2022-11-01-17-24-33.png)
 
-#### 4.14: AHB Pipelining 
+##### 4.9.4: AHB Pipelining 
 
 - Transaction pipelining increase bus bandwidth.
 
@@ -586,7 +584,7 @@ There are two fundamentally different bus protocols:
 
 - During the transactions shown in picture, A,B and C three transactions (instructions) finished, which have 5 cycles. So the CPI (cycles per instruction) is 5/3.
 
-#### 4.15: Shared Bus: Multi-core Dilemma 
+##### 4.9.5: Shared Bus: Multi-core Dilemma 
 
 - Achieving parallelism using a shared global bus is hard with multi-core or multi-masters:
 
@@ -597,12 +595,54 @@ There are two fundamentally different bus protocols:
     - Higher performance.
     - Each master have own bandwidth which no need to share as AHB.
 
-#### 4.12: Shared Bus Example: Intel PCI 
+##### 4.9.6: Shared Bus Example: Intel PCI 
 
-#### 4.13: USB: Universal Serial Bus 
+- PCI: Peripheral component interconnection
+    - High-speed shared bus
+    - Intel released PCI in 1990s 
+    - Bit-width / speed depends on the Peripherals 
+
+![](image/2022-11-01-20-08-12.png)
+
+#### 4.9.7: PCI Arbitration 
+
+- PCI uses a centralized, synchronous arbitration scheme.
+    - Each device has its own unique GNT(Grant) & REQ (Request) line.
+    - Simple request-grant handshake is used to grant bus access.
+
+![](image/2022-11-01-20-11-21.png)
+
+#### 4.10: USB: Universal Serial Bus 
+
+- Shared bus for low-speed I/O device.
+
+- Expandable
+    - through other buses 
+    - up to 127 devices (one for root)
+    - serial data-in and data-out 
+    - Simple design:
+        - Also supplying power
+        - Support for real-time device 
+        - Simple to manufacture 
+- Cable contain four wires 
+    - 2 data lines 
+    - 1 power (+5V) and 1 GND 
+- Data transmitted as:
+    - '0' is transmitted as a voltage transition (0 to 1 or 1 to 0).
+    - '1' as the absence of transition (keep).
+    - Sequence of '0' forms a regular pulse stream.
+
+![](image/2022-11-01-20-16-42.png)
+
+- Has a root hub connected to the main bus 
+    - Following hubs connected to this hub forming a tree-topology.
+- USB root hub multiplex data from devices and transmits data through regular polling.
+
+![](image/2022-11-01-20-19-58.png)
 
 
-#### 4.14: Point-to-Point
+
+#### 4.11: Point-to-Point
 
 Every node connected to every other.
 
@@ -610,17 +650,82 @@ Every node connected to every other.
 
 - Lowest latency 
 
-- Ideal except of the cost
+- Ideal except of the cost.
+
+- Not scalable.
+
+- eg. Nvidia GPU 
 
 ![](image/2022-11-01-11-55-04.png)
 
-#### 4.15: Crossbar 
+#### 4.12: Crossbar 
 
-lots of switches to scale up
+![](image/2022-11-01-20-27-00.png)
 
-#### 4.16: Network-on-Chip 
+- Every node connected to every other busy node.
 
-- very scalable 
+- Good for small number of nodes. 
 
-#### 4.17: NoC Router 
+- Low latency and high throughput (data in and out)
+
+- Expansive and not scalable.
+    - lots of switches to scale up
+
+
+#### 4.13: Network-on-Chip 
+
+- Tile-based scalable architecture:
+    - Each core is connected via a network interface, router (switch).
+
+- Enable concurrent (parallel) sends to non-conflicting destinations.
+
+- Low latency and high throughput.
+
+- Expansive.
+
+- Scalable.
+
+![](image/2022-11-01-20-30-43.png)
+
+##### 4.13.1: NoC Router 
+
+![](image/2022-11-01-20-31-51.png)
+
+- The router can receive and send the direction of last and next step (eg. south-in and north-out).
+
+- There is also buffer in router to store the data in order to read or write in one time to protect the device.
+
+##### 4.13.2: NoC Network Interface 
+
+![](image/2022-11-01-20-36-51.png)
+
+- FIFO means the first-in / first-out controller.
+
+- Packet is an assemble of data, like the packed mail parcel.
+
+##### 4.13.3: NoC routing 
+
+- Affects performance and communication scalability.
+
+- Example routing algorithm on-chip:
+    - Source routing 
+        - Source tile tells the packet specifically how to reach the destination.
+        - Simple but not scalable.
+    - XY routing 
+        - Go as far close to destination in X direction first, then in Y direction.
+        - Adaptive to NoC congestion.
+
+
+##### 4.13.4: XY routing 
+
+![](image/2022-11-01-20-56-15.png)
+
+##### 4.13.5: Fault-tolerant XY routing 
+
+![](image/2022-11-01-20-56-57.png)
+
+##### 4.13.6: A typical modern system-on-chip 
+
+![](image/2022-11-01-20-57-56.png)
+
 
