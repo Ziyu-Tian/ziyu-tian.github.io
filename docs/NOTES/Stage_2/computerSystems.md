@@ -525,4 +525,63 @@ There are two fundamentally different bus protocols:
         - Highly customized for given application 
         - not good scalability
 
-#### 4.9: 
+#### 4.9: Shared Bus 
+
+- Simple and Cost effective.
+- Easy to implement coherence.
+
+![](image/2022-11-01-11-06-46.png)
+
+#### 4.10: Shared Bus 
+
+- A bus transaction or bus cycle includes two parts:
+    - Issuing the command and address.
+    - Transferring the data.
+
+- The **master** starts the bus transaction through command & address.
+
+- The **slave** is the one who responds to the address by:
+    - Sending data to master upon request.
+    - Receiving data from the master.
+
+![](image/2022-11-01-11-22-01.png)
+
+
+#### 4.11: Shared Bus: Multi-core Dilemma 
+
+- Achieving parallelism using a shared global bus is hard with multi-core or multi-masters:
+
+![](image/2022-11-01-11-25-50.png)
+
+- We use new AXI4 (Advanced exXtensible Interface) AMBA standards feature:
+    - multi-layering, simpler handshaking
+    - Higher performance.
+    - Each master have own bandwidth which no need to share as AHB.
+
+#### 4.12: Shared Bus Example: Intel PCI 
+
+#### 4.13: USB: Universal Serial Bus 
+
+
+#### 4.14: Point-to-Point
+
+Every node connected to every other.
+
+- Lowest contention.
+
+- Lowest latency 
+
+- Ideal except of the cost
+
+![](image/2022-11-01-11-55-04.png)
+
+#### 4.15: Crossbar 
+
+lots of switches to scale up
+
+#### 4.16: Network-on-Chip 
+
+- very scalable 
+
+#### 4.17: NoC Router 
+
