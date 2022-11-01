@@ -368,7 +368,7 @@
 - Operations (NOR-based flash)
     - Reading:
         - For the '0', higher CG bias ($V_{T0}>5V$) required. (high voltage required to overcome the channel potential and the trapped charged impact)
-        - For the '1', lower CG bias ($V_{T1}<V_{T0$) required.
+        - For the '1', lower CG bias ($V_{T1}<V_{T0}$) required.
     - Writing:
         - Need hot electrons injection (HEI)
         - HEI follow the quantum tunnelling.
