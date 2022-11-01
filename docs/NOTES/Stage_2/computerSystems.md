@@ -546,8 +546,47 @@ There are two fundamentally different bus protocols:
 
 ![](image/2022-11-01-11-22-01.png)
 
+#### 4.11: Shared Bus Example: ARM AMBA 
 
-#### 4.11: Shared Bus: Multi-core Dilemma 
+- AMBA: Advanced Microprocessor Bus Architecture。
+
+![](image/2022-11-01-16-59-35.png)
+
+#### 4.12: AHB Architecture
+
+![](image/2022-11-01-17-01-12.png)
+
+- The red squared area is the bus.
+
+- The three masters shared the one address bus, one write bus and one read bus.
+
+- The three masters and slaves shared one bandwidth.
+
+#### 4.13: AHB Basic Transfer 
+
+- The transfer is divided into two parts: Address phase and Data phase.
+
+- One cycle for address and the other or data (read/write).
+
+![](image/2022-11-01-17-20-12.png)
+
+- However, the slave may have different wait states (the bus skew or have busy state).
+
+- The first two data phases are meaning waiting time.
+
+![](image/2022-11-01-17-24-33.png)
+
+#### 4.14: AHB Pipelining 
+
+- Transaction pipelining increase bus bandwidth.
+
+![](image/2022-11-01-17-41-33.png)
+
+- As the AHB have different address and data controller, in one cycle time (for example the second cycle in picture), instruction B is getting address while A is doing data writing.
+
+- During the transactions shown in picture, A,B and C three transactions (instructions) finished, which have 5 cycles. So the CPI (cycles per instruction) is 5/3.
+
+#### 4.15: Shared Bus: Multi-core Dilemma 
 
 - Achieving parallelism using a shared global bus is hard with multi-core or multi-masters:
 
