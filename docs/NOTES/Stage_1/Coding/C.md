@@ -359,6 +359,8 @@ if (x < 10) return 1;
 
 
 
+
+
 ### 3: Main function 
 - We can also define the arguments of main function:
 

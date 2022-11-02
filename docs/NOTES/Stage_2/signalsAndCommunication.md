@@ -1023,6 +1023,8 @@ $$
   - I(X,Y) = I(Y,X)
   - I(X,Y) $\le$ 0
 
+- Note that if we know the $H(X|Y)$, we can get: $H(Y|X) = H(X|Y)-H(X)+H(Y)$
+
 ### 7： Capacity
 
 - The capacity of a channel is the max rate at which information can be transmitted error free and is measured in **bits per second (bps)**.

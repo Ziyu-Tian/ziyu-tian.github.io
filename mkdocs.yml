@@ -61,6 +61,7 @@ nav:
             - Semiconductors Devices: 'NOTES/Stage_2/semiconductor.md'
             - Signals and Communication: 'NOTES/Stage_2/signalsAndCommunication.md'
             - Computer Systems and Microprocessors: 'NOTES/Stage_2/computerSystems.md'
+            - Analogue Electronics: 'NOTES/Stage_2/analogElectronic.md'
 
     - Dev: 
         - 'DEV/index.md'
