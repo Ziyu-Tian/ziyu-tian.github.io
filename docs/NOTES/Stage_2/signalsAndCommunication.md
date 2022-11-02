@@ -1145,5 +1145,27 @@ Code II do not have same prefix so that can be used. This is known as a **prefix
 
 ### 10: Huffman Coding 
 
+- Huffman codes are variable length codes.
+
+- The Huffman coding assign each symbol a binary codeword that is approximately equal to the amount of information given by the symbol.
+
+- Huffman coding algorithm:
+    - List the symbol in descending order of probability (highest at the top)
+    - Take two smallest probabilities, add them to forma new probability and reorder the probabilities.
+    - Repeat this process at each stage until only two probabilities remain.
+    - Assign 0 and 1 to the two final symbols. With each successive split, add another 0 and 1 on the end of the previous codeword to form another codeword.
+
+- For example:
+
+![](image/2022-11-02-14-37-51.png)
+
+then:
+
+![](image/2022-11-02-14-42-30.png)
+
+Note that the one who is successfully split will be add '0' at the front, the fixed (no split) will be  added '1'.
+
+![](image/2022-11-02-14-44-20.png)
+
 ## VI: Introduction to Signals 
 
