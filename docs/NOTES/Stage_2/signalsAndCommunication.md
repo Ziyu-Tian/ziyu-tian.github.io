@@ -1269,6 +1269,119 @@ $$
 - The energy of a signal can be finite or infinite. The energy of a periodic signal is infinite.
 - A signal with finite energy is called an **energy signal**.
 
-- The energy of a discrete-time signal is the sum
+- The energy of a discrete-time signal is the sum of the discrete values squared.
+
+$$
+E = \Sigma _{n = -\infty} ^{\infty}{|v(n)|^2}
+$$
+
+![](image/2022-11-03-10-05-48.png)
+
+### 10: Average Signal Power 
+
+- The average power of a continuous-time signal is the time average of its energy calculated over a long time interval.
+
+$$
+P_{av} = \lim_{T_0\to \infty}\frac{1}{T_0}\int _{-T_0/2} ^{T_0/2}{|v(t)|^2}{\rm d}t
+$$
+
+- For a periodic continuous-time signal, the average power is calculated over one period $T$:
+
+$$
+P_{av} = \frac{1}{T}\int _{-T/2} ^{T/2}{|v(t)|^2}{\rm d}t
+$$
+
+- The average power of a discrete-time signal is:
+
+$$
+P_{av} = \lim_{B\to \infty} \frac{1}{2N+1}\Sigma _{n=-N} ^{N}{|v(n)|^2}
+$$
+
+- If the average power of a signal is finite then it said to be a **power signal**.
+
+### 11: Signals in the Frequency Domain 
+
+- All signals in the time domain can be represented in the frequency domain.
+
+- A single sine or cosine function has one frequency, which can be expressed as a shifted delta function.
+
+![](image/2022-11-03-10-17-39.png)
+
+- Time domain signals with more frequencies can be expressed as the sum of shifted delta functions:
+
+![](image/2022-11-03-10-18-45.png)
+
+![](image/2022-11-03-10-19-53.png)
+
+### 12: Negative Frequency 
+
+- The sine and cosine function can be written as the complex exponentials:
+
+$e^{j2\pi f_0 t} = \cos{(2\pi f_0 t)}+j\sin{(2\pi f_0 t)}$
+
+and 
+
+$e^{-j2\pi f_0 t} = \cos{(2\pi f_0 t)}-j\sin{(2\pi f_0 t)}$
+
+- Add both we can get:
+
+![](image/2022-11-03-10-24-11.png)
+
+![](image/2022-11-03-10-24-59.png)
+
+- Negative frequencies only occur when in complex exponential form.
+
+- In physical waveforms we see the combination of both negative and positive frequencies pairs to from single positive frequencies.
+
+### 13: Analogue-to-Digital (A/D) Conversion 
+
+![](image/2022-11-03-10-28-03.png)
+
+- The **sampler** converts the analogue signals $v(t)$ to discrete-time signals.
+
+- The **quantiser** maps the sampled values to a smaller set of discrete values.
+
+- The **coder** takes each discrete values and represents it as binary values.
+
+#### 13.1: Sampling 
+
+![](image/2022-11-03-10-34-52.png)
+
+#### 13.2: Discrete-Time Signals 
+
+- A discrete-time signal with period $N$, where N > 0:
+
+$$
+x(n+N) = x(n)
+$$
+
+- The smallest value of N is known as **fundamental period**
+
+- So $\sin{(2\pi f_d (N+n))=\sin{(2\pi f_d n)}$.
+
+This will be true if $2\pi f_d N = 2\pi k$.
+
+- As $f_d = \frac{k}{N}$, if k and N are relatively prime then the fundamental period will be n
+
+#### 13.3: Frequency of discrete-time signals 
+
+- The frequency of a discrete-time signal $f_d$ is measured in **cycles per sample**.
+
+- If the $-\frac{1}{2}\le f_d \le \frac{1}{2}$, the it is unique.
 
 
+![](image/2022-11-03-10-45-32.png)
+
+- For discrete-time signals, all frequencies satisfy $|f_d|>\frac{1}{2}$ are known as **aliases**.
+
+#### 13.4: Relationship between Analogue and Discrete-time signals 
+
+- Take an analogue signal $v(t) = \cos{(2\pi f_a t)}$.
+
+- If the signal sampled every $T_s$ seconds (or rate $f_a$), we get:
+
+$$
+v(t) = \cos{(2\pi f_a n T_s)} = \cos{\frac{2\pi f_a n}{f_s}}
+$$
+
+- The discrete-time signal has a frequency of $\frac{f_a}{f_s}$ cycles/samples. 
