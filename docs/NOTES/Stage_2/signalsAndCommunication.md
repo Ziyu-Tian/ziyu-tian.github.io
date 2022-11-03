@@ -1169,3 +1169,106 @@ Note that the one who is successfully split will be add '0' at the front, the fi
 
 ## VI: Introduction to Signals 
 
+### 1: Continuous-Time Signals 
+
+- A continuous signal is defined over all values of time.
+
+![](image/2022-11-02-14-46-02.png)
+
+### 2: Discrete-Time Signals 
+
+- Discrete-time signal is defined at specific values of time. 
+
+![](image/2022-11-02-14-46-56.png)
+
+### 3: Amplification 
+
+- Amplification means form $v(t)$ to $Av(t)$ and keep the time unchanged.
+- i.e. multiply a value at y-axis
+
+![](image/2022-11-02-14-48-22.png)
+
+### 4: Time Shifting 
+
+- Time shifting is moving the signal function in the time (x) axis.
+
+|![](image/2022-11-02-14-50-20.png)|![](image/2022-11-02-14-50-27.png)|
+|---|---|
+
+### 5: Time Scaling 
+
+- From $v(t)$ to $v(at)$.
+- For $a>1$, the signal compressed; for $a<1$, the function stretched.
+
+![](image/2022-11-02-14-52-55.png)
+
+### 6: Common Functions used in Signal Processing 
+
+#### 6.1: Impulse function
+
+$$
+ \delta (t) = \begin{cases}
+    1,\quad t=0 \\
+    0, \quad otherwise 
+\end{cases}
+$$
+
+![](image/2022-11-02-14-57-35.png)
+
+#### 6.2: Step function 
+
+$$
+u(t) = \begin{cases}
+    1,\quad t \le \\
+    0,\quad t < 0
+\end{cases}
+$$
+
+- Describe a process form '0' to '1'.
+
+#### 6.3: Unit Ramp function 
+
+$$
+R(t) = \begin{cases}
+    t,\quad t\le 0 \\
+    0,\quad t<0
+\end{cases}
+$$
+
+### 7: Mean Value of a Signal 
+
+- The mean value of a signal is defined as:
+
+$$
+\bar{v} = \frac{1}{(t_2-t_1)}\int _{t_1}^{t_2} v(t){\rm d}t
+$$
+
+- For a periodic signals the mean value is defined over the period $T$:
+
+![](image/2022-11-02-15-06-52.png)
+
+### 8: Root Mean Square Value 
+
+- The **Mean Square Value** of a signal between two points $t_1$ and $t_2$:
+
+$$
+\bar{v^2} = \displaystyle\frac{1}{(t_2-t_1)}\int _{t_1} ^{t_2}{v^2(t)}{\rm d}t
+$$
+
+### 9: Energy of a Signal
+
+
+- The energy, $E$, of a continuous-time signal is the area under the signal squared, i.e.:
+
+$$
+E = \displaystyle\int _{-\infty} ^{\infty} {|v(t)|^2}{\rm d}t
+$$
+
+![](image/2022-11-03-07-35-25.png)
+
+- The energy of a signal can be finite or infinite. The energy of a periodic signal is infinite.
+- A signal with finite energy is called an **energy signal**.
+
+- The energy of a discrete-time signal is the sum
+
+
