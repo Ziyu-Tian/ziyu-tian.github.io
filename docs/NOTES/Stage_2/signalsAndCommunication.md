@@ -1537,6 +1537,41 @@ $$
 
 ![](image/2022-11-04-13-48-20.png)
 
+#### 15.2: Digital Low-Pass Filtering of a distorted sin signal 
+
+![](image/2022-11-04-13-54-06.png)
+
+- The sampled values from the distorted sin are fed into the digital low-pass filter. We assume that the signal is zero for negative 'n'.
+
+![](image/2022-11-04-13-56-35.png)
+
+- The output of the filter shows that the filter has smoothed the distorted sin signal. There is still a small amount of distortion in the signal, but this can be removed by increasing the length of the filter.
+
+- Notice that the filtered signal is delayed by 4 samples compared with the original due to 4 memory elements.
+
+![](image/2022-11-04-14-23-36.png)
+
+### 16: Convolution 
+
+- Determine the response of a digital filter caused by input signal is one application of an important math operation called **convolution**. If we know the **impulse response** *h(n)* of a system then the convolution of input x(n) and h(n) to obtain y(n):
+
+$$
+y(n) = \Sigma _{k=-\infty}^{\infty}{x(k)h(n-k)}
+$$
+
+- For simplicity the convolution of two function $x(n)$ and $h(n)$ is denoted as $x(n)*h(n)$.
+
+- The convolution operation involves of four parts:
+    - **Flipping**: Reflect $h(k)$ in the y-axis to obtain $h(-k)$
+    - **Shifting**: Shift $h(-k)$ by n places to the right to obtain $h(n-k)$.
+    - **Multiplying**: Multiplying *x(k)* by *h(n-k)*.
+    - **Summing**: Add all values from the product *x(k)h(n-k)* to obtain *y(n)*.
+
+#### 16.1: Convolution Example
+
+![](image/2022-11-04-14-58-50.png)
+
+
 ## VII: Laplace Transform 
 
 $\mathcal{L}$
