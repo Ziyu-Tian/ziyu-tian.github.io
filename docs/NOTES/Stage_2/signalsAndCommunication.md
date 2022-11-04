@@ -1385,3 +1385,34 @@ v(t) = \cos{(2\pi f_a n T_s)} = \cos{\frac{2\pi f_a n}{f_s}}
 $$
 
 - The discrete-time signal has a frequency of $\frac{f_a}{f_s}$ cycles/samples. 
+
+- Therefore, we can find the expression of the $f_d$ related to the analogue frequency:
+
+$$
+f_d = \frac{f_a}{f_s}
+$$
+
+- As the range of an analogue signal is infinite, the range of $f_d$ should be:
+
+$$
+-\frac{1}{2}\le f_a \le \frac{1}{2}
+$$
+
+- The frequency of the analogue signal when sampled every $T_s$ seconds, or $f_s= \frac{1}{T_s}$, so:
+
+$$
+-\frac{f_s}{2}\le f_a \frac{f_s}{2}
+$$
+
+- Therefore, the highest frequencies of an analogue signal $f_a$ that is unique when sampled with sampling rate $f_s$ is:
+
+$$
+f_a = \frac{1}{2T_s} = \frac{f_s}{2}
+$$
+
+- The result of alias will be:
+
+![](image/2022-11-04-06-27-40.png)
+
+
+
