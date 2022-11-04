@@ -1414,5 +1414,117 @@ $$
 
 ![](image/2022-11-04-06-27-40.png)
 
+#### 13.5: Sampling Theorem 
+
+- In general, analogue signals are made up of many different sin signals summed together.
+
+- Therefore, any analogue signal must be sampled at a rate $f_{max}\le \frac{f_s}{2}$, where $f_{max}$ is the highest frequency in the analogue signal, to ensure the analogue signal can be recovered from the discrete time signal.
+
+- The minimum sampling rate required to recover the analogue signal from the discrete-time signal is called the **Niquist Rate**, $f_N$ and defined as:
+
+$$
+f_N = 2f_{max}
+$$
+
+- For example, $v(t) = \cos{(2\pi \times 100t)}$, if sampled at a rate of $f_s = 150$. As $ t = nT_s$, $T_s = \frac{1}{f_s}$:
+
+$$
+f(n) = \cos{(2\pi \times 100 \times \frac{n}{150})}
+$$
+
+- We can find the sampling frequency is larger than 1/2.
+
+- As $n = 150t$, $v(t) = \cos{(2\pi \times 50t)}$, which is not same as original signal.
+
+### 14: Linear Time Invariant (LTI) Systems 
+
+- If systems has inputs $x_1(t)$ and $x_2(t)$ and corresponding output $y_1(t)$ and $y_2(t)$ then it is **linear** if the sum of the weighted message $ax_1(t) + bx_2(t)$ generates the output $ay_1(t)+by_2(t)$.
+
+![](image/2022-11-04-11-45-45.png)
+
+- A system is **time invariant** if a tim  shift $\tau$ in the input causes the same time shift in the output:
+
+![](image/2022-11-04-11-47-29.png)
+
+- Hence this system is a **Linear Time Invariant System**.
+
+#### 14.1: Impulse Response
+
+- The impulse response $h(n)$ of a system shows the behavior of the system when the input is impulse function $\delta (n)$.
+
+![](image/2022-11-04-11-50-42.png)
+
+- Knowing the impulse response of LTI means we can determine the response to any sampled input.
 
 
+#### 14.2: Finite Impulse Response (FIR) System
+
+- The output of a FIR system depends only on the current input and past input value.
+
+- If the input of an impulse then the number samples at the output is finite and equal to the number of memory elements plus one.
+
+![](image/2022-11-04-13-14-57.png)
+
+![](image/2022-11-04-13-15-35.png)
+
+![](image/2022-11-04-13-16-30.png)
+
+![](image/2022-11-04-13-18-24.png)
+
+![](image/2022-11-04-13-19-05.png)
+
+- So the impulse response of the FIR filter is $h(n) = {1,0.5,0,0,...}$
+
+![](image/2022-11-04-13-21-22.png)
+
+#### 14.3: Infinite Impulse Response (IIR) Systems 
+
+- The output of an infinite impulse response system depends on the input and also output values, which are fed back and added to the input.
+
+- The feedback structure causes IIR system to generate an infinite number of samples at the output when the input is an impluse.
+
+![](image/2022-11-04-13-24-41.png)
+
+![](image/2022-11-04-13-25-37.png)
+
+![](image/2022-11-04-13-26-10.png)
+
+![](image/2022-11-04-13-26-26.png)
+
+![](image/2022-11-04-13-27-25.png)
+
+#### 14.4: Application of an IIR system 
+
+- The square root of a positive number A can be determined by recursive equation:
+
+$$
+y(n) = \frac{1}{2}[y(n-1)+\frac{x(n)}{y(n-1)}]
+$$
+
+- We initialize the memory element with y(-1), which is estimate of the square root of A. The input is a step response with amplitude A, i.e. x(n) = Au(n)
+
+![](image/2022-11-04-13-32-00.png)
+
+#### 14.5: Causal and Non-Causal Systems 
+
+- A system is **causal** if the output signal depends only on present and past inputs, but does not on future inputs.
+
+- Or else it is **non-causal**.
+
+- For a real-time signal processing, a non-causal system cannot be used as it is not possible to get the future values.
+
+- However, if the signal we wish to process has been recorded the non-causal system can be used
+
+### 15: Introduction to Digital Filters 
+
+- There are three types of filter: **low-pass, band-pass and high-pass**.
+
+- The low-pass filter allows low frequency signals to pass up to a cut-off frequency $f_c$.
+
+![](image/2022-11-04-13-41-06.png)
+
+## VII: Laplace Transform 
+
+$\mathcal{L}$
+
+$\mathfrak{R}$
