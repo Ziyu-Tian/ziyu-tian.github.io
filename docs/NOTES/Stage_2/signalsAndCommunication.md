@@ -1521,7 +1521,21 @@ $$
 
 - The low-pass filter allows low frequency signals to pass up to a cut-off frequency $f_c$.
 
-![](image/2022-11-04-13-41-06.png)
+- The band-pass filter allows a range of frequency signals to pass.
+
+- The high-pass filter allows high frequencies signals to pass.
+
+![](image/2022-11-04-13-43-39.png)
+
+#### 15.1: FIR Low-Pass Filter 
+
+- Discrete-time low-pass filters can also be realized using an FIR system.
+
+![](image/2022-11-04-13-46-30.png)
+
+- This low-pass filter has been designed to have a discrete-time cut-off frequency of 1/3 cycles/sample.
+
+![](image/2022-11-04-13-48-20.png)
 
 ## VII: Laplace Transform 
 
