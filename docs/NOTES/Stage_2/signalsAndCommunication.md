@@ -1604,10 +1604,10 @@ $$
 - The laplace transform is defined as:
 
 $$
-F(s) = \int _0 ^{\infty} {e^{-st}f(t){\rm d}t}
+F(s) = \int _0 ^{\infty} e^{-st}f(t){\rm d}t
 $$
 
-- We denote the laplace transform of $f(t)$ as $\mathcal{L}{f(t)$.
+- We denote the laplace transform of $f(t)$ as $\mathcal{L}\{f(t)\}$.
 
 - Lower case letters denotes function in the time domain, and upper case letters denotes function in the s domain.
 
@@ -1621,8 +1621,8 @@ $$
 
 $$
 \begin{aligned}
-    \mathcal{L}{f(t)+g(t)} &= \mathcal{L}{f(t)} + \mathcal{L}{g(t)} \\
-    \mathcal{L}{\alpha f(t)} &= \alpha \mathcal{L}{f(t)} \\
+    \mathcal{L}\{f(t)+g(t)\} &= \mathcal{L}\{f(t)\} + \mathcal{L}\{g(t)\} \\
+    \mathcal{L}\{\alpha f(t)\} &= \alpha \mathcal{L}\{f(t)\} \\
 \end{aligned}
 $$
 
@@ -1630,12 +1630,12 @@ $$
 
 #### 3.2: First Shift Theorem 
 
-- If $\mathcal{L}{f(t)}=F(s)$, then $\mathcal{L}{e^{-at}f(t)}=F(s+a)$
+- If $\mathcal{L}\{f(t)\}=F(s)$, then $\mathcal{L}\{e^{-at}f(t)\}=F(s+a)$
 
 ![](image/2022-11-05-11-27-40.png)
 
 #### 3.3: Second Shift Theorem 
 
-- If $\mathcal{L}f(t)=F(s)$, then $\mathcal{L$
+- If $\mathcal{L}\{f(t)\}=F(s)$, then $\mathcal{L}$
 
 $\mathfrak{R}$
