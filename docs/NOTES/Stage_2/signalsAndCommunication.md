@@ -1219,7 +1219,7 @@ $$
 
 $$
 u(t) = \begin{cases}
-    1,\quad t \le \\
+    1,\quad t \ge 0 \\
     0,\quad t < 0
 \end{cases}
 $$
@@ -1636,6 +1636,9 @@ $$
 
 #### 3.3: Second Shift Theorem 
 
-- If $\mathcal{L}\{f(t)\}=F(s)$, then $\mathcal{L}$
+- If $\mathcal{L}\{f(t)\}=F(s)$, then $\mathcal{L}\{u(t-d)f(t-d)\} = e^{-sd}F(s)$.
+
+![](image/2022-11-05-16-44-23.png)
+
 
 $\mathfrak{R}$
