@@ -1571,6 +1571,21 @@ $$
 
 ![](image/2022-11-04-14-58-50.png)
 
+![](image/2022-11-05-09-33-01.png)
+
+![](image/2022-11-05-09-34-52.png)
+
+#### 16.2: Multiple Fading Channel 
+
+- One application of the convolution operation is to model the effects of a multipath fading channel on a transmitted signal.
+
+![](image/2022-11-05-09-38-01.png)
+
+- At the receiver multiple copies of the signal arrive at different times and add constructively or destructively depending on the phase shift of each signal.
+
+- The multipath fading channel can be modelled as a low-pass FIR filter.
+
+![](image/2022-11-05-09-43-01.png)
 
 ## VII: Laplace Transform 
 
