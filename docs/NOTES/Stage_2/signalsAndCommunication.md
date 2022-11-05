@@ -1589,6 +1589,53 @@ $$
 
 ## VII: Laplace Transform 
 
-$\mathcal{L}$
+### 1: Introduction to Laplace Transform 
+
+- Laplace transforms used to solve linear differential equations with constant coefficient.
+
+- Produce the transfer functions of different systems to see how different parts of a system interact.
+
+### 2: Definition of Laplace Transform 
+
+- The laplace transform takes a function in time domain and transform it to the $s$ domain.
+
+- $s$ domain is a **complex frequency variable**, where $s = \sigma +j\omega$.
+
+- The laplace transform is defined as:
+
+$$
+F(s) = \int _0 ^{\infty} {e^{-st}f(t){\rm d}t}
+$$
+
+- We denote the laplace transform of $f(t)$ as $\mathcal{L}{f(t)$.
+
+- Lower case letters denotes function in the time domain, and upper case letters denotes function in the s domain.
+
+![](image/2022-11-05-11-07-23.png)
+
+![](image/2022-11-05-11-19-42.png)
+
+### 3: Laplace Transform Properties 
+
+#### 3.1: linearity 
+
+$$
+\begin{aligned}
+    \mathcal{L}{f(t)+g(t)} &= \mathcal{L}{f(t)} + \mathcal{L}{g(t)} \\
+    \mathcal{L}{\alpha f(t)} &= \alpha \mathcal{L}{f(t)} \\
+\end{aligned}
+$$
+
+![](image/2022-11-05-11-22-53.png)
+
+#### 3.2: First Shift Theorem 
+
+- If $\mathcal{L}{f(t)}=F(s)$, then $\mathcal{L}{e^{-at}f(t)}=F(s+a)$
+
+![](image/2022-11-05-11-27-40.png)
+
+#### 3.3: Second Shift Theorem 
+
+- If $\mathcal{L}f(t)=F(s)$, then $\mathcal{L$
 
 $\mathfrak{R}$
