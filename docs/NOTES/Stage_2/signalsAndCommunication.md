@@ -1641,7 +1641,45 @@ $$
 ![](image/2022-11-05-16-44-23.png)
 
 
+#### 3.4: Region of Convergence 
 
+- It was mentioned that 's' can be defined as a complex frequency, defined as $s=\sigma +j\omega$.
 
+- The real part of $s$, $\sigma$, must have restrictions placed on it so that the Laplace integral converges.
 
-$\mathfrak{R}$
+$$
+F(s) = \int _0 ^{\infty} f(t).e^{-st}{\rm d}t = \int_0^{\infty}e^{-\sigma t}e^{-j\omega t}{\rm d}t
+$$
+
+![](image/2022-11-12-21-10-53.png)
+
+- The term $e^{-\sigma t}$ diverges of converges depending on whether $\sigma <0$ or $\sigma >0$.
+
+- The integral will converge if $\sigma >0$, or $\mathfrak{R}{s}>0$, where $\mathfrak{R}{s}$ is the real part of $s$.
+
+![](image/2022-11-12-21-14-58.png)
+
+#### 3.5: Inverse Laplace Transform  
+
+- The inverse laplace transform, $\mathcal{L}^{-1}\{F(s)\}$, can convert from the s-domain back to time domain.
+
+- This can be achieved by using the common Laplace Transform.
+
+![](image/2022-11-12-21-20-31.png)
+
+#### 3.6: Finding inverse laplace transform using Partial Fraction 
+
+- When finding the inverse Laplace transform, we regularly need to write our expression in the s-domain in terms of partial fractions:
+
+![](image/2022-11-12-21-22-30.png)
+
+![](image/2022-11-12-21-22-54.png)
+
+#### 3.7: Laplace Transform of Derivative and Integrals 
+
+- $\mathcal{L}\{f'\} = sF(s)-f(0)$
+- $\mathcal{L}\{f''\} = s^2F(s)-sf(0)-f'(0)$
+
+- $\mathcal{L}\{\int _0 ^t f(t){\rm d}t\} = \frac{1}{s}F(s)$
+
+![](image/2022-11-12-21-32-46.png)
