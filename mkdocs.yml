@@ -46,6 +46,7 @@ extra:
 
 # [Navigation]
 nav:
+    - 'NOTES/index.md'
     - Notes:
         - 'NOTES/index.md'
         - Stage1_Notes:
