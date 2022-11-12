@@ -489,6 +489,8 @@ There are two fundamentally different bus protocols:
 
 ![](image/2022-10-23-09-57-55.png)
 
+![](image/2022-11-12-22-45-28.png)
+
 - (T5-T0) is one interconnect cycle. At T0, the CPU sets the address and mode lines.
 
 - The CPU allows until T1 for bus skew. It then sets the Ready signal. The addressed device receives the Ready signal shortly before T2. It sets the data line, and raises the Accept line to **acknowledge**  receipt.
@@ -504,6 +506,8 @@ There are two fundamentally different bus protocols:
 ![](image/2022-10-23-18-38-43.png)
 
 - The CPU provides the data, so this is made immediately.
+
+![](image/2022-11-12-22-46-06.png)
 
 #### 4.8: Interconnect Topology 
 
