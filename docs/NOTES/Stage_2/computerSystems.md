@@ -658,6 +658,10 @@ Every node connected to every other.
 
 - Not scalable.
 
+- O($n$) connection per node
+
+- O($n^2$) links
+
 - eg. Nvidia GPU 
 
 ![](image/2022-11-01-11-55-04.png)
