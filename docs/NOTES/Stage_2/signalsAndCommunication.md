@@ -39,13 +39,13 @@
 
 ### 4: Modulation 
 
-- A message information contains the control parameters of carrier signal of a carrier signal, so as to impress the information onto the carrier.
+- A message information contains the control parameters of a carrier signal, so as to impress the information onto the carrier.
 
 
 #### 4.1: The Message 
 
 - The message can be digital, analogue or multiple.
-- Analogue message, demoted by $*m(t)*$.
+- Analogue message, demoted by *m(t)*.
 - Digital message, denoted by $d(t)$.
 
 
@@ -215,9 +215,7 @@ For the SSB signal $v_s(t)=V_{DC}\cos{(2\pi f_c t)}+\frac{V_m}{2}\cos {(2\pi (f_
 the power is:
 
 $$
-
 P_{SSB}=\frac{v_{DC}^2}{2R_L}+\frac{V_m ^2}{8R_L}
-
 $$
 
 
@@ -305,7 +303,7 @@ $V_{out}=\frac{m(t)}{2}\cos{(2\pi \Delta ft+ \Delta \phi)}$
 
 * $2\pi f_c t + \phi _C$ is the angle of the carrier.
 
-* Frequency Modulation by varying f_c$, or phase modulation by varying $\varphi _c$.
+* Frequency Modulation by varying $f_c$, or phase modulation by varying $\varphi _c$.
 
 ### 2: Frequency Modulation 
 
@@ -1230,7 +1228,7 @@ $$
 
 $$
 R(t) = \begin{cases}
-    t,\quad t\le 0 \\
+    t,\quad t\ge 0 \\
     0,\quad t<0
 \end{cases}
 $$
@@ -1357,7 +1355,7 @@ $$
 
 - The smallest value of N is known as **fundamental period**
 
-- So $\sin{(2\pi f_d (N+n))=\sin{(2\pi f_d n)}$.
+- So $\sin{(2\pi f_d (N+n))}=\sin{(2\pi f_d n)}$.
 
 This will be true if $2\pi f_d N = 2\pi k$.
 
@@ -1378,7 +1376,7 @@ This will be true if $2\pi f_d N = 2\pi k$.
 
 - Take an analogue signal $v(t) = \cos{(2\pi f_a t)}$.
 
-- If the signal sampled every $T_s$ seconds (or rate $f_a$), we get:
+- If the signal sampled every $T_s$ seconds (or rate $f_s$), we get:
 
 $$
 v(t) = \cos{(2\pi f_a n T_s)} = \cos{\frac{2\pi f_a n}{f_s}}
@@ -1401,7 +1399,7 @@ $$
 - The frequency of the analogue signal when sampled every $T_s$ seconds, or $f_s= \frac{1}{T_s}$, so:
 
 $$
--\frac{f_s}{2}\le f_a \frac{f_s}{2}
+-\frac{f_s}{2}\le f_a \le \frac{f_s}{2}
 $$
 
 - Therefore, the highest frequencies of an analogue signal $f_a$ that is unique when sampled with sampling rate $f_s$ is:
@@ -1426,7 +1424,7 @@ $$
 f_N = 2f_{max}
 $$
 
-- For example, $v(t) = \cos{(2\pi \times 100t)}$, if sampled at a rate of $f_s = 150$. As $ t = nT_s$, $T_s = \frac{1}{f_s}$:
+- For example, $v(t) = \cos{(2\pi \times 100t)}$, if sampled at a rate of $f_s = 150$. As $t = nT_s$, $T_s = \frac{1}{f_s}$:
 
 $$
 f(n) = \cos{(2\pi \times 100 \times \frac{n}{150})}
@@ -1442,7 +1440,7 @@ $$
 
 ![](image/2022-11-04-11-45-45.png)
 
-- A system is **time invariant** if a tim  shift $\tau$ in the input causes the same time shift in the output:
+- A system is **time invariant** if a time shift $\tau$ in the input causes the same time shift in the output:
 
 ![](image/2022-11-04-11-47-29.png)
 
@@ -1638,6 +1636,9 @@ $$
 
 - If $\mathcal{L}\{f(t)\}=F(s)$, then $\mathcal{L}\{u(t-d)f(t-d)\} = e^{-sd}F(s)$.
 
+- 'u' is the step function.
+
+
 ![](image/2022-11-05-16-44-23.png)
 
 
@@ -1655,9 +1656,8 @@ $$
 
 - The term $e^{-\sigma t}$ diverges of converges depending on whether $\sigma <0$ or $\sigma >0$.
 
-- The integral will converge if $\sigma >0$, or $\mathfrak{R}{s}>0$, where $\mathfrak{R}{s}$ is the real part of $s$.
+- The integral will converge if $\sigma >0$, or $\mathfrak{R}{s}>0$, where $\mathfrak{\{R\}}{s}$ is the real part of $s$.
 
-![](image/2022-11-12-21-14-58.png)
 
 #### 3.5: Inverse Laplace Transform  
 
