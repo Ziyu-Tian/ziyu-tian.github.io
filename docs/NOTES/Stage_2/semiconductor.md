@@ -563,6 +563,8 @@ And these are depletion mode devices.
 
 - The channel-oxide-gate forms a capacitor with $C_{ox}$ per unit area. $Q = CV$ followed.
 
+- Note that the formula of capacitance $C=\frac{\epsilon_r \epsilon _0 A}{d}=\frac{\epsilon A}{d}$ can be applied. $\epsilon$ is the dielectric constant.
+
 - For a small length of channel dy:
     - $Q_y$ = Capacitance x (Voltage across the oxide in excess of $V_T$)
     - $Q_y = -C_{ox}Wdy(V_{GS}-V_y-V_T)$
@@ -593,7 +595,7 @@ As $E_y = -\frac{dV}{dy}$:
 
 $$
 \begin{aligned}
-    I_{SD} &= \displaystyle\int{J}{\rm ds\\
+    I_{SD} &= \displaystyle\int{J}{\rm} ds\\
     &= JWd \\
     &= \mu _n [-\displaystyle\frac{C_{ox}}{d}(V_{GS}-V_y-V_T)][-\displaystyle\frac{dV}{dy}Wd] \\
     &= W\mu _n C_{ox}(V_{GS}-V_y-V_T)\frac{dV}{dy}
@@ -622,7 +624,7 @@ $$
 I_{SD}=\frac{\beta}{2}(V_{GS}-V_T)^2
 $$
 
-- In real device, increasing $V_{DS$ above pinch off actually reduces the effective channel length, by increasing the depletion region around the drain and so there is a slight increase in $I_{SD}$.
+- In real device, increasing $V_{DS}$ above pinch off actually reduces the effective channel length, by increasing the depletion region around the drain and so there is a slight increase in $I_{SD}$.
 
 #### 3.2: Transistor Delay Time 
 
