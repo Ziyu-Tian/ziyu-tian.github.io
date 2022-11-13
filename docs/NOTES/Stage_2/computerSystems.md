@@ -679,6 +679,8 @@ Every node connected to every other.
 - Expansive and not scalable.
     - lots of switches to scale up
 
+- O($n^2$) cost
+
 
 #### 4.13: Network-on-Chip 
 
@@ -710,6 +712,8 @@ Every node connected to every other.
 - FIFO means the first-in / first-out controller.
 
 - Packet is an assemble of data, like the packed mail parcel.
+
+- The NI add headers for packetising and to remove headers when depacketsing.
 
 ##### 4.13.3: NoC routing 
 
