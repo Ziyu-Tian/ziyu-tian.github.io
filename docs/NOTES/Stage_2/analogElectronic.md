@@ -88,9 +88,7 @@ noted that we typically use $i_{ac}$ and $v_{ac}$ short for $\Delta I_{AC}$ and 
 
 ## II: Filters & Bode Plots 
 
-### 1: Passive frequency filtering 
-
-#### 1.1: Low Pass filter 
+### 1: Low Pass filter 
 
 ![](image/2022-11-14-11-38-41.png)
 
@@ -130,7 +128,7 @@ And the gain in dB = 20log(Vout/Vin):
 
 - The gain in dB in $f_c$ usually defines the band-width.
 
-#### 1.2: High Pass Filter 
+### 2: High Pass Filter 
 
 ![](image/2022-11-14-11-48-19.png)
 
@@ -146,7 +144,7 @@ $$
 
 ![](image/2022-11-14-12-48-31.png)
 
-#### 1.3: Multi-stage Filter 
+### 3: Multi-stage Filter 
 
 ![](image/2022-11-14-12-51-07.png)
 
@@ -154,8 +152,62 @@ $$
 V_{out2} = V_{in1} * (\frac{R_1^2}{R_1^2+X_{c1}^2})
 $$
 
-#### 1.4: Passive bandpass filter 
+### 4: Passive bandpass filter 
 
 ![](image/2022-11-14-13-07-20.png)
 
 **A band pass filter** is to be constructed using RC components will only allow a range of frequencies to pass, calculating the 
+
+- Note that the high pass filter defines the lower threshold.
+
+## III: BJT transistors - the analog perspective 
+
+### 1: Discrete BJT structure 
+
+![](image/2022-11-14-15-13-22.png)
+
+### 2: BJT large signal operation 
+
+#### 2.1: Ebers Moll model for BJT
+
+![](image/2022-11-14-15-19-11.png)
+
+For example of NPN:
+
+![](image/2022-11-14-15-22-25.png)
+
+where $\alpha _F$ is the forward current gain:
+
+$$
+\alpha _F = \frac{I_C}{I_E}
+$$
+
+and 
+
+$$
+\beta _F = \frac{I_C}{I_B}
+$$
+
+with some operations we can also get the relation between $\alpha$ and $\beta$:
+
+$$
+\beta _F = \frac{\alpha _F}{1-\alpha _F}
+$$
+
+#### 2.2: Driving the BJT with V_BE and I_B
+
+![](image/2022-11-14-15-35-04.png)
+
+The collector current increases exponentially with $V_{BE}$.
+
+|![](image/2022-11-14-15-37-20.png)|![](image/2022-11-14-15-37-29.png)|
+|---|---|
+
+![](image/2022-11-14-15-39-54.png)
+
+#### 2.3: BJT operating regions 
+
+![](image/2022-11-14-15-41-27.png)
+
+
+
