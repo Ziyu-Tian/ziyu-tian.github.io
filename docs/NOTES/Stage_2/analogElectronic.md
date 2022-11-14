@@ -124,7 +124,11 @@ And the gain in dB = 20log(Vout/Vin):
 
 - This plot is known as a **Bode Plot**.
 
+- There is a frequency at which $X_c = R$, which is know as the cut-off frequency ($f_c$).
+
 - The cut-off frequency is 100 Hz as above.
+
+- The gain in dB in $f_c$ usually defines the band-width.
 
 #### 1.2: High Pass Filter 
 
@@ -138,6 +142,20 @@ $$
 
 - If we increase the frequency, the output will be:
 
-$$
+![](image/2022-11-14-12-48-12.png)
+
+![](image/2022-11-14-12-48-31.png)
+
+#### 1.3: Multi-stage Filter 
+
+![](image/2022-11-14-12-51-07.png)
 
 $$
+V_{out2} = V_{in1} * (\frac{R_1^2}{R_1^2+X_{c1}^2})
+$$
+
+#### 1.4: Passive bandpass filter 
+
+![](image/2022-11-14-13-07-20.png)
+
+**A band pass filter** is to be constructed using RC components will only allow a range of frequencies to pass, calculating the 
