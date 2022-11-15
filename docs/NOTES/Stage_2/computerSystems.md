@@ -741,3 +741,80 @@ Every node connected to every other.
 ![](image/2022-11-01-20-57-56.png)
 
 
+### 5: Processors 
+
+#### 5.1: Introduction to Processors 
+
+![](image/2022-11-15-11-18-27.png)
+![](image/2022-11-15-11-23-58.png)
+
+- Opcode: the binary code of operation.
+- Mode: whether privilege allowed (user or administrator)
+- Address: address denote to the memory as caches.
+
+#### 5.2: Functional View 
+
+![](image/2022-11-15-11-26-04.png)
+
+#### 5.3: Structure of a computer - top level 
+
+![](image/2022-11-15-11-27-44.png)
+
+#### 5.4: Structure of CPU 
+
+![](image/2022-11-15-11-32-22.png)
+
+#### 5.5: Revisiting Resisters 
+
+- Types:
+    - User visible registers
+        - General Purpose registers 
+        - Data registers
+        - Address registers 
+        - Status and condition code register
+    - Internal (system) registers 
+
+#### 5.5.1: User Visible Registers 
+
+- General Purpose:
+    - true general purpose
+    - occasional use for data or addressing
+    - restricted use 
+- Data 
+    - Primary data holders 
+    - Accumulators
+- Address
+    - segment or address
+- Condition Codes (Jump register)
+    - used for storing jump labels and address 
+
+#### 5.5.2: General Purpose Register 
+
+- Typically 8, 16,32 or 128 (Itanium)
+- Fewer $\rightarrow$ more memory references 
+- More $\rightarrow$ does not reduce memory references (make more complex) and takes up processors space 
+
+Each processor needs to be:
+
+- Large enough to hold full address
+- Large enough to hold full word
+
+#### 5.5.3: Data and Address Register 
+
+#### 5.5.4: Condition Code Registers 
+
+
+#### 5.5.5: System register
+
+### 5.6: Control Unite: Data Flow 
+
+#### 5.6.1: CPU Control Steps: Data Flow 
+
+![](image/2022-11-15-12-15-28.png)
+
+- Fetch instructions 
+- Interpret instructions 
+- Fetch data 
+- Process data 
+- Write data 
+
