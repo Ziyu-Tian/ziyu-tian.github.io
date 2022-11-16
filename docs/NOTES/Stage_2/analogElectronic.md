@@ -210,4 +210,21 @@ The collector current increases exponentially with $V_{BE}$.
 ![](image/2022-11-14-15-41-27.png)
 
 
+## IV: 2-port Network 
+
+### 1: Two port analysis 
+
+- Circuits are built from building blocks.
+- Each of these blocks can defined has an input impedance and a Norton or Thevenin output stage as:
+
+![](image/2022-11-16-09-13-59.png)
+
+#### 1.1: Two port analysis of transistors 
+
+- The common transistor types such as BJTs and MOSFETs operate by one terminal controlling the current flow between other 2 terminals. 
+- They are therefore current sources with control.
+- For BJT, the base is controlled by a current so the impedance is almost just resistance.
+- 
+
+
 
