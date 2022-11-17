@@ -224,7 +224,7 @@ The collector current increases exponentially with $V_{BE}$.
 - The common transistor types such as BJTs and MOSFETs operate by one terminal controlling the current flow between other 2 terminals. 
 - They are therefore current sources with control.
 - For BJT, the base is controlled by a current so the impedance is almost just resistance.
-- 
+
 
 
 
