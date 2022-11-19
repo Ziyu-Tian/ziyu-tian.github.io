@@ -1683,3 +1683,13 @@ $$
 - $\mathcal{L}\{\int _0 ^t f(t){\rm d}t\} = \frac{1}{s}F(s)$
 
 ![](image/2022-11-12-21-32-46.png)
+
+
+
+- This method can be used to solve the differential equations with the invert laplace transform.
+
+
+
+
+
+
