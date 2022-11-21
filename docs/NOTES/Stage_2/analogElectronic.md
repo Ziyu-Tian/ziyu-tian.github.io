@@ -224,7 +224,81 @@ The collector current increases exponentially with $V_{BE}$.
 - The common transistor types such as BJTs and MOSFETs operate by one terminal controlling the current flow between other 2 terminals. 
 - They are therefore current sources with control.
 - For BJT, the base is controlled by a current so the impedance is almost just resistance.
+- The output impedance is really just the resistance from collector to emitter if we ignore the small internal capacitance.
 
+![](image/2022-11-21-10-17-14.png)
 
+#### 1.2: Two port analysis of Mosfet 
 
+- For mosfet, the gate is controlled by a voltage so the impedance is just a capacitance.
 
+- The output impedance is just resistance from source to drain.
+
+![](image/2022-11-21-10-20-04.png)
+
+#### 1.3: Hybrid pi model 
+
+- The 2 port model can be used as the basis for circuit simulator.
+
+![](image/2022-11-21-10-23-14.png)
+
+#### 1.4: H parameter Model 
+
+- The H parameter model uses the input current as one of variables.
+
+- H11 is the input impedance
+
+- H12 is the usually assumed to 0.
+
+- H21 is the gain.
+
+- H22 is the output impedance of transistor.
+
+H method be like:
+
+$$
+\left(\begin{matrix}
+    V_1 \\
+    I_2
+\end{matrix}\right)=\left(\begin{matrix}
+    h_{11} & h_{12} \\
+    h_{21} & h_{22} 
+\end{matrix}\right)\left(\begin{matrix}
+    I_1 \\
+    V_2 
+\end{matrix}\right)
+$$
+
+### 2: BJT Amplifier 
+
+#### 2.1: The ideal Amplifier 
+
+![](image/2022-11-21-10-34-42.png)
+
+- Voltage gain = $A_{v} = \frac{V_{out}}{V_{in}}$
+
+- Current gain = $A_{i} = \frac{I_{out}}{I_{in}}$
+
+- Power gain = . $A_{p} = \frac{P_{out}}{P_{in}}$ 
+
+#### 2.2: Th way to build amplifier 
+
+- For example, the common-emitter amplifier:
+
+![](image/2022-11-21-10-39-24.png)
+
+- $I_E = I_C +I_B$
+
+- Current gain $\beta = \frac{I_C}{I_B}$
+
+#### 2.3: BJT single transistor amplifier
+
+![](image/2022-11-21-10-42-33.png)
+
+#### 2.4: BJT CE Large signal summary 
+
+![](image/2022-11-21-10-45-11.png)
+
+- CE amplifier: $v_{in}$ form base and $v_{out}$ from collector.
+
+- $C_{in}$: AC isolation of input, preventing input form affecting Q point.
