@@ -907,9 +907,9 @@ This means that each received bit is independent of other bits.
 
 - The BSC is commonly used as a simplified model of a communication system.
 
-![](2022-10-21-11-07-56.png)
+![](image/2022-10-21-11-07-56.png)
 
-![](2022-10-21-11-09-06.png)
+![](image/2022-10-21-11-09-06.png)
 
 - Using Bayes's theorem we can also calculate the conditional possibility as $P(X|Y)$:
 
@@ -929,7 +929,7 @@ $$
 
 - The Binary Erasure Channel (BEC) can be used to model many systems, such as compact disc players and the transmission packets over a wireless network.
 
-- ![](2022-10-21-11-19-10.png)
+- ![](image/2022-10-21-11-19-10.png)
 
 ### 4: Information 
 
@@ -948,19 +948,19 @@ $$
 
 - Information has the following properties:
 
-![](2022-10-21-11-28-59.png)
+![](image/2022-10-21-11-28-59.png)
 
 ### 5: Entropy 
 
 - Entropy is the average amount of information carried by a message $X$ defined by $M$, $X_1,X_2,X_M$.
 
-![](2022-10-21-11-33-03.png)
+![](image/2022-10-21-11-33-03.png)
 
-![](2022-10-21-11-34-08.png)
+![](image/2022-10-21-11-34-08.png)
 
 - The entropy of a binary source $H(p)$ is plotted below:
 
-![](2022-10-21-11-35-50.png)
+![](image/2022-10-21-11-35-50.png)
 
 - The entropy of a source $H(X)$ is the average of uncertainty about the source input before the output is observed.
 
@@ -1007,13 +1007,13 @@ $$
 
 - The relation between entropy, conditional entropy and mutual information can be expressed:
 
-![](2022-10-21-13-17-21.png)
+![](image/2022-10-21-13-17-21.png)
 
 - Mutual information indicates how much the output Y can tell us about the input X. It is a measure of the quality of the channel.
 
 - The formula of I(X,Y) will be:
 
-![](2022-10-21-13-22-31.png)
+![](image/2022-10-21-13-22-31.png)
 
 - Mutual information has the following properties:
   - I(X,Y) = H(X) - H(X|Y)
@@ -1029,7 +1029,7 @@ $$
 - The average mutual information is dependent on the input probability distribution and the channel.
 - We define the channel capacity, C, of a discrete memoryless channel as the max average mutual information, where the max is over all possible input probabilities:
 
-![](2022-10-21-13-39-33.png)
+![](image/2022-10-21-13-39-33.png)
 
 - We will now determine the capacity of two simple channels: the binary symmetric channel and the binary erasure channel.
 

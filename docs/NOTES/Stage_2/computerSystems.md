@@ -402,7 +402,7 @@
     - The resistance cannot change without biasing.
 - Resistive Memory: Meristor
 - Current-Mode In-Memory Circuits: A *multiplier*
-    - ![](2022-10-18-12-03-07.png)
+    - ![](image/2022-10-18-12-03-07.png)
 
 
 ### 4: Interconnects
