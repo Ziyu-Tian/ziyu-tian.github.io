@@ -320,3 +320,7 @@ $$
 - $R_{E1}$: improve the impedance of the amplifier.
 
 - $R_{E2}$: Set the voltage level of Q point / make the output independent of $\beta$ 
+
+- $C_{out}$: AC isolation of the output.
+
+#### 2.5: Transistor biasing 
