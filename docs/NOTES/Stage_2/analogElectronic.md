@@ -44,6 +44,16 @@
 
 ![](image/2022-11-14-08-21-00.png)
 
+- For BJT circuit like below:
+
+![](image/2022-11-21-21-13-09.png)
+
+- Using $I_B$, $I_C$ and $V_{CE}$ and the V-I curve of transistors, the Q point can be found:
+
+![](image/2022-11-21-21-15-04.png)
+
+- The Q-point in the middle will be most proper.
+
 #### 2.6: Small signal conductance 
 
 For AC model:
@@ -301,4 +311,12 @@ $$
 
 - CE amplifier: $v_{in}$ form base and $v_{out}$ from collector.
 
-- $C_{in}$: AC isolation of input, preventing input form affecting Q point.
+- $C_{in}$: AC isolation of input, preventing input from affecting Q point.
+
+- $R_{B1}$ and $R_{B2}$: determine the base voltage independent of BJT types.
+
+- $R_C$: set the gain of circuit which cannot be too large.
+
+- $R_{E1}$: improve the impedance of the amplifier.
+
+- $R_{E2}$: Set the voltage level of Q point / make the output independent of $\beta$ 
