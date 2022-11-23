@@ -324,3 +324,72 @@ $$
 - $C_{out}$: AC isolation of the output.
 
 #### 2.5: Transistor biasing 
+
+![](image/2022-11-23-09-05-34.png)
+
+![](image/2022-11-23-09-05-49.png)
+
+![](image/2022-11-23-09-14-18.png)
+
+- As $I_B = (V_CC-V_{BE})/R_{B1})$, $I_B$ is limited by $R_{B1}$.
+
+![](image/2022-11-23-09-14-38.png)
+
+- $R_E$ will reduces the gain. 
+
+- We can also use the $R_{B}$ to bias the $V_B$, while pay for extra loss of power.
+
+![](image/2022-11-23-09-18-44.png)
+
+- Add the $C_E$ as bypass capacitor.
+
+#### 2.6: BJT CE amplifier - small model summary 
+
+![](image/2022-11-23-09-22-26.png)
+
+![](image/2022-11-23-09-24-49.png)
+
+#### 2.7: BJT CE small model analysis
+
+- First, remove the capacitors (treated as wires) and the DC Vcc.
+
+![](image/2022-11-23-09-41-32.png)
+
+- Second, rearrange to small model.
+
+![](image/2022-11-23-09-42-16.png)
+
+- $r_{\pi}$ and $r_0$ is the resistance of BJT.
+
+- $g_m = \frac{i_c}{v_{BE}}$, so $g_m v_{BE}$ is the $i_c$.
+
+- Consider the input impedance:
+
+![](image/2022-11-23-09-44-44.png)
+
+The input impedance $r_{in}$ is defined as $r_{in} = \frac{v_{in}}{i_{in}}=R_{B1}||R_{B2}||r_x$. $r_x$ is the impedance from transistor and $R_{E1}$.
+
+![](image/2022-11-23-09-47-51.png)
+
+- $r_{in} = R_{B1} || R_{B2} || (r_{\pi}+\beta _FR_{E1})$
+
+- Consider the output impedance, $r_{out} \approx R_C || (r_0+R_{E1})$, which is approx to $R_C$.
+
+- The voltage gain is given by $A_V=\frac{v_{out}}{v_{in}}$.
+
+![](image/2022-11-23-09-53-14.png)
+
+- $v_{out} = -i_c R_c = -\beta_F i_b R_C$
+
+$$
+\begin{aligned}
+    v_{in} &= v_{b} \\
+    &= r_{\pi}i_b + i_eR_{E1} \\
+    &= i_b(r_{\pi} + (\beta _F +1)R_{E1})
+\end{aligned}
+$$
+
+so $A_V = \frac{-\beta _FR_C}{r_{\pi} + \beta _F R_{E1}}$
+
+![](image/2022-11-23-09-59-17.png)
+
