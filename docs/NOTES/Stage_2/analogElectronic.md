@@ -393,3 +393,82 @@ so $A_V = \frac{-\beta _FR_C}{r_{\pi} + \beta _F R_{E1}}$
 
 ![](image/2022-11-23-09-59-17.png)
 
+
+#### 2.8: Example of CE BJT analysis 
+
+![](image/2022-11-23-19-48-42.png)
+
+##### 2.8.1: Setting up the DC characteristics 
+
+- The AC signal is assumed ton be small compared to the DC, so it can be considered later.
+
+- The first step is to review the transistor data sheet and decide the Q point.
+
+- The transistor curves can be generated using simulation software:
+
+![](image/2022-11-23-20-22-40.png)
+
+- First, we assume that $V_{cc} = 10V$ in this condition, then we choose $V_{CE} = 5V$, almost half of $V_{CC}$ is common. If we choose $I_b = 40\mu A$, then we can mark the Q point in the graph.  
+
+- Then we can find that the $I_c$ value and the gain ($\frac{I_C}{I_B}$) can be defined.
+
+- It would be reasonable to choose the line to make sure the Q point is in the m idle of the curve.
+
+- The next step is to calculated the $R_C$, which control the gain (the larger the $R_C$ is, the larger the voltage $R_C$ have will be larger, so that increase the gain). According to voltage divider, we assumed that $V_{RE1} + V_{RE2} = 1 V$ to keep it small.
+
+- The total voltage $V_{CC} = V_{RE1} + V_{RE2} + V_{CE} + V_{RC}$, then $V_{RC}$ can be calculated.
+
+- Using the Ohm's Law, $R_C = \frac{V_{RC}}{I_C}$.
+
+- **Up to now, we have defined the value of $I_B$, $I_C$, $R_C$ and the voltage cover two $R_E$.**
+
+##### 2.8.2: Calculating the emitter resistors 
+
+
+- We know the $I_E = I_C + I_B$ according to the KCL.
+
+- Using Ohm Law on $I_E$, we can find that $R_{E1} + R_{E2}$ can be defined by $\frac{1}{I_E}$.
+
+- We need a small value of $R_{E1}$ so we define that $R_{E1} = 5 \Omega$. The other resistor can be calculated.
+
+##### 2.8.3: Calculating the Bias resistors
+
+- The bias resistors are in the circuit to ensure the base voltage. The current flowing down the $\frac{R_{B1}}{R_{B2}}$ chain is chosen to be many times that of $I_B$. So we choose $I_{RB2} = 20 \times I_B$.
+
+- As we know $V_{R_{B2}} = V_B = V_{RE1} +V_{RE2} + V_{BE} $, $V_{BE}$ is given if the type of the transistor is vested.
+
+- Using Ohm Law, the $R_{B2} = \frac{V_{RB2}}{I_{RB2}}$
+
+- Applying KCL, $I_{RB1} = I_{RB2} + I_B$.
+
+- The voltage across $R_{B1} = V_{CC} - V_{RB2}$, so the $V_{RB1} = R_{B1} \times I_{RB1}$.
+
+##### 2.8.4: Setting up the AC characteristics 
+
+- Using the two-port model to simplify the CE BJT, we can get the formula of the voltage gain:
+
+$$
+A_V = \displaystyle\frac{-g_m R_C}{1+g_m(R_{E1} + R_{E2})}
+$$
+
+- We can find that the emitter resistors reduce the gain. However, the bypass capacitor helps as iof we choose the value of $C_E$, it will short-cut $R_{E2}$.
+
+- The bypass capacitor is there making the effect of the larger emitter resistor disappear for the AC signal so it is in effect a kind of filter:
+
+$$
+f_C = \frac{1}{2\pi RC}
+$$
+
+So we can use:
+
+$$
+f_C = \frac{1}{2\pi R_{E2} C_E}
+$$
+
+- If we want the frequencies above 20 Hz to pass through so we can take $f_C=20$ Hz.
+
+- Then we can calculate $C_E$.
+
+- The value of $C_{in}$ and $C_{out}$ can be choose depends on the type of signal.
+
+- The $R_L$ is also be chosen depends on conditions.
