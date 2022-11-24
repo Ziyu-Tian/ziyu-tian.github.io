@@ -1713,8 +1713,31 @@ $$
 - Discussion:
     - Explain the results - why do they look like that.
     - Connect with the FM theory (validate the result)
+- Conclution:
+    - Summary of the experiment and result
+    - Passive voice needed
+
+- Reference:
+    - IEEE format 
 
 ## VIII: Fourier Transforms 
+
+
+### 1: Introduction 
+
+- The most periodic signals could be represented as the sum of sin signals by Fourier Series.
+
+- Generally most signals will not be periodic and finite. These are called the **transient signals**.
+
+- To analyses the transient signals in frequencies domain, we an use the Fourier Transforms.
+
+### 2: Harmonics 
+
+- Consider the signal $v(t) = \cos{)\2\pi n f t)}$ with the frequency $nf$.
+
+- When $n=1$, this is called the **first harmonic** or **fundamental frequency** of $v(t)$.
+
+![](image/2022-11-24-10-55-00.png)
 
 
 
