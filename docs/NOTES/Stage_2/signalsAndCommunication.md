@@ -1688,12 +1688,37 @@ $$
 
 - This method can be used to solve the differential equations with the invert laplace transform.
 
+## The Instruction of Lab report 
+
+- Abstract:
+    - short summary (experiment and findings)
+    - one paragraph (not a large report)
+    - what you find and the lab about 
+    - Minimize the information
+    - DO NOT INCLUDE REFERENCE IN ABSTRACT !!!
+    - A separated part
+- Introduction:
+    - Background of FM (brief)
+    - Experiment
+- Aims 
+    - General statements of what you achieved,
+    - Specific the tasks what you have done to achieve the aims (bullet points)
+- Procedure:
+    - Demonstrate you understand the reasons per instruction (why)
+    - Method + Demonstration
+    - Explain the steps of the methods   
+- Result:
+    - Ensure the demonstration and the figure in the same page and using the figure number.
+    - Describe the results with figures.
+- Discussion:
+    - Explain the results - why do they look like that.
+    - Connect with the FM theory (validate the result)
+
+## VIII: Fourier Transforms 
 
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> d997fdf795ea1dcb4334c5b8933db009bdaf9feb
+
