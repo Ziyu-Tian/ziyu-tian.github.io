@@ -1733,15 +1733,49 @@ $$
 
 ### 2: Harmonics 
 
-- Consider the signal $v(t) = \cos{)\2\pi n f t)}$ with the frequency $nf$.
+- Consider the signal $v(t) = \cos{(2\pi n f t)}$ with the frequency $nf$.
 
 - When $n=1$, this is called the **first harmonic** or **fundamental frequency** of $v(t)$.
 
 ![](image/2022-11-24-10-55-00.png)
 
+- All sinusoids with frequencies that are harmonics of the fundamental frequencies: $2f,3f,4f$, etc.
+
+![](image/2022-11-25-11-11-35.png)
+
+### 3: Gibb's Phenomenon 
+
+- If periodic signal has discontinuities over a period then the Fourier series representation overshoots.
+
+- This is known as **Gibb's Phenomenon**.
+
+![](image/2022-11-25-11-14-34.png)
+
+### 4: Fourier Series 
+
+![](image/2022-11-25-11-20-54.png)
+
+![](image/2022-11-25-11-21-35.png)
+
+![](image/2022-11-25-11-22-05.png)
+
+### 5: Definition of the Fourier Transform 
+
+- The Fourier transform of a signal $f(t)$ is defined as:
+
+$$
+\mathcal{F}\{f(t)\} = F(\omega) = \displaystyle\int_{-\infty}^{\infty} f(t)e^{-j\omega t}{\rm d}t 
+$$
 
 
+- The Fourier transform integral looks similar to the Laplace transform integral with $s=j\omega$ and the limits between $\pm \infty$.
 
+- The inverse transform of the signal $F(\omega)$ is:
 
+$$
+\mathcal{F}\{F(\omega)\} = f(t) = \frac{1}{2\pi }\displaystyle\int _{-\infty} ^{\infty} F(\omega) e^{j\omega t}{\rm d}\omega
+$$
+
+![](image/2022-11-25-11-49-26.png)
 
 
