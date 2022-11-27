@@ -472,3 +472,210 @@ $$
 - The value of $C_{in}$ and $C_{out}$ can be choose depends on the type of signal.
 
 - The $R_L$ is also be chosen depends on conditions.
+
+
+#### 2.9: Common collector amplifier 
+
+![](image/2022-11-27-20-11-18.png)
+
+- The output of CC is connected to the emitter.
+
+- The gain of CC is approx to 1.
+
+- High impedance in and low impedance out.
+
+![](image/2022-11-27-20-13-25.png)
+
+## V: FET Transistors 
+
+### 1: MOSFET large signal operation
+
+- Note that we discuss the enhancement mode only.
+
+![](image/2022-11-27-20-25-58.png)
+
+#### 1.1: MOSFETs operation
+
+
+|![](image/2022-11-27-20-27-35.png)|![](image/2022-11-27-20-27-47.png)|
+|----|----|
+
+#### 1.2: BJT vs MOSFET 
+
+![](image/2022-11-27-20-44-26.png)
+
+![](image/2022-11-27-20-46-11.png)
+
+
+#### 1.3: Saturation drain current variance with $V_{GS$
+
+![](image/2022-11-27-20-50-02.png)
+
+![](image/2022-11-27-20-50-12.png)
+
+#### 1.4: Channel length modulation 
+
+![](image/2022-11-27-20-51-45.png)
+
+#### 1.5: Summary 
+
+![](image/2022-11-27-20-55-21.png)
+
+### 2: MOSFET small signal operation 
+
+#### 2.1: MOSFET complete small signal 
+
+![](image/2022-11-27-20-59-08.png)
+
+
+#### 2.2: MOSFET simplified small model 
+
+![](image/2022-11-27-21-02-38.png)
+
+#### 2.3: MOSFET operational speed 
+
+![](image/2022-11-27-21-05-16.png)
+
+- Lets assume the dominant capacitance is the GS capacitance.
+
+- The general formula for unity gain current frequency $f_T$ for an R-C combination is given by: 
+
+$$
+f_t = \frac{1}{2\pi RC}
+$$
+
+- $r=\frac{1}{g}$ where g is conductance.
+
+So $f_t = \frac{g}{2\pi C}$
+
+- If we only calculate the most significant $C_{GS}$:
+
+$$
+f_T = \frac{g_m}{2\pi C_{GS}}
+$$
+
+![](image/2022-11-27-21-15-19.png)
+
+### 3: MOSFET single transistor amplifier 
+
+![](image/2022-11-27-21-18-52.png)
+
+#### 3.1: MOSFET Common source amplifier 
+
+![](image/2022-11-27-21-21-32.png)
+
+![](image/2022-11-27-21-25-57.png)
+
+![](image/2022-11-27-21-28-39.png)
+
+#### 3.2: MOSFET Common drain amplifier 
+
+![](image/2022-11-27-21-32-04.png)
+
+### 4: MOSFET as a Resistor (diode connected MOSFET)
+
+
+#### 4.1: Diode connected MOSFET 
+
+![](image/2022-11-27-21-34-22.png)
+
+- $V_{DS} = V_{GS}$, so $V_{DS} > V_T$, device is always in saturation.
+
+- As the device is in saturation, so the drain current is given by:
+
+$$
+I_D = K(V_{GS} - V_T)^2
+$$
+
+- But we want to find the output voltage:
+
+$$
+V_{OUT} = V_{DS} = $V_{GS$
+$$
+
+Then we get:
+
+$$
+V_{OUT} = V_T + \sqrt{\frac{|I_{sig}|}{K}}
+$$
+
+#### 4.2: Diode connected MOSFET as active resistor 
+
+![](image/2022-11-27-21-46-37.png)
+
+- Connecting the gate to the drain means that $V_{DS}$ controls $I_D$, therefore the transconductance becomes the channel conductance, the total resistance is given by:
+
+$$
+r = \frac{1}{g_m +g_{mb} + g_{ds}}
+$$
+
+- However, if the body effect is small, and we use long channel transistors, $g_m$ becomes dominant:
+
+$$
+r = \frac{1}{g_m}
+$$
+
+#### 4.3: Active resistor potential divider 
+
+![](image/2022-11-27-21-54-26.png)
+
+- $g_m = \frac{dI_D}{dV_{GS}} = 2K[V_{GS} - V_T]$.
+
+- $K = \frac{\mu C_{ox}}{2}\frac{W}{L}$
+
+- Lets consider the strong inversion case:
+
+$$
+r = \frac{1}{g_m}
+$$
+
+- So for a potential divider:
+
+$$
+V_{OUT} = \frac{R_2}{R_1 + R_2}V_{DD}
+$$
+
+- $V_{OUT}$ can be altered by varying W and L in each transistor, this is ideal for integration into a micro-chip.
+
+##  VI: Power Amplifier 
+
+### 1: Power Amplifier classes 
+
+- Common emitter and common drain amplifier are considered as class A amplifiers - single active device (transistor)
+
+- There are other classes:
+
+![](image/2022-11-27-22-18-28.png)
+
+### 2: Power Amplifier classes (by power usage)
+
+![](image/2022-11-27-22-20-13.png)
+
+#### 2.1: Class A - eg. Common Emitter 
+
+##### 2.1.1: Efficiency 
+
+![](image/2022-11-27-22-27-03.png)
+
+- we need to understand how efficient our amplifier are.
+
+- Consider the common-emitter amplifier.
+
+- To set up the amplifier, we first arrange the DC bias conditions, which puts the transistor at the Q-point and $I_B$:
+
+
+![](image/2022-11-27-22-30-39.png)
+
+- The red line is the load line and $i_c$(max) is $\frac{V_{cc}}{R_L}$ and B is $V_{cc}$
+
+- As an AC signal is applied on top of the bias, the base current $I_B$, travels up and down the load line. Imagine that the signal causes $I_B$ to vary between the points M and N for example.
+
+- That will cause $V_{CE}$ and $I_C$ to vary as the green waves.
+
+
+##### 2.1.2: Quality 
+
+- There are other potential problems 
+
+
+
