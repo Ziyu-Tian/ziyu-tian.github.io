@@ -1688,6 +1688,102 @@ $$
 
 - This method can be used to solve the differential equations with the invert laplace transform.
 
+#### 3.8: Example 1: Capacitor Discharging 
+
+![](image/2022-11-25-22-10-07.png)
+
+- At t = 0, the voltage across the capacitor is $v_c (0) = V$. Close the switch, the capacitor will discharge.
+
+- As $v_c + v_R = 0$, $i = C\frac{dv_c}{dt}$.
+
+- The first-order differential equation is $EC\frac{dv_c}{dt} + v_C = 0$
+
+- $v_c (t) = Ve^{-\frac{t}{RC}$.
+
+#### 3.9: Example 2: RLC Circuit 
+
+![](image/2022-11-25-22-40-04.png)
+
+- We will determine the current when the input $v(t)$ is a delta function $\delta (t)$.
+
+- $v(t) = v_C +v_L +v_R$
+
+- As $i(t) = C\frac{dv_C}{dt}$, integrating both sides, $v_c = \frac{1}{C}\int _0^t i(t){\rm d}t$
+
+- So $v(t) = \frac{1}{C}\int _0 ^t i(t){\rm d}t + L\frac{di(t)}{dt} + i(t)R$
+
+- With initial condition $i(0) = 0$, the value of $i(t)$ can be found.
+
+![](image/2022-11-25-22-47-19.png)
+
+#### 3.10: Transfer Function 
+
+- The transfer function, $H(s)$ of a system is the laplace transform of the output, $Y(s)$, divided by the Laplace transform of the input, $X(s)$.
+
+##### 3.10.1: Example 1
+
+- The low-pass filter can beexpressed as the differential equation:
+
+![](image/2022-11-27-07-24-20.png)
+
+$$
+v_{IN} (t) = RC\frac{dV_{OUT(t)}}{dt} + v_{OUT}(t)
+$$
+
+- Take the Laplace Transform:
+
+$$
+\frac{V_{OUT}(s)}{V_{IN}(s)} = \frac{1}{1+sRC}
+$$
+
+##### 3.10.2: Transfer Functions in Series 
+
+- If two systems with transfer function $H_1(s)$ and $H_2(s)$ are in series.
+
+
+![](image/2022-11-27-07-27-24.png)
+
+##### 3.10.3: Eliminating a Negative Feedback Loop 
+
+![](image/2022-11-27-07-30-12.png)
+
+##### 3.10.4: Example 2 
+
+![](image/2022-11-27-07-31-16.png)
+
+#### 3.11: Poles and Zeros 
+
+- We can express most transfer functions in the form of $H(s) = \frac{Y(s)}{X(s)}$.
+
+- If the highest power in $Y(s)$ is $m$ and the highest power in $X(s)$ is $n$, where $m < n$:
+
+![](image/2022-11-27-08-13-15.png)
+
+- The values of s that make H(s) = 0 called **zeros** (z).
+
+- The values of s that make H(s) = $\infty$ called **poles**
+
+- It is useful to plot zeros and poles on the s-plane diagram to understand the system.
+
+- Let $X(s) = \frac{1}{s-p}$ where $p$ is a complex pole $p = a+jb$.
+
+- The inverse Laplace transform of $X(s)$:
+
+$$
+x(t) = e^{pt} = e^{(a+jb)t} = e^{at}e^{jbt}= e^{at}(\cos{(bt)}+j\sin{(bt)})
+$$
+
+- There is an exponential term $e^{at}$ and a sin (oscillating) term $e^{jbt}$
+
+- The effect of the poles is called a **transient response** because it decreased with time.
+
+- The real part of a pole must be negative for the response caused by that to declay with time.
+
+- If a pole is further to the left one the x-axis of the s-plane, then the transient response will decay quicker.
+
+![](image/2022-11-27-10-50-30.png)
+
+
 ## The Instruction of Lab report 
 
 - Abstract:
@@ -1778,4 +1874,61 @@ $$
 
 ![](image/2022-11-25-11-49-26.png)
 
+
+### 6: Common Fourier Transfrom 
+
+![](image/2022-11-27-11-04-40.png)
+
+### 7: Properties of the Fourier Transform 
+
+##### 7.1: Linearity 
+
+$$
+\mathbb{F}\{f(t)+g(t)\} = \mathcal{F}\{f(t)\} + \mathbb{F}\{g(t)\} \\
+\mathcal{F}\{\alpha f(t)\} = \alpha \mathcal{F}\{f(t)\}
+$$
+
+##### 7.2: First shift Theorem 
+
+![](image/2022-11-27-11-10-34.png)
+
+##### 7.2: Second shift Theorem 
+
+![](image/2022-11-27-11-11-12.png)
+
+### 8: Similarity with Laplace Transform 
+
+- the integral of the Laplace and Fourier transform look similar:
+
+![](image/2022-11-27-11-13-07.png)
+
+![](image/2022-11-27-11-14-28.png)
+
+- We observe that the Laplace integral differs with the Fourier Transform due to the presence of delaying term $e^{=\alpha t}$
+
+![](image/2022-11-27-11-35-37.png)
+
+
+### 9: Frequency Spectra 
+
+
+- Most periodic functions had a Fourier series, which could be used to plot the frequency spectrum of the function.
+
+- For periodic functions, the frequency spectrum is discrete, such as the components with frequencies $f,2f,3,f,etc$.
+
+### 10: The time-frequency Principles
+
+![](image/2022-11-27-13-00-38.png)
+
+In the inverse Fourier transform integrals, we can treat $\omega$ as a dummy variable and replace it with $z$:
+
+$$
+f(t) = \displaystyle\frac{1}{2\pi} \int _{-\infty}^{\infty} F(z)e^{jzt}{\rm d}z
+$$
+
+$$
+f(-\omega) = \frac{1}{2\pi}\mathcal{F}\{F(t)\}
+$$
+
+- This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
 
