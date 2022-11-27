@@ -1884,7 +1884,7 @@ $$
 ##### 7.1: Linearity 
 
 $$
-\mathbb{F}\{f(t)+g(t)\} = \mathcal{F}\{f(t)\} + \mathbb{F}\{g(t)\} \\
+\mathcal{F}\{f(t)+g(t)\} = \mathcal{F}\{f(t)\} + \mathcal{F}\{g(t)\} \\
 \mathcal{F}\{\alpha f(t)\} = \alpha \mathcal{F}\{f(t)\}
 $$
 
@@ -1927,7 +1927,7 @@ f(t) = \displaystyle\frac{1}{2\pi} \int _{-\infty}^{\infty} F(z)e^{jzt}{\rm d}z
 $$
 
 $$
-f(-\omega) = \frac{1}{2\pi}\mathcal{F}\{F(t)\}
+f(-\omega) = \frac{1}{2\pi}\mathcal{F}\{f(t)\}
 $$
 
 - This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
