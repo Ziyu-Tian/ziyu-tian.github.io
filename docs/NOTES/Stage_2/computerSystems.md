@@ -801,10 +801,29 @@ Each processor needs to be:
 
 #### 5.5.3: Data and Address Register 
 
+- Data registers can hold numeric values such as integer and , in some architecture, floating-point values and other data.
+    - In some older and low-end CPUs, a special data register, known as the accumulator.
+    - The number required is determined by cost and architectural aspects, such as parallelism, the number of ALUs, etc.
+
+- Address register hold addresses and used by instructions that indirectly access primary memory.
+    - Some processors contain registers that may not only be used to hold an address or only to hold numeric values.
+    - The number required is determined by the cost consideration and architecture.
+
 #### 5.5.4: Condition Code Registers 
 
+- Sets of individual bits.
+
+- Can be read by programs.
+
+- Can not be set by program.
+
+- Two kinds: Control and Status registers:
+
+![](image/2022-11-28-00-36-29.png)
 
 #### 5.5.5: System register
+
+![](image/2022-11-28-00-38-08.png)
 
 ### 5.6: Control Unite: Data Flow 
 
