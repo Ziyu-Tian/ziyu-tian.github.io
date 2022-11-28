@@ -1687,7 +1687,6 @@ $$
 
 
 - This method can be used to solve the differential equations with the invert laplace transform.
-
 #### 3.8: Example 1: Capacitor Discharging 
 
 ![](image/2022-11-25-22-10-07.png)
