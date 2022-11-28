@@ -907,9 +907,9 @@ This means that each received bit is independent of other bits.
 
 - The BSC is commonly used as a simplified model of a communication system.
 
-![](2022-10-21-11-07-56.png)
+![](image/2022-10-21-11-07-56.png)
 
-![](2022-10-21-11-09-06.png)
+![](image/2022-10-21-11-09-06.png)
 
 - Using Bayes's theorem we can also calculate the conditional possibility as $P(X|Y)$:
 
@@ -929,7 +929,7 @@ $$
 
 - The Binary Erasure Channel (BEC) can be used to model many systems, such as compact disc players and the transmission packets over a wireless network.
 
-- ![](2022-10-21-11-19-10.png)
+- ![](image/2022-10-21-11-19-10.png)
 
 ### 4: Information 
 
@@ -948,19 +948,19 @@ $$
 
 - Information has the following properties:
 
-![](2022-10-21-11-28-59.png)
+![](image/2022-10-21-11-28-59.png)
 
 ### 5: Entropy 
 
 - Entropy is the average amount of information carried by a message $X$ defined by $M$, $X_1,X_2,X_M$.
 
-![](2022-10-21-11-33-03.png)
+![](image/2022-10-21-11-33-03.png)
 
-![](2022-10-21-11-34-08.png)
+![](image/2022-10-21-11-34-08.png)
 
 - The entropy of a binary source $H(p)$ is plotted below:
 
-![](2022-10-21-11-35-50.png)
+![](image/2022-10-21-11-35-50.png)
 
 - The entropy of a source $H(X)$ is the average of uncertainty about the source input before the output is observed.
 
@@ -1007,13 +1007,13 @@ $$
 
 - The relation between entropy, conditional entropy and mutual information can be expressed:
 
-![](2022-10-21-13-17-21.png)
+![](image/2022-10-21-13-17-21.png)
 
 - Mutual information indicates how much the output Y can tell us about the input X. It is a measure of the quality of the channel.
 
 - The formula of I(X,Y) will be:
 
-![](2022-10-21-13-22-31.png)
+![](image/2022-10-21-13-22-31.png)
 
 - Mutual information has the following properties:
   - I(X,Y) = H(X) - H(X|Y)
@@ -1029,7 +1029,7 @@ $$
 - The average mutual information is dependent on the input probability distribution and the channel.
 - We define the channel capacity, C, of a discrete memoryless channel as the max average mutual information, where the max is over all possible input probabilities:
 
-![](2022-10-21-13-39-33.png)
+![](image/2022-10-21-13-39-33.png)
 
 - We will now determine the capacity of two simple channels: the binary symmetric channel and the binary erasure channel.
 
@@ -1686,6 +1686,253 @@ $$
 
 
 
+<<<<<<< HEAD
 - This method can be used to solve the differential equations with the invert laplace transform
+=======
+- This method can be used to solve the differential equations with the invert laplace transform.
 
+#### 3.8: Example 1: Capacitor Discharging 
+
+![](image/2022-11-25-22-10-07.png)
+
+- At t = 0, the voltage across the capacitor is $v_c (0) = V$. Close the switch, the capacitor will discharge.
+
+- As $v_c + v_R = 0$, $i = C\frac{dv_c}{dt}$.
+
+- The first-order differential equation is $EC\frac{dv_c}{dt} + v_C = 0$
+
+- $v_c (t) = Ve^{-\frac{t}{RC}$.
+
+#### 3.9: Example 2: RLC Circuit 
+
+![](image/2022-11-25-22-40-04.png)
+
+- We will determine the current when the input $v(t)$ is a delta function $\delta (t)$.
+
+- $v(t) = v_C +v_L +v_R$
+
+- As $i(t) = C\frac{dv_C}{dt}$, integrating both sides, $v_c = \frac{1}{C}\int _0^t i(t){\rm d}t$
+
+- So $v(t) = \frac{1}{C}\int _0 ^t i(t){\rm d}t + L\frac{di(t)}{dt} + i(t)R$
+
+- With initial condition $i(0) = 0$, the value of $i(t)$ can be found.
+
+![](image/2022-11-25-22-47-19.png)
+
+#### 3.10: Transfer Function 
+
+- The transfer function, $H(s)$ of a system is the laplace transform of the output, $Y(s)$, divided by the Laplace transform of the input, $X(s)$.
+
+##### 3.10.1: Example 1
+
+- The low-pass filter can beexpressed as the differential equation:
+
+![](image/2022-11-27-07-24-20.png)
+
+$$
+v_{IN} (t) = RC\frac{dV_{OUT(t)}}{dt} + v_{OUT}(t)
+$$
+
+- Take the Laplace Transform:
+
+$$
+\frac{V_{OUT}(s)}{V_{IN}(s)} = \frac{1}{1+sRC}
+$$
+
+##### 3.10.2: Transfer Functions in Series 
+
+- If two systems with transfer function $H_1(s)$ and $H_2(s)$ are in series.
+>>>>>>> origin/HEAD
+
+
+![](image/2022-11-27-07-27-24.png)
+
+##### 3.10.3: Eliminating a Negative Feedback Loop 
+
+![](image/2022-11-27-07-30-12.png)
+
+##### 3.10.4: Example 2 
+
+![](image/2022-11-27-07-31-16.png)
+
+#### 3.11: Poles and Zeros 
+
+- We can express most transfer functions in the form of $H(s) = \frac{Y(s)}{X(s)}$.
+
+- If the highest power in $Y(s)$ is $m$ and the highest power in $X(s)$ is $n$, where $m < n$:
+
+![](image/2022-11-27-08-13-15.png)
+
+- The values of s that make H(s) = 0 called **zeros** (z).
+
+- The values of s that make H(s) = $\infty$ called **poles**
+
+- It is useful to plot zeros and poles on the s-plane diagram to understand the system.
+
+- Let $X(s) = \frac{1}{s-p}$ where $p$ is a complex pole $p = a+jb$.
+
+- The inverse Laplace transform of $X(s)$:
+
+$$
+x(t) = e^{pt} = e^{(a+jb)t} = e^{at}e^{jbt}= e^{at}(\cos{(bt)}+j\sin{(bt)})
+$$
+
+- There is an exponential term $e^{at}$ and a sin (oscillating) term $e^{jbt}$
+
+- The effect of the poles is called a **transient response** because it decreased with time.
+
+- The real part of a pole must be negative for the response caused by that to declay with time.
+
+- If a pole is further to the left one the x-axis of the s-plane, then the transient response will decay quicker.
+
+![](image/2022-11-27-10-50-30.png)
+
+
+## The Instruction of Lab report 
+
+- Abstract:
+    - short summary (experiment and findings)
+    - one paragraph (not a large report)
+    - what you find and the lab about 
+    - Minimize the information
+    - DO NOT INCLUDE REFERENCE IN ABSTRACT !!!
+    - A separated part
+- Introduction:
+    - Background of FM (brief)
+    - Experiment
+- Aims 
+    - General statements of what you achieved,
+    - Specific the tasks what you have done to achieve the aims (bullet points)
+- Procedure:
+    - Demonstrate you understand the reasons per instruction (why)
+    - Method + Demonstration
+    - Explain the steps of the methods   
+- Result:
+    - Ensure the demonstration and the figure in the same page and using the figure number.
+    - Describe the results with figures.
+- Discussion:
+    - Explain the results - why do they look like that.
+    - Connect with the FM theory (validate the result)
+- Conclution:
+    - Summary of the experiment and result
+    - Passive voice needed
+
+- Reference:
+    - IEEE format 
+
+## VIII: Fourier Transforms 
+
+
+### 1: Introduction 
+
+- The most periodic signals could be represented as the sum of sin signals by Fourier Series.
+
+- Generally most signals will not be periodic and finite. These are called the **transient signals**.
+
+- To analyses the transient signals in frequencies domain, we an use the Fourier Transforms.
+
+### 2: Harmonics 
+
+- Consider the signal $v(t) = \cos{(2\pi n f t)}$ with the frequency $nf$.
+
+- When $n=1$, this is called the **first harmonic** or **fundamental frequency** of $v(t)$.
+
+![](image/2022-11-24-10-55-00.png)
+
+- All sinusoids with frequencies that are harmonics of the fundamental frequencies: $2f,3f,4f$, etc.
+
+![](image/2022-11-25-11-11-35.png)
+
+### 3: Gibb's Phenomenon 
+
+- If periodic signal has discontinuities over a period then the Fourier series representation overshoots.
+
+- This is known as **Gibb's Phenomenon**.
+
+![](image/2022-11-25-11-14-34.png)
+
+### 4: Fourier Series 
+
+![](image/2022-11-25-11-20-54.png)
+
+![](image/2022-11-25-11-21-35.png)
+
+![](image/2022-11-25-11-22-05.png)
+
+### 5: Definition of the Fourier Transform 
+
+- The Fourier transform of a signal $f(t)$ is defined as:
+
+$$
+\mathcal{F}\{f(t)\} = F(\omega) = \displaystyle\int_{-\infty}^{\infty} f(t)e^{-j\omega t}{\rm d}t 
+$$
+
+
+- The Fourier transform integral looks similar to the Laplace transform integral with $s=j\omega$ and the limits between $\pm \infty$.
+
+- The inverse transform of the signal $F(\omega)$ is:
+
+$$
+\mathcal{F}\{F(\omega)\} = f(t) = \frac{1}{2\pi }\displaystyle\int _{-\infty} ^{\infty} F(\omega) e^{j\omega t}{\rm d}\omega
+$$
+
+![](image/2022-11-25-11-49-26.png)
+
+
+### 6: Common Fourier Transfrom 
+
+![](image/2022-11-27-11-04-40.png)
+
+### 7: Properties of the Fourier Transform 
+
+##### 7.1: Linearity 
+
+$$
+\mathcal{F}\{f(t)+g(t)\} = \mathcal{F}\{f(t)\} + \mathcal{F}\{g(t)\} \\
+\mathcal{F}\{\alpha f(t)\} = \alpha \mathcal{F}\{f(t)\}
+$$
+
+##### 7.2: First shift Theorem 
+
+![](image/2022-11-27-11-10-34.png)
+
+##### 7.2: Second shift Theorem 
+
+![](image/2022-11-27-11-11-12.png)
+
+### 8: Similarity with Laplace Transform 
+
+- the integral of the Laplace and Fourier transform look similar:
+
+![](image/2022-11-27-11-13-07.png)
+
+![](image/2022-11-27-11-14-28.png)
+
+- We observe that the Laplace integral differs with the Fourier Transform due to the presence of delaying term $e^{=\alpha t}$
+
+![](image/2022-11-27-11-35-37.png)
+
+
+### 9: Frequency Spectra 
+
+
+- Most periodic functions had a Fourier series, which could be used to plot the frequency spectrum of the function.
+
+- For periodic functions, the frequency spectrum is discrete, such as the components with frequencies $f,2f,3,f,etc$.
+
+### 10: The time-frequency Principles
+
+![](image/2022-11-27-13-00-38.png)
+
+In the inverse Fourier transform integrals, we can treat $\omega$ as a dummy variable and replace it with $z$:
+
+$$
+f(t) = \displaystyle\frac{1}{2\pi} \int _{-\infty}^{\infty} F(z)e^{jzt}{\rm d}z
+$$
+
+$$
+f(-\omega) = \frac{1}{2\pi}\mathcal{F}\{f(t)\}
+$$
+
+- This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
 
