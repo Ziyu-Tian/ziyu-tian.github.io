@@ -675,7 +675,94 @@ $$
 
 ##### 2.1.2: Quality 
 
-- There are other potential problems 
+- There are other potential problems as well. The common emitter amplifier works well if the AC input signal is small.
+
+- If the signal gets too large, then eventually the base current could "hit" either access axis ($V_{CE}$ or I_C axes)
+
+- In fact this problem becomes an issue as soon as the output signal reaches $V_{cc}~V_{CE-SAT}$.
+
+|![](image/2022-11-27-23-06-28.png)|![](image/2022-11-27-23-07-00.png)|
+|----|----|
+
+##### 2.1.3: MOSFET clipping distortion 
+
+![](image/2022-11-27-23-11-41.png)
+
+##### 2.1.4: The Wrong Bias 
+
+- if the transistor is biased wrongly then the signal might also get clipped even if the AC input is small.
+
+- Suppose for example, the Q point was chosen to be N by mistake. Then even for a small AC input, the output might be clipped in the negative half.
+
+![](image/2022-11-27-23-20-06.png)
+
+##### 2.1.5: Frequency Effects 
+
+- The transistor will not amplify all frequencies equally - that can distort a more complex signal that has multiple frequencies.
+
+![](image/2022-11-27-23-27-11.png)
 
 
+##### 2.1.6: Power analysis - class A 
 
+![](image/2022-11-27-23-32-51.png)
+
+- Imagine common-emitter amplifier powering a resistive load.
+
+- Then load receives the amplified $I_c$ wave (green) with magnitude.
+
+- The amplified wave is usually smaller than the quiescent current.
+
+- In fact the amplified wave should never have a peak-peak current greater than 2$I_Q$. So output power is much smaller than that consumed.
+
+![](image/2022-11-27-23-38-51.png)
+
+##### 2.1.7: Class A amplifier: summary 
+
+![](image/2022-11-27-23-40-30.png)
+
+#### 2.2: Class B 
+
+##### 2.2.1: Class B push pull amplifier
+
+![](image/2022-11-27-23-48-10.png)
+
+- To improve efficiency compared to a Class A amplifier, we may try to eliminate the dissipation at zero output. That means, we aim to design an amplifier whose dissipation is zero when $v_{in} = 0$
+
+- The solution will be Class B push-pull output stage.
+
+![](image/2022-11-27-23-53-55.png)
+
+![](image/2022-11-27-23-54-21.png)
+
+![](image/2022-11-27-23-56-58.png)
+
+![](image/2022-11-27-23-57-15.png)
+
+![](image/2022-11-27-23-57-33.png)
+
+##### 2.2.2: Class B amplifier crossover distortion 
+
+![](image/2022-11-28-00-00-18.png)
+
+##### 2.2.3: Power analysis - Class B 
+
+![](image/2022-11-28-00-02-56.png)
+
+##### 2.2.4: Summary 
+
+![](image/2022-11-28-00-03-39.png)
+
+#### 2.3: Class AB 
+
+##### 2.3.1: Class AB power amplifier 
+
+![](image/2022-11-28-00-05-57.png)
+
+##### 2.3.2: Crossover distortion improvement in Class AB
+
+![](image/2022-11-28-00-09-38.png)
+
+##### 2.3.3: Summary 
+
+![](image/2022-11-28-00-11-07.png)
