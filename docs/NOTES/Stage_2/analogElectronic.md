@@ -768,4 +768,3 @@ $$
 ![](image/2022-11-28-00-11-07.png)
 
 ## VII: Operational Amplifier 
-

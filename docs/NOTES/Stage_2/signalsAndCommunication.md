@@ -1931,3 +1931,26 @@ $$
 
 - This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
 
+{
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["S"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["Q"],
+            "commands": [":q!"],
+        }{
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["S"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["Q"],
+            "commands": [":q!"],
+        }
