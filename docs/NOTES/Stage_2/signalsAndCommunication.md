@@ -1686,7 +1686,6 @@ $$
 
 
 
-- This method can be used to solve the differential equations with the invert laplace transform.
-
+- This method can be used to solve the differential equations with the invert laplace transform
 
 
