@@ -1686,9 +1686,6 @@ $$
 
 
 
-<<<<<<< HEAD
-- This method can be used to solve the differential equations with the invert laplace transform
-=======
 - This method can be used to solve the differential equations with the invert laplace transform.
 
 #### 3.8: Example 1: Capacitor Discharging 
@@ -1742,7 +1739,6 @@ $$
 ##### 3.10.2: Transfer Functions in Series 
 
 - If two systems with transfer function $H_1(s)$ and $H_2(s)$ are in series.
->>>>>>> origin/HEAD
 
 
 ![](image/2022-11-27-07-27-24.png)
