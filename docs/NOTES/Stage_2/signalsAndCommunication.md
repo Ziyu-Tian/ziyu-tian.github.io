@@ -1931,4 +1931,8 @@ $$
 
 - This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
 
+$$
+\d
+
+
 
