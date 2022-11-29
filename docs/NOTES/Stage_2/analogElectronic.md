@@ -849,3 +849,4 @@ So: $s_{out} = A(s_{in}-s_f)$
 
 #### 3.4: Advantage 3 - noise rejection
 
+
