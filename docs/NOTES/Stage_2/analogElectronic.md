@@ -771,3 +771,11 @@ $$
 
 ### 1: Introduction 
 
+- Op-Amps are as general purpose amplifier:
+
+![](image/2022-11-29-08-05-15.png)
+
+
+
+- Two Golden rules :
+    - Rule 1: 
