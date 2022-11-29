@@ -210,8 +210,8 @@ $$
 
 The collector current increases exponentially with $V_{BE}$.
 
-|![](image/2022-11-14-15-37-20.png)|![](image/2022-11-14-15-37-29.png)|
-|---|---|
+| ![](image/2022-11-14-15-37-20.png) | ![](image/2022-11-14-15-37-29.png) |
+| ---------------------------------- | ---------------------------------- |
 
 ![](image/2022-11-14-15-39-54.png)
 
@@ -497,8 +497,8 @@ $$
 #### 1.1: MOSFETs operation
 
 
-|![](image/2022-11-27-20-27-35.png)|![](image/2022-11-27-20-27-47.png)|
-|----|----|
+| ![](image/2022-11-27-20-27-35.png) | ![](image/2022-11-27-20-27-47.png) |
+| ---------------------------------- | ---------------------------------- |
 
 #### 1.2: BJT vs MOSFET 
 
@@ -681,8 +681,8 @@ $$
 
 - In fact this problem becomes an issue as soon as the output signal reaches $V_{cc}~V_{CE-SAT}$.
 
-|![](image/2022-11-27-23-06-28.png)|![](image/2022-11-27-23-07-00.png)|
-|----|----|
+| ![](image/2022-11-27-23-06-28.png) | ![](image/2022-11-27-23-07-00.png) |
+| ---------------------------------- | ---------------------------------- |
 
 ##### 2.1.3: MOSFET clipping distortion 
 
@@ -778,4 +778,76 @@ $$
 
 
 - Two Golden rules :
-    - Rule 1: 
+    - Rule 1: the output attempts to do whatever is necessary to make the voltage between the two inputs zero.
+    - The input draw no current.
+
+### 2: Classic op-amp circuits
+
+- Inverting Amplifier 
+
+$$
+\frac{v_{out}}{v_{in}} = -\frac{R_1}{R_1}
+$$
+
+- Non-inverting Amplifier 
+
+$$
+\frac{V_o}{v_i} = \frac{R_2}{R_1} +1
+$$
+
+- Difference Amplifier 
+
+$$
+V_{o} = \frac{R_2}{R_1}(V_2-V_1)
+$$
+
+- Instrument Amplifier:
+
+$$
+V_o = -(V_1-V_2)(1+\frac{R_2}{R_1}\times 2)\frac{R_4}{R_3}
+$$
+
+### 3: Feedback 
+
+
+- A: Basic amplifier gain
+
+- f: Feedback gain factor 
+
+- $S_{out}$: Output signal
+
+- $S_e$: Error signal
+
+- $S_f$: Feedback signal 
+
+
+- In negative, the feedback signal tries to negate the input, so it is termed error.
+
+#### 3.1: Feedback Gain
+
+For any amplifier, the output signal will be given by:
+
+$$
+s_{out} = As_e
+$$
+
+where:
+
+$$
+\begin{case}
+    s_e &= s_{in} - s_f \\
+    s_f &= fs_{out}
+\end{case}
+$$
+
+So: $s_{out} = A(s_{in}-s_f)$
+
+#### 3.2: Advantage 1 - Gain sensitivity
+
+#### 3.3: Advantage 2 - Eliminating distortion 
+
+
+#### 3.4: Advantage 3 - noise rejection
+
+
+
