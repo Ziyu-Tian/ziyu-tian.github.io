@@ -837,3 +837,15 @@ Each processor needs to be:
 - Process data 
 - Write data 
 
+#### 5.6.2: CPU Instruction cycle
+
+- PC: program counters
+
+- MAR: memory access registers
+
+- MDR: memory data registers
+
+- MBR: memory buffer registers]
+
+
+
