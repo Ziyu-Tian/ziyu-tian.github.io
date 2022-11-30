@@ -167,8 +167,18 @@ strcmp("a","b");//which can return a number show the '>','<','=' relation
 string s;//define the string
 string s_1;
 int size = s.length();//get the length of string
-int i;// string 's' can also be set using s[i]
+int i;// string 's' cannot be visited using the index simply, which would be declared later
 s_1.append(1,s[i]);//append can be used to append
+```
+
+- Note that the "string" type cannot br treated as the character array simply:
+
+```cpp
+string s_1 = "test";
+char a[10] = "test";
+// Both the string and char[] can be "viewed" using the index simply
+cout << char[0]; // output will be 't'
+cout << string[0]; // the output will be 't' as well 
 ```
 
 * For the 'string' type, we can use 'stringstream' type to do type change:
@@ -183,7 +193,7 @@ string_stream.clear();// clear the stringstream after usage
 
 
 ```
-
+   
 
 #### 2.6: Symbolic names and Constant
 ```cpp
