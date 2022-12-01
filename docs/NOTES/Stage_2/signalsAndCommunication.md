@@ -1947,7 +1947,36 @@ $$
 
 - Change the minus $\omega$ back to positive using the type of the function.
 
+## IX: Z transforms
 
+### 1: Introduction to Z transfrom 
+
+- The Z transform can be considered as the discrete-time equivalent of the Laplace Transform.
+
+- It can be used to characterize systems with the transfer function and solve difference equations with non-zero initial conditions.
+
+- A **difference equation** is the discrete equivalent of a differential equation, such as:
+
+$$
+y[k] = 2x[k]-x[k-1]
+$$
+
+is a first-order difference equation.
+
+
+### 2: Definition of Z Transform 
+
+For a sequence $f[k]$, the Z transform is defined as:
+
+$$
+F(z) = \mathcal{Z}\{f[k]\} = \displaystyle\sum_{k=0}^{\infty} f[k]z^{-k}
+$$
+
+which is an infinite series that we expand as:
+
+$$
+\mathcal{}
+$$
 
 
 
