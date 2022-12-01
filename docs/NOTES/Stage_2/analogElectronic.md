@@ -834,10 +834,10 @@ $$
 where:
 
 $$
-\begin{case}
+\begin{cases}
     s_e &= s_{in} - s_f \\
-    s_f &= fs_{out}
-\end{case}
+    s_f &= fs_{out}    
+\end{cases}
 $$
 
 So: $s_{out} = A(s_{in}-s_f)$
