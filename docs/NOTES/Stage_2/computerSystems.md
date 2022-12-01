@@ -845,7 +845,13 @@ Each processor needs to be:
 
 - MDR: memory data registers
 
-- MBR: memory buffer registers]
+- MBR: memory buffer registers
+
+- IR: instruction register 
+
+- CIR: current instruction register 
+
+- CC: Condition code register 
 
 
 

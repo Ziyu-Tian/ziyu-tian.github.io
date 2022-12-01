@@ -1931,8 +1931,24 @@ $$
 
 - This is known as the $t-\omega$ duality principle and allows us to find the Fourier Transform of other functions.
 
+- The time-frequency relationship will be:
+
 $$
-\d
+\mathcal{F}\{F(t)\} = 2\pi f(-\omega)
+$$
+
+![](image/2022-12-01-10-35-38.png)
+
+![](image/2022-12-01-10-35-56.png)
+
+- Find the same equation in the frequencies domain.
+
+- Multiply with $2\pi$ and change 't' to the '-$\omega$'.
+
+- Change the minus $\omega$ back to positive using the type of the function.
+
+
+
 
 
 
