@@ -839,19 +839,86 @@ Each processor needs to be:
 
 #### 5.6.2: CPU Instruction cycle
 
-- PC: program counters
+- PC: (program counters) count the number of memory address number.
 
-- MAR: memory access registers
+- MAR: (memory access registers) access the address of memory transferred from PC.
 
-- MDR: memory data registers
+- MDR: (memory data registers) fetch the data or instruction from memory according to the address transferred for MAR.
 
 - MBR: memory buffer registers
 
 - IR: instruction register 
 
-- CIR: current instruction register 
+- CIR: (current instruction register) decode and execute the instruction or data.
 
 - CC: Condition code register 
 
+![](image/2022-12-01-22-08-45.png)
 
 
+- **Fetching**: The next instruction is fetched from the memory address (that is currently stored in the PC), and stored in the instruction register (IR). At theend of the fetch operation, the PC points to the next instruction that will be read in next cycle.
+
+- **Decode**: during the cycle the encoded instruction in the IR is interpreted by the decoder.
+
+- **Execute**: The CPU and ALU (Arithmetic Logic Unit) receive the signal and PC may be updated to a different address from which the next instruction will be fetched.
+
+
+#### 5.6.3: Data Flow (Execute)
+
+- Fetch and Decode are very common in all CPU architectures, **while Execute flow may vary**.
+
+- **Execute** usually does nit access main memory.
+
+- May include:
+    - Memory read / write 
+    - IO
+    - Register transfer 
+    - ALU operation 
+
+#### 5.6.4: Data Flow (with interrupt)
+
+- CPU data flow can be interrupted by IO or others.
+
+- Current PC saved to allow resumption after interrupt.
+
+- Data contents of the current instruction copied to MBR/MDR form memory.
+
+- Instruction address saved in special memory location via MAR.
+
+- After loaded the current flow then fetch the next instruction.
+
+#### 5.6.4: Prefetch 
+
+- Some architectures can fetch next instruction during execution of current instruction (pipelining).
+
+- Prefetch can require accessing main memory.
+
+![](image/2022-12-01-22-31-09.png)
+
+- Prefetch offers good performance as it reduces the latency between CPU and the main memory.
+
+#### 5.6.5: Pipelining 
+
+- Fetch instruction (memory read)
+
+- Decode instruction (internal decode)
+
+- Control operand addresses (internal control)
+
+- Fetch operand (memory read)
+
+- Execute instructions (ALU)
+
+- Write result (write memory)
+
+- **Overlap these operations.**
+
+#### 5.6.6: Timing of Pipelining 
+
+
+
+![](image/2022-12-01-22-36-24.png
+
+#### 5.6.7: Branch in Pipelining 
+
+![](image/2022-12-01-22-36-51.png)
