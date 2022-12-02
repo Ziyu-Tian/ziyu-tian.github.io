@@ -1697,7 +1697,7 @@ $$
 
 - The first-order differential equation is $EC\frac{dv_c}{dt} + v_C = 0$
 
-- $v_c (t) = Ve^{-\frac{t}{RC}$.
+- $v_c (t) = Ve^{-\frac{t}{RC}}$.
 
 #### 3.9: Example 2: RLC Circuit 
 
@@ -1975,9 +1975,50 @@ $$
 which is an infinite series that we expand as:
 
 $$
-\mathcal{}
+\mathcal{Z}\{f[k]\} = \frac{f[0] }{z^0} + \frac{f[1]}{z^1} + ...
 $$
 
+In most case, it will be possible to express these infinite series in s closed form. 
+
+The closed form exist when the values of z are within the region of convergence.
 
 
+#### 2.1: Example 1
+
+For example, find the Z transform of $x[k] = a^k$:
+
+Apply the definition then:
+
+$$
+\mathcal{Z}\{a^k\} = \frac{1}{1-\frac{a}{2}} = a^0 + \frac{a^1}{z^1} + \frac{a^2}{z^2}+...
+$$
+
+This is an infinite geometric series with common ratio of $\frac{a}{z}$, whose converge to:
+
+$$
+\displaystyle\frac{1}{1-\frac{a}{z}}
+$$
+
+So:
+
+$$
+\mathcal{Z}\{a^k\} = \frac{1}{1-\frac{a}{z}}
+$$
+
+Therefore the z transform converges when |z| > |a|, which that range can be expressed as the shadow area:
+
+// image of the ROC
+
+#### 2.2: Example 2
+
+Find the z transform of unit step function in discrete form:
+
+$$
+f[k] = \begin{cases}
+    1, \quad k\ge 0 \\
+    0, \quad k < 0
+\end{cases}
+$$
+
+Use the definition of z transform:
 
