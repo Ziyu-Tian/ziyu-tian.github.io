@@ -2023,5 +2023,127 @@ $$
 Use the definition of z transform:
 
 $$
-F(z) = \mathcal{Z}\{f[k]\} = \sum
+F(z) = \mathcal{Z}\{f[k]\} = \sum_{k=0}^{\infty} f[k]z^{-k}
 $$
+
+We find that:
+
+$$
+F(z) = 1+ \frac{1}{z^1} + \frac{1}{z^2} + \frac{1}{z^3} + ... = \displaystyle\frac{1}{1-\frac{1}{z}} = \frac{z}{z-1}
+$$
+
+when $|z|>1$, this sequency is called as the **unit step function** denoted by $u(k)$.
+
+// image of the uni step function 
+
+#### 2.3: Table of Common Z Transform 
+
+// image of Z transform table
+
+### 3: Properties of the Z transform 
+
+#### 3.1: Linearity 
+
+$$
+\mathcal{Z}\{f[k] + g[k]\}= \mathcal{Z}\{f[k]\} + \mathcal{Z}\{g[k]\}
+$$
+
+and 
+
+$$
+\mathcal{Z}\{\alpha f[k]\} = \alpha \mathcal{Z}\{f[k]\}
+$$
+
+
+#### 3.2: First Shift Theorem 
+
+$$
+\mathcal{Z}\{f[k+i]\} = z^iF(z) - (z^if[0] + z^{i-1}f[1] + ... + zf[i-1])
+$$
+
+While in this module, we will use the first shift theorem for $i=1$ and $i=2$:
+
+$$
+\mathcal{Z}\{f[k+1]\} = zF(z) - zf[0]
+$$
+
+and 
+
+$$
+\mathcal{Z}\{f[k+2]\} = z^2F(z) - z^2f[0]-zf[1]
+$$
+
+#### 3.3: Second Shift Theorem 
+
+$$
+\mathcal{L}\{f[k-1]u[k-1]\} = z^{-1}F(z)
+$$
+
+### 4: Inverse Z Transforms
+
+- We need to manipulate $F(s)$ so that it looked like the functions in the table of common z transform.
+
+- We will also use partial fractions to find the inverse z transform.
+
+
+### 5: Solving Difference Equations using Z transform 
+
+- Z Transform can be used to solve difference equations.
+
+For example, to solve $x[k+1]-3x[k]=0$ with the initial condition $x[0] = 1$:
+
+Take the z transform in both side:
+
+$$
+\mathcal{Z}\{x[k+1]\} - \mathcal{Z}\{3x[k]\} = \mathcal{Z}\{0\}
+$$
+
+Using the first shift theorem:
+
+$$
+zX(z) -zx[0] - 3X(z) = 0
+$$
+
+We find the $X(z)$:
+
+$$
+X(z) = \frac{z}{z-3}
+$$
+
+Using the inverse z transform:
+
+$$
+x[k] = 3^k
+$$
+
+### 6: Stability of a LTI System
+
+- A linear time-invariant system is only stable if its system function $H(z)$ includes the unit circle.
+
+- This means that all poles of $H(z)$ lies inside the unit circle.
+
+- For example, for a LTI system with $H(z)$ given by:
+
+$$
+H(z) = \displaystyle\frac{1}{(1+a)z-5}
+$$
+
+then determine the $a$ so that the system is stable.
+
+- The pole must be within the unit cycle to be stable:
+
+$$
+\begin{aligned}
+    (1+a)z-5 &= 0 \\
+    z &= \frac{5}{1+a}
+\end{aligned}
+$$
+
+- To make:
+
+$$
+-1 < \frac{5}{1+a} <1
+$$
+
+So a < -6 or a > 4 to make the system stable.
+
