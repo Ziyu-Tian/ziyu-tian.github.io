@@ -911,3 +911,11 @@ $$
 - Where $\tilde{v_n}$ is the *rms* noise at the amplifier input.
 
 - The easiest way to analyze this is to simply assume the input signal is a combination of signal $s_{in$ and noise $\tilde{v_n}$
+
+- The signal to noise ratio is then defined as:
+
+$$
+SNR = \displaystyle\frac{Afs_{in}}{Af\tilde{v_n}} = \frac{s_{in}}{\tilde{v_n}}
+$$
+
+
