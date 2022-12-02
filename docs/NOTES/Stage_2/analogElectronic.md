@@ -809,7 +809,6 @@ $$
 
 ### 3: Feedback 
 
-
 - A: Basic amplifier gain
 
 - f: Feedback gain factor 
@@ -820,10 +819,11 @@ $$
 
 - $S_f$: Feedback signal 
 
-
 - In negative, the feedback signal tries to negate the input, so it is termed error.
 
 #### 3.1: Feedback Gain
+
+![](image/2022-12-02-08-10-30.png)
 
 For any amplifier, the output signal will be given by:
 
@@ -840,15 +840,74 @@ $$
 \end{cases}
 $$
 
-So: $s_{out} = A(s_{in}-s_f)$
+where $f$ is the feedback factor.
+
+So: $s_{out} = A(s_{in}-s_f) = A(s_{in}-fs_{out}$
+
+By definition:
+
+$$
+A_f = \frac{s_{out}}{s_{in}} = \frac{A(s_{in}-fs_{out})}{s_{in}} = A - \frac{A.fs_{out}}{s_{in}}
+$$
+
+So:
+
+$$
+A_f = A - Af\frac{s_{out}}{s_{in}} = A-AfA_f
+$$
+
+Finally:
+
+$$
+A_f = \frac{A}{1+Af} \approx \frac{1}{f}
+$$
+
 
 #### 3.2: Advantage 1 - Gain sensitivity
 
+If assume:
+
+$$
+A = A\pm \delta A
+$$
+
+Bring back to the former formula:
+
+$$
+A_f = \frac{A \pm \delta A}{1+(A\pm \delta A)f}
+$$
+
+As long as $Af >> 1$:
+
+$$
+A_f \approx \frac{1}{f}
+$$
+
 #### 3.3: Advantage 2 - Eliminating distortion 
+
+- Suppose the basic amplifier is distortive. So the output does not give a sine wave for a sine wave input.
+
+
+|![](image/2022-12-02-08-15-25.png)|![](image/2022-12-02-08-16-10.png)|
+|----|----|
+
+- The gain is about 1/f. 
+
+- This gives a very good property of feedback amplifier in terms of eliminating distortion.
 
 
 #### 3.4: Advantage 3 - noise rejection
 
+|![](image/2022-12-02-08-19-29.png)|![](image/2022-12-02-08-19-50.png)|
+|----|----|
 
 
+- Consider a noisy amplifier scenario (predicted conditions). It generates noise, such that:
 
+$$
+s\prime _e = s_e + \tilde{v_n}
+$$
+
+- Where $\tilde{v_n}$ is the *rms* noise at the amplifier input.
+
+- The easiest way to analyze this is to simply assume the input signal is a combination of signal $s_{in$ and noise $\tilde{v_n}$
