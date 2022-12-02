@@ -2022,3 +2022,6 @@ $$
 
 Use the definition of z transform:
 
+$$
+F(z) = \mathcal{Z}\{f[k]\} = \sum
+$$
