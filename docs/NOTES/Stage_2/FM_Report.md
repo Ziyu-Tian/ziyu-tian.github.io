@@ -3,7 +3,7 @@
 ## 1: The principle of FM 
 
 $$
-v_s(t) = V_c\sum_{n=0}^{\infty} J_n (\ beta) \cos{(2\pi (f_c\pm nf_m)t)}
+v_s(t) = V_c\sum_{n=0}^{\infty} J_n (\beta) \cos{(2\pi (f_c\pm nf_m)t)}
 $$
 
 ## 2: Frequency conversion factor 

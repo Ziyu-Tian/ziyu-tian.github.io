@@ -1721,7 +1721,7 @@ $$
 
 ##### 3.10.1: Example 1
 
-- The low-pass filter can beexpressed as the differential equation:
+- The low-pass filter can be expressed as the differential equation:
 
 ![](image/2022-11-27-07-24-20.png)
 
@@ -2075,7 +2075,7 @@ $$
 #### 3.3: Second Shift Theorem 
 
 $$
-\mathcal{L}\{f[k-1]u[k-1]\} = z^{-1}F(z)
+\mathcal{Z}\{f[k-1]u[k-1]\} = z^{-1}F(z)
 $$
 
 ### 4: Inverse Z Transforms
