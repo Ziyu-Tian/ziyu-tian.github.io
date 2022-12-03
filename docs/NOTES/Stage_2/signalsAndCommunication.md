@@ -2007,7 +2007,7 @@ $$
 
 Therefore the z transform converges when |z| > |a|, which that range can be expressed as the shadow area:
 
-// image of the ROC
+![](image/2022-12-03-11-02-38.png)
 
 #### 2.2: Example 2
 
@@ -2034,12 +2034,11 @@ $$
 
 when $|z|>1$, this sequency is called as the **unit step function** denoted by $u(k)$.
 
-// image of the uni step function 
+![](image/2022-12-03-11-02-57.png)
 
 #### 2.3: Table of Common Z Transform 
 
-// image of Z transform table
-
+![](image/2022-12-03-11-03-14.png)
 ### 3: Properties of the Z transform 
 
 #### 3.1: Linearity 
