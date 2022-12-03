@@ -919,3 +919,154 @@ SNR = \displaystyle\frac{Afs_{in}}{Af\tilde{v_n}} = \frac{s_{in}}{\tilde{v_n}}
 $$
 
 
+#### 3.5: Cost of Feedback 
+
+- Feedback comes with reduced gain, hence you may need to add a pre-amplifier to boost the gain.
+
+- Wherever you have a loop, there is hazard of oscillation.
+
+#### 3.6: Frequency response - open loop 
+
+For the amplifier without feedback, we can simply define the frequency response in terms of the first pole:
+
+$$
+A(j\omega) = \frac{A_{LF}}{1+i\omega/P_1}
+$$
+
+![](image/2022-12-03-08-52-46.png)
+
+### 4: Non-ideal performance 
+
+#### 4.1: Slew rate 
+
+![](image/2022-12-03-09-02-53.png)
+
+#### 4.2: Input offset voltage 
+
+![](image/2022-12-03-09-03-41.png)
+
+## VIII: Digital to Analog Conversion (& back again)
+
+### 1: Analog <-> digital representation 
+
+![](image/2022-12-03-09-06-24.png)
+
+### 2: Accuracy in ADC/DAC conversion 
+
+
+Consider the two components of information in the signal:
+
+- **Time**: Accuracy is determined by the sampling rate ($\Delta T$)
+
+- **Amplitude**: Accuracy is determined by the dynamic range resolution ($\Delta S$)
+
+These will determine the rate of information the system to deal with, which is called the bit rate, defined by:
+
+$$
+BR = information\quad packet \quad size \times sampling \quad rate
+$$
+
+![](image/2022-12-03-09-15-17.png)
+
+### 3: Nyquist - Shannon theorem 
+
+Minimum sampling rate should be at least twice the highest data frequency of the analog signal:
+
+$$
+f_{sampling} \ge 2.f_{max}
+$$
+
+### 4: ADC/DAC Quantization error (noise)
+
+![](image/2022-12-03-09-32-46.png)
+
+$S_{out}$ is affected by the discrete levels. It is not possible to match exactly, the error $S_{out} - S_{in}$ is the quantization noise that has an amplitude of $\pm \frac{1}{2}$ LSB.
+
+- If all error values are equally likely the RMS quantization error is:
+
+$$
+NOISE_{RMS} = \frac{1}{\sqrt{12}}LSB = 0.3LSB
+$$
+
+### 5: ADC/DAC Quantization SNR 
+
+![](image/2022-12-03-09-40-55.png)
+
+### 6: Digital to Analog conversion 
+
+#### 6.1: Core principle 
+
+![](image/2022-12-03-09-42-32.png)
+
+#### 6.2: DAC system 
+
+Objective is to take a digital signal and convert it into an analog one. It can use a simple summing amplifier, which is know as a weighted resistor DAC.
+
+![](image/2022-12-03-09-45-45.png)
+
+#### 6.3: Weighted resistor DAC 
+
+![](image/2022-12-03-09-47-13.png)
+
+#### 6.4: R-2R Ladder network DAC 
+
+![](image/2022-12-03-09-50-18.png)
+
+
+#### 6.5: Capacitive DAC
+
+![](image/2022-12-03-10-01-49.png)
+
+#### 6.6: Charge Scaling DAC 
+
+![](image/2022-12-03-10-04-12.png)
+
+
+### 7: Analog to digital Conversion 
+
+#### 7.1: Types of ADC's 
+
+- Flash ADC 
+
+- Sigma-delta ADC 
+
+- Successive approximation converter 
+
+#### 7.2: Sample and hold concept 
+
+![](image/2022-12-03-10-15-21.png)
+
+#### 7.3: Comparator 
+
+![](image/2022-12-03-10-15-41.png)
+
+#### 7.4: Flash ADC - operational principle
+
+![](image/2022-12-03-10-24-33.png)
+
+#### 7.5: Flash ADC -3 Bit ADC
+
+![](image/2022-12-03-10-26-33.png)
+
+#### 7.6: Half Flash ADC 
+
+If we need high resolution (high number of bits) but don't have the space for lots of components.
+
+![](image/2022-12-03-10-32-47.png)
+
+#### 7.7: Sigma-delta ADC 
+
+![](image/2022-12-03-10-33-53.png)
+
+![](image/2022-12-03-10-34-05.png)
+
+#### 7.8: Successive approximation 
+
+
+![](image/2022-12-03-10-49-40.png)
+
+![](image/2022-12-03-10-52-20.png)
+
+#### 7.9: ADC Comparison 
+
+![](image/2022-12-03-10-57-39.png)
