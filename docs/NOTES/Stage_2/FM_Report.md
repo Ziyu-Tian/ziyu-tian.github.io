@@ -3,7 +3,7 @@
 
 ## Abstract 
 
-This experiment calculated the frequency conversion factor $\alpha$, generated and validated the frequency spectrum of narrow-band FM and wide-band FM with FM theory, verified the composition ratio of FM carrier power and total power in final result. Carried out the frequency shift keying demodulation with the plotted measurement graph of demodulated frequency response of slope detector and ratio detector, which satisfied the theoretical properties.
+This experiment calculated the frequency conversion factor $\alpha$, generated and validated the frequency spectrum of narrow-band FM and wide-band FM with FM theory, verified the composition ratio of FM carrier power and total power in final result. Carried out the frequency shift keying and frequency demodulation with the plotted measurement graph of demodulated frequency response of slope detector and ratio detector, which satisfied the theoretical properties.
 
 ## Introduction
 
