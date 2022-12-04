@@ -1,10 +1,13 @@
-# FM and FSK Lab Sheet 
+<div align='center' ><font size ='6'>Frequency  Modulation and Frequency Shift Keying Lab Report</font> </div>
 
-## 1: The principle of FM 
 
-$$
-v_s(t) = V_c\sum_{n=0}^{\infty} J_n (\beta) \cos{(2\pi (f_c\pm nf_m)t)}
-$$
+## Abstract 
+
+This experiment calculated the frequency conversion factor $\alpha$, generated and validated the frequency spectrum of narrow-band FM and wide-band FM with FM theory, verified the composition ratio of FM carrier power and total power in final result. Carried out the frequency shift keying demodulation with the plotted measurement graph of demodulated frequency response of slope detector and ratio detector, which satisfied the theoretical properties.
+
+## Introduction
+
+The Frequency Modulation 
 
 ## 2: Frequency conversion factor 
 
@@ -41,8 +44,6 @@ calculate the $\alpha$ (almost 5.5K).
 - Measure the bandwidth.
 
 - Same operation for WBFM. 
-
-## 5: 
 
 
 
