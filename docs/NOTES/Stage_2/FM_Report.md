@@ -9,7 +9,7 @@ This experiment calculated the frequency conversion factor $\alpha$, generated a
 
 The main principle of this experiment is using the formula of linear voltage-frequency convertor to calculated frequency conversion factor $\alpha$:
 $$
-\alpha = \frac{\Delta f}{\Delta V}\tag{1}
+\alpha = \frac{\Delta f_{OUT}}{\Delta V_{IN}}\tag{1}
 $$
 with the modulation index $\beta$ [1] calculated by:
 $$
@@ -36,9 +36,9 @@ With these theory, this experiment mainly aimed at determining frequency convers
 
 ## Procedure 
 
-- To calculate the $\alpha$, we set $V_1 = 0$ for the initial condition and $V_2 = 1 V_{pp}$. According to the measurement on oscilloscope, note down the $f_1$ and $f_2$ for two conditions.
+- To calculate the $\alpha$, we set $V_1 = 0$ for the initial condition and $V_2 = 1 V$. According to the measurement on oscilloscope, note down the $f_1$ and $f_2$ for two conditions.
 
-- Connect the AC signal output, varying the $V_m$ values, so that the number of the sidebands may change until the carrier component being suppressed, then record and compare the spectrum of signal.
+- Connect the AC signal output of 1 kHz, varying the $V_m$ values, so that the number of the sidebands may change until the carrier component being suppressed, then record and compare the spectrum of signal.
 
 - Narrow-band means there is only one pairs of sideband in spectrum[3]. Change the $V_m$ until only have one pair of sideband, record the spectrum and modulation index $\beta$.
 
@@ -60,12 +60,49 @@ $$
 
 ## Result and Discussion 
 
+In terms of the measurement, we record the values of $f_1$ adn $f_2$ using x-cursor, for the $V_1=0$ and $V_2 = 1V$ respectively in Fig.2. As the formula:
+$$
+\Delta f_{OUT} = f_2 -f_1\tag{4.1} 
+$$
+and 
+$$
+\Delta V_{IN} = V_2 - V_1\tag{4.2}
+$$
+In consequence, the $\displaystyle\alpha = \frac{f_1-f_2}{V_2 -V_1}=7.3$ kHz/V.
+
+When there is no sine wave connect, according to equation(1) and equation(2):
+$$
+\beta = \frac{\alpha V_m}{f_m}\tag{5}
+$$
+as $V_m = 0$ of sine wave disconnected, $\beta = 0$, there is only one carrier component in spectrum as shown in Fig.3.
+
+Varying the max voltage (shown as $V_{pp}$) in oscilloscope, we found the carrier component suppressed when $V_{pp}=600$ mV, i.e. $V_m = 300$ mV shown in Fig.4. Using equation (5), the $\beta = \displaystyle\frac{7.3 \times 0.3}{1} = 2.19$ V/kHz. Compared with Bessel Function Tables in Fig.1, the $\beta$ is close to $\beta = 2$, which have four pairs of sidebands, just as Fig.4 shown.
+
+Continue varying the max voltage until the signal is NBFM, it is noted the $V_{pp} = 60$ mV (i.e. $V_m = 30$ mV) in Fig.5. According to equation (5), $\beta = \displaystyle\frac{7.3 \times 0.03}{1}$ V/kHz. Compared to the Bessel Function Tables in Fig.1, $\beta = 0.219$ closes to $\beta = 0.2$, which has 1 pair of sideband, verify the experimental result of NBFM.
+
+
+
+
+
 
 
 
 
 ![](image/2022-12-04-22-58-03.png)
 <font size=2><center>Fig.2. $f_1$ and $f_2$</center></font>
+
+![](image/2022-12-05-05-51-18.png)
+<font size=2><center>Fig.3. Spectrum when $\beta =0$</center></font>
+
+![](image/2022-12-05-05-51-43.png)
+<font size=2><center>Fig.4. Suppressed Carrier Spectrum </center></font>
+
+![](image/2022-12-05-06-03-05.png)
+<font size=2><center>Fig.5. NBFM Spectrum </center></font>
+
+
+
+
 
 ## Reference 
 
