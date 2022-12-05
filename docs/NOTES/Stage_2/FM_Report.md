@@ -34,6 +34,7 @@ With these theory, this experiment mainly aimed at determining frequency convers
 ![](image/2022-12-04-22-21-11.png)
 <font size=2><center>[2]Fig.1.Bessel Function Table</center></font>
 
+
 ## Procedure 
 
 - To calculate the $\alpha$, we set $V_1 = 0$ for the initial condition and $V_2 = 1 V$. According to the measurement on oscilloscope, note down the $f_1$ and $f_2$ for two conditions.
@@ -107,11 +108,6 @@ $$
 
 The $\frac{P_{BL}}{P_T}\times 100 = 99.49$ %.
 
-Using the oscilloscope to measure the spectrum of FSK, the frequencies between two peak can be read form Fig.8. The $\Delta f_{pp}$ is 40 kHz as the cursors shown.
-
-Varying the frequency between 4 MHz to 6 MHz, measuring the voltage in different frequency, we plot the voltage-frequency results of both slop detector (Fig.9.1) and ratio detector (Fig.9.2). The result validate that the slope detector only have limited linear range (4.5-4.6 MHz in Fig.9.1) to demodulate the FM signal, while ratio detector have a wide-range demodulation area.
-
-
 ![](image/2022-12-04-22-58-03.png)
 <font size=2><center>Fig.2. $f_1$ and $f_2$</center></font>
 
@@ -139,7 +135,21 @@ Varying the frequency between 4 MHz to 6 MHz, measuring the voltage in different
 ![](image/2022-12-05-09-13-25.png)
 <font size=2><center>Fig.9.2. Voltage-Frequency of ratio detector </center></font>
 
+## Conclusion
 
+Using the oscilloscope to measure the spectrum of FSK, the frequencies between two peak can be read form Fig.8. The $\Delta f_{pp}$ is 40 kHz as the cursors shown.
+
+Varying the frequency between 4 MHz to 6 MHz, measuring the voltage in different frequency, we plot the voltage-frequency results of both slop detector (Fig.9.1) and ratio detector (Fig.9.2). The result validate that the slope detector only have limited linear range (4.5-4.6 MHz in Fig.9.1) to demodulate the FM signal, while ratio detector have a wide-range demodulation area.
+
+Following the results above, we verified the FM modulation theory, compared the real signal spectrum of suppressed FM, NBFM and WBFM with theoretical results in Bessel Function Tables (Fig.1). According to the values and graphs above, the sideband pairs explicitly followed the theory values, which validate the accuracy of FM theory. 
+
+During the FM power calculation, the result of $P_T$ and $P_{BL}$ show the difference of band limited power and total power significantly, only a few of insignificant component being omitted in real condition, which follow the FM theory.
+
+In FSK experiment, the graph (Fig.8) shows the result of spectrum and the measurement of bandwidth.
+
+According to the frequency demodulation tests, the frequency response curves (Fig.9.1 and Fig.9.2) verify the properties of slope detector and ratio detector apparently: the slope detector have small range of demodulation, which suited to be used in NBFM; while ratio detector have a wide-range which can be used in WBFM.
+
+In conclusion, this experiment validate the theory above successfully.
 
 ## Reference 
 
