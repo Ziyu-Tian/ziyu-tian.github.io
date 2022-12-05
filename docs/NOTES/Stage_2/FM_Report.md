@@ -76,16 +76,40 @@ $$
 $$
 as $V_m = 0$ of sine wave disconnected, $\beta = 0$, there is only one carrier component in spectrum as shown in Fig.3.
 
-Varying the max voltage (shown as $V_{pp}$) in oscilloscope, we found the carrier component suppressed when $V_{pp}=600$ mV, i.e. $V_m = 300$ mV shown in Fig.4. Using equation (5), the $\beta = \displaystyle\frac{7.3 \times 0.3}{1} = 2.19$ V/kHz. Compared with Bessel Function Tables in Fig.1, the $\beta$ is close to $\beta = 2$, which have four pairs of sidebands, just as Fig.4 shown.
+Varying the max voltage (shown as $V_{pp}$) in oscilloscope, we found the carrier component suppressed when $V_{pp}=600$ mV, i.e. $V_m = 300$ mV shown in Fig.4. Using equation (5): 
+$$
+\beta = \displaystyle\frac{7.3 \times 0.3}{1} = 2.19 \quad V/kHz
+$$ 
+Compared with Bessel Function Tables in Fig.1, the $\beta$ is close to $\beta = 2$, which have four pairs of sidebands, just as Fig.4 shown.
 
-Continue varying the max voltage until the signal is NBFM, it is noted the $V_{pp} = 60$ mV (i.e. $V_m = 30$ mV) in Fig.5. According to equation (5), $\beta = \displaystyle\frac{7.3 \times 0.03}{1}$ V/kHz. Compared to the Bessel Function Tables in Fig.1, $\beta = 0.219$ closes to $\beta = 0.2$, which has 1 pair of sideband, verify the experimental result of NBFM.
+Continue varying the max voltage until the signal is NBFM, it is noted the $V_{pp} = 60$ mV (i.e. $V_m = 30$ mV) in Fig.5. According to equation (5):
+$$
+\beta = \displaystyle\frac{7.3 \times 0.03}{1} \quad V/kHz
+$$ 
+Compared to the Bessel Function Tables in Fig.1, $\beta = 0.219$ closes to $\beta = 0.2$, which has 1 pair of sideband, verify the experimental result of NBFM. 
+
+Following the lab sheet, using the equation (5) to determine the $V_m$ when $\beta = 10$:
+$$
+V_m = \frac{\beta f_m}{\alpha} = 1.37\quad V
+$$
+so $V_{pp} = 2.74$ V. Change the voltage to 2.74 V, the spectrum of WBFM can be found using cursors in Fig.6, the bandwidth is 31.9 kHz. Check the Bessel Function Tables (Fig.1), when $\beta =10$, the signal have 14 pairs of sideband, which is the same as result in Fig.6.
 
 
+The $P_T$ is calculated by equation (3.1). Using the given value of $R_L =180 \Omega$ and $V_{RMS} = 1.05$ V as measured:
+$$
+P_T = \frac{V_{RMS}^2}{R_L} = 6.125 \quad mW
+$$
 
+Then change to the condition of $\beta = 1$, according to the equation (5), $V_m = 0.137$ V (i.e.$V_{pp} = 0.274$ V), we got the spectrum as Fig.7. Using formula (3.2), the $P_{BL}$ can be expressed:
+$$
+P_{BL} = \displaystyle\frac{1}{R_L}(V_1^2 + 2V_2 ^2 + 2V_3 ^2 + 2V_4 ^2) = 6.094 \quad mW
+$$
 
+The $\frac{P_{BL}}{P_T}\times 100 = 99.49$ %.
 
+Using the oscilloscope to measure the spectrum of FSK, the frequencies between two peak can be read form Fig.8. The $\Delta f_{pp}$ is 40 kHz as the cursors shown.
 
-
+Varying the frequency between 4 MHz to 6 MHz, measuring the voltage in different frequency, we plot the voltage-frequency results of both slop detector (Fig.9.1) and ratio detector (Fig.9.2). The result validate that the slope detector only have limited linear range (4.5-4.6 MHz in Fig.9.1) to demodulate the FM signal, while ratio detector have a wide-range demodulation area.
 
 
 ![](image/2022-12-04-22-58-03.png)
@@ -100,7 +124,20 @@ Continue varying the max voltage until the signal is NBFM, it is noted the $V_{p
 ![](image/2022-12-05-06-03-05.png)
 <font size=2><center>Fig.5. NBFM Spectrum </center></font>
 
+![](image/2022-12-05-07-06-33.png)
+<font size=2><center>Fig.6. WBFM Spectrum </center></font>
 
+![](image/2022-12-05-07-29-01.png)
+<font size=2><center>Fig.7. $\beta =1$ Spectrum </center></font>
+
+![](image/2022-12-05-09-00-42.png)
+<font size=2><center>Fig.8. FSK Spectrum </center></font>
+
+![](image/2022-12-05-09-12-24.png)
+<font size=2><center>Fig.9.1. Voltage-Frequency of Slope detector </center></font>
+
+![](image/2022-12-05-09-13-25.png)
+<font size=2><center>Fig.9.2. Voltage-Frequency of ratio detector </center></font>
 
 
 
