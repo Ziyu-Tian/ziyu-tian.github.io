@@ -7,17 +7,21 @@ This experiment calculated the frequency conversion factor $\alpha$, generated a
 
 ## Introduction
 
-The main principle of this experiment is using the formula of linear voltage-frequency convertor to calculated frequency conversion factor $\alpha$:
+Frequency Modulation (FM) is one form of angle modulation, in which the frequency (angle) of the carrier wave is varied according to the base-band signal while the amplitude of carrier wave maintain constant[1].The main principle of this FM experiment is using the formula of linear voltage-frequency convertor to calculated frequency conversion factor $\alpha$:
 $$
 \alpha = \frac{\Delta f_{OUT}}{\Delta V_{IN}}\tag{1}
 $$
-with the modulation index $\beta$ [1] calculated by:
+with the modulation index $\beta$ [2] calculated by:
 $$
 \beta = \frac{\Delta f}{f_m}\tag{2}
 $$
-then measuring the narrow-band FM, wide-band FM properties and frequency response of FSK to validate the result.
+then measuring the narrow-band FM, wide-band FM properties to validate the result.
 
-With this theory, this experiment mainly aimed at determining frequency conversion factor $\alpha$, using this value to verify the frequency spectrum of suppressed carrier FM, NBFM and WBFM, calculating and comparing the total power and band-limit power of FM, finally discovering the difference type of slope detector and ratio detector. To achieve the aims above, the tasks have been done as below:
+Frequency Shift Keying (FSK) is a special case of the construction of orthogonal signals, in which the messages are transmitted by signals that differ in frequency[3].
+
+One method to demodulate the FM signal is using slope-detector and ratio-detector, the properties can be verified by observing frequency response graphs. 
+
+With these theories, this experiment mainly aimed at determining frequency conversion factor $\alpha$, using this value to verify the frequency spectrum of suppressed carrier FM, NBFM and WBFM, calculating and comparing the total power and band-limit power of FM, finally discovering the difference type of slope detector and ratio detector. To achieve the aims above, the tasks have been done as below:
 
 - Determine the $\alpha$ using equation (1).
 
@@ -32,7 +36,7 @@ With this theory, this experiment mainly aimed at determining frequency conversi
 
 
 ![](image/2022-12-04-22-21-11.png)
-<font size=2><center>[2]Fig.1.Bessel Function Table</center></font>
+<font size=2><center>[4]Fig.1.Bessel Function Table</center></font>
 
 
 ## Procedure 
@@ -41,7 +45,7 @@ With this theory, this experiment mainly aimed at determining frequency conversi
 
 - Connect the AC signal output of 1 kHz, varying the $V_m$ values, so that the number of the sidebands may change until the carrier component being suppressed, then record and compare the spectrum of signal.
 
-- Narrow-band means there is only one pairs of sideband in spectrum[3]. Change the $V_m$ until only have one pair of sideband, record the spectrum and modulation index $\beta$.
+- Narrow-band means there is only one pairs of sideband in spectrum[5]. Change the $V_m$ until only have one pair of sideband, record the spectrum and modulation index $\beta$.
 
 - Determine the value of $V_m$ of WBFM with $\beta =10$ using equation (1) and equation (2), record the spectrum and bandwidth.
 
@@ -154,8 +158,12 @@ In conclusion, this experiment validate the theory above successfully.
 
 ## References
 
-[1]: S.S.Haykin, *Communication Systems*, New York: Wiley, 2010, pp. 110–111. 
+[1]:S.S.Haykin, *Communication Systems*, New York: Wiley, 2010, pp. 102. 
 
-[2]: L.E.Frenzel, *Principles of Electronic Communication Systems*, New York, NY: McGraw-Hill, a business unit of The McGraw-Hill Companies, Inc., 2014, pp. 159. 
+[2]: S.S.Haykin, *Communication Systems*, New York: Wiley, 2010, pp. 110. 
 
-[3]:L.E.Frenzel, *Principles of Electronic Communication Systems*, New York, NY: McGraw-Hill, a business unit of The McGraw-Hill Companies, Inc., 2014, pp. 160.
+[3]: Proakis, J.G. and Salehi, *Digital Communications*, Boston, MA: McGraw-Hill, 2007, pp. 110–111. 
+
+[4]: L.E.Frenzel, *Principles of Electronic Communication Systems*, New York, NY: McGraw-Hill, a business unit of The McGraw-Hill Companies, Inc, 2014, pp. 159. 
+
+[5]:L.E.Frenzel, *Principles of Electronic Communication Systems*, New York, NY: McGraw-Hill, a business unit of The McGraw-Hill Companies, Inc., 2014, pp. 160.
