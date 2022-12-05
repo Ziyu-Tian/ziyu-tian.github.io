@@ -65,7 +65,6 @@ In terms of the measurement, we record the values of $f_1$ adn $f_2$ using x-cur
 $$
 \Delta f_{OUT} = f_2 -f_1\tag{4.1} 
 $$
-and 
 $$
 \Delta V_{IN} = V_2 - V_1\tag{4.2}
 $$
@@ -151,7 +150,7 @@ According to the frequency demodulation tests, the frequency response curves (Fi
 
 In conclusion, this experiment validate the theory above successfully.
 
-## Reference 
+## References
 
 [1]: S.S.Haykin, *Communication Systems*, New York: Wiley, 2010, pp. 110–111. 
 
