@@ -915,10 +915,18 @@ Each processor needs to be:
 
 #### 5.6.6: Timing of Pipelining 
 
-
-
-![](image/2022-12-01-22-36-24.png
+![](image/2022-12-01-22-36-24.png)
 
 #### 5.6.7: Branch in Pipelining 
 
 ![](image/2022-12-01-22-36-51.png)
+
+
+
+
+
+
+
+
+
+
