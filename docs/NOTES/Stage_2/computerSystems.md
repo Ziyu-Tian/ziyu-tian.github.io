@@ -774,7 +774,7 @@ Every node connected to every other.
         - Status and condition code register
     - Internal (system) registers 
 
-#### 5.5.1: User Visible Registers 
+##### 5.5.1: User Visible Registers 
 
 - General Purpose:
     - true general purpose
@@ -788,7 +788,7 @@ Every node connected to every other.
 - Condition Codes (Jump register)
     - used for storing jump labels and address 
 
-#### 5.5.2: General Purpose Register 
+##### 5.5.2: General Purpose Register 
 
 - Typically 8, 16,32 or 128 (Itanium)
 - Fewer $\rightarrow$ more memory references 
@@ -799,7 +799,7 @@ Each processor needs to be:
 - Large enough to hold full address
 - Large enough to hold full word
 
-#### 5.5.3: Data and Address Register 
+##### 5.5.3: Data and Address Register 
 
 - Data registers can hold numeric values such as integer and , in some architecture, floating-point values and other data.
     - In some older and low-end CPUs, a special data register, known as the accumulator.
@@ -809,7 +809,7 @@ Each processor needs to be:
     - Some processors contain registers that may not only be used to hold an address or only to hold numeric values.
     - The number required is determined by the cost consideration and architecture.
 
-#### 5.5.4: Condition Code Registers 
+##### 5.5.4: Condition Code Registers 
 
 - Sets of individual bits.
 
@@ -821,13 +821,13 @@ Each processor needs to be:
 
 ![](image/2022-11-28-00-36-29.png)
 
-#### 5.5.5: System register
+##### 5.5.5: System register
 
 ![](image/2022-11-28-00-38-08.png)
 
-### 5.6: Control Unite: Data Flow 
+#### 5.6: Control Unite: Data Flow 
 
-#### 5.6.1: CPU Control Steps: Data Flow 
+##### 5.6.1: CPU Control Steps: Data Flow 
 
 ![](image/2022-11-15-12-15-28.png)
 
@@ -837,7 +837,7 @@ Each processor needs to be:
 - Process data 
 - Write data 
 
-#### 5.6.2: CPU Instruction cycle
+##### 5.6.2: CPU Instruction cycle
 
 - PC: (program counters) count the number of memory address number.
 
@@ -863,7 +863,7 @@ Each processor needs to be:
 - **Execute**: The CPU and ALU (Arithmetic Logic Unit) receive the signal and PC may be updated to a different address from which the next instruction will be fetched.
 
 
-#### 5.6.3: Data Flow (Execute)
+##### 5.6.3: Data Flow (Execute)
 
 - Fetch and Decode are very common in all CPU architectures, **while Execute flow may vary**.
 
@@ -875,7 +875,7 @@ Each processor needs to be:
     - Register transfer 
     - ALU operation 
 
-#### 5.6.4: Data Flow (with interrupt)
+##### 5.6.4: Data Flow (with interrupt)
 
 - CPU data flow can be interrupted by IO or others.
 
@@ -887,7 +887,7 @@ Each processor needs to be:
 
 - After loaded the current flow then fetch the next instruction.
 
-#### 5.6.4: Prefetch 
+##### 5.6.4: Prefetch 
 
 - Some architectures can fetch next instruction during execution of current instruction (pipelining).
 
@@ -897,7 +897,7 @@ Each processor needs to be:
 
 - Prefetch offers good performance as it reduces the latency between CPU and the main memory.
 
-#### 5.6.5: Pipelining 
+##### 5.6.5: Pipelining 
 
 - Fetch instruction (memory read)
 
@@ -913,16 +913,16 @@ Each processor needs to be:
 
 - **Overlap these operations.**
 
-#### 5.6.6: Timing of Pipelining 
+##### 5.6.6: Timing of Pipelining 
 
 ![](image/2022-12-01-22-36-24.png)
 
-#### 5.6.7: Branch in Pipelining 
+##### 5.6.7: Branch in Pipelining 
 
 ![](image/2022-12-01-22-36-51.png)
 
 
-#### 5.6.8: Branch Prediction 
+##### 5.6.8: Branch Prediction 
 
 - Predict the next jump.
 
@@ -949,17 +949,45 @@ Each processor needs to be:
     - Do all current in sequency until jump instruction.
     - Rearrange instructions.
 
-#### 5.6.9: Pipeline stalls - 5 stages example
+##### 5.6.9: Pipeline stalls - 5 stages example
 
-#### 5.6.10: Speed up Equation for Pipelining 
+![](image/2022-12-06-13-18-33.png)
+
+- If the machine have two transfer ports.
+
+##### 5.6.10: Speed up Equation for Pipelining 
 
 Without pipelining, cycles per instruction is equal to the number of stages in Data Flow; assuming each stage requires 1 cycle (=Ideal CPI x Pipeline depth)
 
-// Formula of Speedup 
+![](image/2022-12-06-13-20-42.png)
 
+For example:
 
-For example, dual port means there will no conflict.
+- Machine A: Dual port DRAM system, same clock for both piped and unpipelined.
 
+- Machine B: single port DRAM system, but it's pipeline implementation has a 1.05 times faster clock rate.
+
+- Ideal CPI = 1 for both: what are their comparative speed ups when Loads are 40% of the instructions executed?
+
+- Assume same clock for pipelined system:
+
+![](image/2022-12-06-13-39-08.png)
+
+- Machine A is 1.33 times faster. 
+
+##### 5.6.11: Pipelined Architectures: Examples 
+
+![](image/2022-12-06-13-41-08.png)
+
+#### 5.7: Control Unit: CPU Types 
+
+![](image/2022-12-06-13-44-51.png)
+
+##### 5.7.1: Von Neumann architecture 
+
+- common store for program and data 
+
+![](image/2022-12-06-13-47-48.png)
 
 
 
