@@ -922,10 +922,43 @@ Each processor needs to be:
 ![](image/2022-12-01-22-36-51.png)
 
 
+#### 5.6.8: Branch Prediction 
+
+- Predict the next jump.
+
+- Predict never taken (bad condition, pessimistic)
+    - Assume the jump will not happen.
+    - Always fetch next instruction.
+    - Do not prefetch after branch.
+
+- Predict always taken (good condition, optimistic) 
+    - Assume the jump will happen during fetch.
+    - Next fetch the branch target instruction.
+    - Newer processors.
+
+- Predict by Opcode:
+    - Some instructions are more likely to jump than others.
+    - Can get up to 75% success.
+
+- Taken/Not taken switch
+    - Based on a previous history.
+    - Good for loops.
+
+- Delayed Branch 
+    - Do not take jump until you have to.
+    - Do all current in sequency until jump instruction.
+    - Rearrange instructions.
+
+#### 5.6.9: Pipeline stalls - 5 stages example
+
+#### 5.6.10: Speed up Equation for Pipelining 
+
+Without pipelining, cycles per instruction is equal to the number of stages in Data Flow; assuming each stage requires 1 cycle (=Ideal CPI x Pipeline depth)
+
+// Formula of Speedup 
 
 
-
-
+For example, dual port means there will no conflict.
 
 
 
