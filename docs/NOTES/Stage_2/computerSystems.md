@@ -1027,3 +1027,52 @@ For example:
 
 ![](image/2022-12-12-10-43-42.png)
 
+#### 5.9: CPU: ALUs 
+
+#### 5.9.1: Arithmetic and Logic Unit (ALU)
+
+- Arithmetic: an instruction involving just arithmetic des not involve any communication with the outside, so it is very fast.
+
+- The ALU can perform a number of operations e.g. AND, NOT, XOR, >>, <<, etc.
+
+- The operation is selected by a function code F, which is implemented by means of a decoder. This decoder enables one of the functions.
+
+##### 5.9.2: BUilding N-bit ALUs 
+
+- To make an N-bit ALU: duplicated the 1-bit ALU N times.
+
+![](image/2022-12-12-11-06-29.png)
+
+##### 5.9.3: Understanding CPU operations 
+
+- The decoder determines the nature of the instruction in IR, and passes this on to the PLA.
+
+- The control Programmable Logic Array takes in information from all the other modules, and generate the data path operations.
+
+![](image/2022-12-12-11-09-38.png)
+
+##### 5.9.4: Example: Instruction fetch 
+
+- Fetching an arithmetic instruction form memory for example.
+
+- Loading IR with the contents of the memory location pointed to by by PC.
+
+- The operation will be like:
+    - Load PC (1) into MAR (2). This require control signals to the PC and MAR. The address will start to propagate over the system bus.
+    - Set external control signal to indicate Read (3).
+    - The memory retrieves the data, and puts it on the data bus. Wait until completion.
+    - Load MDR (4) and enable IR (5) to be decoded. This require control signals to IR and MDR.
+
+![](image/2022-12-12-11-20-30.png)
+
+##### 5.9.5: Example: ALU-based Execution 
+
+Supposed we want R3 to be set to the sum of R2 and R1. 
+
+- load R2 (1) into A latch (2).
+
+- load R1 (3) into B latch (4).
+
+- set ALU to addition mode (5) by Control Path.(PLA output).
+
+- store accumulator (6) in R3 (7).
