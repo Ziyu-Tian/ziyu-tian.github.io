@@ -989,5 +989,41 @@ For example:
 
 ![](image/2022-12-06-13-47-48.png)
 
+##### 5.7.2: Structure of a Typical CPU
 
+![](image/2022-12-12-10-32-10.png)
+
+#### 5.8: CISC and RISC 
+
+- CISC: complex instruction set computer 
+
+- RISC: reduced instruction set computer 
+
+##### 5.8.1: RISC philosophy 
+
+- Instructions of fixed length executing in a single clock cycle.
+
+- Pipelines to achieve one-instruction-per-clock-cycle (need to predict branches in program flow in advance)
+
+- Simple control logic and no micro code.
+
+- Operations performed on internal registers only; only LOAD and STORE instructions access external memory.
+
+##### 5.8.2: CISC characteristics 
+
+- Binary compatibility.
+
+- Complex control logic.
+
+- Use of micro code.
+
+- Variable-length instructions to save program memory.
+
+- Small internal register sets.
+
+- Complex addressing modes, operands can reside in external memory or internal registers.
+
+##### 5.8.3: RISC versus CISC 
+
+![](image/2022-12-12-10-43-42.png)
 
