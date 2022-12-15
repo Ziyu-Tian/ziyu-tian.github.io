@@ -294,7 +294,7 @@ There are two possible types of current flow:
 
 ![](image/2022-10-07-10-47-20.png)
 
-Hole diffusion in the n-type is given:
+Hole diffusion in the p-type is given:
 
 $$
 \begin{align*}
@@ -303,7 +303,7 @@ I_p &= AeD_p \frac{dp}{dx} \\
 \end{align*}
 $$
 
-And same for p-type:
+And same for n-type:
 
 $$
 \begin{align*}
