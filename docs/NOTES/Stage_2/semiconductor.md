@@ -188,6 +188,8 @@ $$
 * The $\phi$ is the build-in voltage generated in the depletion area.
 * The build-in electric field can be : $E = \frac{\phi }{W}$
 
+* In real condition, we assume that the drift and diffusion currents are almost equal but opposite for P-N junctions even under forward or reverse bias.
+
 ## III: P-N Junction
 
 ### 1: Relation between carrier concentration and potential difference
@@ -263,6 +265,30 @@ $$
 \begin{align*}
 \frac{n_n}{n_p} &= \exp(\frac{e}{k_B T}(\phi _{bi} -V_A)) \\
 \frac{p_p}{p_n} &= \exp(\frac{e}{k_B T}(\phi _{bi}-V_A))
+\end{align*}
+$$
+
+- Even the carrier concentration changed, in fact we can omit the change:
+
+$$
+n_{no} \approx n_n \quad p_{po} \approx p_p
+$$
+
+so that:
+
+$$
+\begin{align*}
+\frac{n_{no}}{n_p} &= \exp(\frac{e}{k_B T}(\phi _{bi} -V_A)) \\
+\frac{p_{po}}{p_n} &= \exp(\frac{e}{k_B T}(\phi _{bi}-V_A))
+\end{align*}
+$$
+
+Using the previous formula, we got:
+
+$$
+\begin{align*}
+\frac{n_p}{n_{po}} &= \exp(\frac{e}{k_B T}V_A) \\
+\frac{p_n}{p_{no}} &= \exp(\frac{e}{k_B T}V_A)
 \end{align*}
 $$
 
