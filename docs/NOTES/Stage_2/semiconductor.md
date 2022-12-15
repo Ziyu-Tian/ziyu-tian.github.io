@@ -75,7 +75,7 @@ $$
 * The carrier velocity can also be defined as:
 
 $$
-v = \nu E
+v = \mu E
 $$
 
 * $\nu$ is the **drift mobility**
@@ -83,13 +83,13 @@ $$
 So we can get:
 
 $$
-J= en\nu E
+J= en\mu E
 $$
 
 We also found the relation below:
 
 $$
-\sigma = ne\nu 
+\sigma = ne\mu 
 $$
 
 Which can be finally written as:
@@ -101,7 +101,7 @@ $$
 If we consider the minor carriers in semiconductors:
 
 $$
-\sigma = e(n\nu_n+p\nu _p)
+\sigma = e(n\mu_n+p\mu _p)
 $$
 
 #### 2.2: Diffusion Current 
@@ -136,8 +136,8 @@ Drift and diffusion current both exist in semiconductors:
 
 $$
 \begin{align*}
-J_n &= e\nu _n En +e D_n \frac{dn}{dx} \\
-J_p &= e\nu _p En -e D_p \frac{dn}{dx}
+J_n &= e\mu _n En +e D_n \frac{dn}{dx} \\
+J_p &= e\mu _p En -e D_p \frac{dn}{dx}
 \end{align*}
 $$
 
