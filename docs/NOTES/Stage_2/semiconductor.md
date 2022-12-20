@@ -595,7 +595,7 @@ And these are depletion mode devices.
     - $Q_y$ = Capacitance x (Voltage across the oxide in excess of $V_T$)
     - $Q_y = -C_{ox}Wdy(V_{GS}-V_y-V_T)$
 
-- Where $Q_y$ is the volume density of charge in the channel, $W$ is the gate length and $V_y$ is the chnanel voltage at position $y$ along the channel.
+- Where $Q_y$ is the volume density of charge in the channel, $W$ is the gate length and $V_y$ is the channel voltage at position $y$ along the channel.
 - The electron charge density in the channel is:
 
 $$
