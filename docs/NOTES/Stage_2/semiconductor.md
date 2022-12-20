@@ -589,7 +589,7 @@ And these are depletion mode devices.
 
 - The channel-oxide-gate forms a capacitor with $C_{ox}$ per unit area. $Q = CV$ followed.
 
-- Note that the formula of capacitance $C=\frac{\epsilon_r \epsilon _0 A}{d}=\frac{\epsilon A}{d}$ can be applied. $\epsilon$ is the dielectric constant.
+- Note that the formula of capacitance $C=\frac{\varepsilon_r \epsilon _0 A}{d}=\frac{\varepsilon A}{d}$ can be applied. $\varepsilon$ is the dielectric constant.
 
 - For a small length of channel dy:
     - $Q_y$ = Capacitance x (Voltage across the oxide in excess of $V_T$)
