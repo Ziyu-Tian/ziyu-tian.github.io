@@ -613,7 +613,7 @@ $$
 $$
 \begin{aligned}
 J &= en\mu _n E_y \\
-J &= -\frac{\mu _n C_{ox}}{d}(V_{GS}-V_y-V_T)E_x
+J &= -\frac{\mu _n C_{ox}}{d}(V_{GS}-V_y-V_T)E_y
 \end{aligned}
 $$
 
