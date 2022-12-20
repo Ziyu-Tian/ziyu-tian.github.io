@@ -576,7 +576,7 @@ $$
 
 ![](image/2022-10-20-14-17-44.png)
 
-- When $V_T$ is '+' and a '+' gate voltage enhances the channel the device is called the enhancement mode. But MOSFET cannot be designed to have ?$V_T$ negative. Then a negative gate voltage depletes the channel of electrons and the devices switches off.
+- When $V_T$ is '+' and a '+' gate voltage enhances the channel the device is called the enhancement mode. But MOSFET cannot be designed to have $V_T$ negative. Then a negative gate voltage depletes the channel of electrons and the devices switches off.
 And these are depletion mode devices.
 
 - P-channel enhancement an depletion devices is possible.
