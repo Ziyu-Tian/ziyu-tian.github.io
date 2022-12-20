@@ -608,7 +608,7 @@ $$
 en = \frac{C_{ox}}{d}(V_{GS}-V_y-V_T)
 $$
 
-- Assuming diffusion current, the current density in y-direction:
+- Assuming drift current, the current density in y-direction:
 
 $$
 \begin{aligned}
