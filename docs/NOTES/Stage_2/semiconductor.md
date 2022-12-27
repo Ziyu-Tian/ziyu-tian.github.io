@@ -75,7 +75,7 @@ $$
 * The carrier velocity can also be defined as:
 
 $$
-v = \nu E
+v = \mu E
 $$
 
 * $\nu$ is the **drift mobility**
@@ -83,13 +83,13 @@ $$
 So we can get:
 
 $$
-J= en\nu E
+J= en\mu E
 $$
 
 We also found the relation below:
 
 $$
-\sigma = ne\nu 
+\sigma = ne\mu 
 $$
 
 Which can be finally written as:
@@ -101,7 +101,7 @@ $$
 If we consider the minor carriers in semiconductors:
 
 $$
-\sigma = e(n\nu_n+p\nu _p)
+\sigma = e(n\mu_n+p\mu _p)
 $$
 
 #### 2.2: Diffusion Current 
@@ -136,8 +136,8 @@ Drift and diffusion current both exist in semiconductors:
 
 $$
 \begin{align*}
-J_n &= e\nu _n En +e D_n \frac{dn}{dx} \\
-J_p &= e\nu _p En -e D_p \frac{dn}{dx}
+J_n &= e\mu _n En +e D_n \frac{dn}{dx} \\
+J_p &= e\mu _p En -e D_p \frac{dn}{dx}
 \end{align*}
 $$
 
@@ -187,6 +187,8 @@ $$
 * Then the electric field $E$ can be estimated. 
 * The $\phi$ is the build-in voltage generated in the depletion area.
 * The build-in electric field can be : $E = \frac{\phi }{W}$
+
+* In real condition, we assume that the drift and diffusion currents are almost equal but opposite for P-N junctions even under forward or reverse bias.
 
 ## III: P-N Junction
 
@@ -266,6 +268,30 @@ $$
 \end{align*}
 $$
 
+- Even the carrier concentration changed, in fact we can omit the change:
+
+$$
+n_{no} \approx n_n \quad p_{po} \approx p_p
+$$
+
+so that:
+
+$$
+\begin{align*}
+\frac{n_{no}}{n_p} &= \exp(\frac{e}{k_B T}(\phi _{bi} -V_A)) \\
+\frac{p_{po}}{p_n} &= \exp(\frac{e}{k_B T}(\phi _{bi}-V_A))
+\end{align*}
+$$
+
+Using the previous formula, we got:
+
+$$
+\begin{align*}
+\frac{n_p}{n_{po}} &= \exp(\frac{e}{k_B T}V_A) \\
+\frac{p_n}{p_{no}} &= \exp(\frac{e}{k_B T}V_A)
+\end{align*}
+$$
+
 ![](image/2022-10-07-10-21-47.png)
 
 - This graph shows the condition of the reverse bias and forward bias.
@@ -294,7 +320,7 @@ There are two possible types of current flow:
 
 ![](image/2022-10-07-10-47-20.png)
 
-Hole diffusion in the n-type is given:
+Hole diffusion in the p-type is given:
 
 $$
 \begin{align*}
@@ -303,7 +329,7 @@ I_p &= AeD_p \frac{dp}{dx} \\
 \end{align*}
 $$
 
-And same for p-type:
+And same for n-type:
 
 $$
 \begin{align*}
@@ -550,7 +576,7 @@ $$
 
 ![](image/2022-10-20-14-17-44.png)
 
-- When $V_T$ is '+' and a '+' gate voltage enhances the channel the device is called the enhancement mode. But MOSFET cannot be designed to have ?$V_T$ negative. Then a negative gate voltage depletes the channel of electrons and the devices switches off.
+- When $V_T$ is '+' and a '+' gate voltage enhances the channel the device is called the enhancement mode. But MOSFET cannot be designed to have $V_T$ negative. Then a negative gate voltage depletes the channel of electrons and the devices switches off.
 And these are depletion mode devices.
 
 - P-channel enhancement an depletion devices is possible.
@@ -563,13 +589,13 @@ And these are depletion mode devices.
 
 - The channel-oxide-gate forms a capacitor with $C_{ox}$ per unit area. $Q = CV$ followed.
 
-- Note that the formula of capacitance $C=\frac{\epsilon_r \epsilon _0 A}{d}=\frac{\epsilon A}{d}$ can be applied. $\epsilon$ is the dielectric constant.
+- Note that the formula of capacitance $C=\frac{\varepsilon_r \epsilon _0 A}{d}=\frac{\varepsilon A}{d}$ can be applied. $\varepsilon$ is the dielectric constant.
 
 - For a small length of channel dy:
     - $Q_y$ = Capacitance x (Voltage across the oxide in excess of $V_T$)
     - $Q_y = -C_{ox}Wdy(V_{GS}-V_y-V_T)$
 
-- Where $Q_y$ is the volume density of charge in the channel, $W$ is the gate length and $V_y$ is the chnanel voltage at position $y$ along the channel.
+- Where $Q_y$ is the volume density of charge in the channel, $W$ is the gate length and $V_y$ is the channel voltage at position $y$ along the channel.
 - The electron charge density in the channel is:
 
 $$
@@ -582,12 +608,12 @@ $$
 en = \frac{C_{ox}}{d}(V_{GS}-V_y-V_T)
 $$
 
-- Assuming diffusion current, the current density in y-direction:
+- Assuming drift current, the current density in y-direction:
 
 $$
 \begin{aligned}
 J &= en\mu _n E_y \\
-J &= -\frac{\mu _n C_{ox}}{d}(V_{GS}-V_y-V_T)E_x
+J &= -\frac{\mu _n C_{ox}}{d}(V_{GS}-V_y-V_T)E_y
 \end{aligned}
 $$
 
