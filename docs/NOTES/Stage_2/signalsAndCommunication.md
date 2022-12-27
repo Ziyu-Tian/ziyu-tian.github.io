@@ -699,8 +699,8 @@ $$
 
 $$
 v_s(t) = \begin{cases}
-    V_c \cos{(2\pi f_1 t)}, & 1\quad,f_1 = f_c +\Delta f_c \\
-    V_c \cos{(2\pi f_0 t)}, & 1\quad,f_0 = f_c -\Delta f_c 
+    V_c \cos{(2\pi f_1 t)}, for 1 \quad,f_1 = f_c +\Delta f_c \\
+    V_c \cos{(2\pi f_0 t)}, for 0 \quad,f_0 = f_c -\Delta f_c 
 \end{cases}
 $$
 
