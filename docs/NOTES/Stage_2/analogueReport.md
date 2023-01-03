@@ -211,8 +211,13 @@ For a good op-amp, a very large change in common-mode voltage should change the 
 
 ## Conclusion
 
-- Summary of the experiment and result
-- Passive voice needed
+This experiment explored and validate the gain of inverting op-amps with two sets of resistance ratio.
+
+Using the data observed from oscilloscope, the frequency response was plotted with the bandwidth and cut-off frequency estimated. The results follow the theoretical rules in acceptable error range.
+
+During the distortion test, the calculation of slew rate, full power bandwidth and offset voltage validate the phenomenon of distortion.
+
+In the exploration of summing and difference amplifier, the graphed waves of summing effect verified the result of two weighted signal summing, which can be used in DAC devices. From the difference amplifier, the calculated CMRR shows the importance property of op-amps.
 
 
 ## References 
