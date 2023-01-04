@@ -4,7 +4,7 @@
 
 ## Abstract 
 
-This experiment explored the properties of inverting operational amplifier (op-amp in short), which contain the plotted frequency response graphs, Gain-Bandwidth Product, slew rate and offset voltage, validated the mathematical operation of the summing op-amp and difference op-amp, discussed how the Common Mode Rejection Ratio (CMRR in short) affect the efficiency of amplifier.
+This experiment explored the properties of inverting operational amplifiers (op-amps in short), which contain the plotted frequency response graphs, gain-bandwidth product, slew rate and offset voltage, validated the mathematical function of the summing op-amp and difference op-amp, discussed how the Common Mode Rejection Ratio (CMRR in short) affect the efficiency of amplifier.
 
 ## Introduction 
 
@@ -13,26 +13,26 @@ The op-amp is a very high-gain (open-loop gain tending to infinity), DC-coupled 
 ![](image/2023-01-03-08-02-48.png)
 <font size=2><center>Fig.1.[1] The Op-amp in symbolic (left) and IC (right) form  </center></font>
 
-This experiment aimed at validating the bandwidth, cut-off frequency, slew rate, distortion phenomenon and the offset voltage of inverting op-amps, exploring the operation of the summing and difference op-amps with CMRR properties. To achieve the aims above, the tasks have been done as below:
+This experiment aimed at validating the definition of bandwidth, cut-off frequency, slew rate, distortion phenomenon and the offset voltage of inverting op-amps, exploring the operation of the summing and difference op-amps with CMRR properties. To achieve the aims above, the tasks have been done as below:
 
-- Calculate the total gain with the $V_{out}$ and $V_{in}$ in oscilloscope.
+- Calculate the total gain using the $V_{out}$ and $V_{in}$ in oscilloscope.
 
 - Determine the bandwidth using the gain-bandwidth product provided in data sheet shown in Fig.2.
 
 ![](image/2023-01-03-08-33-08.png)
 <font size=2><center>Fig.2. The Op-amp data sheet </center></font>
 
-- Plot the frequency response and determine the cut-off frequency, then change another set of resistance repeat the test above.
+- Plot the frequency response and determine the cut-off frequency, then change another set of resistance ratio repeating the test above.
 
-- Increasing the frequency, observe the full power bandwidth then calculated the slew rate.
+- Increase the frequency, observe the full power bandwidth then calculate the slew rate.
 
 - Reconnect the circuit, determine the offset-voltage.
 
-- Change the circuit to summing op-amp and difference op-amp, observing the operations and calculating the CMRR.
+- Change the circuit to summing op-amp and difference op-amp, observe the operations and calculate the CMRR.
 
 ## Procedure 
 
-- For inverting amplifier experiment, we use the op-amp designed as Fig.3 with $R_1=1\quad k\Omega$. Apply the input as 1 kHz, 0.1 $V_{pp}$, then observe and record the $V_{in}$ and $V_{out}$ to calculate the gain using formula:
+- For inverting amplifier experiment, we use the op-amp designed as Fig.3 with $R_1=1$k$\Omega$. Apply the input as 1 kHz, 0.1 $V_{pp}$, then observe and record the $V_{in}$ and $V_{out}$ to calculate the gain using formula:
 $$
 A_{experiment}= \displaystyle\frac{V_{out}}{V_{in}}\tag{1.1}
 $$
@@ -44,9 +44,9 @@ $$
 ![](image/2023-01-03-09-43-59.png)
 <font size=2><center>Fig.3. The inverting op-amp </center></font>
 
-then compare the gain with theoretical value calculated by formula 1.2. Change $R_2$ to 470 $\Omega$ and voltage to 0.025 $V_{pp}$ do above procedure again.
+then compare the gain with theoretical value calculated by formula 1.2. Change $R_2$ to 470 $\Omega$ and voltage to 0.025 $V_{pp}$ do the above procedure again.
 
-- Increasing the frequency, measuring the gain up to the cut-off frequency and plotting the data. Observe the cut-off frequency from the graph and calculate the the bandwidth using the formula:
+- Increase the frequency, measure the gain up to the cut-off frequency and plot the data. Observe the cut-off frequency from the graph and calculate the the bandwidth using the formula:
 
 $$
 Bandwidth = \displaystyle\frac{GBP}{Gain}\tag{2}
@@ -88,7 +88,7 @@ measuring the output voltage $V_o$, then calculate the offset voltage.
 
 - Connect one of the summing op-amp input to 1 kHz sine wave with 100 $mV_{pp}$.
 
-- Connect the lower terminal of potentiometer to ground and the upper terminal to +15 V pin, then connect the potentiometer output to another input of the summing op-amp. So that the input voltage of the op-amp can be changed easily.
+- Connect the lower terminal of potentiometer to ground and the upper terminal to +15 V pin, then connect the potentiometer output to another input of the summing op-amp. So that the input voltage of the op-amp can be adjusted easily.
 
 - Increase the DC input using potentiometer, then observe and record the summing effect of the output signal.
 
@@ -99,7 +99,7 @@ measuring the output voltage $V_o$, then calculate the offset voltage.
 
 - Connect the both input of the op-amp to 1 $V_{pp}$, 1 Hz sine wave, which is the common mode of amplifier.Measure the output using multimeter, calculated the gain in this condition, $A_{CM}$.
 
-- Keep one of the op-amp input 1 kHz sine wave, change another input to the ground. Measure the output suing multimeter, calculated the gain in this condition, $A_{DM}$.
+- Keep one of the op-amp input 1 kHz sine wave, change another input to the ground. Measure the output using multimeter, calculated the gain in this condition, $A_{DM}$.
 
 - Determine the Common Mode Rejection Ratio (CMRR) using the formula given by:
 
@@ -110,7 +110,7 @@ $$
 
 ## Results and Discussion 
 
-In terms of the measured data of the inverting amplifier experiment, $V_{out1} = 980$ mV and $V_{in1} = 113$ mV when $R_2 = 10$ k$\Omega$ and $V_{out2} = 12.25$ V and $V_{in1} = 0.025$ V when $R_2 = 470$ k$\Omega$, as shown in Fig.7.1 and Fig.7.2. 
+In terms of the measured data of the inverting amplifier experiment, $V_{out1} = 980$ m$V_{pp}$ and $V_{in1} = 113$ m$V_{pp}$ when $R_2 = 10$ k$\Omega$ and $V_{out2} = 12.25$ $V_{pp}$ and $V_{in1} = 0.025$ $V_{pp}$ when $R_2 = 470$ k$\Omega$, as shown in Fig.7.1 and Fig.7.2. 
 
 ![](image/2023-01-03-20-55-45.png)
 <font size=2><center>Fig.7.1 Gain when $R_2$ = 10 k$\Omega$ </center></font>
@@ -194,7 +194,7 @@ For example, a binary weighted ladder can be designed as Fig.12
 ![](image/2023-01-03-22-12-44.png)
 <font size=2><center>[4]Fig.12 Summing amplifier application in DAC </center></font>
 
-In the difference amplifier experiment, the $V_{out}$ of difference mode and common mode were recorded using multimeter in Fig.13.1 and Fig.13.2. As $V_{in}$ = 1 $V_{pp}$, the gain of common mode and difference mode can be generated directly: $A_{DM} = 7.37$ V and $A_{CM}$ = 0.5 mV. Using formula (4) the CMRR can be calculated:
+In the difference amplifier experiment, the $V_{out}$ of difference mode and common mode were recorded using multimeter in Fig.13.1 and Fig.13.2. As $V_{in}$ = 1 $V_{pp}$, the gain of common mode and difference mode can be generated directly: $A_{DM} = 7.37$ and $A_{CM}$ = $0.5 \times 10^{-3}$. Using formula (4) the CMRR can be calculated:
 
 $$
 CMRR = 20\log_{10}{\displaystyle\frac{A_{DM}}{A_{CM}}} = 83.37\quad dB
@@ -211,13 +211,13 @@ For a good op-amp, a very large change in common-mode voltage should change the 
 
 ## Conclusion
 
-This experiment explored and validate the gain of inverting op-amps with two sets of resistance ratio.
+This experiment explored and validated the gain of inverting op-amps with two sets of different resistance ratio.
 
 Using the data observed from oscilloscope, the frequency response was plotted with the bandwidth and cut-off frequency estimated. The results follow the theoretical rules in acceptable error range.
 
 During the distortion test, the calculation of slew rate, full power bandwidth and offset voltage validate the phenomenon of distortion.
 
-In the exploration of summing and difference amplifier, the graphed waves of summing effect verified the result of two weighted signal summing, which can be used in DAC devices. From the difference amplifier, the calculated CMRR shows the importance property of op-amps.
+In the exploration of summing and difference amplifier, the graphed waves of summing effect verified the result of two weighted signal summing, which can be applied in DAC devices. From the difference amplifier, the calculated CMRR shows the importance property of op-amps.
 
 
 ## References 
