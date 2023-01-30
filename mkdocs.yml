@@ -62,6 +62,7 @@ nav:
             - Signals and Communication: 'NOTES/Stage_2/signalsAndCommunication.md'
             - Computer Systems and Microprocessors: 'NOTES/Stage_2/computerSystems.md'
             - Analogue Electronics: 'NOTES/Stage_2/analogElectronic.md'
+            - Microprocessors: 'NOTES/Stage_2/microProcessors.md'
 
     - Dev: 
         - 'DEV/index.md'
