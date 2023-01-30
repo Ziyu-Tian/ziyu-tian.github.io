@@ -44,5 +44,5 @@ Using LSI, VLSI.
 
 #### 2.5: The Microprocessors 
 
-
+Intel 8080 (8 bits), Motorola 68000 (16-bits), Intel Core 2 Duo (64-bits), TI TMS320C50 
 
