@@ -79,4 +79,30 @@
 ![](image/2023-02-01-09-50-08.png)
 
 - The PLA is divided into the AND plane and OR plane:
-    - The 
+    - The outputs of the AND plane are the product terms.
+    - Then these products terms become the inputs of the OR plane.
+
+![](image/2023-02-01-10-12-35.png)
+
+#### 1.8: BUffering implementation 
+
+- Each input variable needs to have both positive and negative wires:
+
+![](image/2023-02-01-10-13-55.png)
+
+
+#### 1.9: Programmable Gates 
+
+For example of an AND gate with $x_0$, $\bar{x_1}$, $x_2$ three inputs:
+
+![](image/2023-02-01-10-15-41.png)
+
+if connects to the OR array:
+
+![](image/2023-02-01-10-18-58.png)
+
+We can also use the textual description:
+
+![](image/2023-02-01-10-19-37.png)
+
+This plane is then defined by this "bit map".
