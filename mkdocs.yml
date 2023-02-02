@@ -64,6 +64,7 @@ nav:
             - Analogue Electronics: 'NOTES/Stage_2/analogElectronic.md'
             - Microprocessors: 'NOTES/Stage_2/microProcessors.md'
             - Digital Electronics: 'NOTES/Stage_2/digitalElectronics.md'
+            - Statistical Method: 'NOTES/Stage_2/statisticalMethod.md'
 
     - Dev: 
         - 'DEV/index.md'
