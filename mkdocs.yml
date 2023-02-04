@@ -1,5 +1,5 @@
 # [Info]
-site_name: Ziyu Tian's Personal Website # 左上角标题
+site_name: Nothing except Notes # 左上角标题
 site_url: https://ziyu-tian.github.io
 site_author: Ziyu Tian
 site_description: Ziyu Tian's Website
@@ -36,7 +36,7 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Ziyu-Tian/ziyu-tian.github.io # 右上角点击跳转的链接
 repo_name: ziyu-tian.github.io # 右上角的名字
 ## [bottom-left corner]
-copyright: Copyright &copy; 2022 Ziyu Tian # 左下角的版权声明
+copyright: Copyright &copy; 2023 Ziyu Tian # 左下角的版权声明
 ## [bottom-right corner]
 extra:
   social: # icons
@@ -66,6 +66,7 @@ nav:
             - Digital Electronics: 'NOTES/Stage_2/digitalElectronics.md'
             - VHDL Basics: 'NOTES/Stage_2/vhdl.md'
             - Statistical Method: 'NOTES/Stage_2/statisticalMethod.md'
+            - AC Electrical Power: 'NOTES/Stage_2/acElectrical.md'
 
     - Dev: 
         - 'DEV/index.md'
