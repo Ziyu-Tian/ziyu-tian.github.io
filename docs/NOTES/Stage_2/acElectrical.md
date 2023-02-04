@@ -89,3 +89,4 @@ $$
 #### 2.3: AC current, flux and the induced voltage 
 
 ![](image/2023-02-04-20-42-46.png)
+
