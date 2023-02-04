@@ -37,7 +37,7 @@
 
 ### 5: Presentation of data
 
-- Bar chart 
+- Bar chart
 
 - Pie chart 
 
@@ -86,6 +86,8 @@ $$
 
 - The interquartile range (IQR) = $Q_3-Q_1$.
 
+![](image/2023-02-04-12-50-53.png)
+
 - The **variance** (sample variance) is defined by:
 
 $$
@@ -108,4 +110,6 @@ $$
 $$
 S.E._{\bar{x}} = \frac{s}{\sqrt{n}}
 $$
+
+
 
