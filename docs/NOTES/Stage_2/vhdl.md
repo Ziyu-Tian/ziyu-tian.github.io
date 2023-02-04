@@ -135,4 +135,48 @@ end architecture_name;
 
 It is possible to specify different architecture for same entity and select one before proceeding. The association between a particular architecture and an  entity is called *configuration declaration*.
 
+For the implementation of full-adder:
+
+```
+architecture first of full_adder is 
+begin 
+    s <= a xor b xor cin after delay;
+    cout <= (a and b) or (b and cin) or (a and cin) after delay;
+end first
+```
+
+- Note that the synchronous problem should be mentioned, for example of the circuit below:
+
+![](image/2023-02-04-07-41-09.png)
+
+the code would be:
+
+```
+begin 
+    t <= a and b;
+    x <= t and c;
+    y <= d or e;
+end par_two
+```
+
+Note that the first AND gate and second AND gate are not executed synchronous, while the sentences under "begin" would execute at same time, which would lead to conflict.
+
+So if we choose another architecture:
+
+```
+architecture par_three of circuit is 
+    signal t: bit;
+begin 
+    y <= d or e;
+    x <= t and c;
+    t <= a and b;
+end par_three;
+```
+
+The conflict would be solved.
+
+
+
+
+
 
