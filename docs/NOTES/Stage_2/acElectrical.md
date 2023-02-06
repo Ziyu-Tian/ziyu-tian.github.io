@@ -90,3 +90,33 @@ $$
 
 ![](image/2023-02-04-20-42-46.png)
 
+### 3: Properties of AC Power 
+
+#### 3.1: Single Phase Power 
+
+- Using the sink convention, which power into the load is positive.
+
+- The instantaneous power flow into circuit is:
+
+$$
+P=v.i
+$$
+
+- For AC case, 
+
+$$
+v = \hat{V}\cos{(\omega t)} \\
+i = \hat{I}\cos{(\omega t -\phi)}
+$$
+
+- Bring the V and I together:
+
+$$
+P = \hat{V}\hat{I}[\displaystyle\frac{1}{2}(1+\cos{(2\omega t)}\cos{(\phi)}+\frac{1}{2}\sin{(2\omega t)}\sin{(\phi)}]
+$$
+
+
+
+
+
+
