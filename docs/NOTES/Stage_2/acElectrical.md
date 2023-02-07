@@ -115,6 +115,14 @@ $$
 P = \hat{V}\hat{I}[\displaystyle\frac{1}{2}(1+\cos{(2\omega t)}\cos{(\phi)}+\frac{1}{2}\sin{(2\omega t)}\sin{(\phi)}]
 $$
 
+- The PULSATING part deliver the **active** power and the OSCILLATING part deliver the **reactance** power which just goes back and forth. The stored energy in inductance or capacitor is $\frac{1}{2}CV^2$ OR $\frac{1}{2}LI^2$
+
+
+
+#### 3.2: Complex Power 
+
+
+
 
 
 
