@@ -132,3 +132,50 @@ For example, $y_0 = r_0$ and $y_1 = r_0 + r_2$, $r_0$ appears twice in outputs. 
 
 #### 2.7: From truth table to PLA bitmaps
 
+- Using the RHS of truth table forming the OR plane:
+
+
+- Using all the value '1' in LHS forming AND plane positive column:
+
+
+- Using all value '0' in LHS forming AND plane negative column:
+
+#### 2.8: Sum-of-Product SOP 
+
+
+We can deduce the sum-of-product formula from the truth table value:
+
+
+- Firstly, find out the SOP using result '1' lines:
+
+$$
+z = \bar{a}\bar{b}c + \bar{a}bc + a\bar{b}\bar{c} + a\bar{b}c + abc
+$$
+
+- Next step, rewrite the formula to product-of sum form (POS):
+
+$$
+z = (a+b+c).(a+\bar{b}+c).(\bar{a}+\bar{b}+c)
+$$
+
+
+#### 2.9: Basic rules of Boolean algebra 
+
+
+#### 2.10: AND/OR vs NAND/NOR implementation of SOP expression 
+
+
+- Implementing an SOP expression simply requires ORing the outputs of AND gates.
+
+
+- eg
+
+
+- NAND gates can be used to implement an SOP expression:
+
+
+#### 2.11: The Karnaugh Map (K-map)
+
+
+- The Karnaugh map can be used to minimize the Boolean function z(a,b,c):
+
