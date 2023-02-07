@@ -121,7 +121,94 @@ $$
 
 #### 3.2: Complex Power 
 
+$\hat{I}\cos{(\omega t-\phi)}$ and $\hat{V}\cos{(\omega t)}$ can be expressed as:
 
+$$
+I = \frac{\hat{I}}{\sqrt{2}}-j\frac{\hat{I}}{\sqrt{2}}+j0
+$$
+
+- So the complex is defined as:
+
+$$
+S = P + jQ = VI*
+$$
+
+- $I*$ is called the **Conjugate** I, which change the imaginary part symbol to "-":
+
+$$
+I* = \frac{\hat{I}}{\sqrt{2}}\cos{(\phi)}+j\frac{\hat{I}}{\sqrt{2}}\sin{(\phi)}
+$$
+
+- So the complex power is defined as:
+
+$$
+S = \frac{\hat{V}\hat{I}}{2}\cos{(\phi)} + j\frac{\hat{V}\hat{I}}{2}\sin{(\phi
+)}
+$$
+
+- The unit of complex power is **unit voltamps(VA)**, the unit of active power is just **Watts** and the unit of reactive power is **Volt-Ampere Reactive (VAR)**.
+
+
+
+- The power factor is defined using the power triangle:
+
+$$
+\cos{(\phi)} = \frac{Power}{Volt-Amperes}
+$$
+
+
+#### 3.2: Resistance and Impedance 
+
+- Compared to $V=IR$ in DC circuits, Z is used so $V = IZ$.
+
+- For a pure resistance, Z = R.
+
+- For a pure inductance:
+
+$$
+Z = jX_L = j\omega L
+$$
+
+$X_L$ is defined as *inductive reactance*.
+
+- For a pure capacitance:
+
+$$
+Z = -jX_C = -\frac{j}{\omega C}
+$$
+
+$X_C$ is defined as *capacitive reactance*.
+
+- Note that the resistance and reactance measured in ohm.
+
+
+#### 3.3: Power with an Resistive Load 
+
+- Voltage and current are in phase, so the $\phi = 0$ and the power factor is 1.
+
+- $P = V_{rms}I_{rms}$
+
+
+#### 3.4: Power with an Inductive Load 
+
+- Current lags the voltage by 90 degrees according to the calculation.
+
+- The average power delivered should be '0', and anergy is released then stored each 1/2 cycle.
+
+
+#### 3.5: Power with a capacitive Load 
+
+- Current leads the voltage according to the calculation.
+
+- The average power is '0'.
+
+
+#### 3.6: Meaning of Reactive Power 
+
+
+- Reactive power is the power that helps create and sustain the electric and magnetic fields required by alternating current.
+
+- The reactive power in AC circuit depends on phase angle.
 
 
 
