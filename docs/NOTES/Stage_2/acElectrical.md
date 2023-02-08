@@ -117,6 +117,8 @@ $$
 
 - The PULSATING part deliver the **active** power and the OSCILLATING part deliver the **reactance** power which just goes back and forth. The stored energy in inductance or capacitor is $\frac{1}{2}CV^2$ OR $\frac{1}{2}LI^2$
 
+![](image/2023-02-08-11-20-58.png)
+
 
 
 #### 3.2: Complex Power 
@@ -156,6 +158,7 @@ $$
 \cos{(\phi)} = \frac{Power}{Volt-Amperes}
 $$
 
+![](image/2023-02-08-11-21-19.png)
 
 #### 3.2: Resistance and Impedance 
 
