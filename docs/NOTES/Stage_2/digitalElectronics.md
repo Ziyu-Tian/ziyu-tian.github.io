@@ -87,7 +87,7 @@
 
 ![](image/2023-02-01-10-12-35.png)
 
-#### 2.4: BUffering implementation 
+#### 2.4: Buffering implementation 
 
 - Each input variable needs to have both positive and negative wires:
 
@@ -133,12 +133,15 @@ For example, $y_0 = r_0$ and $y_1 = r_0 + r_2$, $r_0$ appears twice in outputs. 
 #### 2.7: From truth table to PLA bitmaps
 
 - Using the RHS of truth table forming the OR plane:
-
+![](image/2023-02-08-10-04-14.png)
 
 - Using all the value '1' in LHS forming AND plane positive column:
 
+![](image/2023-02-08-10-04-27.png)
 
 - Using all value '0' in LHS forming AND plane negative column:
+
+![](image/2023-02-08-10-04-37.png)
 
 #### 2.8: Sum-of-Product SOP 
 
@@ -168,7 +171,7 @@ $$
 - Implementing an SOP expression simply requires ORing the outputs of AND gates.
 
 
-- eg
+![](image/2023-02-08-10-01-40.png)
 
 
 - NAND gates can be used to implement an SOP expression:
@@ -177,5 +180,114 @@ $$
 #### 2.11: The Karnaugh Map (K-map)
 
 
-- The Karnaugh map can be used to minimize the Boolean function z(a,b,c):
+- The Karnaugh map can be used to minimize the Boolean function z(a,b,c).
+
+- First write down the true table in K map:
+
+![](image/2023-02-08-10-05-49.png)
+
+- Then draw the circle to combine the nearly blocks:
+
+![](image/2023-02-08-10-07-03.png)
+
+- The result will be $z = a\bar{b}+\bar{c}$
+
+- The same for 4 variable K-map:
+
+![](image/2023-02-08-10-07-55.png)
+
+- The result will be $z = a\bar{b}+a\bar{c}+\bar{b}\bar{c}$
+
+
+#### 2.12: Multiple output minimization 
+
+![](image/2023-02-08-10-14-49.png)
+
+- The key point is to find common-product term.
+
+- Increase the number of AND gates, decrease the number of *m*.
+
+- For example of:
+
+![](image/2023-02-08-10-21-24.png)
+
+- The first step is to find all ANDs:
+
+![](image/2023-02-08-10-21-54.png)
+
+- Finally we find that *m* reduced to 2:
+
+![](image/2023-02-08-10-22-37.png)
+
+#### 2.13: Hardware implementation of connection bitmaps 
+
+- Hard-wired: NOT programmable.
+
+- Single-time programmable: WORM (Write once read only).
+
+- Multiple-time programmable: connections done through transistors switches controlled by external signals.
+
+
+#### 2.14: Diagram review of PLA
+
+- Fuses used for non-programmable and single programmable.
+
+![](image/2023-02-08-10-27-07.png)
+
+- CMOS (transistors) used in multiple programmable device.
+
+![](image/2023-02-08-10-27-55.png)
+
+#### 2.15: Full programmability 
+
+- Full programmability only requires one of the plane to have programmability:
+    
+- AND gates fixed and programmable OR gates are enough for full programmability.
+
+
+#### 2.16: More complex K-maps 
+
+- Minimize the 5-variables expression fro example:
+
+![](image/2023-02-08-10-34-03.png)
+
+- We can go with a **3D presentation** of the K-map.
+
+- $z = f(a,b,c,d,e)$ can be expressed as $ z= f_{e=0}(a,b,c,d) + f_{e=1}(a,b,c,d)$.
+
+![](image/2023-02-08-10-40-19.png)
+
+
+- For six variables:
+
+![](image/2023-02-08-10-41-41.png)
+
+![](image/2023-02-08-10-41-51.png)
+
+- To solve the problem in example, we can rewrite to:
+
+$$
+G =G_{V=0} + G_{V=1}
+$$
+
+then 
+
+$$
+G_{V=0} &= X\bar{Y}\bar{Z} + WX\bar{Y}\bar{Z} \\
+G_{V=1} &= \bar{Y}\bar{Z} +\bar{X}Y\bar{Z} +WX\bar{Y}\bar{Z}
+$$
+
+![](image/2023-02-08-10-53-08.png)
+
+
+- The result finally be $G = X\bar{Y}\bar{Z} + V\bar{X}\bar{Z}$
+
+
+
+
+
+
+
+
+
 
