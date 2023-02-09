@@ -111,5 +111,116 @@ $$
 S.E._{\bar{x}} = \frac{s}{\sqrt{n}}
 $$
 
+## II: Probability 
+
+### 1: Basics Concepts 
+
+- Experiment / Trail: A process where the outcome is **random**.
+
+- Outcome: The result of a particular experiment.
+
+- Sample Space: The set of all possible outcomes of an experiment.
+
+- Events: Specific collection of sample points.
+
+eg:
+
+![](image/2023-02-09-09-08-54.png)
+
+
+### 2: Probability of events
+
+- If the sample space *S* of an experiment consists of finitely many outcomes that are equally likely then the probability $P(A)$ of an event $A$ is:
+
+![](image/2023-02-09-09-12-09.png)
+
+- If the same applies to the experiment which is not equally likely:
+
+![](image/2023-02-09-09-13-14.png)
+
+- The probability of A is the proportion of times A occurs as the number of trials increasing.
+
+
+### 3: Events 
+
+- For two events A and B we define:
+    - The *union* of A,B: $A\cup B$
+    - The *intersection* of A,B: $A\cap B$
+    - The *complement* of an A: $A'$ or $\bar{A}$
+
+#### 3.1: Mutually exclusive events 
+
+- Mutually exclusive events **cannot both happen at the same time**.
+
+- E.g. For dice point =1 and point =6.
+
+#### 3.2: Conditional Probability
+
+- Note that $P(A|B)$, which means probability of A given B.
+
+- Using the Venn graph, it can be expressed as:
+
+![](image/2023-02-09-09-24-39.png)
+
+i.e:
+
+$$
+P(A|B) = \frac{P(A\cup B)}{P(B)}
+$$
+
+- Using the formula in P(A) and P(B), we can get:
+
+$$
+P(A|B) = \displaystyle\frac{P(B|A)P(A)}{P(B)}
+$$
+
+- Definition of **independent events**:
+
+Two events are independent if the occurrence of one does not affect the outcomes of other.
+
+- For independent two events:
+
+$$
+P(A\cup B) = P(A)P(B)
+$$
+
+
+#### 3.3: Bayes'theorem 
+
+- Bayes' theorem is a way to reversing the condition in a conditional probability:
+
+$$
+P(A|B) = \displaystyle\frac{P(B|A)P(A)}{P(B)}
+$$
+
+### 4: Combinatorics 
+
+For example, choose random from a unsorted card deck with 52 cards, the possible events can be noted as:
+
+$$
+\begin{pmatrix}
+52 \\
+2    
+\end{pmatrix}=
+\displaystyle\frac{52!}{(52-5)!5!}
+$$
+
+or generally:
+
+$$
+C(n,k) = 
+\begin{pmatrix}
+    n \\
+    k
+\end{pmatrix} = \displaystyle\frac{n!}{(n-k)!k!}
+$$
+
+or 
+
+$$
+C(n,k) = \displaystyle\frac{A_k^n}{n!}
+$$
+
+- This is called the *permutation*.
 
 
