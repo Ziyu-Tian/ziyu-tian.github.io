@@ -213,8 +213,69 @@ $X_C$ is defined as *capacitive reactance*.
 
 - The reactive power in AC circuit depends on phase angle.
 
+### 4: Single phase AC to Three phase AC 
+
+#### 4.1: Single phase 
+
+- To get more current spread out the winding, we add one pair of coil:
+
+![](image/2023-02-09-11-16-38.png)
+
+#### 4.2: Simple three phase generator 
+
+![](image/2023-02-09-11-19-39.png)
+![](image/2023-02-09-11-20-53.png)
+![](image/2023-02-09-11-24-51.png)
+
+- As $I_1+I_2+I_3 =0$, the return path can be removed:
+
+![](image/2023-02-09-11-23-49.png)
+
+- **The three phases using 3 cables and use machine better with 0.96 use factor**, compared to single and four phase machines.
+
+#### 4.3: Vector representation of three-phase generator 
+
+- $V = V_{rms}\angle{0}$
+
+- $V = V_{rms}\angle{-120}$
+
+- $V = V_{rms}\angle{-240)$
+
+![](image/2023-02-09-11-30-02.png)
+
+#### 4.4: Star connection to Line connection 
+
+![](image/2023-02-09-11-32-58.png)
+
+- Line voltage: measure across two lines.
+
+- Line current: measure through a line.
+
+$$
+V_{LINE} = \sqrt{3} \times V_{PHASE} \\
+I_{LINE} = I_{PHASE}
+$$
+
+- If the phases are the same or balanced:
+
+$$
+P = \sqrt{3}V_LI_L\cos{\phi}
+$$
 
 
+#### 4.5: Delta connection to line quantities
 
+![](image/2023-02-09-11-44-38.png)
 
+$$
+I_{LINE} = \sqrt{3} \times I_{PHASE} \\
+V_{LINE} = V_{PHASE} 
+$$
 
+- If all phases are the same or balanced:
+
+$$
+P = \sqrt{3}V_LI_L\cos{\phi}
+$$
+
+![](image/2023-02-09-11-47-22.png)
