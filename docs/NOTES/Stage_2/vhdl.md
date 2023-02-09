@@ -176,6 +176,110 @@ end par_three;
 The conflict would be solved.
 
 
+## III: Data Types 
+
+### 1: Data types 
+
+- Only few of the types can be used fro *synthesis purpose* as they are recognized by *automatic synthesis tools*.
+
+- The **basic data types** and **user-defined types** will be introduced.
+
+### 2: Bit types
+
+- The bit type is the simplest, which represent a binary value and can only be '0' or '1' enclosed in single **quotes**.
+
+- The operators are **assignment, comparison and logical operators**.
+
+```
+x <= a and b;
+y <= '1';
+```
+
+- Constant need quotes and '+' no defined.
+
+#### 2.1: Bit-vector type 
+
+- Used for vectors.
+
+- A set of signals by a common **name** and an **index**.
+
+- Possible to read and write elements through index:
+
+- The vector has an order determined by keywords **to** or **downto**:
+
+```
+bit_vector( 0 to 3 ); -- 4 Elements 
+bit_vector( 16 downto 1); -- 16 Elements
+```
+
+- The specific elements is referred using (), such as a(5).
+
+- Bit and bit-vector have no other states rather than logic '0' or '1', to use *std_logic* and *std_logic_vector* to extend the range of values and solve these limitation.
+
+### 3: Integer type 
+
+- The integer type represents **32-bit integer** values and can be used for synthesis.
+
+- The values are **unsigned integers** by default.
+
+### 4: IEEE types 
+
+- It is used for synthesis purposes to specify values other than '0' and '1'.
+
+- A standard IEEE library defines the addition types: *std_logic** that include a nine logic values rather than 2:
+
+![](image/2023-02-09-10-26-36.png)
+
+- The IEEE library has three packages:
+    - std_logic_unsigned
+    - std_logic_signed 
+    - std_logic_arith
+- These define some arithmetic and comparison operators for std_logic and std_logic_vector types, such as :
+
+```
+c <= a +b;
+```
+
+### 5: User-defined types: subtyping and enumeration 
+
+- A user-defined type is a new data type specified by the user that can redefined some operators used in new type.
+
+- **Subtyping** defines a new type equivalent ro an existing one with limited range of values.
+
+eg.
+
+```VHDL
+subtype new_type_name is type_name rangw val1 to val2 ;
+```
+
+- To define a 5-bit integer as a subtype of standard integer with a range:
+
+```VHDL
+subtype small_integer is integer range 0 to 31; 
+```
+
+- **Enumeration** defines a new type by enumerating all the values:
+
+```
+type new_type_name is ( val0, val1, ..., valN ); 
+```
+
+- A typical case of using an enumerated type is in finite state machine:
+
+```
+type status is ( RES, INIT, COMP, ERR, OK ); 
+```
+
+- For a signal **pres** of this type:
+
+```
+pres <= INIT;
+```
+
+
+
+
+
 
 
 

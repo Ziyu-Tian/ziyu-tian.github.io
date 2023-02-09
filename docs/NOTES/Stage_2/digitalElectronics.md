@@ -273,8 +273,8 @@ $$
 then 
 
 $$
-G_{V=0} &= X\bar{Y}\bar{Z} + WX\bar{Y}\bar{Z} \\
-G_{V=1} &= \bar{Y}\bar{Z} +\bar{X}Y\bar{Z} +WX\bar{Y}\bar{Z}
+G_{V=0} = X\bar{Y}\bar{Z} + WX\bar{Y}\bar{Z} \\
+G_{V=1} = \bar{Y}\bar{Z} +\bar{X}Y\bar{Z} +WX\bar{Y}\bar{Z}
 $$
 
 ![](image/2023-02-08-10-53-08.png)
