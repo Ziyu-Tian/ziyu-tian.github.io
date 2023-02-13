@@ -190,7 +190,7 @@ $$
 
 ![](image/2023-02-08-10-07-03.png)
 
-- The result will be $z = a\bar{b}+\bar{c}$
+- The result will be $z = a\bar{b}+c$
 
 - The same for 4 variable K-map:
 
@@ -209,7 +209,7 @@ $$
 
 - For example of:
 
-![](image/2023-02-08-10-21-24.png)
+![](image/2023-02-13-11-06-25.png)
 
 - The first step is to find all ANDs:
 
