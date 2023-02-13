@@ -282,12 +282,85 @@ $$
 
 - The result finally be $G = X\bar{Y}\bar{Z} + V\bar{X}\bar{Z}$
 
+## II: From PLAs to FPGAs 
+
+### 1: PLA Usage 
+
+- General PLA in CPU:
+
+![](image/2023-02-13-14-06-24.png)
+
+The control PLA takes in information and play a role as the controller.
+
+Usually not optimizable, but fully programmable at design-time to accommodate CPU.
+
+|![](image/2023-02-13-14-19-16.png)|![](image/2023-02-13-14-19-25.png)|
+|---|---|
+
+- General and Custom PLA:
+
+![](image/2023-02-13-14-20-53.png)
+
+### 2: Complex Programmable Logic Device (CPLD)
+
+- Complex devices extend the idea of programmable logic further.
+
+- A matrix of PLAs and programmable interconnection array (PIA)
+
+![](image/2023-02-13-14-22-51.png)
+
+### 3: Field programmable gate array (FPGA)
+
+- FPGA employs another approach programmable logic (not based on PLA)
+
+- The three basic elements are **configurable logic block (CLB)** or **logic array block (LAB)**, the **interconnections**, and the **IO Blocks**. 
+
+![](image/2023-02-13-14-25-57.png)
+
+- Each CLB is made up of **multiple smaller logic modules** and a lo**cal programmable interconnect** used to connect logic modules within CLB.
+
+- General FPGA cell:
+
+![](image/2023-02-13-14-33-04.png)
+
+- SRAM -Based FPGAs 
+
+     - FPGAs are either non-volatile because they are based on SRAM.
+
+![](image/2023-02-13-14-38-13.png)
+
+- FPGA Cores:
+    - A hard core is a portion of logic in an FPGA that is put in by the manufacturer to provide a specific function and that cannot be reprogrammed.
+
+![](image/2023-02-13-14-39-45.png)
 
 
+- Specific FPGA Devices:
+    - Example FPGA block diagram: Several manufacturer produce FPGAs as well as CPLDs.
+
+![](image/2023-02-13-14-41-01.png)
 
 
+## III: Memories in logic design 
+
+### 1: Introduction 
+
+- Gate-level memory cells (latches, flip-flops), used in CPU registers.
+
+- Transistor level volatile memory cell:
+
+    - SRAM, used in cache memory.
+    - DRAM, used in main memory.
+
+- Floating-gate memory cells (flash), non-volatile.
+
+- FRAM, MRAM, Memristors: non-volatile.
 
 
+### 2: SR Latch 
 
+- Simplest memory elements based on a cross-paired of two input NAND or NOR gates.
 
+![](image/2023-02-13-14-52-03.png)
 
+![](image/2023-02-13-14-53-24.png)
