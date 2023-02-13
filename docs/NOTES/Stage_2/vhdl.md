@@ -78,7 +78,7 @@ this diagram consists of **3 modules and 5 instances**.
 
 The entity construct specifies the module name, the ports and a set of generic parameters if needed:
 
-```
+```VHDL
 entity entity_name is 
     [generic(generic_list);]
     [port(port_list);]
@@ -89,7 +89,7 @@ end entity_name;
 
 - The *port_list* describes the input and output as:
 
-```
+```VHDL
 prot_name[,port_name,...]:{in|out|inout} port_type
 
 ```
@@ -102,7 +102,7 @@ For example of full adder:
 
 The code would be like (-- for comments):
 
-```
+```VHDL
 entity full_adder is
     generic (delay: time);
     port(
@@ -125,7 +125,7 @@ end full_adder;
 
 An entity declaration defines the module interface, but it does not specify the functionality, which is described by architecture declaration:
 
-```
+```VHDL
 architecture architecture_name  of entity name is 
     [declaration]
 begin 
@@ -137,7 +137,7 @@ It is possible to specify different architecture for same entity and select one 
 
 For the implementation of full-adder:
 
-```
+```VHDL
 architecture first of full_adder is 
 begin 
     s <= a xor b xor cin after delay;
@@ -151,7 +151,7 @@ end first
 
 the code would be:
 
-```
+```vhdl
 begin 
     t <= a and b;
     x <= t and c;
@@ -163,7 +163,7 @@ Note that the first AND gate and second AND gate are not executed synchronous, w
 
 So if we choose another architecture:
 
-```
+```VHDL
 architecture par_three of circuit is 
     signal t: bit;
 begin 
@@ -190,7 +190,7 @@ The conflict would be solved.
 
 - The operators are **assignment, comparison and logical operators**.
 
-```
+```VHDL
 x <= a and b;
 y <= '1';
 ```
@@ -207,7 +207,7 @@ y <= '1';
 
 - The vector has an order determined by keywords **to** or **downto**:
 
-```
+```VHDL
 bit_vector( 0 to 3 ); -- 4 Elements 
 bit_vector( 16 downto 1); -- 16 Elements
 ```
@@ -249,7 +249,7 @@ c <= a +b;
 eg.
 
 ```VHDL
-subtype new_type_name is type_name rangw val1 to val2 ;
+subtype new_type_name is type_name range val1 to val2 ;
 ```
 
 - To define a 5-bit integer as a subtype of standard integer with a range:
@@ -260,13 +260,13 @@ subtype small_integer is integer range 0 to 31;
 
 - **Enumeration** defines a new type by enumerating all the values:
 
-```
+```VHDL
 type new_type_name is ( val0, val1, ..., valN ); 
 ```
 
 - A typical case of using an enumerated type is in finite state machine:
 
-```
+```VHDL
 type status is ( RES, INIT, COMP, ERR, OK ); 
 ```
 
