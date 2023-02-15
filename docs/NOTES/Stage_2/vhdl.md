@@ -276,10 +276,68 @@ type status is ( RES, INIT, COMP, ERR, OK );
 pres <= INIT;
 ```
 
+## IV: Combinatorial Logic 
 
+### 1: Slice and Concatenation 
 
+- *Slice* is a subset of a vector:
 
+```VHDL 
+signal_name (index1 to index2);
+```
 
+- Index1 and index2 must be valid value followed the order imposed by *to* or *downto*.
+
+For example:
+
+```VHDL 
+architecture rtl of test is 
+    signal BUS: std_logic_vector(0 to 31);
+    signal B0, B1, B2, B3: std_logic_vector(0 to 7);
+begin 
+    B0 <= BUS(0 to 7);
+    B1 <= BUS(8 to 15);
+    B2 <= BUS(16 to 23);
+    B3 <= BUS(31 downto 24);
+end rtl;
+```
+![](image/2023-02-15-09-17-34.png)
+
+- The *concatenation* allows signals under the same name with the operator '&':
+
+```VHDL
+BUS2 <= B3(7 downto 0) & B2 & B1 & B0 
+```
+
+For example:
+
+```VHDL
+if ( a='1' and b='0' and c='1') then ...
+```
+
+can be rewrite as:
+
+```VHDL
+signal temp: std_logic_vector(0 to 2);
+temp <= a & b & c;
+if (temp = "101") then ...
+```
+
+### 2: Logic expression 
+
+![](image/2023-02-15-09-24-03.png)
+
+### 3: Truth tables 
+
+- For example:
+
+![](image/2023-02-15-09-26-50.png)
+
+which using *conditional assignment* construct.
+
+or more simplified version:
+
+![](image/2023-02-15-09-27-49.png)
 
 
 
