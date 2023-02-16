@@ -339,8 +339,68 @@ or more simplified version:
 
 ![](image/2023-02-15-09-27-49.png)
 
+or the output may not limits to '0' and '1':
 
+![](image/2023-02-15-09-31-13.png)
 
+- The concatenation can be used in truth tables:
+
+```VHDL
+architecture rtl of test is 
+    signal temp: std_logic_vector (0 to 1);
+begin 
+    temp <= a & b;
+end rtl;
+```
+and 
+
+```VHDL 
+with temp select
+    f <=  '1' when "00",
+    '0' when "01",
+    '-' when "10",
+    '1' when "11",
+    '-' when others;
+```
+
+### 4: Implication Tables: 6 to 3 priority encoder 
+
+- An *encoder* accepts an active level on one of its inputs representing one digit and converts it to a coded output (binary).
+
+![](image/2023-02-15-09-44-04.png)
+
+For example:
+
+```VHDL
+-- 6 to 3-bit priority encoder 
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- The encoder 
+entity pro_enc is 
+    port(a: in std_logic;
+         b: in std_logic;
+         c: in std_logic;
+         d: in std_logic;
+         e: in std_logic;
+         f: in std_logic;
+         f0: out std_logic;
+         f1: out std_logic;
+         f2: out std_logic;
+    );
+end pri_enc;
+```
+
+and the architecture:
+
+```VHDL 
+architecture rtl of pri_enc is 
+    signal enc_in: std_logic_vector(0 to 5);
+    signal enc_out: std_logic_vector (0 to 2);
+begin 
+    -- concatenation inputs into enc_in 
+    enc_in <= a & b & c & d & e & f;
+```
 
 
 
