@@ -365,3 +365,49 @@ Usually not optimizable, but fully programmable at design-time to accommodate CP
 
 ![](image/2023-02-13-14-53-24.png)
 
+#### 2.1: Gated SR Latch 
+
+![](image/2023-02-16-10-22-08.png)
+
+- The enable input E can define whether it is enabled for SR latch to receive signals.
+(only E = '1')
+
+### 3: Gated D Latch 
+
+![](image/2023-02-16-10-23-57.png)
+
+- D latch only have one input D in addition to E.
+
+#### 3.1: D flip-flop 
+
+- Controlled by a periodic control signal, eg. CLK
+    - Memory for single bit.
+    - Fast, high power.
+    - 20 transistors as below design.
+
+![](image/2023-02-16-10-30-17.png)
+
+![](image/2023-02-16-10-30-25.png)
+
+- Operation:
+
+![](image/2023-02-16-10-36-18.png)
+
+### 4: SRAM 
+
+- Simple single-bit memory
+![](image/2023-02-16-10-41-03.png)
+
+#### 4.1: 6T SRAM 
+
+![](image/2023-02-16-10-42-48.png)
+
+### 5: DRAM 
+
+![](image/2023-02-16-10-47-45.png)
+
+### 6: Floating gate memory cells 
+
+- Flash is based on floating gate.
+    - FGMOS transistor 
+

@@ -278,7 +278,7 @@ $$
 P = \sqrt{3}V_LI_L\cos{\phi}
 $$
 
-![](image/2023cvbnm,./-02-09-11-47-22.png)
+
 
 
 
