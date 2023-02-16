@@ -281,12 +281,5 @@ $$
 ![](image/2023cvbnm,./-02-09-11-47-22.png)
 
 
-Tutorial 5
-
-$\cos{\phi} = \frac{P}{S}=0.8$
-
-$V_{rms} = 415 V$ and $P = 10kW$, 
-
-$S = \frac{P}{0.8} = \frac{100000W}{0.8}$
 
 

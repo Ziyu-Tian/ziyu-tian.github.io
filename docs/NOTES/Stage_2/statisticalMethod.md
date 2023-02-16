@@ -223,4 +223,35 @@ $$
 
 - This is called the *permutation*.
 
+### 5: Distributions 
+
+#### 5.1: Random variable 
+
+- Variables whose possible values outcomes of a random process.
+
+- Discrete or Continuous.
+
+- Consider a random variable that represents the outcome of a experiment.
+
+#### 5.2: Probability Distributions of Univariate 
+
+- For a *discrete* random $X$:
+
+    - the distribution corresponds to a list of probability $P(X=x)$ for all values of $x$, formally known as the *probability mass function*:
+
+$$
+f(x) = P(X=x)
+$$
+
+- Note that:
+
+$$
+0 \le f(x) \le 1 \\
+\Sigma P(X=x) =1 
+$$
+
+eg:
+
+![](image/2023-02-16-10-03-27.png)
+
 
