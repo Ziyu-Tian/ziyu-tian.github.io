@@ -278,6 +278,13 @@ $$
 P = \sqrt{3}V_LI_L\cos{\phi}
 $$
 
+## II: Electrical magnetic interaction and VF drives 
+
+
+### 1: Rotor and armature interaction 
+
+- Field interaction and torque:
+
 
 
 
