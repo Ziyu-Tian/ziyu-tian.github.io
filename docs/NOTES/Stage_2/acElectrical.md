@@ -71,7 +71,7 @@ $$
 For example, a signal named '$F=e^{j\phi}$' in complex domain, to change it back to time domain, we can multiply it by $e^{j\omega t}$:
 
 $$
-Fe^{j\omega t} = Ae^{j(\omeg t +\phi)} = A\angle (\omega t+ \phi)
+Fe^{j\omega t} = Ae^{j(\omega t +\phi)} = A\angle (\omega t+ \phi)
 $$
 
 This expression can be simplified to:
@@ -160,6 +160,12 @@ $$
 
 ![](image/2023-02-08-11-21-19.png)
 
+- $S = \sqrt{P^2+Q^2}$
+
+- $Q = VI\sin{(\phi)}$
+
+- $P = VI\cos{(\phi)}$
+
 #### 3.2: Resistance and Impedance 
 
 - Compared to $V=IR$ in DC circuits, Z is used so $V = IZ$.
@@ -239,7 +245,7 @@ $X_C$ is defined as *capacitive reactance*.
 
 - $V = V_{rms}\angle{-120}$
 
-- $V = V_{rms}\angle{-240)$
+- $V = V_{rms}\angle{-240}$
 
 ![](image/2023-02-09-11-30-02.png)
 
@@ -252,7 +258,10 @@ $X_C$ is defined as *capacitive reactance*.
 - Line current: measure through a line.
 
 $$
-V_{LINE} = \sqrt{3} \times V_{PHASE} \\
+V_{LINE} = \sqrt{3} \times V_{PHASE}
+$$
+
+$$
 I_{LINE} = I_{PHASE}
 $$
 
@@ -268,7 +277,10 @@ $$
 ![](image/2023-02-09-11-44-38.png)
 
 $$
-I_{LINE} = \sqrt{3} \times I_{PHASE} \\
+I_{LINE} = \sqrt{3} \times I_{PHASE}
+$$
+
+$$
 V_{LINE} = V_{PHASE} 
 $$
 
@@ -284,8 +296,6 @@ $$
 ### 1: Rotor and armature interaction 
 
 - Field interaction and torque:
-
-
 
 
 
