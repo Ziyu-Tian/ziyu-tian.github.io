@@ -411,3 +411,77 @@ Usually not optimizable, but fully programmable at design-time to accommodate CP
 - Flash is based on floating gate.
     - FGMOS transistor 
 
+## IV: Arithmetic Logic-Adders 
+
+### 1: Digital arithmetic  
+
+- Data path in charge of arithmetic operations.
+
+- Controller defines the sequence of operations.
+
+- Data path operation include:
+    - addition
+    - subtraction 
+    - multiplication 
+    - division 
+    - AND, OR, etc.
+
+### 2: The case of addition 
+
+- Subtraction
+    - implemented by addition through the use of 2's complement.
+    - A - B = A + (2's complement of B)
+
+- 2's complement 
+    - A bit string considers two interpretations:
+        - Natural interpretation
+        - 2's complement 
+
+![](image/2023-02-20-14-15-55.png)
+
+
+- Multiplication:
+    - Multiplication is repeated addition.
+![](image/2023-02-20-14-18-48.png)
+
+- Division:
+    - The division can be divided into **comparison** and **subtraction**.
+
+![](image/2023-02-20-14-20-52.png)
+
+- Integer power and roots:
+    - $A^n$: repeated multiplication / division.
+    - $\sqrt[n]{A}$: successive approximation (monotony functions only)
+
+![](image/2023-02-20-14-28-05.png)
+
+- Functions not amenable for successive approximation:
+    - Power series and lookup table approach.
+
+### 3: Single-bit full adder 
+
+Simplify the boolean expression of full-adder:
+
+![](image/2023-02-20-14-38-47.png)
+
+
+#### 3.1: Adder as a Sum of Products 
+
+- No common product terms for random logic solution.
+
+- AND and OR can be made using NAND.
+
+![](image/2023-02-20-14-41-36.png)
+
+#### 3.2: A more modular approach 
+
+- A half adder adds two operands A and B without taken in carry in $C_{in}$.
+
+![](image/2023-02-20-14-47-17.png)
+
+- The practical point of the half adder is you can assemble a full adder using two half adders in modular fashion and end with smaller gates.
+
+![](image/2023-02-20-14-48-37.png)
+
+- Fewer gates, smaller gates but delay more from B to $C_{out}$.
+

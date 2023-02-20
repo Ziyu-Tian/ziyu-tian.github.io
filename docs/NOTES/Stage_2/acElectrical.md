@@ -290,6 +290,18 @@ $$
 P = \sqrt{3}V_LI_L\cos{\phi}
 $$
 
+#### 4.6: Power in three phase system 
+
+- Active Power: $P = \sqrt{3}V_LI_L\cos{(\phi)}$
+
+- Reactive Power: $Q = \sqrt{3}V_LI_L\sin{(\phi)}$
+
+- Apparent Power: $S = \sqrt{3}V_LI_L*$
+
+- Note that by default we use line values and total power (apparent power) with rms value.
+
+
+
 ## II: Electrical magnetic interaction and VF drives 
 
 
