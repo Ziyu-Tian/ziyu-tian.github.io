@@ -485,3 +485,20 @@ Simplify the boolean expression of full-adder:
 
 - Fewer gates, smaller gates but delay more from B to $C_{out}$.
 
+
+#### 3.3: Ripple carry adder 
+
+- $C_{in}$ of next bit is $C_{out}$ of current bit.
+
+- If no $C_{in}$, just wire $C_{in}$ to 0.
+
+- An n-bit adder can add two n-bits number.
+
+![](image/2023-02-23-10-23-29.png)
+
+- Delay problem:
+
+![](image/2023-02-23-10-25-22.png)
+
+
+

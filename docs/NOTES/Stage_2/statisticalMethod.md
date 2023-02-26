@@ -233,7 +233,7 @@ $$
 
 - Consider a random variable that represents the outcome of a experiment.
 
-#### 5.2: Probability Distributions of Univariate 
+#### 5.2: Probability Distributions of Univariate discrete variable
 
 - For a *discrete* random $X$:
 
@@ -254,4 +254,113 @@ eg:
 
 ![](image/2023-02-16-10-03-27.png)
 
+#### 5.3: Probability Distributions of Univariate continuous variable
 
+- For a continuous random variable $Y$:
+    - the set of possible outcomes is **infinite**
+    - we cannot specify the pmf for a continuous random variable, which use **cumulative distribution function (cdf)** is defined the same :$F(y) = P(Y\le y)$.
+    - the probability that the outcome has a value between a small interval $y$ and $y+\delta y$. 
+    - the gradient of $F$ at $y$ is:
+
+$$
+\frac{F(y+\delta y)-F(y)}{\delta y}
+$$
+
+- The gradient function $f(y)$ is known as the probability function (pdf):
+
+$$
+f(y) \ge 0 \quad \forall y 
+$$
+
+which is related to the cdf:
+
+$$
+f(y) = \displaystyle\frac{dF(y)}{dy}
+$$
+
+- Note that it is possible for the pdf to take values greater than 1, as the **pdf** itself is not probability, the cdf is the probability.
+
+- For example:
+
+![](image/2023-02-26-08-21-35.png)
+
+![](image/2023-02-26-08-22-36.png)
+
+
+#### 5.4: The expectation of a random variable 
+
+- The expectation or expected value is defined as:
+
+$$
+E[X] = \Sigma x P(X=x)
+$$
+
+#### 5.5: The variance of a random variable 
+
+$$
+Var[X] = \Sigma (x-E[x])^2P(X=x) = E[X^2]-E[X]^2
+$$
+
+
+
+- Other relationship:
+
+$$
+Var[aX+b] = a^2 Var[X]
+$$
+
+- For independent random variable:
+    - Var[$X_1+X_2$] = Var[$X_1$] + Var[$X_2$]
+
+#### 5.6: The binomial distribution
+
+- Describe the number of *successes* in a sequence of n independent experiments.
+
+- The distribution has two parameters: n for the number of trial and p for probability of success for each experiment.
+
+- The pmf for binomial distribution is:
+
+$$
+P(X=x) = C_n^x p^x (1-p)^{n-x}
+$$
+
+- The expectation of binomial distribution is expressed as:
+
+$$
+E[X] = np
+$$
+
+- The variance of binomial distribution is expressed as:
+
+$$
+Var[X] = np(1-p)
+$$
+
+#### 5.7: The Poisson distribution 
+
+- Describe the probability of a given number of events occurring in a fixed interval of time (or space etc.) if:
+    - these events occur with a known constant rate (parameter $\lambda$)
+    - and are independent of the time since the last event.
+
+- The probability mass function of a Poisson distribution with $\lambda$ is given by:
+
+$$
+P(X=x) = e^{-\lambda} \frac{\lambda ^x}{x!}
+$$
+
+- It can be shown that $E[X] = \lambda$ and Var[X] = $\lambda$.
+
+- Sum of the independent Poisson Distribution also follow the Poisson distribution.
+
+
+![](image/2023-02-26-10-10-10.png)
+
+
+- The Poisson distribution can be used to approximate the binomial distribution when the total number of trials is **large** and the probability of success is **low**.
+
+![](image/2023-02-26-10-28-29.png)
+
+
+#### 5.8: Comparison of Binomial and Poisson 
+
+![](image/2023-02-26-10-31-39.png)
