@@ -153,3 +153,7 @@ end: move reg,z
 - The true instructions:
 
 ![](image/2023-02-06-16-55-54.png)
+
+
+### 5: Three-state logic 
+
