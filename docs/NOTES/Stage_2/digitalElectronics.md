@@ -501,4 +501,88 @@ Simplify the boolean expression of full-adder:
 ![](image/2023-02-23-10-25-22.png)
 
 
+### 3.4: Speeding up addition 
 
+- For delay, carry is more critical.
+
+- Fewer inputs gates are faster.
+
+- Separate out non-carry portion.
+
+- Composition of two half adders.
+
+- Delay may different:
+
+|![](image/2023-02-27-14-20-06.png)|![](image/2023-02-27-14-20-39.png)|
+|----|----|
+
+- The max fan-in/fan-out = 2:
+
+![](image/2023-02-27-14-22-12.png)
+
+which delay is 2 gates per bit.
+
+### 3.5: More focused analysis 
+
+- If we rename the signals as k for 1 to n.
+
+![](image/2023-02-27-14-23-57.png)
+
+- The carry to carry ripple delay is the critical path: $2n\tau$:
+
+![](image/2023-02-27-14-25-36.png)
+
+- Reviewing the truth table of adder, we may find the rule of **propagate**:
+
+|![](image/2023-02-27-14-28-38.png)|![](image/2023-02-27-14-28-44.png)|
+|----|----|
+
+- Carry Generate G = 1, then $C_{out}=1$ whatever $C_{in}$ is.
+
+- Carry Propagate P = 1, then $C_{out}=C_{in}$
+
+- As G and P are dependent on A and B nothing to do with $C_{in}$, no need to wait for $C_{in}$ signal.
+
+### 3.6: Propagate and Generate 
+
+- P and G come from A and B and only have single gate delay $\tau$.
+
+![](image/2023-02-27-14-37-06.png)
+
+- If we define every C signal as a sum of products of $G_k$, $P_k$ and $C_{in}$ only.
+
+- We generate the carry path by **recursively** using the formula:
+![](image/2023-02-27-14-46-39.png)
+
+$$
+\begin{equation*}
+\begin{split}
+    C_k &= G_k +P_kC_{k-1} \\ 
+    &= G_k + P_k(G_{k-1}+P_{k-1}C_{k-2}) \\
+\end{split} 
+\end{equation*}
+$$
+
+- Recursive until $C_{-1}$ remains on the right side.
+
+- All carries are evaluated in parallel:
+
+![](image/2023-02-27-14-48-28.png)
+
+### 3.7: Taking out the carry chain 
+
+![](image/2023-02-27-14-51-16.png)
+
+- Combining existing parts to form a CLA adder:
+
+![](image/2023-02-27-14-52-51.png)
+
+- $S_k = P_k \oplus C_{k-1}$
+
+### 3.8: CLA adder delay 
+
+- CLA adder formulas:
+
+$$
+
+$$

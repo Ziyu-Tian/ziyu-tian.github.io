@@ -301,6 +301,29 @@ $$
 - Note that by default we use line values and total power (apparent power) with rms value.
 
 
+#### 4.7: 3 Phase Power Systems 
+
+![](image/2023-02-26-23-05-22.png)
+
+- Generation: there is a limit on generator voltage (22-23.5 kV)
+
+- Transmission: Voltage stepped up for efficiency (275/400 kV)
+
+- Distribution: voltage stepped down for underground cables and safe load.
+
+#### 4.8: Single line representation 
+
+- The system is usually balanced if the system is healthy.
+
+- No need to think of 3 phases, loom at a single phase instead.
+
+- Assume balanced conditions, i.e. only one phase is used.
+
+- Large loads are designed to be balanced.
+
+- Single phase load are distributed evenly to balance the 3-phase load on the grid.
+
+
 
 ## II: Electrical magnetic interaction and VF drives 
 
