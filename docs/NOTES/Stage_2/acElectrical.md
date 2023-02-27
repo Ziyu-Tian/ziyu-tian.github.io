@@ -339,8 +339,34 @@ $$
 
 ### 1: Rotor and armature interaction 
 
-- Field interaction and torque:
+#### 1.1: Field interaction and torque 
+
+- The stator and rotor **magnetic fields** have to be in the correct position and the **correct magnitude** to create demanded torque.
+
+- Electrical supply has to be sufficient to create enough speed and torque.
+
+- Torque has to be sufficient to overcome mechanical resistance, inertia to the required speed.
+
+#### 1.2: 3 phase synchronous machine 
+
+![](image/2023-02-27-19-29-47.png)
+
+- As the phase shift of 120 degrees between three phases, if we analyses at $t=0$:
+
+![](image/2023-02-27-20-19-59.png)
+
+- So we note $F$ as the *magnetomotive force*, defined as $F = NI$:
+
+![](image/2023-02-27-20-18-29.png)
 
 
+#### 1.3: 3 phase rotating field 
 
+- 3 stationary pulsating fields sum giving a rotating field **constant in magnitude** moving forwards at one pole pitch per half cycle.
+
+- Mathematically expressed as $\frac{3}{2}\Phi e^{j\omega t}$
+
+- A two pole field moves 1 revolution per electrical cycle - 50 Hz means 50 revs/sec.
+
+- A four pole field rotates 1/2 revolution per electrical cycle.
 
