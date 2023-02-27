@@ -324,6 +324,15 @@ $$
 - Single phase load are distributed evenly to balance the 3-phase load on the grid.
 
 
+#### 4.9: Per-unit calculation 
+
+![](image/2023-02-27-18-21-49.png)
+
+- Base (reference) value choice:
+    - Usually base of S and V are chosen and I and Z are derived.
+
+- The unit of per-unit will be '$p.u.$'.
+
 
 ## II: Electrical magnetic interaction and VF drives 
 
