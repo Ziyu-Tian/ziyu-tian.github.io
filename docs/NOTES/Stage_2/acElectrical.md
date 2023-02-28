@@ -370,3 +370,77 @@ $$
 
 - A four pole field rotates 1/2 revolution per electrical cycle.
 
+
+### 2: Variable frequency electric drives
+
+
+- The large efficiency gains should be made when process operate at variable speed.
+
+
+- This need a variable frequency and variable voltage, so that requires a variable frequency converter.
+
+#### 2.1: Power Electronics Devices 
+
+- Mosfet: Low voltage rating (up to 1.5k), high speed.
+
+- BJT: largely replaced by IGBT.
+
+- IGBT: Moderate voltage rating and speed.
+
+- GTO Thyristor: High V (6k), low speed, used in high power and low frequency devices.
+
+![](image/2023-02-27-21-29-54.png)
+
+#### 2.2: Chopper controlled DC motor 
+
+|![](image/2023-02-27-21-31-59.png)|![](image/2023-02-27-21-32-11.png)|
+|----|----|
+
+- Switching turning on / off to control the voltage.
+
+- Voltage across the motor is pulsating.
+
+- The motor responds to the average voltage.
+
+- Resistance limits the steady state current.
+
+- Inductance limits the speed of current rise.
+
+- The chopper circuit can produce a sine wave if we alter the pulse width dynamically:
+
+![](image/2023-02-27-22-08-20.png)
+
+- Apply PWM voltage to the motor winding, the inductance will provide the sin AC current.
+
+
+#### 2.3: 3-phase voltage source inverter 
+
+![](image/2023-02-28-18-14-49.png)
+
+- The capacitor and diodes can provide the path when the lower side switch connected.
+
+- The phase connection can be expressed as:
+
+![](image/2023-02-28-18-17-05.png)
+
+#### 2.4: PWM voltage and current waveform 
+
+- As the voltage in one phase can be $\frac{2}{3}V_{DC}$, $\frac{1}{3}V_{DC}$, 0, $-\frac{1}{3}V_{DC}$ and $-\frac{2}{3}V_{DC}$, changing the switch we can get the phase voltage as:
+
+![](pwm.png)
+
+- By altering the modulation signal (change the switch altering frequency) we can change AC frequency.
+
+![](pwm2.png)
+
+#### 2.5: Sine-triangle PWM (SPWM)
+
+- Combine the square wave of triangle wave in high frequency, the modulated sin wave can be produced:
+
+![](20230228220338.png)
+
+#### 2.6: Implementing PWM in Logic 
+
+- DSP and micro-controller usually have built in hardware to produce PWM:
+
+![](2023-02-28-22-05-18.png)
