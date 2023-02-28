@@ -444,3 +444,14 @@ $$
 - DSP and micro-controller usually have built in hardware to produce PWM:
 
 ![](2023-02-28-22-05-18.png)
+
+#### 2.7: Shoot-through fault 
+
+- To avoid T1 and T2 connect at the same time causing the short circuit (shoot-through fault), a small time delay called *deadline* is inserted by the controller.
+
+![](2023-02-28-22-09-01.png)
+
+#### 2.8: Variable frequency 3 phase convert Overview 
+
+
+![](20230228221325.png)
