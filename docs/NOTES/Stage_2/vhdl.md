@@ -402,5 +402,79 @@ begin
     enc_in <= a & b & c & d & e & f;
 ```
 
+### 5: Commonly used modules: Multiplexer 
 
+- A multiplexer allows one of the input signals to be brought to the output.
 
+- 's' for the select signal which is also a input.
+
+![](20230301091751.png)
+
+```VHDL 
+entity mux is 
+    port(
+        s:      in std_logic;
+        a,b:    in std_logic;
+        y:      out_std_logic;
+    );
+end mux;
+
+architecture rtl of myx is 
+begin
+    y <= a when s= '0' else 
+        b when s='1' else
+        '-';
+end rtl;
+```
+or 
+
+```VHDL
+begin 
+    with s select
+    y <= a when s= '0'  
+    b      when s='1' 
+end rtl;
+```
+
+- For a more complicated multiplexer:
+
+![](20230301092422.png)
+
+using " with...select" in the architecture:
+
+```VHDL 
+begin 
+    sel <= s0 & s1;
+
+    with sel select
+    y <= a when "00",
+-- ...
+
+end rtl;
+```
+
+- If the signal are 8-bit signals, the new entity for the multiplexer becomes:
+
+```VHDL 
+entity mux_8bit is 
+
+port(s0,s1:     in std_logic;
+        a, b, c, d: in std_logic_vector(0 to 7);
+        y:      out_std_logic_vector(0 to 7)
+        
+    );
+
+end mux_8bit;
+```
+
+- To specify a generic 4 to 1 multiplexer for signals of variable size, we can use the **generic** construct:
+
+```VHDL
+entity mux_Nbit is 
+    generic (N: integer);
+    prot( sel:  in std_logic_vector (0 to 1);
+    a,b,c,d: in std_logic_vector (0 to N-1);
+    y:  out std_logic_vector(0 to N-1);
+    );
+end mux_Nbit;
+```

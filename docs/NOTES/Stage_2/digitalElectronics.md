@@ -458,7 +458,7 @@ Usually not optimizable, but fully programmable at design-time to accommodate CP
 - Functions not amenable for successive approximation:
     - Power series and lookup table approach.
 
-### 3: Single-bit full adder 
+### 3: N-bit adder 
 
 Simplify the boolean expression of full-adder:
 
@@ -501,7 +501,7 @@ Simplify the boolean expression of full-adder:
 ![](image/2023-02-23-10-25-22.png)
 
 
-### 3.4: Speeding up addition 
+#### 3.4: Speeding up addition 
 
 - For delay, carry is more critical.
 
@@ -522,7 +522,7 @@ Simplify the boolean expression of full-adder:
 
 which delay is 2 gates per bit.
 
-### 3.5: More focused analysis 
+#### 3.5: More focused analysis 
 
 - If we rename the signals as k for 1 to n.
 
@@ -543,7 +543,7 @@ which delay is 2 gates per bit.
 
 - As G and P are dependent on A and B nothing to do with $C_{in}$, no need to wait for $C_{in}$ signal.
 
-### 3.6: Propagate and Generate 
+#### 3.6: Propagate and Generate 
 
 - P and G come from A and B and only have single gate delay $\tau$.
 
@@ -569,7 +569,7 @@ $$
 
 ![](image/2023-02-27-14-48-28.png)
 
-### 3.7: Taking out the carry chain 
+#### 3.7: Taking out the carry chain 
 
 ![](image/2023-02-27-14-51-16.png)
 
@@ -579,10 +579,70 @@ $$
 
 - $S_k = P_k \oplus C_{k-1}$
 
-### 3.8: CLA adder delay 
+#### 3.8: CLA adder delay 
 
 - CLA adder formulas:
 
 $$
-
+\begin{equation*}
+\begin{split}
+    C_k &= G_k +P_kC_{k-1} \\ 
+    S_k &= P_k \oplus C_{k-1} \\
+\end{split} 
+\end{equation*}
 $$
+
+- The total CLA delay is therefore:
+
+![](20230301110617.png)
+
+- Remember ripple carry adder delay $2n\tau$.
+
+- In this CLA design, the delay reduced from linear to constant.
+
+
+#### 3.9: Fan-in and Fan-out 
+
+- We need to consider fan-in and fan-out for a realistic estimation of performance:
+    - The CLA have fan-in and fan-out increasing with the increasing of bits.
+
+
+#### 3.10: Gate switching 
+
+- Gate switching can be modelled as the charging through resistors.
+
+- The gate delay is noted as $\tau = RC$:
+
+![](20230301112035.png)
+
+- For example of a NOR Gate with 2 fan-in and 4 fan-out:
+
+![](20230301112246.png)
+
+#### 3.11: Gate delay
+
+- The rise and fall times of the voltage at Y in previous NOR gate example depends on the $C_{load}$.
+
+- $C_{load}$ is proportional to fan-out N(Y), so that the gate delay is proportional to N(Y).
+
+- Each input adds a pair of transistors to the gate which causing extra capacitance.
+
+- In general, pull-up and pull-down delays are not equal.
+
+![](20230301132449.png)
+
+
+#### 3.12: Fan-out delay cost 
+
+- Drive m outputs - single gate delay has become $m\tau$.
+
+- CLA is even worse than ripple carry in the cost of delay.
+
+
+#### 3.13: Fan-out / Fan-in buffers 
+
+![](20230301134309.png)
+
+
+
+
