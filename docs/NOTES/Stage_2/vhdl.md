@@ -400,6 +400,21 @@ architecture rtl of pri_enc is
 begin 
     -- concatenation inputs into enc_in 
     enc_in <= a & b & c & d & e & f;
+
+WITH enc_in SELECT
+        enc_out <= "000" WHEN "000000",
+        "001" WHEN "000001",
+        "010" WHEN "00001-",
+        "011" WHEN "0001--",
+        "100" WHEN "001---",
+        "101" WHEN "01----",
+        "110" WHEN "1-----",
+        "---" when others;
+
+    f0 <= enc_out(0);
+    f1 <= enc_out(1);
+    f2 <= enc_out(2);
+END rtl;
 ```
 
 ### 5: Commonly used modules: Multiplexer 
@@ -478,3 +493,11 @@ entity mux_Nbit is
     );
 end mux_Nbit;
 ```
+
+- The **demultiplexer** is the module that performs the duel function of the multiplexer.
+
+![](20230301134847.png)
+
+### 6: Commonly used modules: Shifters 
+
+- A **shifter** is an element that presents at the output the 
