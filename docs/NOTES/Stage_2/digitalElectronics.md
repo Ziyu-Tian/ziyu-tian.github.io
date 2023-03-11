@@ -645,4 +645,35 @@ $$
 
 
 
+### 4: Large Adders 
+
+#### 4.1: Adder size limits 
+
+- For a 4-bit adder delays:
+
+![](20230306141438.png)
+
+- CLA has better performance, but the max fan-out delay grows with adder size.
+
+- CLA adder size therefore cannot be more bits and 4-bits is almost the optimizable choice.
+
+#### 4.2: Large adder design 
+
+- Two ways to extend the size of these adders, whilst keeping the fan-in an fan-out problem in check:
+    - Ripple carry
+    - Block carry
+
+##### 4.2.1: Ripple carrying CLA blocks 
+
+- Ripple carry with constant max fan-in and fan-out unrelated to the size of adder, can be applied between CLA adder blocks.
+
+
+![](20230306142223.png)
+
+
+- Block carry is a kind of CLA of CLA, apply the same CLA method to the 4-bit CLA block as we did to 1-bit adder.
+
+![](20230306142831.png)
+
+![](20230306142911.png)
 
