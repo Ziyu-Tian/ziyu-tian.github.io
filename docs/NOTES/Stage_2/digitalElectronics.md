@@ -669,6 +669,72 @@ $$
 
 - In custom, the fan-out and fan-in should be limited to 4 for optimal performance.
 
+#### 3.14: Fan-out Tree optimization 
+
+- The best possible worst-case delay for a buffer delay is:
+
+$$
+t_{pd} = 4 + B[ns]
+$$
+
+- If we want a fan-out of 60, for B = 2:
+
+![](20230312174849.png)
+
+![](20230312175146.png)
+
+![](20230312175430.png)
+
+- For B = 3:
+
+![](20230312175512.png)
+
+- For B = 4:
+
+![](20230312175655.png)
+
+- For B = 5:
+
+![](20230312175950.png)
+
+![](20230312180038.png)
+
+![](20230312180133.png)
+
+
+#### 3.15: Fan-in optimization example 
+
+- Consider a circuit which used to justify if all bits of a 64-bit word are zero.
+
+- The easiest way is using the NAND gate or NOR gate with 64 fan-in and 1 fan-out.
+
+-  To reduce the delay, we can use the circuit below which combine the NOR gate and NAND gate:
+
+![](20230312201002.png)
+
+- The delay formula is given as:
+
+$$
+t = 2+ (1\times B_{in}) + (2 \times B_{out})[ns]
+$$
+
+- And we can change the number of fan-in as well as the level (layer) of the gate:
+
+![](20230312201143.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 4: Large Adders 
 
 #### 4.1: Adder size limits 
