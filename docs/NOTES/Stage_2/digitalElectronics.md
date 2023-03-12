@@ -636,14 +636,38 @@ $$
 
 - Drive m outputs - single gate delay has become $m\tau$.
 
-- CLA is even worse than ripple carry in the cost of delay.
+- CLA is even worse than ripple carry in the cost of delay as for a single $P_n$ will be several fan-out.
+
+- To solve this problem, we use fan-in (out) trees to decrease the number of fan-out by adding levels.
 
 
 #### 3.13: Fan-out / Fan-in buffers 
 
 ![](20230301134309.png)
 
+- For this condition, the fan-out (controlled gate) of one gate is only 3.
 
+- If we note B is the **branching ratio** and L is the **level**, the realistic controlled by the input is $B^L$, which is 27 in this condition.
+
+- As we know, the delay time is proportional to the total value of capacitance.
+
+- To calculate the equivalent capacitance of fan-out (parallel), we can find that $C_{load}=B \times C_{load_in}$.
+
+- As the fan-out is same for each level, if we note 'k' is the proportional constant, the total delay is :
+
+$$
+t_{tot} = L \times k \times B
+$$
+
+- Compare the total delay of this method (9k) and common method (27k), it reduced obviously.
+
+- As the delay is $kBL$, we can change the value of B or L as long as BL is constant:
+
+![](20230312174007.png)
+
+- The optimal value for B is $e \approx 2.718$.
+
+- In custom, the fan-out and fan-in should be limited to 4 for optimal performance.
 
 ### 4: Large Adders 
 
