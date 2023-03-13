@@ -724,17 +724,6 @@ $$
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ### 4: Large Adders 
 
 #### 4.1: Adder size limits 
@@ -761,9 +750,55 @@ $$
 ![](20230306142223.png)
 
 
-- Block carry is a kind of CLA of CLA, apply the same CLA method to the 4-bit CLA block as we did to 1-bit adder.
+##### 4.2.2: Block carry of CLA 
 
-![](20230306142831.png)
+- We use the same CLA method to a 4-bit CLA. Instead of using the $C_3$ as the output, the block carry needs to output G and P, which can also be noted as $G'$ and $P'$.
 
-![](20230306142911.png)
+- Block carry generate G':
+    - G' = 1 when carry is generated without regard to $C_{in}$.
+- Block carry propagate P':
+    - P' = 1 when block carry output depends on block carry input.
+
+- The 4-bit adder carry output is redefined as:
+
+![](20230313062915.png)
+
+- The output of normal of CLA is $C_{n-1}$
+
+![](20230313063312.png)
+
+- The output of the block CLA is $G$ and $P$.
+
+![](20230313063437.png)
+
+- Example of 16 bits CLA:
+    - Delay to form G, P is **1 $\tau$**
+    - Delay to form final sum is **1 $\tau$**
+    - Delay to do the first carry calculation C0, C1, C2 is  **2 $\tau$**
+    - Delay to do other carry calculation (in parallel) is **2 $\tau$**
+    - Delay to do CLA is **2 $\tau$**
+
+- Each level multiply the size by 4, only adds a constant of $4\tau$:
+
+![](20230313071210.png)
+
+- We can find that O(n) to O(log(n)) in this method.
+
+
+### 5: Multiplication Basics 
+
+#### 5.1: Binary multiplication 
+
+- Long multiplication example as 13 $\times$ 11:
+
+![](20230313072115.png)
+
+- This requires 3 or n-bit adder.
+
+
+
+
+
+
+
 
