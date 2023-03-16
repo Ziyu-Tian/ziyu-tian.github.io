@@ -795,10 +795,25 @@ $$
 
 - This requires 3 or n-bit adder.
 
+##### 5.1.1: Delay analysis 
+
+- Using the previous method:
+    - Single $\tau$ for one-bit multiplication (using AND gate, fully parallel)
+    - Addition step has a delay which is approx to $\tau\log n$ if we use the CLA adder.
+
+- To reduce the delay, we find that the adding starts from the right-side, so some bit-wise multiplication in the left is not required:
+
+![](20230316101221.png)
 
 
+##### 5.1.2: Better method 
 
+- As the moving of addition of multiplication is similar to the Ripple carry adders, it is a better choice rather blocked CLA.
 
+#### 5.2: Parallel Multiplier 
 
+- We don't need to complete each partial product before starting the next.
+
+![](20230316102000.png)
 
 
