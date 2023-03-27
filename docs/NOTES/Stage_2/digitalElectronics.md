@@ -805,6 +805,15 @@ $$
 
 ![](20230316101221.png)
 
+- So we can use the only calculate what we need (Note that the figure may not correct)
+
+![](20230327082242.png)
+
+- Using the delay analysis of Ripple Carry Adder, we can find the delay of:
+
+![](20230327082907.png)
+
+
 
 ##### 5.1.2: Better method 
 
