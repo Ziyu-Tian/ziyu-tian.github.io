@@ -843,4 +843,15 @@ $$
 
 - The carry chain still exist on downward path.
 
-#### 5.3: 
+##### 5.2.3: Carry-save scheme 
+
+- We may change the algorithm so that the final product remains but each row have different partial product, which means the final result of each row appearing at the same time.
+
+- If we want to add two A + B block, the carry number need to be passed leftward:
+
+![](20230328161013.png)
+
+- But if we add three A + B block, the addition order can be changed as right (carry-save) or left (previous):
+
+|![](20230328161149.png)|![](20230328161203.png)|
+|---|---|
