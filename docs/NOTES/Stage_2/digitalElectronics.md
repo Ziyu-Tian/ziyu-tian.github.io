@@ -855,3 +855,50 @@ $$
 
 |![](20230328161149.png)|![](20230328161203.png)|
 |---|---|
+
+- This doesn't work if there is only one adder row.
+
+- The final row needs special attention to catch all carries saved from the previous row, we use CLA here.
+
+##### 5.2.4: 16 x 16 Multiplier Example
+
+![](20230328185714.png)
+
+- As there is no more leftward carry in the first row, so the full-adders can be replaced by half-adders (HA).
+
+- The delay depth per row is now a single instead of two.
+
+- One more row because of carry save.
+
+##### 5.2.5: Per-row delay reduction 
+
+- The previous ripple carry delay per-row is $4\tau$, which only happen  at the right-most diagonal:
+
+![](20230328190249.png)
+
+- The total delay is only $2\tau$ in the carry save condition:
+
+
+![](20230328190715.png)
+
+- Passing to the next row avoids the sequential propagation (the waiting for the previous signals) within single row.
+
+- The total delay consist of:
+    - One A, B to S delay ($2\tau$) for n-1 row.
+    - Last row is block CLA adder (log delay)
+
+- Assuming a 4-bits CLA adders in the final row, the delay is:
+
+$$
+D = 2(n-1)\tau + 4\tau \log_{4}{n} + \tau
+$$
+
+- If we use ripple-carry adder in the last line, the delay will be:
+
+$$
+D = 4(n-1)\tau + 2(n-2)\tau + \tau
+$$
+
+
+
+
