@@ -825,4 +825,12 @@ $$
 
 ![](20230316102000.png)
 
+- Before you can add in $r_0d_2$, the previous row's addition needs to have processed to column 2.
+
+- The addition order is a kind of wavefront form $r_0d_0$, $r_0d_1$,$r_0d_2$ to $r_0d_3$, as the red line in below:
+
+![](20230328152159.png)
+
+
+
 
