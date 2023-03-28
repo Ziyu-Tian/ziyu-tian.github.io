@@ -795,7 +795,21 @@ $$
 
 - This requires 3 or n-bit adder.
 
-##### 5.1.1: Delay analysis 
+
+
+#### 5.2: Parallel Multiplier 
+
+- We don't need to complete each partial product before starting the next.
+
+![](20230316102000.png)
+
+- Before you can add in $r_0d_2$, the previous row's addition needs to have processed to column 2.
+
+- The addition order is a kind of wavefront form $r_0d_0$, $r_0d_1$,$r_0d_2$ to $r_0d_3$, as the red line in below:
+
+![](20230328152159.png)
+
+##### 5.2.1: Delay analysis 
 
 - Using the previous method:
     - Single $\tau$ for one-bit multiplication (using AND gate, fully parallel)
@@ -811,26 +825,22 @@ $$
 
 - Using the delay analysis of Ripple Carry Adder, we can find the delay of:
 
-![](20230327082907.png)
+|![](20230327082907.png)|![](20230328153234.png)|
+|---|---|
+
+- If we set $n$ is the partial product number, so the total delay can be expressed as:
+
+$$
+1\tau (n-1) + 3\tau (n-1) + 2\tau (n-1) = 6n\tau - 6\tau
+$$
+
+- Compared to the previous method delay of $\tau + k_1.(n-1).\log{n}.\tau$, the parallel method is only $k_2.(n-1).\tau$
 
 
+##### 5.2.2: Scope for further speedup 
 
-##### 5.1.2: Better method 
+- The last-row ripple-carry adder cannot be replaced by CLA cause the feed-in are not parallel.
 
-- As the moving of addition of multiplication is similar to the Ripple carry adders, it is a better choice rather blocked CLA.
+- The carry chain still exist on downward path.
 
-#### 5.2: Parallel Multiplier 
-
-- We don't need to complete each partial product before starting the next.
-
-![](20230316102000.png)
-
-- Before you can add in $r_0d_2$, the previous row's addition needs to have processed to column 2.
-
-- The addition order is a kind of wavefront form $r_0d_0$, $r_0d_1$,$r_0d_2$ to $r_0d_3$, as the red line in below:
-
-![](20230328152159.png)
-
-
-
-
+#### 5.3: 
