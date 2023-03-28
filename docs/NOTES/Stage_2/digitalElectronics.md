@@ -899,6 +899,18 @@ $$
 D = 4(n-1)\tau + 2(n-2)\tau + \tau
 $$
 
+##### 5.2.6: Further Speedup Methods 
+
+- Wallace / Dadda trees
+    - Reduce the middle layer of partial product.
+    - The total time is O(log(n))
+
+- Approximate computing
+    - Full precision is not needed most of time.
+    - Eg. if we use a OR gate as a single-bit adder, the accuracy is 75%.
+
+-  Analogue Multiplier
+
 
 
 
