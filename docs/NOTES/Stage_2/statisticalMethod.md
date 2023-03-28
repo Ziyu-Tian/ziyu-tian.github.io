@@ -364,3 +364,5 @@ $$
 #### 5.8: Comparison of Binomial and Poisson 
 
 ![](image/2023-02-26-10-31-39.png)
+
+
