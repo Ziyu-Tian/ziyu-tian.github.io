@@ -1029,9 +1029,10 @@ $$
 
 ![](20230329030042.png)
 
-- However, the space savings from serialization, we can make the single-bit adders a bit bigger and use the sum-of-product truth table deisgn which has two layers of gates for a delayed of $2\tau$
+- However, the space savings from serialization, we can make the single-bit adders a bit bigger and use the sum-of-product truth table design which has two layers of gates for a delayed of $2\tau$
 
 ![](20230329031027.png)
+
 
 
 
