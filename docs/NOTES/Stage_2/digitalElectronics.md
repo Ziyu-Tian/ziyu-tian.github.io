@@ -1033,7 +1033,11 @@ $$
 
 ![](20230329031027.png)
 
+- Carry-save allows the parallelization of carries, and the remaining carries must be added at the last step.
+    - n-1 CLK steps needed, with D held at 0, to sort out the final carries (like ripple-carry scheme)
 
+- Delay at each step is now only 1 adder delay ($2\tau$):
+    - $t_{total} = (n+(n-1))\times 2\tau$
 
 
 
