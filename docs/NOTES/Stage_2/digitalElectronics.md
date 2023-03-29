@@ -911,6 +911,133 @@ $$
 
 -  Analogue Multiplier
 
+#### 5.3: Serial Multiplier
+
+##### 5.3.1: Serial arithmetic 
+
+- Parallel Multiplier featuren large hardware size.
+
+- The block CLA multiplier makes the addition happens in 1 step, each step is the same, so we don't need n-1 n-bit block CLA adders.
+
+- If we reuse the same CLA repeatedly n-1 times, this is method of serial operation.
+
+
+- The carry-save multiplier is parallel at the level of individual cell, which can also be serialized.
+
+##### 5.3.2: Serial Multiplication 
+
+- If the multiplication / AND step is also serialized, we need $2n$ AND gates.
+
+- A single adder (block CLA for speed)
+
+- Some memory to store partial products between steps.
+
+- Significant reduction of silicon compared to the parallel version.
+
+
+- The simpler version of serial multiplier:
+    - Repeatedly using a single adder row and a single row of ANDs.
+
+
+![](20230328195040.png)
+
+
+##### 5.3.3: The algorithm of serial multiplication
+
+- The sequence of the operations should be:
+    - Load R and D, and reset P to 0.
+    - Add the partial product $r_0$ AND D to P.
+    - Shift R right 1 bit; Shift D left 1 bit.
+    - Repeat from step 2 for 4 times.
+
+
+![](20230328195829.png)
+
+- Multiplying two n-digit numbers the result may be up to 2n digit wide.
+
+- Adding two n-digit numbers the result may be up to n+1 digits wide.
+
+- Shifting the R Register right makes it possible to AND the correct $r_i$.
+
+- Shifting the D register left can ensure the last-digit on the left is zero in partial product register.
+
+
+- Time control signals for the registers:
+
+![](20230328201958.png)
+
+
+
+##### 5.3.4: Improvement of Serial multiplication
+
+- Half of the bits in the adder have 0 in each addition steps.
+    - Only half of the adder is ever used at a time.
+    - We can do this with a n-bit adder instead of 2n-bit adder.
+
+- It may save registers and AND gates as well.
+
+- So if we apply a smaller version, the size an be reduced if the output register shifts.
+
+- For example of 13 x 11 (1101 x 1011):
+
+![](20230329003725.png)
+
+- In each calculation, we can right-shift the register instead of the D or R.
+
+- Move one of the partial product when doing the adding:
+
+![](20230329004621.png)
+
+- As we are doing the right-shift for the R register, it is gradually empty from left to right.
+
+
+- The right-hand cell storing the right-shifted value can be replaced by Multiplier R:
+
+![](20230329010549.png)
+
+
+- The carry bit is not necessory if the adder drops the result to the right by one bit (combine add with shift).
+
+
+##### 5.3.5: Delay Calculation 
+
+- After initialization, the multiplier takes n CLK cycle to multiply two n-bits numbers:
+
+- Each addition takes one n-bit adder delay, which should be accomodate with the CLK cycle.
+
+- Assuming using the CLA adder, the delay should be $n(4\tau\log_{4}{n})$ (the max of CLA block is 4).
+
+- So it is O(n x log(n))
+
+- For n = 16, the delay is 128$\tau$.
+
+- CLA serial multiplier is slower, and the size also grow with n because of CLA trees.
+
+##### 5.3.6: Carry-save in serial multiplier
+
+
+- Carry-save in serial multipliers:
+    - Carry-bits must be stored in a register betwen steps; If D is shifted, the partial product are accumulated at the same position and the carry is shifted to the left at each clock., which requires 2n single-bit adder.
+
+![](20230329025807.png)
+
+
+- Combining shift with add:
+    - if the product register P is shifted and D remains the same, thesum outputs must be shifted right each clock and the carries remain at the same position, which requires n single-bit adders.
+
+- As the steps are controlled by clocks, we cannot exploit the tolerance for late $C_{in}$ to produce $C_{out}$. S and $C_{out}$ must be ready at the clock edge.
+
+![](20230329030042.png)
+
+- However, the space savings from serialization, we can make the single-bit adders a bit bigger and use the sum-of-product truth table deisgn which has two layers of gates for a delayed of $2\tau$
+
+![](20230329031027.png)
+
+
+
+
+
+
 
 
 
