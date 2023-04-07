@@ -1039,8 +1039,7 @@ $$
 - Delay at each step is now only 1 adder delay ($2\tau$):
     - $t_{total} = (n+(n-1))\times 2\tau$
 
-
-
+- 
 
 
 
