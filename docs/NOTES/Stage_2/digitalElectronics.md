@@ -594,7 +594,7 @@ $$
 
 - The total CLA delay is therefore:
 
-![](20230301110617.png)
+![](image/20230301110617.png)
 
 - Remember ripple carry adder delay $2n\tau$.
 
@@ -613,11 +613,11 @@ $$
 
 - The gate delay is noted as $\tau = RC$:
 
-![](20230301112035.png)
+![](image/20230301112035.png)
 
 - For example of a NOR Gate with 2 fan-in and 4 fan-out:
 
-![](20230301112246.png)
+![](image/20230301112246.png)
 
 #### 3.11: Gate delay
 
@@ -629,7 +629,7 @@ $$
 
 - In general, pull-up and pull-down delays are not equal.
 
-![](20230301132449.png)
+![](image/20230301132449.png)
 
 
 #### 3.12: Fan-out delay cost 
@@ -643,7 +643,7 @@ $$
 
 #### 3.13: Fan-out / Fan-in buffers 
 
-![](20230301134309.png)
+![](image/20230301134309.png)
 
 - For this condition, the fan-out (controlled gate) of one gate is only 3.
 
@@ -663,7 +663,7 @@ $$
 
 - As the delay is $kBL$, we can change the value of B or L as long as BL is constant:
 
-![](20230312174007.png)
+![](image/20230312174007.png)
 
 - The optimal value for B is $e \approx 2.718$.
 
@@ -679,27 +679,27 @@ $$
 
 - If we want a fan-out of 60, for B = 2:
 
-![](20230312174849.png)
+![](image/20230312174849.png)
 
-![](20230312175146.png)
+![](image/20230312175146.png)
 
-![](20230312175430.png)
+![](image/20230312175430.png)
 
 - For B = 3:
 
-![](20230312175512.png)
+![](image/20230312175512.png)
 
 - For B = 4:
 
-![](20230312175655.png)
+![](image/20230312175655.png)
 
 - For B = 5:
 
-![](20230312175950.png)
+![](image/20230312175950.png)
 
-![](20230312180038.png)
+![](image/20230312180038.png)
 
-![](20230312180133.png)
+![](image/20230312180133.png)
 
 
 #### 3.15: Fan-in optimization example 
@@ -710,7 +710,7 @@ $$
 
 -  To reduce the delay, we can use the circuit below which combine the NOR gate and NAND gate:
 
-![](20230312201002.png)
+![](image/20230312201002.png)
 
 - The delay formula is given as:
 
@@ -720,7 +720,7 @@ $$
 
 - And we can change the number of fan-in as well as the level (layer) of the gate:
 
-![](20230312201143.png)
+![](image/20230312201143.png)
 
 
 
@@ -730,7 +730,7 @@ $$
 
 - For a 4-bit adder delays:
 
-![](20230306141438.png)
+![](image/20230306141438.png)
 
 - CLA has better performance, but the max fan-out delay grows with adder size.
 
@@ -747,7 +747,7 @@ $$
 - Ripple carry with constant max fan-in and fan-out unrelated to the size of adder, can be applied between CLA adder blocks.
 
 
-![](20230306142223.png)
+![](image/20230306142223.png)
 
 
 ##### 4.2.2: Block carry of CLA 
@@ -761,15 +761,15 @@ $$
 
 - The 4-bit adder carry output is redefined as:
 
-![](20230313062915.png)
+![](image/20230313062915.png)
 
 - The output of normal of CLA is $C_{n-1}$
 
-![](20230313063312.png)
+![](image/20230313063312.png)
 
 - The output of the block CLA is $G$ and $P$.
 
-![](20230313063437.png)
+![](image/20230313063437.png)
 
 - Example of 16 bits CLA:
     - Delay to form G, P is **1 $\tau$**
@@ -780,7 +780,7 @@ $$
 
 - Each level multiply the size by 4, only adds a constant of $4\tau$:
 
-![](20230313071210.png)
+![](image/20230313071210.png)
 
 - We can find that O(n) to O(log(n)) in this method.
 
@@ -791,7 +791,7 @@ $$
 
 - Long multiplication example as 13 $\times$ 11:
 
-![](20230313072115.png)
+![](image/20230313072115.png)
 
 - This requires 3 or n-bit adder.
 
@@ -801,13 +801,13 @@ $$
 
 - We don't need to complete each partial product before starting the next.
 
-![](20230316102000.png)
+![](image/20230316102000.png)
 
 - Before you can add in $r_0d_2$, the previous row's addition needs to have processed to column 2.
 
 - The addition order is a kind of wavefront form $r_0d_0$, $r_0d_1$,$r_0d_2$ to $r_0d_3$, as the red line in below:
 
-![](20230328152159.png)
+![](image/20230328152159.png)
 
 ##### 5.2.1: Delay analysis 
 
@@ -817,15 +817,15 @@ $$
 
 - To reduce the delay, we find that the adding starts from the right-side, so some bit-wise multiplication in the left is not required:
 
-![](20230316101221.png)
+![](image/20230316101221.png)
 
 - So we can use the only calculate what we need (Note that the figure may not correct)
 
-![](20230327082242.png)
+![](image/20230327082242.png)
 
 - Using the delay analysis of Ripple Carry Adder, we can find the delay of:
 
-|![](20230327082907.png)|![](20230328153234.png)|
+|![](image/20230327082907.png)|![](image/20230328153234.png)|
 |---|---|
 
 - If we set $n$ is the partial product number, so the total delay can be expressed as:
@@ -849,11 +849,11 @@ $$
 
 - If we want to add two A + B block, the carry number need to be passed leftward:
 
-![](20230328161013.png)
+![](image/20230328161013.png)
 
 - But if we add three A + B block, the addition order can be changed as right (carry-save) or left (previous):
 
-|![](20230328161149.png)|![](20230328161203.png)|
+|![](image/20230328161149.png)|![](image/20230328161203.png)|
 |---|---|
 
 - This doesn't work if there is only one adder row.
@@ -862,7 +862,7 @@ $$
 
 ##### 5.2.4: 16 x 16 Multiplier Example
 
-![](20230328185714.png)
+![](image/20230328185714.png)
 
 - As there is no more leftward carry in the first row, so the full-adders can be replaced by half-adders (HA).
 
@@ -874,12 +874,12 @@ $$
 
 - The previous ripple carry delay per-row is $4\tau$, which only happen  at the right-most diagonal:
 
-![](20230328190249.png)
+![](image/20230328190249.png)
 
 - The total delay is only $2\tau$ in the carry save condition:
 
 
-![](20230328190715.png)
+![](image/20230328190715.png)
 
 - Passing to the next row avoids the sequential propagation (the waiting for the previous signals) within single row.
 
@@ -939,7 +939,7 @@ $$
     - Repeatedly using a single adder row and a single row of ANDs.
 
 
-![](20230328195040.png)
+![](image/20230328195040.png)
 
 
 ##### 5.3.3: The algorithm of serial multiplication
@@ -951,7 +951,7 @@ $$
     - Repeat from step 2 for 4 times.
 
 
-![](20230328195829.png)
+![](image/20230328195829.png)
 
 - Multiplying two n-digit numbers the result may be up to 2n digit wide.
 
@@ -964,7 +964,7 @@ $$
 
 - Time control signals for the registers:
 
-![](20230328201958.png)
+![](image/20230328201958.png)
 
 
 
@@ -980,20 +980,20 @@ $$
 
 - For example of 13 x 11 (1101 x 1011):
 
-![](20230329003725.png)
+![](image/20230329003725.png)
 
 - In each calculation, we can right-shift the register instead of the D or R.
 
 - Move one of the partial product when doing the adding:
 
-![](20230329004621.png)
+![](image/20230329004621.png)
 
 - As we are doing the right-shift for the R register, it is gradually empty from left to right.
 
 
 - The right-hand cell storing the right-shifted value can be replaced by Multiplier R:
 
-![](20230329010549.png)
+![](image/20230329010549.png)
 
 
 - The carry bit is not necessory if the adder drops the result to the right by one bit (combine add with shift).
@@ -1019,7 +1019,7 @@ $$
 - Carry-save in serial multipliers:
     - Carry-bits must be stored in a register betwen steps; If D is shifted, the partial product are accumulated at the same position and the carry is shifted to the left at each clock., which requires 2n single-bit adder.
 
-![](20230329025807.png)
+![](image/20230329025807.png)
 
 
 - Combining shift with add:
@@ -1027,11 +1027,11 @@ $$
 
 - As the steps are controlled by clocks, we cannot exploit the tolerance for late $C_{in}$ to produce $C_{out}$. S and $C_{out}$ must be ready at the clock edge.
 
-![](20230329030042.png)
+![](image/20230329030042.png)
 
 - However, the space savings from serialization, we can make the single-bit adders a bit bigger and use the sum-of-product truth table design which has two layers of gates for a delayed of $2\tau$
 
-![](20230329031027.png)
+![](image/20230329031027.png)
 
 - Carry-save allows the parallelization of carries, and the remaining carries must be added at the last step.
     - n-1 CLK steps needed, with D held at 0, to sort out the final carries (like ripple-carry scheme)

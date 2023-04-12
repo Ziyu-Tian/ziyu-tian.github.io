@@ -427,31 +427,31 @@ $$
 
 - As the voltage in one phase can be $\frac{2}{3}V_{DC}$, $\frac{1}{3}V_{DC}$, 0, $-\frac{1}{3}V_{DC}$ and $-\frac{2}{3}V_{DC}$, changing the switch we can get the phase voltage as:
 
-![](pwm.png)
+![](image/pwm.png)
 
 - By altering the modulation signal (change the switch altering frequency) we can change AC frequency.
 
-![](pwm2.png)
+![](image/pwm2.png)
 
 #### 2.5: Sine-triangle PWM (SPWM)
 
 - Combine the square wave of triangle wave in high frequency, the modulated sin wave can be produced:
 
-![](20230228220338.png)
+![](image/20230228220338.png)
 
 #### 2.6: Implementing PWM in Logic 
 
 - DSP and micro-controller usually have built in hardware to produce PWM:
 
-![](2023-02-28-22-05-18.png)
+![](image/2023-02-28-22-05-18.png)
 
 #### 2.7: Shoot-through fault 
 
 - To avoid T1 and T2 connect at the same time causing the short circuit (shoot-through fault), a small time delay called *deadline* is inserted by the controller.
 
-![](2023-02-28-22-09-01.png)
+![](image/2023-02-28-22-09-01.png)
 
 #### 2.8: Variable frequency 3 phase convert Overview 
 
 
-![](20230228221325.png)
+![](image/20230228221325.png)

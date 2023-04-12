@@ -423,7 +423,7 @@ END rtl;
 
 - 's' for the select signal which is also a input.
 
-![](20230301091751.png)
+![](image/20230301091751.png)
 
 ```VHDL 
 entity mux is 
@@ -453,7 +453,7 @@ end rtl;
 
 - For a more complicated multiplexer:
 
-![](20230301092422.png)
+![](image/20230301092422.png)
 
 using " with...select" in the architecture:
 
@@ -496,7 +496,7 @@ end mux_Nbit;
 
 - The **demultiplexer** is the module that performs the duel function of the multiplexer.
 
-![](20230301134847.png)
+![](image/20230301134847.png)
 
 ### 6: Commonly used modules: Shifters 
 

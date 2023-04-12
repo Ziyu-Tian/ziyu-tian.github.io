@@ -7,7 +7,7 @@
 
 To investigate the optimum time point to harvest the crops (or replanted the machine), which could make the average yield maximum during the crops production or machine working lifetime, we set the initial model to describe the *Output - Age* relationship shown in *Fig.1.1*.
 
-![](20230408203914.png)
+![](image/20230408203914.png)
 
 <font size=2><center>*Fig.1.1* Initial Modelling of *Output - Age* Relationship</center></font>
 
@@ -23,7 +23,7 @@ As the graph shown in *Fig.1.2*, we use the maximum value of '1' refer to 100% o
 We fix the value of *d* is 25 in this condition.
 
 
-![](20230408204117.png)
+![](image/20230408204117.png)
 
 <font size=2><center>*Fig.1.2* Simplified Model of *Output - Age* Relationship</center></font>
 
@@ -54,7 +54,7 @@ $$
 Now that we got the expression of the optimum length, we have done several simple test of this model with different values of *a*, *b* and *c* shown in *Table.1*:
 
 
-![](20230409111247.png)
+![](image/20230409111247.png)
 <font size=2><center>*Table.1* Optimum Length, Output and Average_Y with different *a,b*,and *c*</center></font>
 
 
@@ -64,14 +64,14 @@ The values of the optimum length with the output and average_Y at the optimum po
 
 As we assumed before, the parameter *d* is fixed to 25, so we researched the influence to the optimum length of *a, b* and *c* independently by fixing two parameters and changing the other one:
 
-|![](20230409155708.png)|![](20230409155953.png)|![](20230409160030.png)|
+|![](image/20230409155708.png)|![](image/20230409155953.png)|![](image/20230409160030.png)|
 |---|---|---|
 <font size=2><center>*Table.2* Spreadsheet when changing *a*, *b* or *c* and fixing the other two parameters</center></font>
 
 
 To show the different increasing ot decreasing influence trend of different parameters, the scatter-point graph of the *Table.2* can be plotted:
 
-![](20230409202330.png)
+![](image/20230409202330.png)
 <font size=2><center>*Figure.2* Scatter-point graph for different *a, b, c*</center></font>
 
 According to the results shown in *Figure.2*, when we changing one of the parameters and fixing the others, parameter *a* and *b* have a linear-like relation with the optimum length with a small positive gradient, while the increasing of parameter *c* have a larger positive gradient than *a* and *b*.
@@ -112,7 +112,7 @@ $$
 
 The whole model will be like *Figure.3*:
 
-![](20230412165324.png)
+![](image/20230412165324.png)
 
 <font size=2><center>*Figure.3* Another fitting model with quadratic function</center></font>
 
@@ -140,5 +140,4 @@ The calculation of different above shown a different solution compared to the fi
 
     - For large quantity of targets (crops area or machine quantity), some type of the crops or machines may not suitable to this single formula. For further work, it is suggested to classify the type of different targets, and construct different model for each types.
     - For the continuity of the production, it is advised that another model with interruption is needed in further research to improve the efficiency of the model.
-
 
