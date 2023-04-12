@@ -3,6 +3,5 @@
         "Prasad"
     ],
     "pasteImage.path": "${currentFileDir}/image",
-    "pasteImage.basePath": "${currentFileDir}",
     "pasteImage.prefix": "/"
 }
