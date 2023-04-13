@@ -1017,7 +1017,7 @@ $$
 
 
 - Carry-save in serial multipliers:
-    - Carry-bits must be stored in a register betwen steps; If D is shifted, the partial product are accumulated at the same position and the carry is shifted to the left at each clock., which requires 2n single-bit adder.
+    - Carry-bits must be stored in a register between steps; If D is shifted, the partial product are accumulated at the same position and the carry is shifted to the left at each clock., which requires 2n single-bit adder.
 
 ![](image/20230329025807.png)
 
@@ -1039,7 +1039,14 @@ $$
 - Delay at each step is now only 1 adder delay ($2\tau$):
     - $t_{total} = (n+(n-1))\times 2\tau$
 
-- 
+- The time-complexity is *O(n)*.
+
+- For example, for n =16, the delay is 62 $\tau$ without AND gates.
+
+
+##### 5.3.7: More improvement of serial multiplier 
+
+
 
 
 
