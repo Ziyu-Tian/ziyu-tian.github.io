@@ -118,25 +118,23 @@ The whole model will be like *Figure.3*:
 
 As the analytic solution of optimum length is too complicated to solve, we got the numerical solution using MATLAB:
 
-$$
-L'_1 = \displaystyle\frac{3cd^2}{2} - \frac{3ac^2}{4} -\frac{3ad^2}{4} -\frac{3bc^2}{4} - \frac{3bd^2}{4} - 3cd^2 + \frac{3c^3}{2} + \frac{3acd}{2} + \frac{3bcd}{2} + 8 - 3c\tag{4.1}
-$$
+![](image/2023-04-23-14-48-28.png)
+<font size=2><center>*Figure.4.1* Numerical Solution in MATLAB</center></font>
 
-$$
-L'_2 = \displaystyle\frac{3cd^2}{2} - \frac{3ac^2}{4} -\frac{3ad^2}{4} -\frac{3bc^2}{4} - \frac{3bd^2}{4} - 3cd^2 + \frac{3c^3}{2} + \frac{3acd}{2} + \frac{3bcd}{2} + 27 - \frac{9c}{2}\tag{4.2}
-$$
+Using the subs() function in MATLAB, the zero points of $\bar{Y'}$ can be expressed as:
 
-According to the limit of *a*, *b* and *c*, if $c <\frac{38}{3}$, $L'_2$ will be the optimum length, or else $L'_1$ will be the chosen length.
+![](image/2023-04-23-14-52-49.png)
+<font size=2><center>*Figure.4.2* Zero points of $\bar{Y'}$in MATLAB</center></font>
 
-The calculation of different above shown a different solution compared to the first model, which lead to two numerical solution. In conclusion, the client or manager should choose the model carefully according to different collected data.
+However, due to the properties of $\bar{Y}$ and the various position of $a, b, c$, the optimum choice of $L$ to maximize $\bar{Y}$ is too complicated to find using the given information.
 
+In conclusion, the client or manager is suggested to collect data of $a,b,c$ carefully, so that this model can lead to a more accurate solution of $L$.
 ## Final Conclusion and Application advice 
 
 - According to the solutions above, we can find that different model would lead to different choice of the optimum length:
     - For the first model using linear shown in formula.2, the key-point of the application is to define the parameter *a*, *b* especially *c*, which affects the $L'$ most. The client is suggested to choose the stopped ages as $L'$ calculated above.
-    - For the second model, the formula 4.1 and 4.2 shown the optimum length is related to the value of *c*. Using the collected data, the client is suggested to choose $L'_1$ or $L'_2$ by the range of *c*.
-
-- The historical conclusion above is based on the limited condition shown in the content under title 'Assumptions and Simplifications'. To make the model work more accurately, the following advice could be applied in real conditions:
+    - For the second model, the formula above shown the optimum length is too complicated to solve using limited data of $a,b,c$. So that it is suggested to collect more data.
+- The holistic conclusion above is based on the limited condition shown in the content under title 'Assumptions and Simplifications'. To make the model work more accurately, the following advice could be applied in real conditions:
 
     - For large quantity of targets (crops area or machine quantity), some type of the crops or machines may not suitable to this single formula. For further work, it is suggested to classify the type of different targets, and construct different model for each types.
     - For the continuity of the production, it is advised that another model with interruption is needed in further research to improve the efficiency of the model.
