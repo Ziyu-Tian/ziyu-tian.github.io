@@ -134,7 +134,7 @@ In conclusion, the client or manager is suggested to collect data of $a,b,c$ car
 - According to the solutions above, we can find that different model would lead to different choice of the optimum length:
     - For the first model using linear shown in formula.2, the key-point of the application is to define the parameter *a*, *b* especially *c*, which affects the $L'$ most. The client is suggested to choose the stopped ages as $L'$ calculated above.
     - For the second model, the formula above shown the optimum length is too complicated to solve using limited data of $a,b,c$. So that it is suggested to collect more data.
-- The holistic conclusion above is based on the limited condition shown in the content under title 'Assumptions and Simplifications'. To make the model work more accurately, the following advice could be applied in real conditions:
+- The holistic conclusion above is based on the limited condition shown in the content under title 'Assumptions and Simplifications'. To make the model work more accurately, the following advice could be applied in real conditions
 
     - For large quantity of targets (crops area or machine quantity), some type of the crops or machines may not suitable to this single formula. For further work, it is suggested to classify the type of different targets, and construct different model for each types.
     - For the continuity of the production, it is advised that another model with interruption is needed in further research to improve the efficiency of the model.
