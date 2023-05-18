@@ -94,7 +94,11 @@ this instruction add the value in D to register.
 move reg,io
 stop 
 ```
+- If we defined that two = 2 in constant:
 
+```
+two defc 2
+```
 moving the result to output again and stop the instruction.
 
 ![](image/2023-02-06-16-29-24.png)
@@ -104,56 +108,147 @@ moving the result to output again and stop the instruction.
 ![](image/2023-02-06-16-37-10.png)
 
 
-### 3: Example of conditional statements in assembly language 
+### 3: Example of branch and flags in assembly language 
 
 
-- The introduce of zero flag: Z= 1: result is zero and Z=0: result is NOT zero.
-
-- If we defined that x = y = 6 in constant:
+- In assembly language Motorola 68000, we use branch to express conditional cases:
 
 ```
-x defc 6
-y defc 6
+initial:
+            move #$10000, d0 ; # for constant, $ for hexadecimal
+delay:      
+            sub  #1,d0
+            bne  delay ; if d0 is not zero, go back to the beginning of delay
 ```
+- 'bne' means "branch if the previous instruction is not equal to zero", same as the function of 'bz'
 
-- Moving x to register:
+- We can also use 'bne' for not zero, 'bra' for jump directly.
 
-```
-move x,reg
-sub y,reg
-```
-
-- The result should be zero, Z = ture:
-
-```
-bz equal 
-```
-
-'bz' means branch if zero-flag is true, or it will be ignored. So it moves to the 'equal' branch:
+- Apart form the 'z', the zero flag, we can also use the negative flag 'N':
 
 ```
-equal: move one,reg
+bmi loop1  ; branch if minus, N flag is '1'
+bpl loop2  ; branch if positive, N flag is '0'
 ```
-moving one (stored '1') to register.
-
-then end the program.
-
-
-![](image/2023-02-06-16-53-48.png)
-
-- If the zero flag is not true, the program would do:
+- For the bit that gets pushed out at left-hand side (MSB), it will be moved to 'C' flag for carrying:
 
 ```
-end: move reg,z
+bcs     loop1       ; branch if carry set (true)
+bcc     loop2       ; branch if carry is not set (false)
 ```
 
-- Then stop.
+### 4: Other instructions in assembly language 
+
+- The way to define storage and constant:
+
+```
+name ds 1       ; define a 16-bit storage 
+name dc 1       ; define a constant
+```
+
+- Logic shift left, which moves every bits one place to the left and add '0' to the right. The MSB will be set to flag 'C':
+
+![](image/2023-05-17-09-50-41.png)
+```
+lsl     #1,d0
+```
+- If a binary value is shifted left one place, it is **multiplied by 2**, and **divided by 2 if shifted right**. For signed , then this may not work because the most significant bit (the far left-hand bit), which represents the sign, will have problems. Therefore use the arithmetic shift instruction, which maintains the sign bit whilst shifting all the other bits.
+
+```
+asl     #1,d0
+```
+
+## III: Internal micro-processor structure 
+
+![](image/2023-05-18-06-36-08.png)
+
+- Initialization: 
+    - Memory contains the machine codes, one byte per address.
+    - Program Counter (PC) shows address of first instruction.
+
+- Fetching:
+    - Control unit sends value of PC to memory, and instructs memory to read out bytes from this address to bus.
+    - Control unit writes this byte to the IR (instruction register).
+
+- Next instruction:
+    - PC increments to 0001 from 0000.
+    - After the fetch of IR (machine code of current instruction), execute the instruction (read or write).
 
 
-- The true instructions:
+## III: Bus 
 
-![](image/2023-02-06-16-55-54.png)
+![](image/2023-05-18-07-16-27.png)
+
+- $\bar{RD}$ for read ('not gate' should be noted)
+- $\bar{WR}$ for write 
+- OE for 'output enable' to enable data reading form memory.
+- WE for 'write enable' to enable data writing to memory.
+
+### 1: Sequential graph before the R/W 
+
+![](image/2023-05-18-07-24-17.png)
+
+- The shadow in A0-A15 means 'we don't know'.
+
+- RD and WR are all in 'LOW'.
 
 
-### 5: Three-state logic 
+### 2: Sequential graph in read-from-memory
+
+![](image/2023-05-18-07-27-23.png)
+
+- The crossing A0-A15 means data connection among MPU - Address bus - memory.
+
+- Address of the instruction is been sent to memory.
+
+![](image/2023-05-18-07-34-52.png)
+
+- Put up the RD, than D0-D7 can read the data from memory to MPU.
+
+![](image/2023-05-18-07-37-14.png)
+
+- Finish the reading.
+
+### 3: Sequential graph in reading-from-memory 
+
+![](image/2023-05-18-07-47-56.png)
+
+- After the cross of A0-A15, the address of instruction has been sent to memory. Then the data connection has been created. 
+
+- After a period of delay, WR has been put up so that data has been moved from MPU to memory.
+
+
+## IV: Three-State Logic 
+
+
+### 1: Single direction transmission 
+
+![](image/2023-05-18-09-57-06.png)
+
+- Two CMOS inverters at both sides, which could send '0' or '1'.
+
+
+### 2: Bi-direction transmission 
+
+![](image/2023-05-18-09-58-30.png)
+
+- The VDD in memory may connect to the VSS in MPU directly, which causing bus contention in circuit.
+
+### 3: Three-state switch 
+
+- if we put a MOS gate between the input and output of each side:
+
+![](image/2023-05-18-10-00-47.png)
+
+- Switch on the switch ( PMOS = 0, NMOS = 1) on sender side (keep the other switch off), the input '1' can be inverted to '0' in bus, and sent to memory side in '1' without any short-circuit. 
+
+- This switch is integrated in chip as **OE** (output enable).
+
+- For the transmission from memory to MPU:
+
+![](image/2023-05-18-10-04-46.png)
+
+- If both the OE in MPU and memory is off, then the bus is called 'floating' or 'High-Z', which may be influenced by other wires.
+
+![](image/2023-05-18-10-07-11.png)
 
