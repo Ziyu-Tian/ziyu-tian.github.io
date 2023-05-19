@@ -142,8 +142,8 @@ bcc     loop2       ; branch if carry is not set (false)
 - The way to define storage and constant:
 
 ```
-name ds 1       ; define a 16-bit storage 
-name dc 1       ; define a constant
+name ds 1       ; define a 16-bit storage with length 1
+name dc 1       ; define a constant with contents 1
 ```
 
 - Logic shift left, which moves every bits one place to the left and add '0' to the right. The MSB will be set to flag 'C':
@@ -252,3 +252,91 @@ asl     #1,d0
 
 ![](image/2023-05-18-10-07-11.png)
 
+
+## V: Address Mapping and Decoding 
+
+![](image/2023-05-18-13-27-26.png)
+
+- If the address sent by MPU is 3 bits and received by memory in 2 bits, than we should decode the address as above.
+
+![](image/2023-05-19-07-05-44.png)
+
+- With the different A2, if A2 = 0, the address will be in Memory 0, if A2 = 1, go to memory 1.
+
+- Using a inverter shown in the middle, the signal from A2 as '1' could enable the $\bar{CE}$ in memory in and disable the other. A2 as '0' would enable $\bar{CE}$ in memory 0.
+
+![](image/2023-05-19-09-11-37.png)
+
+- For MPU A0-A15 (16 bits)n to A0-A12 in memory, we use two bits A13-A14 as decoding value:
+
+![](image/2023-05-19-09-13-15.png)
+
+- According to different A13/14, the multiplexer will send the data to one of four 8 k RAM.
+
+## VI: Clock Calculation 
+
+![](image/2023-05-19-09-27-30.png)
+
+- From the frequency of CLK we can find the period of CLK is:
+
+
+![](image/2023-05-19-09-28-24.png)
+
+- Using the instruction time, we can find the speed of operation:
+
+![](image/2023-05-19-09-29-00.png)
+
+## VII: Input & Output 
+
+### 1: Unconditioned I/O 
+
+![](image/2023-05-19-11-42-22.png)
+
+- Only one device (FF) use the bus and memory, so the I/O happens unconditionally.
+
+### 2: Polling 
+
+![](image/2023-05-19-11-51-37.png)
+
+- We use PIO, short for parallel I/O to control different I/o confections. Assuming the data is transmit form disk (memory) to MPU via bus.
+
+![](image/2023-05-19-12-50-21.png)
+
+- When the DATA and RDY are not selected, the status register is '0', so PIO just wait in loop for the RDY signal.
+
+![](image/2023-05-19-12-52-19.png)
+
+- After the select of RDY, the status register is set to '1', so the value of DATA come to DATA register.
+
+![](image/2023-05-19-12-56-06.png)
+
+- The value in DATA register then be sent to MPU R2, the ACK signal set to memory, polling finished.
+
+![](image/2023-05-19-12-57-37.png)
+
+### 3: Interrupt 
+
+- Using interrupt, the multitask can be operated as below:
+
+![](image/2023-05-19-15-32-46.png)
+
+- The task running in absence of any IO process us called **background task**, the tasks using interrupt routine is called **foreground task**.
+
+- For example, assuming we want to store the data from I/O when waiting for ACK finished:
+
+![](image/2023-05-19-17-06-30.png)
+
+- After reading the data into data register, we need the IRS to store the data into memory during waiting. So we store the current PC '1008' into 4000:
+
+![](image/2023-05-19-17-07-42.png)
+
+- Save the register ISR used and transfer the data from data register to address '5000' via R0. Then restore the R0:
+
+![](image/2023-05-19-17-09-20.png)
+
+- Return the status reg back to '1008', so that the next operation in 1008 could continue:
+
+![](image/2023-05-19-17-10-55.png)
+
+
+![](image/2023-05-19-17-12-48.png)
