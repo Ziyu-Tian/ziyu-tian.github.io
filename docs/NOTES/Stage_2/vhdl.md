@@ -500,4 +500,116 @@ end mux_Nbit;
 
 ### 6: Commonly used modules: Shifters 
 
-- A **shifter** is an element that presents at the output the 
+- A **shifter** is an element that presents at the output the value of the input shifted by a certain number of bits:
+
+![](image/2023-05-21-12-07-48.png)
+
+```VHDL 
+entity shift_right is 
+    port(
+        x: in std_logic_vector(0 to 3);
+        y: out std_logic_vector(0 to 3)
+    );
+end shift_right;
+
+architecture rtl of shift_right is 
+
+begin 
+    y <= '0' & x(0 to 2);
+
+end rtl;
+
+```
+## V: Structural level Example: XOR gate 
+
+- The structural level description focus on the connection of components.
+
+```VHDL
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity xor_gate is 
+
+port( 
+    A: in std_logic;
+    B: in std_logic;
+    C: out std_logic
+);
+
+end xor_gate;
+
+architecture structural of xor_gate is 
+
+    component and_gate 
+        port (
+            A: in std_logic;
+            B: in std_logic;
+            C: out std_logic
+        );
+    end component;
+
+    component or_gate is 
+        port (
+             A: in std_logic;
+            B: in std_logic;
+            C: out std_logic
+        );
+    end component;
+
+    component not_gate is 
+        port(
+            A: in std_logic;
+            B: out std_logic
+        );
+    end component;
+
+signal a1,a4,O1,O2: std_logic;
+
+begin 
+    not_1: not_gate
+        port map (A,a1);
+
+    not_2: not_gate 
+        port map (B,a4);
+
+    and1: and_gate
+        port map (a1,B,O1);
+
+    and2: and_gate
+        port map (A,a4,O2);
+    
+    or: or_gate
+        port map (O1,O2,C)
+
+end structural;
+
+```
+
+## VI: Concept of Process 
+
+- The design of combinatorial and especially sequential logic can be based on the concept of process, which based on events.
+
+- The process can be expressed as below:
+
+![](image/2023-05-21-12-43-25.png)
+
+- For example of a shift-register:
+
+![](image/2023-05-21-12-44-50.png)
+
+### 1: SR-Latch 
+
+![](image/2023-05-21-12-50-43.png)
+
+### 2: D-Flip-flops 
+
+![](image/2023-05-21-12-53-02.png)
+
+### 3: shift-register
+
+![](image/2023-05-21-12-54-37.png)
+
+### 4: Counter 
+
+![](image/2023-05-21-12-55-31.png)
