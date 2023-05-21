@@ -1044,10 +1044,162 @@ $$
 - For example, for n =16, the delay is 62 $\tau$ without AND gates.
 
 
-##### 5.3.7: More improvement of serial multiplier 
+## V: Sequential Logic: Control and FSM 
+
+### 1: Basic control 
+
+![](image/2023-05-21-08-02-25.png)
+
+- Data path needs to be put under control, which could determine when the previous step ends and next step starts.
+
+#### 1.1: Hazard 
+
+![](image/2023-05-21-08-04-08.png)
+
+- For different signals reach the same port at different time, it may cause an unexpected pause.
+
+- Hazards do not necessarily lead to errors.
+
+- To avoid hazards:
+    - Adding extra gates / delays
+    - Synchronous design 
 
 
+- For example of a D-FF with one enable output:
+
+![](image/2023-05-21-08-07-28.png)
 
 
+### 2: Finite State Machine (FSM) Types 
+
+- Two main FSM types:
+    - Sync:  State changes only on the CLK pulse.
+    - Async: State changes when input changes 
+
+- In sync-FSM, there are:
+    - **Mealy**:  output is valid at the CLK' event. Output depends on state and inputs.
+    - **Moore**: output valid during entire CLK period.
+
+- For Mealy model FSM:
+
+![](image/2023-05-21-08-12-12.png)
+
+- For Moore model FSM:
+  
+![](image/2023-05-21-08-12-30.png)
 
 
+### 3: Sync-FSM minimization 
+
+#### 3.1: Y-map / K-map reduction 
+
+![](image/2023-05-21-08-14-22.png)
+
+- From the state-graph shown above, we can convert it to **Y-map**:
+
+![](image/2023-05-21-08-15-11.png)
+
+- If we using binary code '0' and '1' for two state S0 and S1, the map can be shown as above. For more states such as 4 states, '00','01','11', '10' can be applied.
+
+- To find the relation of Y(x,y) and Z(x,y), K-map for each function can be deduced:
+
+![](image/2023-05-21-08-17-48.png)
+
+- For more complicated condition:
+
+![](image/2023-05-21-08-26-21.png)
+
+![](image/2023-05-21-08-28-02.png)
+
+
+#### 3.2: Finding equivalence / redundancies 
+
+- Rows are equivalent **if their outputs are the same and their next states are equivalent** or identical.
+
+- If we can find two different states have at least one input sequence to make the output different, it is called the **distinguishable**.
+
+- If not distinguishable, the two states are called '**equivalence**'.
+
+- As the example below, we can use the **implication table** to check equal and reduce the states numbers:
+
+![](image/2023-05-21-08-33-42.png)
+
+![](image/2023-05-21-08-36-32.png)
+
+- Finally:
+
+![](image/2023-05-21-08-36-54.png)
+
+![](image/2023-05-21-08-37-05.png)
+
+- So the new table can be expressed as:
+
+![](image/2023-05-21-08-37-36.png)
+
+
+### 4: Async-FSM minimization 
+
+- To reduce cost, async-FSM can be applied.
+
+- State changed immediately on an input change.
+
+![](image/2023-05-21-08-41-24.png)
+
+- In async-FSM, we use Fundamental Mode iff:
+    - Only one input is allowed at a time.
+    - The input changes only when y is stable.
+
+- We use primitive flow tables to describe the transition:
+
+![](image/2023-05-21-08-43-37.png)
+
+- The steady state is circled, such as in state-1, when input is 00, the next-state is still state-1.
+
+- Two-bits changing is not allowed:
+
+![](image/2023-05-21-08-45-16.png)
+
+- To minimize the PFT, y-map can be used:
+
+![](image/2023-05-21-08-48-50.png)
+
+![](image/2023-05-21-08-50-09.png)
+
+![](image/2023-05-21-08-51-06.png)
+
+![](image/2023-05-21-08-51-16.png)
+
+- However, one ringed stable state can only on one 'group' (connected with '='):
+
+|![](image/2023-05-21-08-52-44.png)|![](image/2023-05-21-08-52-52.png)|
+|---|---|
+
+- The final result can be expressed as:
+
+![](image/2023-05-21-08-54-48.png)
+
+- Merge the don't care term:
+
+![](image/2023-05-21-08-56-19.png)
+
+- Encode the states to '0' and '1', then minimizing:
+
+![](image/2023-05-21-08-57-20.png)
+
+### 5: Race condition 
+
+![](image/2023-05-21-09-22-24.png)
+
+![](image/2023-05-21-09-22-35.png)
+
+- The transition changing two-bits will cause race:
+
+![](image/2023-05-21-09-25-09.png)
+
+- The using of cycles can reduce race using empty cell:
+
+![](image/2023-05-21-09-46-42.png)
+
+![](image/2023-05-21-09-47-49.png)
+
+![](image/2023-05-21-09-48-27.png)
