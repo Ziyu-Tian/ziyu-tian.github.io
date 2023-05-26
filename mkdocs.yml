@@ -67,6 +67,7 @@ nav:
             - VHDL Basics: 'NOTES/Stage_2/vhdl.md'
             - Statistical Method: 'NOTES/Stage_2/statisticalMethod.md'
             - AC Electrical Power: 'NOTES/Stage_2/acElectrical.md'
+            - Automatic Control Systems: 'NOTES/Stage_2/automaticControl.md'
 
     - Dev: 
         - 'DEV/index.md'
