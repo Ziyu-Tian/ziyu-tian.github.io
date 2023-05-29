@@ -88,6 +88,8 @@ $$
 
 ![](image/2023-02-04-12-50-53.png)
 
+- For n number in a sequence, if (n+1)%4 !=0, for example n = 8, (n+1)/4 = 2.25, which is more closer to No.2, so Q1 = (No.2 * 0.75+ No.3 *0.25)/1.
+
 - The **variance** (sample variance) is defined by:
 
 $$
@@ -246,7 +248,10 @@ $$
 - Note that:
 
 $$
-0 \le f(x) \le 1 \\
+0 \le f(x) \le 1 
+$$
+
+$$
 \Sigma P(X=x) =1 
 $$
 
