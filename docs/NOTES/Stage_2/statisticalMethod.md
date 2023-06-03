@@ -88,7 +88,7 @@ $$
 
 ![](image/2023-02-04-12-50-53.png)
 
-- For n number in a sequence, if (n+1)%4 !=0, for example n = 8, (n+1)/4 = 2.25, which is more closer to No.2, so Q1 = (No.2 * 0.75+ No.3 *0.25)/1.
+![](image/2023-05-31-18-37-56.png)
 
 - The **variance** (sample variance) is defined by:
 
@@ -297,13 +297,13 @@ $$
 - The expectation or expected value is defined as:
 
 $$
-E[X] = \Sigma x P(X=x)
+E[X] = \displaystyle\Sigma x P(X=x)
 $$
 
 #### 5.5: The variance of a random variable 
 
 $$
-Var[X] = \Sigma (x-E[x])^2P(X=x) = E[X^2]-E[X]^2
+Var[X] = \displaystyle\Sigma (x-E[x])^2P(X=x) = E[X^2]-E[X]^2
 $$
 
 
@@ -369,5 +369,129 @@ $$
 #### 5.8: Comparison of Binomial and Poisson 
 
 ![](image/2023-02-26-10-31-39.png)
+
+
+#### 5.9: Continuous distributions 
+
+
+##### 5.9.1: Continuous uniform distribution 
+
+![](image/2023-05-29-10-51-23.png)
+
+
+![](image/2023-05-29-10-53-06.png)
+
+
+##### 5.9.2: The exponential distribution 
+
+
+![](image/2023-05-29-10-55-48.png)
+
+
+##### 5.9.3: The normal distribution 
+
+- A 'bell-shaped' curve, or a Gaussian curve mean $\mu$ and $\sigma ^2$, which is denoted as:
+
+$$
+X ~ N(\mu,\sigma^2)
+$$
+
+![](image/2023-05-29-13-13-14.png)
+
+![](image/2023-05-29-13-13-24.png)
+
+- The standard normal distribution has $\mu = 0$ and $\sigma^2$:
+
+![](image/2023-05-29-13-15-48.png)
+
+![](image/2023-05-29-13-16-03.png)
+
+- Using the standard normal function table and the symmetric property, the possibility P(Z < m) can be find easily.
+
+
+- Any normally distributed random variable, $X(\mu, \sigma ^2)$ can be transformed (standardized) to the standard normal distribution:
+
+$$
+![](image/2023-05-29-13-25-36.png)
+$$
+
+- After the transform, the pmf about new variable z ica n be got as:
+
+![](image/2023-05-29-13-28-50.png)
+
+ - The add operation of two different normal distribution X1 and X2:
+
+![](image/2023-05-29-16-20-52.png)
+
+- The central limit theorem:
+
+![](image/2023-05-29-16-25-53.png)
+
+
+- Approximation to binomial distribution:
+    - As n increasing, the binomial distribution tends towards a normal distribution with mean $np$ and variance $np(1-p)$.
+    - Normally requires $np > 5$ and $n(1-p) >5$ 
+
+- Continuity Correction:
+
+![](image/2023-05-29-18-55-26.png)
+
+- The normal distribution can be used to approximate a Poisson distribution with $\lambda > 10$, for large $\lambda$, each individual outcome becomes samll so the continuity can be omitted.
+
+##### 5.9.4: Other continuous distribution 
+
+
+![](image/2023-05-29-19-04-03.png)
+
+![](image/2023-05-29-19-04-15.png)
+
+
+### 6: Joint probability distributions inference 
+
+
+#### 6.1: Joint probability distribution 
+
+- If we consider two random variables simultaneously, it will lead to a **joint probability distribution**.
+
+![](image/2023-05-29-19-11-30.png)
+
+
+- The joint probability is the probability of the intersection of events $X =x$ and $Y = y$:
+
+![](image/2023-05-29-19-30-19.png)
+
+- Marginal probability: the probability that $X=x$ regardless of value of $Y$ and vice versa.
+
+- Conditional probability:
+
+![](image/2023-05-29-19-33-48.png)
+
+- Expectations:
+
+![](image/2023-05-29-19-38-26.png)
+
+- Covariance:
+
+![](image/2023-05-29-19-40-36.png)
+
+![](image/2023-05-29-19-45-13.png)
+
+#### 6.2: Inference - estimation 
+
+
+##### 6.2.1: Inference 
+
+- We can construct the models for the population and use the information from the sample to estimate the unknown parameters in the model.
+
+##### 6.2.2: Point estimate vs interval estimate 
+
+- Point estimate:
+    - gives a single-value estimation of some population parameters.
+    - eg. use sample mean to estimate population mean.
+
+- Point estimation:
+    - gives a probability of population mean in [a,b].
+
+##### 6.2.3: Estimators 
 
 
