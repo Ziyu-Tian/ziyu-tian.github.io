@@ -436,7 +436,7 @@ $$
 
 ![](image/2023-05-29-18-55-26.png)
 
-- The normal distribution can be used to approximate a Poisson distribution with $\lambda > 10$, for large $\lambda$, each individual outcome becomes samll so the continuity can be omitted.
+- The normal distribution can be used to approximate a Poisson distribution with $\lambda > 10$, for large $\lambda$, each individual outcome becomes small so the continuity can be omitted.
 
 ##### 5.9.4: Other continuous distribution 
 
