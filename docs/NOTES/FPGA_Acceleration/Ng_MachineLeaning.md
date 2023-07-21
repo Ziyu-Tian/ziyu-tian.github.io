@@ -91,3 +91,57 @@ $$
 $$
 
 Here *simultaniously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
+
+
+### 3.3: Multi-linear regression model 
+
+- For the multi-features $x_1, x_2, x_3...x_n$, a linear model can built as:
+
+$$
+f_{w,b}(x) = w_1x_1 + w_2x_2 + ... +w_nx_n +b 
+$$
+
+- For a series of $w$ and $b$ can be set as two **vectors**:
+
+$$
+\vec{w} = [w_1, w_2, w_3... w_n]\\
+\vec{x} = [x_1, x_2, x_3... x_n]
+$$
+
+- The function can be rewrite as:
+
+$$
+f_{\vec{w},b} = \vec{w}. \vec{x} +b 
+$$
+
+- 'Dot product' means each element being multiplied respectively.
+
+#### Vectorized Method 
+
+![](image/2023-07-20-10-06-25.png)
+
+#### Feature Scaling 
+
+- The range of the features may not same, which may lead to different weight-coefficient '$w_n$'.
+
+- For the variable $x_1$ with standard deviation $\sigma_1$ and average $\mu_1$, $x$ can be rescaled as:
+
+$$
+x_1' = \frac{x_1 - \mu_1}{\sigma_1}
+$$
+
+#### Checking the convergence of gradient descent 
+
+- Use the learning curve of $\J(\vec{w},\vec{b})$, it should be converged to 0:
+
+![](image/2023-07-21-09-33-28.png)
+
+- Use automatic convergence test: 
+
+  - Let $\epsilon$ is the descent per step, which could be set as 0.001 or other precise tiny number.
+  - If $J(\vec{w},\vec{b})$ decreases by $\le \epsilon$, this iteration is declared as convergence.
+
+
+#### Choosing of learning-rate $\alpha$ 
+
+![](image/2023-07-21-09-41-59.png)
