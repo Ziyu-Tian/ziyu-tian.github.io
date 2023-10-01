@@ -68,6 +68,8 @@ nav:
             - Statistical Method: 'NOTES/Stage_2/statisticalMethod.md'
             - AC Electrical Power: 'NOTES/Stage_2/acElectrical.md'
             - Automatic Control Systems: 'NOTES/Stage_2/automaticControl.md'
+        - Stage3_Notes:
+            - Industrial Control and PLC: 'NOTES/Stage_3/Industrial_Control.md'
 
     - Dev: 
         - 'DEV/index.md'
