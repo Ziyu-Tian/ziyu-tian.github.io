@@ -93,5 +93,7 @@ input signal goes from negative to positive it actually needs to reach a thresho
 
 ![](image/2023-10-01-21-04-11.png)
 
+### 9: Example of a bank-control system 
 
+![](image/2023-10-01-21-09-23.png)
 
