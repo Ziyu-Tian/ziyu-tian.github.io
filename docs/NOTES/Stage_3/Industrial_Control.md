@@ -74,4 +74,3 @@ after some fixed time delay has passed following a button being presse
 
 - A simple counter will have two inputs; a Reset (R) that resets the counter and an input (In) which provides the pulses that are counted.
 
-
