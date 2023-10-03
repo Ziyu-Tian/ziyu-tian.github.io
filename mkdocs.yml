@@ -70,6 +70,7 @@ nav:
             - Automatic Control Systems: 'NOTES/Stage_2/automaticControl.md'
         - Stage3_Notes:
             - Industrial Control and PLC: 'NOTES/Stage_3/Industrial_Control.md'
+            - introduction to Business Law: 'NOTES/Stage_3/Introduction_to_Law.md'
 
     - Dev: 
         - 'DEV/index.md'
