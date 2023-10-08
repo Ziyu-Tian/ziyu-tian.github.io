@@ -97,3 +97,23 @@ input signal goes from negative to positive it actually needs to reach a thresho
 
 ![](image/2023-10-01-21-09-23.png)
 
+
+## II: PLC Applications 
+
+### 1: Introduction to PLCs 
+
+- Generally PLCs (as the name suggests) implement logic, determining outputs based on some logical combination of inputs.
+
+- PLCs are programmable devices that are capable of taking inputs from sensors and activating actuators in order to control industrial equipment.
+
+- LEDs on PLC indicate the **Power On**, **Program Running**, **Software Fault**, **Module Fault** and **Link Status**.
+
+### 2: PLC Architecture 
+
+![](image/2023-10-09-00-15-39.png)
+
+### 3: PLC Operating Sequence 
+
+- PLCs are cyclical machines that repeat the same sequence of functions until the program terminates or the machine is switched off.
+
+![](image/2023-10-09-00-24-49.png)
