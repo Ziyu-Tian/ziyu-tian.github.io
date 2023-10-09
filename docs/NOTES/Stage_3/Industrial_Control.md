@@ -117,3 +117,45 @@ input signal goes from negative to positive it actually needs to reach a thresho
 - PLCs are cyclical machines that repeat the same sequence of functions until the program terminates or the machine is switched off.
 
 ![](image/2023-10-09-00-24-49.png)
+
+### 4: PLC Ladder Logic Programming 
+
+
+![](image/2023-10-09-08-49-23.png)
+
+- Internal Variable instead of physical switch (relay) could be applied on the same Ladder Logic notation, such as the A-LATCH below:
+
+![](image/2023-10-09-08-53-39.png)
+
+- Normally Closed and Normally Open Switches & Contactors:
+
+![](image/2023-10-09-08-54-45.png)
+
+### 5: Example of a system with START and STOP 
+
+![](image/2023-10-09-08-56-02.png)
+
+
+### 6: Ladder Logic Errors 
+
+![](image/2023-10-09-08-57-38.png)
+
+![](image/2023-10-09-08-58-21.png)
+
+### 7: PLC Timers
+
+![](image/2023-10-09-09-00-49.png)
+
+![](image/2023-10-09-09-03-15.png)
+
+### 8: Counters 
+
+![](image/2023-10-09-09-04-44.png)
+
+### 9: Master Control Relay (GOTO)
+
+![](image/2023-10-09-09-07-10.png)
+
+### 10: Sequential Function Charts 
+
+![](image/2023-10-09-09-08-42.png)
