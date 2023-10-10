@@ -31,13 +31,35 @@
 ![](image/2022-10-02-20-45-24.png)
 
 * In the *band model*, the bonding electrons are in the valence band. Conduction will be possible when moving electrons to into the conduction band.
-* To cross the energy band between conduction band and valence band, the efficient energy $E_G=E_C-E_V$ should be given (same to the Si-Si bond energy).
+* To cross the energy band (*forbidden gap*) between conduction band and valence band, the efficient energy $E_G=E_C-E_V$ should be given (same to the Si-Si bond energy), which is called the *bandgap energy*.
 
 ![](image/2022-10-02-20-48-36.png)
 
 * The band-gap Energy is 0 for metals, but it is very large for insulators.
 
-* The intrinsic number of electrons can be found using the formula below:
+* Assume in the *thermal equilibrium* condition,the numbers of hole is equal to the electrons (omit the impurity), this semiconductor is called the *intrinsic semiconductor*. 
+
+- To calculate the electron concentration per unit volume, we can do the integration of *Density of states* x *Probability of occupation of state*:
+
+$$
+\displaystyle n = \int_{E_c}^{\infty}D(E)f(E){\rm d}E
+$$
+
+- The *Probability of occupation of state* is provided by $f(E)$, which is also called **The Fermi-Dirac distribution**:
+
+![](image/2023-10-10-12-31-51.png)
+
+- $E_F is Fermi-level, which is the band energy when *probability of occupation of state* is 50%.
+
+- Simplifying the carrier density below, the formula could be:
+
+$$
+n \displaystyle\approx N_C\exp{\frac{E_F-E_C}{k_B T}} \\ 
+\quad \\
+p \displaystyle\approx N_V\exp{\frac{E_V-E_F}{k_B T}}
+$$
+
+- The intrinsic number of electrons can be found using the formula below:
 
 $$
     n_i^2 = N_cN_v\exp{\frac{-E_g}{k_B T}}
