@@ -59,7 +59,7 @@ n \displaystyle\approx N_C\exp{\frac{E_F-E_C}{k_B T}} \\
 p \displaystyle\approx N_V\exp{\frac{E_V-E_F}{k_B T}}
 $$
 
-- The intrinsic number of electrons can be found using the formula below:
+- For the number of intrinsic semiconductor, The intrinsic number of electrons can be found using the formula below:
 
 $$
     n_i^2 = N_cN_v\exp{\frac{-E_g}{k_B T}}
