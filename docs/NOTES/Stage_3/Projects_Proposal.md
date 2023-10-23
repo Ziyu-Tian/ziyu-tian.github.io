@@ -6,7 +6,7 @@
 ## <font size=5 face=Times New Roman>I: Introduction</font>
 <font size=3 face=Times New Roman>
 
-With the increasing demand of machine learning (ML) based Artificial Intelligence (AI), the acceleration for the training and classification tasks become a valuable subject in modern computer science researches. Compared to the software implementation, hardware acceleration based on Field Programmable Gate Arrays (FPGAs) is significantly faster and less energy demanding. In this project, a low-power ML algorithm base on propositional logic, namely Tsetlin Machine [1], which originates from Tsetlin Automata [2], would be implemented on PYNQ-Z1 FPGA board as an accelerator. 
+With the increasing demand of machine learning (ML) based Artificial Intelligence (AI), the acceleration for the training and classification tasks become a valuable subject in modern computer science researches. Compared to the software implementation, hardware acceleration based on Field Programmable Gate Arrays (FPGAs) is significantly faster and less energy demanding. In this project, a low-power ML algorithm base on propositional logic, namely Tsetlin Machine, which originates from Tsetlin Automata, would be implemented on PYNQ-Z1 FPGA board as an accelerator. 
 
 </font>
 
@@ -53,120 +53,12 @@ In order to complete the global target on time, the following milestones should 
 ## <font size=5 face=Times New Roman>IV: Scheduled Gantt Chart  </font>
 <font size=3 face=Times New Roman> 
 
-```mermaid
-gantt
-    dateFormat  YYYY-MM-DD
-    title       FPGA Accelerator Project Schedule 
-    excludes    
 
-    section Technical Design
-    Vivado Familiarize                     : a1, 2023-10-20,2023-10-26
 
-    Multiplier Performance Analysis        :milestone, 2023-10-27, 0d
+![](image/2023-10-23-11-22-18.png)
 
-    Tsetlin Machine Module Design                            :         a2, 2023-10-28,2023-11-12
 
-    TM IP Verification:    milestone, 2023-11-15
 
-    Interconnection Building:                     :         a3, 2023-11-12, 2023-12-01
-
-    Interconnection Simulation and  Verification                     : milestone, 2023-12-03, 0d
-
-    Global construction and board level verification: a4, 2023-12-04, 2024-01-04
-
-    Simple datasets testing: milestone, after a4, 1d
-
-    Performance Analysis: pa1, 2024-01-05,2024-02-05
-
-    Conclusive results: milestone, after pa1, 1d 
-
-    Further researches: further1, 2024-02-05, 2024-04-20
-
-
-    section Formal Documentation 
-
-    Initiate Proposal    :  proposal1,2023-10-20,2023-10-27
-
-    Proposal Submission :  milestone, after proposal1, 0d
-
-    Preparing Demo-1: demo1,2023-10-28,2023-12-05
-
-    Demo-1 Submission: milestone, after demo1, 3d
-
-    Preparing Poster Presentation: post1,2023-12-06,2024-02-13
-
-    Poster Presentation: milestone, after post1,2d 
-
-    Preparing Technical Report: report, 2024-02-15, 2024-04-20
-
-    Technical Report: milestone, after report, 5d 
-
-    Preparing second presentation: demo2,2024-02-22, 2024-04-20
-
-    Second Presentation: milestone, after demo2, 0d 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-</font>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## <font size=5 face=Times New Roman> References </font>
-<font size=3 face=Times New Roman>
-
-
-[1]:J.Lei, A.Wheeldon, R.Shafik, A.Yakovlev and O. -C. Granmo, "*From Arithmetic to Logic based AI: A Comparative Analysis of Neural Networks and Tsetlin Machin*e," 2020 27th IEEE International Conference on Electronics, Circuits and Systems (ICECS), Glasgow, UK, 2020, pp. 1-4, doi: 10.1109/ICECS49266.2020.9294877.
-
-[2] M. L. Tsetlin, ‘‘On behaviour of finite automata in random medium,’’ Avtomatika I Telemekhanika, vol. 22, no. 10, pp. 1345–1354, 1961.
-
-
-</font>
 
 
 
