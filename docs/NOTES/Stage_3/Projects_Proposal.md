@@ -1,6 +1,6 @@
 <div align='center' ><font size ='6'>Proposal of the FPGA Accelerator Individual Project </font> </div>
 
-<div align='center' ><font size ='2'>Ziyu Tian</font> </div>
+<div align='center' ><font size ='3'>Ziyu Tian</font> </div>
 
 
 ## <font size=5 face=Times New Roman>I: Introduction</font>
@@ -49,10 +49,23 @@ In order to complete the global target on time, the following milestones should 
 </font>
 
 
-
-## <font size=5 face=Times New Roman>IV: Scheduled Gantt Chart  </font>
+## <font size=5 face=Times New Roman>IV: Risks Judgement and Mitigation   </font>
 <font size=3 face=Times New Roman> 
 
+To complete the settled objectives above, it is essential to do the advanced risks judgement and the research of mitigation methods. The risks may occur in the designing process are shown as below:
+
+- **Risk-1**: The core objective of this project is the translation of Tsetlin Machine Algorithm from C / Python to Verilog, and it may cause problems due to different structures between software and hardware. To avoid the risk of generate unaware errors, a series of regional tests could be applied as the verification. Verify the partial block with simple tests such as doing XOR test of TM IP core could ensure the accuracy of translating  HDL codes, so that avoiding the large error of the total design.
+
+
+- **Risk-2**: Compared with the software implementation, another risk of hardware design is doing sequential constraint between each blocks in the circuit. To reduce or avoid the risks of sequential error, the advanced simulation between implementation could be carried. A detailed sequential wave form of each elements should be monitored to keep all the signals on track, which could reduce the sequential risks mostly. 
+
+
+
+
+## <font size=5 face=Times New Roman>V: Scheduled Gantt Chart </font>
+<font size=3 face=Times New Roman> 
+
+Following the objectives and risks analysis above, the planned schedule of this project is drawn as the Gantt Chart below.
 
 
 ![](image/2023-10-23-11-22-18.png)
