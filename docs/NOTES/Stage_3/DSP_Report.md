@@ -14,7 +14,7 @@ This assignment aims at building a AM demodulator system shown in Fig.1, which s
 
 ## <font size=5 face=Times New Roman>II: Task-1: Original AM Analysis</font>
 <font size=3 face=Times New Roman> 
-Using the audioread() function in MATLAB, the .wav file could be read into the demodulation system with sampling rate 'F_s' and amplitude array 'y'. Combined with the time-axis generated using length() function, the AM signal in time domain could be plotted in Fig.2 by following MATLAB codes:
+Using the audioread() function in MATLAB, the .wav file could be read into the demodulation system with the sampling rate 'F_s' and amplitude array 'y'. Combined with the time-axis array and the length() function, the AM signal in time domain could be plotted in Fig.2 by following MATLAB codes:
 
 
 ```matlab
@@ -37,15 +37,15 @@ ylabel('Amplitude');
 ![](image/2023-12-09-14-22-39.png)
 <font size=2><center>*Fig.2*. AM signal in time domain </center></font>
 
-From the soundtrack in Fig.2, the total length of the .wav file is 2.27 seconds with obviously noises being mixed. 
+According to the soundtrack in Fig.2, the total length of the .wav file is 2.27 seconds with obvious noises . 
 
-To show the original AM signal in frequency domain, a Fast Fourier Transform is needed to do the conversion. As the sampling frequency is 96 kHz with the sound length is 2.27 s, the total samples should be calculated as:
+To show the original AM signal in frequency domain, a Fast Fourier Transform operation is needed to complete the conversion. As the sampling frequency is 96 kHz and the sound length is 2.27 s, the total samples should be calculated as:
 
 $$
 n = F_s . t = 2.27\times96000 = 217920
 $$
 
-The number 217900 is close to the result calculated by MATLAB length(), which is 217992. The sampling number n could be used as the Number of FFT directly. However, for the purpose of improving FFT efficiency, we normally choose the closet power of 2 to the total samples number. Applied with the nextpow2() function, the appropriate Number of FFT N could be found as 262144 by the codes below:
+The number 217900 is close to the result calculated by MATLAB length(), which is 217992. The sampling number n could be used as the Number of FFT directly, however, for the purpose of improving FFT efficiency, we normally choose the closet power of 2 to the total samples number. Applied with the nextpow2() function, the appropriate Number of FFT N could be found as 262144 by the codes below:
 
 ```matlab
 % Frequency Domain
@@ -426,7 +426,8 @@ $$
 The calculation could be executed by the following codes:
 
 ```matlab
-magnitude_demodulated_signal = sqrt(y_two_stage.^2 + y_two_stage2.^2); %y_two_stage is the Re part signal while y_two_stage2 is the Im Part signal
+magnitude_demodulated_signal = sqrt(y_two_stage.^2 + y_two_stage2.^2); 
+%y_two_stage is the Re part signal while y_two_stage2 is the Im Part signal
 
 ```
 
