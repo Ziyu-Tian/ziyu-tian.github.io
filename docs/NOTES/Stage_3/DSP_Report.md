@@ -414,7 +414,7 @@ $$
 
 The measured execution time of FIR sampling and convolution for the Two-stage FIR is 0.274657s. Compared with the Single-stage FIR with 0.839893 s execution time and computation load of 25.3M Mac/s, the speed of the Two-stage IIR is almost 3 times faster. And the computation load would have 4 times saving. In conclusion, the two-stage IIR would have better efficiency and performance.
 
-## <font size=5 face=Times New Roman>V: Task-5: DC Removing  </font>
+## <font size=5 face=Times New Roman>VI: Task-5: DC Removing  </font>
 <font size=3 face=Times New Roman>
 
 After the low-pass filtering for the AM signals, a total magnitude of the AM signal should be calculated as a combination of Real Part and Imaginary Part:
