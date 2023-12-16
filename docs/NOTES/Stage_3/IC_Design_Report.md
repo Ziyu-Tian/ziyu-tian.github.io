@@ -1,4 +1,6 @@
-# IC Design Report 
+<div align='center' ><font size ='6'>EEE 3027 IC Design Report  </font> </div>
+
+<div align='center' ><font size ='3'>Ziyu Tian</font> </div>
 
 ## Task 1: Modelling logic gates and blocks
 
