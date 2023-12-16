@@ -4,7 +4,7 @@
 
 ## Task 1: Modelling logic gates and blocks
 
-In the following designs, I constructed half-adder and full-adder in both truth-table form and logic-gate form.
+In the following designs, I constructed the half-adder and full-adder in both truth-table form and logic-gate form.
 
 Logic-gate Half-adder (./HA_via_Gates.work):
 
@@ -23,16 +23,16 @@ Truth Table Full-adder (./FA_via_Truthtable.work)
 
 ![](image/2023-12-15-08-16-34.png)
 
-Comparing the designs generated from Truth Table and Logic-gate, the advantages and disadvantages could be observed obviously. The truth-table models are simpler in architectures, which have less places / transitions, so that would provide a higher efficiency. In the logic-gate based designs, the architectures are more complicated, which have more places and transitions. However, the gate-based designs have better performance in modulator developing process. Compared to the truth-table based modelling, which structure should be redesigned according to different truth table, logic-gates based models could be simply constructed by the default logic-gates whatever the purpose is. 
+Comparing the designs generated from Truth Table and Logic-gate, the advantages and disadvantages could be observed obviously. The truth-table models are simpler in architectures, which have less places / transitions, so that would provide a higher efficiency. In the logic-gate based designs, the architectures are more complicated, which have more places and transitions. However, the gate-based designs have better performance in modular developing process. Compared to the truth-table based modelling, which structure should be redesigned according to different truth table, logic-gates based models could be simply constructed using the default logic-gates according to different purposes. 
 
-In conclusion, the true-table based models could have better efficiency and brief structure, but the cost of design may increase obviously. The logic-gates based models would have more modular choices, which allows you to construct the circuit from previous gate-level models. The modular design method could reduce the cost of designing significantly, however have lower efficiency and scale of architecture in return. The trade-off between efficiency and cost should be considered in real-world condition.
+In conclusion, the true-table based models could have better efficiency and brief structure, but the cost of design may increase significantly. The logic-gates based models would have more modular choices, which allows you to construct the circuit from previous gate-level models. The modular design method could reduce the cost of designing, however have lower efficiency with larger scale of architectures. The trade-off between efficiency and cost should be considered in real-world condition.
 
-To implement the adder designs above, I constructed an environment to receive the input and generate the output in a deadlock-free circle. An example of HA environment is shown as below (./Environment_with_HA.work)
+To implement the adder designs above, I also constructed an environment to receive the input and generate the output in a deadlock-free circle. An example of HA environment is shown as below (./Environment_with_HA.work)
 
 
 ![](image/2023-12-15-10-51-10.png)
 
-The input for the half adder could be got from transition a0, a1, b0 and b1. After the calculation, the output in transition t4, t3, t2 and t1 could be extracted to another storing blocks, than the firing of t6 would lead the token return to the input. The system was tested as deadlock-free.
+The input for the half adder could be got from transition a0, a1, b0 and b1. After the calculation, the output in transition t4, t3, t2 and t1 could be extracted to another storing blocks, than the firing of t6 would lead the token back to the input. The system was tested as deadlock-free.
 
 ## Task 2: Modelling buffers and frequency dividers
 
@@ -42,7 +42,7 @@ In this task, I built the constant-latency multi-place buffer shown as below (./
 
 In my multi-place buffer design, I choose the parallel method to avoid the increasing latency in linear-buffer design, which have 3 places. 
 
-With the help of Workcraft software, I constructed the reachability state graph for it as following (./Parallel_FSM.work):
+With the help of Workcraft software, I also constructed the reachability state graph for it as following (./Parallel_FSM.work):
 
 ![](image/2023-12-16-07-04-16.png)
 
@@ -58,7 +58,7 @@ In the following design, I developed a Petri-net model of a 3-philosophers-probl
 
 ![](image/2023-12-16-07-41-07.png)
 
-In my solution for the 3-philosopher problem, I used three hand-shake standing for three folks among three philosophers. When a philosopher has picked up one folk, the adjacent philosophers in his both sides would be forbidden to pick up the nearby folks, which avoid the conflicts. This method could solve this problem with deadlock-free result.
+In my solution for the 3-philosopher problem, I used three hand-shake on the places of three folks among three philosophers. When a philosopher has picked up one folk, the adjacent philosophers in his both sides would be forbidden to pick up the nearby folks, which avoid the conflicts. This method could solve this problem with deadlock-free result.
 
 ## Task 4: Modelling simple CPUs
 
@@ -66,7 +66,7 @@ According to the basic principle, a simple CPU without pipeline could be derived
 
 ![](image/2023-12-16-09-26-46.png)
 
-This CPU Petri-net design could model the process of increase Program Counter, visit Memory Read Register and read in instructions from IR to execute a single instruction. To improve the efficiency, the multi-level pipeline could be added.
+This CPU Petri-net design could model the process of increasing Program Counter, visiting Memory Read Register and reading in instructions from IR to execute a single instruction. To improve the efficiency, the low-level pipeline could be added.
 
 A low-level pipeline CPU could be designed as below (./Original_CPU.work):
 
@@ -74,7 +74,7 @@ A low-level pipeline CPU could be designed as below (./Original_CPU.work):
 
 In the first version of the pipeline design, the deadlock would occur in a certain condition. When the store-instruction has been decoded into MAR_read, another word could be fetched from PC as a pipeline. In this condition, the Instructor Register should wait for the store to complete, and the newly fetched word is also waiting for the response of IR, which would lead to a deadlock.
 
-To solve this deadlock, an extra register is necessary to store the newly fetched word and allow MAR to accept the request from store (./One_latch_CPU.work):
+To solve this deadlock, an extra register is necessary to store the newly fetched word and allow MAR to accept the request from storing (./One_latch_CPU.work):
 
 ![](image/2023-12-16-10-08-29.png)
 
@@ -98,7 +98,7 @@ The design could calculate the first two bits of the multiplication result, i.e.
 ## Task 5: Design of a multi-place buffer
 
 
-TWith the request and acknowledge signals, the one-place buffer could be implemented. The simple buffer in STG could be design as below (./buffer_simple_stg.work):
+With the request and acknowledge signals, the one-place buffer could be implemented. The simple buffer in STG could be design as below (./buffer_simple_stg.work):
 
 ![](image/2023-12-16-10-52-11.png)
 
