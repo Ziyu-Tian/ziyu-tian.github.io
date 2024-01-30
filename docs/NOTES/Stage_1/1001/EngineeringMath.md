@@ -709,7 +709,7 @@ $\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
 * $\displaystyle\frac{dy}{dt}+p(t)y=q(t)$
 * The **integrating factor** is given by $u(t)=e^{\int p(t)dt}$.
 * Multiply the standard function by $u(t)$, then integrating both sides.
-* $y(t)=\displaystyle\frac{1}{u(t)}\int u(t)q(t)dt$
+* $y(t)=\displaystyle\frac{1}{u(t)}(\int u(t)q(t)dt + C)$
 * Examples:
     * $y'+2y\sin(2x)=2e^{\cos(2x)}$
         * $u(x)=e^{\int p(x)dx}$, for this situation $p(x)=2\sin(2x)$, $u(x)=e^{\int 2\sin(2x)dx}=e^{2\times(-1)\times0.5\cos(2x)}=e^{-\cos(2x)}$
