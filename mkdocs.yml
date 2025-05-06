@@ -36,13 +36,13 @@ edit_uri: edit/main/docs # 编辑按钮跳转的链接
 repo_url: https://github.com/Ziyu-Tian/ziyu-tian.github.io # 右上角点击跳转的链接
 repo_name: ziyu-tian.github.io # 右上角的名字
 ## [bottom-left corner]
-copyright: Copyright &copy; 2023 Ziyu Tian # 左下角的版权声明
+copyright: Copyright &copy; 2025 Ziyu Tian # 左下角的版权声明
 ## [bottom-right corner]
-extra:
-  social: # icons
-    - icon: fontawesome/brands/github # 鼠标悬浮提示
-      link: https://github.com/Ziyu-Tian
-      name: GitHub | Ziyu Tian
+#extra:
+  #social: # icons
+    #- icon: fontawesome/brands/github # 鼠标悬浮提示
+      #link: https://github.com/Ziyu-Tian
+      #name: GitHub | Ziyu Tian
 
 # [Navigation]
 nav:
