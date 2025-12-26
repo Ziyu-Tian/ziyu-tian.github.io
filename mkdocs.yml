@@ -72,8 +72,8 @@ nav:
             - Industrial Control and PLC: 'NOTES/Stage_3/Industrial_Control.md'
             - introduction to Business Law: 'NOTES/Stage_3/Introduction_to_Law.md'
             - Digital Signal Processing: 'NOTES/Stage_3/Digital_Signal_Process.md'
-        - Test_Notes:
-            - Industrial Control and PLC: 'NOTES/Stage_3/Industrial_Control.md'
+        - Railway Basics:
+            - PWay Class A: 'NOTES/Railway/Pway_Class_A.md'
 
     - Dev: 
         - 'DEV/index.md'
