@@ -72,6 +72,8 @@ nav:
             - Industrial Control and PLC: 'NOTES/Stage_3/Industrial_Control.md'
             - introduction to Business Law: 'NOTES/Stage_3/Introduction_to_Law.md'
             - Digital Signal Processing: 'NOTES/Stage_3/Digital_Signal_Process.md'
+        - Railway Basics:
+            - PWay Class A: 'NOTES/Railway/Pway_Class_A.md'
 
     - Dev: 
         - 'DEV/index.md'
@@ -81,10 +83,10 @@ nav:
         - Bit Operation: 'DEV/BitOperation.md'
     - Blog:
         - 'BLOGS/index.md'
-        - Blogs_Zero: 'BLOGS/BlogsZero.md' 
-        - Thoughts 22/08/22: 'BLOGS/Thoughts_220822.md' 
-        - Thoughts 24/08/22: 'BLOGS/Thoughts_240822.md'
-        - Poem Thoughts 26/08/22: 'BLOGS/Literature_260822.md'
+        #- Blogs_Zero: 'BLOGS/BlogsZero.md' 
+        #- Thoughts 22/08/22: 'BLOGS/Thoughts_220822.md' 
+        #- Thoughts 24/08/22: 'BLOGS/Thoughts_240822.md'
+        #- Poem Thoughts 26/08/22: 'BLOGS/Literature_260822.md'
 
 
 # [Extensions]
