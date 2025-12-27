@@ -87,6 +87,170 @@ LU PWay standards mandate a suite of inspections that provide information about 
 
 ### 2.1: Running Rails 
 
+- Purpose - to carry and guide the train wheels
+- Required to distribute significant forces
+- Properties:
+  - Hardness - to resist wear
+  - Toughness - to absord load and resist fatigue 
+  - Tensile strength - to withstand thermal forces
+- Also used to locate signals equipments
+- Material Most Used:
+  - Normal Grade steel - historical used
+  - Grade A steel - standard use
+  - Premium Steels & Head Hardened - wear resistant 
+
+### 2.2: Track Forms
+
+- Bullhead (BH) - Traditional 
+
+- Flat Bottom (FB) - New Works
+
+![](image/2025-12-27-10-30-42.png)
+
+- General Track Guage:
+  - Straight Track: 1435 mm
+  - Check Rail Curves: 1438 mm
+
+### 2.3: Running Rail Joints
+
+- Purpose - to connect together lengths of rail to form a secure path
+- Welded Types:
+  - Flash butt weld (workshop process)
+  - Thermic (site welding process)
+- Fishplated (mechanical connection):
+  - Expansion (for short rails)
+  - Tight
+  - Junction
+  - Blockjoint
+
+![](image/2025-12-27-10-51-08.png)
+
+### 2.4: Sleepers
+
+- Purpose - to maintain gauge
+  - Maintain dimension between rails
+  - Maintain coss level
+  - Support running and conductor rails
+  - Distribute dynamic and static loads
+
+#### 2.4.1: Sleepers Type
+
+- **Softwood** - ballasted track only
+  - PRO: inexpensive, lightweight
+  - AGAINST: Easy to splitting and rotting 
+- **Hardwood** - ballasted and mainly concreted track
+  - PRO: duarbale, lighter than concrete
+  - AGAINST: exotic and expensive
+- **Composite**
+  - FOR: Eco-friendly
+  - AGAINST: flammable, heat distortion 
+- **Prestressed concrete** - ballasted and concreted
+  - FOR: inexpensive, strong and stable
+  - AGAINST: very heavy, difficult to trim, brittle
+
+
+### 2.5: Running Rail Supports and Fastenings
+
+#### 2.5.1: Bulkhead Track Keys
+
+- **Oak Keys**:
+  - FOR - Eaasy to install, cheap, light and good electrical insulation 
+  - AGAINST - Tend to shrink and fall out
+- **Steel**:
+  - FOR - Wear resistance, easy to install, tight fitting, good creep resistance
+  - AGAINST - Need to be driven in tight, tendency to crush and fall out, tend to rust poor electricail insulation
+- **PANLOCK KEYS**:
+  - FOR - secure location and low maintenance
+  - AGAINST - need special tool to install, tend to rust, poor electrical resistance
+
+![](image/2025-12-27-18-36-16.png)
+
+#### 2.5.2: Chairscrews and ferrules
+
+![](image/2025-12-27-19-57-07.png)
+
+- **Chairscrews**: to hold the chair or baseplate securely to the sleepers. Restrains the rails and hold the gauge.
+- **Ferrules** : accommodate casting tolerances in chair and baseplate. Prevent screw and metals to contact.
+
+#### 2.5.3: Flatbottom Track - rail clips
+
+- **Pandrol Clips**
+
+![](image/2025-12-27-20-03-46.png)
+
+- **Fastclips**
+
+![](image/2025-12-27-20-09-34.png)
+
+
+#### 2.5.4: FB Rail vs BH Rail
+
+- **Flat Bottom rail**:
+  - Baseplate with chairscrews and ferrules.
+  - Special baseplate for check rail.
+  - Pandrol shoulders casted into concrete sleepers.
+  - Pandrol with insulators and rail seat pad, directly seated on concrete sleepers.
+- **Bull Head Rail**:
+  - Chairs with chariscrews, ferrules and keys
+  - Keys - oak or steel (two types: Mills and Panlock)
+  - Special Chairs for check rail
+
+#### 2.5.5: Resilient Baseplate - composite with rubber insert
+
+- **PRO**:
+  - Reduced noise and vibration
+  - Longer lifetime 
+- **DIS**:
+  - Energy dissipation into noise 
+  - Bulky component in space constained area
+
+![](image/2025-12-27-20-19-16.png)
+
+
+#### 2.5.6: Track Bed
+
+- **Ballast**:
+  - Purpose:
+    - To absorb and disperse track load through track foundations
+    - Restrain movement of sleepers
+    - Provide drainage
+- **Ballast Sleepers**:
+  - **Granite Ballast - preferred**
+    - FOR - hard stay sharps, strong abration resistant
+    - AGAINST - heavy and expensive
+  - **Limestone - was most common in LU**
+    - FOR- cheap, resonable drainage
+    - AGAINST - scarce resorce in the UK, cannot be used with concrete sleepers
+  - **Ash Ballast**
+    - Waste product from coal power station. Mainly in depot.
+- **Typical Faults**:
+  - Wet Spot: Train dynamic movement makes the underkying clay being drawn up into the ballast, thus blocks the drainage and loose the support.
+
+### 2.6: General Track Construction 
+
+- 1: Geotexile laid on formation 
+
+![](image/2025-12-27-20-52-26.png)
+
+- 2: Bottom Ballast installation 
+
+![](image/2025-12-27-20-52-50.png)
+
+- 3: Concrete sleepers ready to lay
+
+![](image/2025-12-27-21-56-27.png)
+
+- 4: Sleeper laid Pandrol e-clip and fast clip
+
+![](image/2025-12-27-21-57-06.png)
+
+- 5: Rail Installation 
+
+- 6: Top Ballast Installation 
+
+- 7: Tamping
+
+- 8: Welding and Stressing 
 
 
 
