@@ -504,4 +504,99 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ![](image/2025-12-28-20-03-07.png)
 
 
+## 3: Track Welding 
+
+### 3.1: Rail Identification 
+
+- Rolled or stamped every 1km along the rail net.
+- Manufacturer, Type of steel, Year of manugacturing, Approx weight and Rail profile.
+
+![](image/2025-12-28-20-35-33.png)
+
+
+### 3.2: Fuel Gasses Used For Welding 
+
+- All cylinders used for welding contain gas under pressure and are sealed.
+- All cylinders are colour coded to a recognised standard to indetify contents.
+- **Three main gases**:
+  - *Oxygen*
+  - *Acetylene*
+    - Garlic odour
+    - Highly flammable and ignites very easily in air.
+    - ****Can be used in all areas.****
+  - *Propane*
+    - Heavier than air, fish like odour
+    - Flammable and makes it a high fire and explosion hazard.
+    - ****Open section only.****
+
+![](image/2025-12-28-20-48-26.png)
+
+### 3.3: Aluminothermic Welding 
+
+- Used for Joining Rails and Defect Removal
+
+- Following second word war - very small amount of welding via old Thermit
+- 1949/50 - SmW was introduced.
+- 1976/77 - SkV process was introduced.
+  - Stronger welds
+  - Welding process with short preheat
+  - Reduction in process failures
+  - Main Thermit weld used in LU / NR
+  - Enhancements: SKV-E
+
+- **Standard method for all Thermic process**:
+  - 1: Rail gaps are produced either by flame cutting or mechanical saw. Checked squareness and verticality.
+  - 2: Align the rail.
+  - 3: Moulds are fitted and checked for position relative to the gap.
+![](image/2025-12-28-21-25-55.png)
+
+  - 4: Add welding portions (4 main ingredients)
+    - Aluminium Powder
+    - Ion Oxide
+    - Mild Steel
+    - Ferro-manganese  
+  - 5: Rail ends preheating started when the preheater is locked in the moulds. The sand core is dried in this process.
+  - 6: The crucible is placed into position on top of the moulds and portion ignited. 
+    - Thermit reaction takes place
+    - Weld metal is released into the moulds.
+
+![](image/2025-12-28-21-49-23.png)
+
+  - 7: Remove all the support equipment at the set time following pouring.
+  - 8: At prescribed time:
+    - Weld debris is removed
+    - Fastenings are replaced
+    - Weld is ground within 25 mins to profile.
+
+### 3.4: Manual Metal Arcing (MMA) Welding Processes
+
+#### 3.4.1: Fusion Welding Material
+
+![](image/2025-12-29-09-37-27.png)
+
+#### 3.4.2: MMA Welding Processes
+
+- The electrode is preferred method for the weld repair of rails.
+- Step 1: When the arc is struck between metal rod (electrode) and the workpiece, both end surface melt to form a weld pool.
+- Step 2: Simultaneous melting of the flux coating on the rod will form the sheilding gas to protect the weld pool.
+- Step 3: The slag will then solidfy, cool and must be chipped off the weld bead when the welding is completed.
+
+![](image/2025-12-29-09-48-45.png)
+
+#### 3.4.3: Flash Butt Welding
+
+- To begin, the rails are positioned with a precise gap determined by factors such as materials.
+- The rails are clamped, and a high current is applied.
+- Once the correct temperature is reached, the current is stopped, and the rails are rapidly pressed together. The action forges the two rails into a single continuous rail.
+
+![](image/2025-12-29-10-00-38.png)
+
+#### 3.4.4: Future in Welding
+
+- HWR / HRW (Hot Weather Rail) Weld process for the removal of defects
+- Induction Welding 
+- Phase Array Weld Inspection 
+- Mobile Flash Butt Welding
+
+![](image/2025-12-29-10-15-51.png)
 
