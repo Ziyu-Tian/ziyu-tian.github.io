@@ -747,4 +747,75 @@ LU PWay standards mandate a suite of inspections that provide information about 
    -  TRV and ATMS covered A, B and C track.
    -  Not decalred areas must be inspect by other means.
 
+## 5: Managing Buckling
+
+### 5.1: General Principles of Hot weather Management
+
+- **Stress Free Temperature (SFT)**
+  - The temeprature at which the rail is of the same length as it would be in a natural unrestrained state, which is no thermal force inside the rail.
+- **Critical rail temperature**
+  - Is the temeprature to which the rail may be allowed to rise before measures to protect traffic are to be taken.
+  - The amoutn by which ythe CRT exceeds the SFT depends on the configuration and condition of the track.
+
+- **Hot Weather for PWay**
+  - Potential for Buckles or misalignments leading to speed resitrction.
+  - Mitigation / action:
+    - Ensure ballast profile
+    - Install rail at correct temperature
+    - Eliminate all defects.
+    - Short rails / jointed track - allow for expansion
+- **Maintenance work during hot weather**
+  - Tamping and lining (open areas)
+  - Removal of wet beds / ballast disturbance
+  - Fastening /chair / baseplate removal
+  - Resleepering
+  - Rectification of geometry
+  - Rerailing (with no stress restoration)
+- **Ongoing Monitoring**
+  - Ongoing specific temperature monitoring (CRT related)
+  - Overall temeprature monitoring
+  - Consider local condition
+
+### 5.2: Rail configurationm rail stress and Rail tenmperatures
+
+- **Rail Configuration**
+  - Short Rail Sites (SR)
+  - Long Welded Rail (LWR)
+  - Continuously Welded Rail (CWR)
+- **Rail Stressing**
+  - 21-27 Deg C
+  - Hydraulic tensors
+
+
+### 5.3: Buckles - if things don't go as planned
+
+- **Buckle definition**:
+  - *Any track deformation in hot weather which requires emergency remedial work, speed resitrction or emergency closure of the line and must be reported.*
+- **Causes of Buckle**:
+  - Incorrect SFT
+  - Poor ballast profile
+  - Poor sleeper condition
+  - Incorrectly managed short sections of Plain Line between Point & Cross (P&C).
+  - Unstable embankment.
+  - Sudden change in support
+
+![](image/2025-12-30-16-08-31.png)
+
+
+### 5.4: Interfaces with Other Asset areas
+
+- *Signals*:
+  - Interface at P&C
+  - Block joints
+- *Civils*:
+  - Embankment - loading with ballast and increasing the weight
+  - Slip / Settlement problem - risk of lateral movement is increased.
+- *Rolling Stock*
+  - Acceleration and Braking rates
+  - Wheel Condition
+
+- *Adjustment Switch*:
+  - Allows sliding movement (mm level) when temeprature changed
+
+![](image/2025-12-30-16-23-34.png)
 
