@@ -254,7 +254,7 @@ LU PWay standards mandate a suite of inspections that provide information about 
 
 ### 2.7: Check Rails
 
-- ***Purpose**:
+- **Purpose**:
   - Installed on curved track of of 200m radius or less ot prevent the ourside wheels to be derailed.
   - 180 m radius on LU, DLR and trams can be lower than 60 m.
   - Also used on some under bridges to constrain train.
@@ -523,11 +523,11 @@ LU PWay standards mandate a suite of inspections that provide information about 
   - *Acetylene*
     - Garlic odour
     - Highly flammable and ignites very easily in air.
-    - ****Can be used in all areas.****
+    - **Can be used in all areas.**
   - *Propane*
     - Heavier than air, fish like odour
     - Flammable and makes it a high fire and explosion hazard.
-    - ****Open section only.****
+    - **Open section only.**
 
 ![](image/2025-12-28-20-48-26.png)
 
@@ -599,4 +599,152 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Mobile Flash Butt Welding
 
 ![](image/2025-12-29-10-15-51.png)
+
+
+## 4: Track Recording and Analysis
+
+### 4.1: Benifits of Track Geometry Measurement (Static and Dynamic)
+
+- For passenger comfort and Asset life
+- The dynamically measure benifits:
+  - True reflection of maximum deflection under load
+  - Record movement because of voids under sleepers
+  - Ability to record large section of track in short time
+  - Eliminate human errors
+
+### 4.2: Measurement Principles
+
+#### 4.2.1: Geometry System Basics
+
+![](image/2025-12-29-10-46-03.png)
+
+#### 4.2.2: Measurement Parametres
+
+- Track Geometry:
+  - Gauge (mm)
+  - Cant / Crosslevel (mm)
+  - Twist (2m and 10m) (mm)
+  - Top (Vertical Profile) (mm)
+  - Alignment (Lateral) (mm)
+
+- Dynamic cross-level (no longer required in S1159)
+- Wheel unload 
+- Curvature
+- Corrugation (or Equivalent Rail Roughness)
+
+- **Gauge**:
+  - Distance between the two rails measured 14 mm below the crown of the rail.
+  - Norminal gauge is 1435 mm.
+
+![](image/2025-12-29-17-02-17.png)
+
+- **Vertical Profile (TOP)**
+  - The difference of rail height.
+  - With 25m filter fitted.
+
+![](image/2025-12-29-20-43-51.png)
+
+- **Cant and Twist**:
+  - *Cant*: Difference in height of two rails (the outer rail is normally higher than inner one in curves)
+  - *Twist*: Difference in Cant over a set distance, e.g. 2m between wheel centres and 10m between two bogie centres.
+
+![](image/2025-12-29-20-49-31.png)
+
+- **Wheel Unload**
+  - Wheel unload is a conbination of 2m and 10m twist on LU passenger stock.
+  - 100% wheel unload will lead to o downward force being applied from wheel to the rail.
+  - General wheel unload parameters are set so that rains experience less than 60% Wheel unload. 
+
+![](image/2025-12-29-21-10-07.png)
+
+
+- **Alignment**
+  - Alignment measures the difference along the running rails.
+  - A perfect continuous curve gives zero reading.
+
+![](image/2025-12-29-21-19-49.png)
+
+
+- **3 main causes of Geometry fault related derailment**:
+  - Loss of gauge
+  - Twist fault resulting in wheel unload
+  - Cyclic Top 
+
+- **Noise and vehicle / track damage**:
+  - Rail Roughness or Corrugation
+
+### 4.3: TRV and ATMS Data Collection 
+
+#### 4.3.1: TRV Digitisation 
+
+- Digitised TRV output into Excel
+- All Data processed off train
+
+#### 4.3.2: ATMS
+
+- Nince passenger trains fitted with Automated Track Monitoring Systems (ATMS)
+- Gives geometry and supporting data when it is in service
+- ATMS could find faults not seen by legacy systems including TRV
+
+- **Benefits**:
+  - Proven unattended data collection
+  - Next day data processing
+  - Additional data - Noise and Vibration, and video
+
+![](image/2025-12-30-06-33-39.png)
+
+
+#### 4.3.3: Comparison between ATMS and TRV
+
+- *TRV does well*:
+  - Transducer on axles for vertical measurement. ATMS beam is offset from the axle, which can under report faults, e.g. twist.
+  - TRV covers low speed areas where ATMS laser shuts down for safety reasons.
+  - Dedcated vehicle gives pro=iority access to the train.
+- *ATMS deos well*:
+  - ATMS does not smooth out Top faults like TRV.
+  - ATMS laser based system is better than TRV white light system.
+  - Higher recording frequency.
+  - Location accuracy from RFID tags compared with manual sync on TRV.
+
+#### 4.3.3: Data Outputs
+
+- **Discrete Exceedences**:
+  - Safety Standard (SS)
+    - Need to be inspected within 24 hours
+  - Maintenance Limit (ML)
+  - Maintenance Target (MT)
+  - Can pose a risk of derailment and may require immediate action (e.g. speed restriction)
+
+![](image/2025-12-30-09-25-05.png)
+
+- **ISSE Process**
+  - Inspection fo Safety Standard Exceedence (ISSE)
+  - SS Fault must be inspected with 24 hours.
+  - Inspection now only has to be visual to check ok for traffic wholst repair is arranged
+  - Fault combination should follow S1159.
+- **Standard Deviation**
+  - A quantitative representation of ride quality, allowing every 100m of track to be assigned a value for a parameter.
+  - Good indication of overall Track condition
+  - SD data can be used to plan maintenance activities like tamping and access degradation.
+
+![](image/2025-12-30-09-41-10.png)
+
+- **DataMap Application**
+  - Notification of new / rapidly degrading faults
+  - Trendin of faults with predicted timescale to fix
+  - Fault priority based in degradation rates not just the current value.
+- **Spurious Data**
+  - Readings from Dynamic system do not match site static readings.
+  - Readings can be confirmed as spurious by a competent track recording engineer.
+- **Inherent Gepmetry**
+  - Inherent geometry is valid reading, but the nature of track alignment / construction cause an inherent fault.
+  - Must be recorded on a centrally held register.
+- **Recording Frequency** 
+  - **TRV:** 8 weeks Cat A and B track where ATMS does not run.
+  - **ATMS**: Minimum once every 28 days in areas covered by ATMS.
+
+-  **Recording Coverage**:
+   -  TRV and ATMS covered A, B and C track.
+   -  Not decalred areas must be inspect by other means.
+
 
