@@ -918,5 +918,69 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ![](image/2025-12-30-20-49-54.png)
 
 
+## 7: LU Rolling Stock
+
+### 7.1: Features of WRI
+
+- **Profile and Wear management**: wheel, rail profiles and corrugations
+- **Friction management**: grease contamination and leaf fall.
+- **Vehicle dynamics**: steerability, suspansion tuning, wheel unloading 
+- **Track geometry**: wheel unloading, Vmax constraint, dynamic gauge
+
+### 7.2: Wheel Profile
+
+![](image/2025-12-30-20-59-44.png)
+
+### 7.3: Vehicle on Curves
+
+![](image/2025-12-30-21-02-36.png)
+
+![](image/2025-12-30-21-02-49.png)
+
+### 7.4: Wheel Wear
+
+![](image/2025-12-30-21-05-17.png)
+
+- The wear can be measured by Hand Gauges or MiniProf.
+
+![](image/2025-12-30-21-05-59.png)
+
+### 7.5: Rail Lubrication 
+
+- Rail side grease spreader
+- Undergrame grease lubricators
+
+
+### 7.6: Brakes - LU Principles
+
+- **The continous brake**: Any accidental separation with a train must result in an EB applied.
+- **Deadman features**: If it cannot be proved the driver is present and alert on a moving train, then EB would be applied.
+- **Sufficient Air Supply**: The train must have sufficient air pressure before it can be motored forwards.
+- **The Tripcock**: Trip the Trainstop and lead to EB applied.
+- **ATP**: Tripcock replaced with ATP in modern trains.
+
+- **LU Brake system**:
+  - Service Brake - pneumatic / electric
+  - Emergency Brake - peumatic only
+  - Parking Brake - mechanical
+- **Wheel Slide Protection (WSP)**
+  - Deliever the optimum pratical braking force in poor adhesion conditions
+  - Respond to speed information from each wheelset
+  - When it deteced wheel lock-up, WSP operates a dump valve to release the brake on that wheelset and closes the valve when wheel picks up again.
+
+### 7.7: RS Maintenance
+
+![](image/2025-12-30-21-49-45.png)
+
+- Maintenance activities described by WI
+- Measured by MACS
+- Controlled via Work Orders
+- Changed authorised via CRS
+
+
+
+
+
+
 
 
