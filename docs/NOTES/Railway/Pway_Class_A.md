@@ -819,3 +819,104 @@ LU PWay standards mandate a suite of inspections that provide information about 
 
 ![](image/2025-12-30-16-23-34.png)
 
+
+## 6: Power Distribution System
+
+### 6.1: LU Power Assets
+
+- LU needs electricity for luminaires, signals, compressed air, trains and ticket systems.
+
+![](image/2025-12-30-19-03-18.png)
+
+- 22kV (Bulk Supply Point) and 11kV (Distribution Point) network
+- Auxiliary Transformers
+- HV and LV CB
+- Transformer Rectifier 
+- DC Traction CB
+- Air compressors
+- Frequency Changers
+- Battery and Charger sets
+- VAr Compensators
+- Harmonic Filters
+
+- **Cable runs:**
+  - 11kV Cable
+  - Air Main
+  - Pilot Cable
+  - Fibre Optic Cable
+  - Signal Cable
+  - LV Cable
+  - Connect Leaky Feeder
+
+![](image/2025-12-30-19-32-04.png)
+
+- 11kV from **Substation** will be stepped down and rectified by **Transformer Rectifiers**, and then connect to DC busbar, which provides DC feeds for traction / non-traction DC power.
+- Seperate **Aux Transformer** feed LVAC busbar for Station and lighting.
+- Additional F**requency Changers** needed to provide required AC power for signalling equipments.
+- **Air Compressers** are driven from LVAC busbar.
+- **Greenwich Power Station** provides Central Emergency Power Supply (CEPS)
+
+### 6.2: CEPS and LEPS
+
+- Central Emergency Power Supplies (CEPS)
+  - Core part of LU stafety certificate.
+  - 7x14MW open cycle Gas Turbine Alternators.
+  - Automated control sequences can re-energise most of LU network within 30 mins for evacuation.
+  - Also used for system support and commercial generation.
+- Local Emergency Power Supplies (LEPS)
+  - Off-line Battery Inverters (OLBIS) feed 25% of station lighting.
+  - Local UPS feeds essentail computer systems, comms and control systems for 1 h.
+
+### 6.3: DC Sectionalisation & Earth Fault Management 
+
+#### 6.3.1: Normal Operation - No Earth Fault 
+
+![](image/2025-12-30-20-34-02.png)
+
+- Positive track - 420 V ref to GND
+- Negative track - 220 V ref to GND
+
+#### 6.3.2: Negative rail Earth Fault
+
+![](image/2025-12-30-20-35-33.png)
+
+- Negative earth fault - Positive - negative 630 V
+
+#### 6.3.3: Positive rail Earth Fault 
+
+![](image/2025-12-30-20-36-30.png)
+
+- Positive earth fault - Negative - GND 630 V
+
+#### 6.3.4: Both rails - Earth Fault 
+
+
+![](image/2025-12-30-20-39-59.png)
+
+- Low impedance current route lead to overcurrent protection being triggered.
+
+#### 6.3.5: Managing Earth Faults
+
+- Recuced area affected thrugh sectionalisation 
+- Separate section when there is a fault
+- Remove ASAP
+- Making larger DC sections
+  - Trade-off between efficiency and risk of earth faults.
+  - Operational instruction to open section switches to trace earth faults and reduce risks.
+
+### 6.4: Power Quality 
+
+- Converting AC into DC (via rectifier) will produce *harmonics*.
+- Rapidly accelerating / decelerating trains produces *flicker* in AC supply.
+- Harmonics Filters and Static Var Compensators being used to manage quality.
+
+### 6.5: Security of Supply and Winter readiness
+
+- National Grid issues alerts if energy supplies are severely constrained and there is a higher risks of power outages.
+- TfL have plans in place to react to local and widespread power outages.
+
+![](image/2025-12-30-20-49-54.png)
+
+
+
+
