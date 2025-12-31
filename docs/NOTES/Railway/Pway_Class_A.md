@@ -65,13 +65,13 @@
 Various condition measures are used for each form of degradtion:
 
 - Irreversible Degradation:
-  - Running rail wear
-  - Running rail flaws
-  - Conductor rail wear
+    - Running rail wear
+    - Running rail flaws
+    - Conductor rail wear
 - Reversible Degradation:
-  - Running rail corrugation
-  - Loss of track geometry
-  - Ballast contamination (eg. wet beds)
+    - Running rail corrugation
+    - Loss of track geometry
+    - Ballast contamination (eg. wet beds)
 
 LU PWay standards mandate a suite of inspections that provide information about track condition:
 
@@ -90,14 +90,14 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Purpose - to carry and guide the train wheels
 - Required to distribute significant forces
 - Properties:
-  - Hardness - to resist wear
-  - Toughness - to absord load and resist fatigue 
-  - Tensile strength - to withstand thermal forces
+    - Hardness - to resist wear
+    - Toughness - to absord load and resist fatigue 
+    - Tensile strength - to withstand thermal forces
 - Also used to locate signals equipments
 - Material Most Used:
-  - Normal Grade steel - historical used
-  - Grade A steel - standard use
-  - Premium Steels & Head Hardened - wear resistant 
+    - Normal Grade steel - historical used
+    - Grade A steel - standard use
+    - Premium Steels & Head Hardened - wear resistant 
 
 ### 2.2: Track Forms
 
@@ -108,45 +108,45 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ![](image/2025-12-27-10-30-42.png)
 
 - General Track Guage:
-  - Straight Track: 1435 mm
-  - Check Rail Curves: 1438 mm
+    - Straight Track: 1435 mm
+    - Check Rail Curves: 1438 mm
 
 ### 2.3: Running Rail Joints
 
 - Purpose - to connect together lengths of rail to form a secure path
 - Welded Types:
-  - Flash butt weld (workshop process)
-  - Thermic (site welding process)
+    - Flash butt weld (workshop process)
+    - Thermic (site welding process)
 - Fishplated (mechanical connection):
-  - Expansion (for short rails)
-  - Tight
-  - Junction
-  - Blockjoint
+    - Expansion (for short rails)
+    - Tight
+    - Junction
+    - Blockjoint
 
 ![](image/2025-12-27-10-51-08.png)
 
 ### 2.4: Sleepers
 
 - Purpose - to maintain gauge
-  - Maintain dimension between rails
-  - Maintain coss level
-  - Support running and conductor rails
-  - Distribute dynamic and static loads
+    - Maintain dimension between rails
+    - Maintain coss level
+    - Support running and conductor rails
+    - Distribute dynamic and static loads
 
 #### 2.4.1: Sleepers Type
 
 - **Softwood** - ballasted track only
-  - PRO: inexpensive, lightweight
-  - AGAINST: Easy to splitting and rotting 
+    - PRO: inexpensive, lightweight
+    - AGAINST: Easy to splitting and rotting 
 - **Hardwood** - ballasted and mainly concreted track
-  - PRO: duarbale, lighter than concrete
-  - AGAINST: exotic and expensive
+    - PRO: duarbale, lighter than concrete
+    - AGAINST: exotic and expensive
 - **Composite**
-  - FOR: Eco-friendly
-  - AGAINST: flammable, heat distortion 
+    - FOR: Eco-friendly
+    - AGAINST: flammable, heat distortion 
 - **Prestressed concrete** - ballasted and concreted
-  - FOR: inexpensive, strong and stable
-  - AGAINST: very heavy, difficult to trim, brittle
+    - FOR: inexpensive, strong and stable
+    - AGAINST: very heavy, difficult to trim, brittle
 
 
 ### 2.5: Running Rail Supports and Fastenings
