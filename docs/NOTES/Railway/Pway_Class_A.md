@@ -154,14 +154,14 @@ LU PWay standards mandate a suite of inspections that provide information about 
 #### 2.5.1: Bulkhead Track Keys
 
 - **Oak Keys**:
-  - FOR - Eaasy to install, cheap, light and good electrical insulation 
-  - AGAINST - Tend to shrink and fall out
+    - FOR - Eaasy to install, cheap, light and good electrical insulation 
+    - AGAINST - Tend to shrink and fall out
 - **Steel**:
-  - FOR - Wear resistance, easy to install, tight fitting, good creep resistance
-  - AGAINST - Need to be driven in tight, tendency to crush and fall out, tend to rust poor electricail insulation
+    - FOR - Wear resistance, easy to install, tight fitting, good creep resistance
+    - AGAINST - Need to be driven in tight, tendency to crush and fall out, tend to rust poor electricail insulation
 - **PANLOCK KEYS**:
-  - FOR - secure location and low maintenance
-  - AGAINST - need special tool to install, tend to rust, poor electrical resistance
+    - FOR - secure location and low maintenance
+    - AGAINST - need special tool to install, tend to rust, poor electrical resistance
 
 ![](image/2025-12-27-18-36-16.png)
 
@@ -186,23 +186,23 @@ LU PWay standards mandate a suite of inspections that provide information about 
 #### 2.5.4: FB Rail vs BH Rail
 
 - **Flat Bottom rail**:
-  - Baseplate with chairscrews and ferrules.
-  - Special baseplate for check rail.
-  - Pandrol shoulders casted into concrete sleepers.
-  - Pandrol with insulators and rail seat pad, directly seated on concrete sleepers.
+    - Baseplate with chairscrews and ferrules.
+    - Special baseplate for check rail.
+    - Pandrol shoulders casted into concrete sleepers.
+    - Pandrol with insulators and rail seat pad, directly seated on concrete sleepers.
 - **Bull Head Rail**:
-  - Chairs with chariscrews, ferrules and keys
-  - Keys - oak or steel (two types: Mills and Panlock)
-  - Special Chairs for check rail
+    - Chairs with chariscrews, ferrules and keys
+    - Keys - oak or steel (two types: Mills and Panlock)
+    - Special Chairs for check rail
 
 #### 2.5.5: Resilient Baseplate - composite with rubber insert
 
 - **PRO**:
-  - Reduced noise and vibration
-  - Longer lifetime 
+    - Reduced noise and vibration
+    - Longer lifetime 
 - **DIS**:
-  - Energy dissipation into noise 
-  - Bulky component in space constained area
+    - Energy dissipation into noise 
+    - Bulky component in space constained area
 
 ![](image/2025-12-27-20-19-16.png)
 
@@ -210,21 +210,21 @@ LU PWay standards mandate a suite of inspections that provide information about 
 #### 2.5.6: Track Bed
 
 - **Ballast**:
-  - Purpose:
-    - To absorb and disperse track load through track foundations
-    - Restrain movement of sleepers
-    - Provide drainage
+    - Purpose:
+        - To absorb and disperse track load through track foundations
+        - Restrain movement of sleepers
+        - Provide drainage
 - **Ballast Sleepers**:
-  - **Granite Ballast - preferred**
-    - FOR - hard stay sharps, strong abration resistant
-    - AGAINST - heavy and expensive
-  - **Limestone - was most common in LU**
-    - FOR- cheap, resonable drainage
-    - AGAINST - scarce resorce in the UK, cannot be used with concrete sleepers
-  - **Ash Ballast**
-    - Waste product from coal power station. Mainly in depot.
+    - **Granite Ballast - preferred**
+        - FOR - hard stay sharps, strong abration resistant
+        - AGAINST - heavy and expensive
+    - **Limestone - was most common in LU**
+        - FOR - cheap, resonable drainage
+        - AGAINST - scarce resorce in the UK, cannot be used with concrete sleepers
+    - **Ash Ballast**
+        - Waste product from coal power station. Mainly in depot.
 - **Typical Faults**:
-  - Wet Spot: Train dynamic movement makes the underkying clay being drawn up into the ballast, thus blocks the drainage and loose the support.
+    - Wet Spot: Train dynamic movement makes the underkying clay being drawn up into the ballast, thus blocks the drainage and loose the support.
 
 ### 2.6: General Track Construction 
 
@@ -265,35 +265,35 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 2.8: Special Trackforms
 
 - **Long timbers**:
-  - Used timbers or more modern composite materials.
-  - The timber is set into a trough within the bridge.
+    - Used timbers or more modern composite materials.
+    - The timber is set into a trough within the bridge.
 
 ![](image/2025-12-28-09-15-31.png)
 
 - **Laterial Restraint**
-  - Laterial resistance plates clamped to sleepers to resist sideway forces.
-  - Glued ballast spreads the loads and reduces the risk of localised failures.
+    - Laterial resistance plates clamped to sleepers to resist sideway forces.
+    - Glued ballast spreads the loads and reduces the risk of localised failures.
 
 ![](image/2025-12-28-09-22-11.png)
 
 - **Slab Track**
-  - Track slab is structural construction.
+    - Track slab is structural construction.
 
 ![](image/2025-12-28-09-23-21.png)
 
 - **Resilient Trackform**
-  - Isolation of forces from supporting structure, need to consider unintended noises.
+    - Isolation of forces from supporting structure, need to consider unintended noises.
 
 ![](image/2025-12-28-09-25-19.png)
 
 
 - **Floating Slabtrack**
-  - Used in noise-critical locations.
+    - Used in noise-critical locations.
 
 ![](image/2025-12-28-09-28-32.png)
 
 - **Depot and Sidings - Train Arrestors**
-  - Energy absorption and need space behind.
+    - Energy absorption and need space behind.
 
 ![](image/2025-12-28-09-30-37.png)
 
@@ -301,40 +301,40 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 2.9: Conductor Rails
 
 - **Main Conductor Rail Sections**
-  - Steel or Aluminium Body with Stainless Steel Cap
+    - Steel or Aluminium Body with Stainless Steel Cap
 
 ![](image/2025-12-28-09-35-51.png)
 
 - **Rail Lengths - Allowance for thermal expansion**
-  - 400m with cable connection or 600m with one cable end & one Out of Gauge (OOG) rails in open / sub-surface sections.
-  - 800m with all types of connection in tube sections.
-  - Max lengths are dependent on curvature.
+    - 400m with cable connection or 600m with one cable end & one Out of Gauge (OOG) rails in open / sub-surface sections.
+    - 800m with all types of connection in tube sections.
+    - Max lengths are dependent on curvature.
 
 ![](image/2025-12-28-09-41-33.png)
 
 
 - **Joints**
-  - Purpose - to join together lengths of conductor rail
-  - Type of joints
-    - Welded flash butt in workshop
-    - Arc welding on site
-    - Fishplate - two holes
+    - Purpose - to join together lengths of conductor rail
+    - Type of joints
+        - Welded flash butt in workshop
+        - Arc welding on site
+        - Fishplate - two holes
 
 ![](image/2025-12-28-09-47-03.png)
 
 - **General Components**
-  - Insulator, clipsm Coachscrews and Shim
-  - Anchors
+    - Insulator, clipsm Coachscrews and Shim
+    - Anchors
 
 ![](image/2025-12-28-09-51-16.png)
 
 - **Tube station**
-  - Due to lack of sleepers, the negative conductor rail insulator is supported on a concrete pedstral.
+    - Due to lack of sleepers, the negative conductor rail insulator is supported on a concrete pedstral.
 
 ![](image/2025-12-28-09-53-18.png)
 
 - **Anchors**:
-  - Purpose - to restrain the conductor rail from moving bodily longitudinally. 
+    - Purpose - to restrain the conductor rail from moving bodily longitudinally. 
 
 ![](image/2025-12-28-10-01-28.png)
 
@@ -346,34 +346,34 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 2.10: Junctionwork
 
 - **Function of junctionwork**:
-  - Corss from one running line or route to another
-  - Gain access to stabling or depot tracks
-  - Gain access to a particular platform at station
+    - Corss from one running line or route to another
+    - Gain access to stabling or depot tracks
+    - Gain access to a particular platform at station
 
 - **Facing and Trailing Crossover**:
-  - When trains moving towards the *switch rail rail head*, it will be called *Facing Crossover*.
-  - When trains moving from a siding to a mainline (opposite to the switch rail head), it will be called *Trailing Crossover*.
+    - When trains moving towards the *switch rail rail head*, it will be called *Facing Crossover*.
+    - When trains moving from a siding to a mainline (opposite to the switch rail head), it will be called *Trailing Crossover*.
   ![](image/2025-12-28-12-03-30.png)
 
 - **Scissors Crossover**
-  - Two single lead turnout overlapped to fomr a Scissors Crossover.
-  - Allows trains moving between upstream and downstream.
+    - Two single lead turnout overlapped to fomr a Scissors Crossover.
+    - Allows trains moving between upstream and downstream.
 
 ![](image/2025-12-28-12-08-20.png)
 
 - **Trap Switches**
-  - Avoid siding trains slipping into mainline by accident.
+    - Avoid siding trains slipping into mainline by accident.
 ![](image/2025-12-28-12-09-12.png)
 
 
 - **Diamond Crossing**
-  - No switches in the trunout, the signalling interlocking is used as protection.
-  - Only two direction allowed.
+    - No switches in the trunout, the signalling interlocking is used as protection.
+    - Only two direction allowed.
 
 ![](image/2025-12-28-12-39-44.png)
 
 - **Double Slip**
-  - Similar to Diamond Crossing, but additional swiches allow the movement from one direction to another.
+    - Similar to Diamond Crossing, but additional swiches allow the movement from one direction to another.
 
 ![](image/2025-12-28-12-41-04.png)
 
@@ -382,56 +382,56 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 2.11：Points (switches) 
 
 - **Stretcher Bars & Brackets**
-  - Purpose:
-    - Transmits drive from one rail to another
-    - Ensure no electrical isolation between switch rails
+    - Purpose:
+        - Transmits drive from one rail to another
+        - Ensure no electrical isolation between switch rails
 - **Flangeway**
-  - The space between the switch rail and stock rail (the open side) must be designed to perimit width of wheel flanges.
+    - The space between the switch rail and stock rail (the open side) must be designed to perimit width of wheel flanges.
 
 ![](image/2025-12-28-16-11-02.png)
 
 
 - **Straightcut, Undercut and Rail Joggle**
-  - Undercut / shallow depth / full depth profile provides extra space for flangeway (when switch rail is closed)
-  - Extra 'joggle' will be provided in stock rail to provide flangeway. Note that point will be facing crossover only.
+    - Undercut / shallow depth / full depth profile provides extra space for flangeway (when switch rail is closed)
+    - Extra 'joggle' will be provided in stock rail to provide flangeway. Note that point will be facing crossover only.
 
 ![](image/2025-12-28-16-36-34.png)
 ![](image/2025-12-28-16-38-40.png)
 
 - **Supports and Fastenings**
-  - Switchs could move laterally on slide chairs or baseplates.
-  - Switch and stock rail are fixed with an anchor at heel.
+    - Switchs could move laterally on slide chairs or baseplates.
+    - Switch and stock rail are fixed with an anchor at heel.
 
 - **Distance Blocks**
-  - The block retain the swith in the moveable part between the end of planning and fixed heel.
+    - The block retain the swith in the moveable part between the end of planning and fixed heel.
 ![](image/2025-12-28-17-55-46.png)
 
 
 - **Soleplates**
-  - To maintain track gauge at the toes of points.
-  - Fitted on top of the timber under the slide charis/baseplates, and are secured in position by the chariscrews hilding the slide chairs in position.
+    - To maintain track gauge at the toes of points.
+    - Fitted on top of the timber under the slide charis/baseplates, and are secured in position by the chariscrews hilding the slide chairs in position.
 
 ![](image/2025-12-28-18-37-03.png)
 
 
 - **Switch Anchors (Bullhead)**
-  - Purpose - to fix together the switch and stock rails providing:
-    - A fixed pivot point for switch rail
-    - Prevention of longitudinal movement.
+    - Purpose - to fix together the switch and stock rails providing:
+        - A fixed pivot point for switch rail
+        - Prevention of longitudinal movement.
 ![](image/2025-12-28-18-38-57.png)
 
 
 - **Heel Blocks (Flat Bottom)**
-  - Purpose - to fix together the switch and stock rails (same as Anchors in BH track)
+    - Purpose - to fix together the switch and stock rails (same as Anchors in BH track)
   
 ![](image/2025-12-28-18-40-46.png)
 
 
 - **Twist Rails**
-  - Twist the rails to change height of the rails, thus allow smooth transition between different track levels.
+    - Twist the rails to change height of the rails, thus allow smooth transition between different track levels.
 - **Precurving of Rails**
-  - Ensure corrct curvature of stock and switch rail before installation.
-  - Balancing of the energy required to normalise or revere points for the correct switch fit and providing a correct flange way.
+    - Ensure corrct curvature of stock and switch rail before installation.
+    - Balancing of the energy required to normalise or revere points for the correct switch fit and providing a correct flange way.
 
 ### 2.13: Common Crossing & Obtuse Crossing
 
@@ -444,20 +444,20 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ![](image/2025-12-28-19-15-22.png)
 
 - **Types of Construction**:
-  - Fully fabricated or Part fabricated 
-  - Cast centre block 
+    - Fully fabricated or Part fabricated 
+    - Cast centre block 
 
 - **Cast Centre Block Crossings**
-  - Used in congested areas for a smaller footprint.
-  - Used for bespoke geometry
+    - Used in congested areas for a smaller footprint.
+    - Used for bespoke geometry
 ![](image/2025-12-28-19-18-13.png)
 
 #### 2.13.2: Obtuse Crossings
 
 - Obtuse crossings are used in crossing layouts which include a diamond:
-  - Diamond Crossover
-  - Scissors Crossover
-  - Double Junction 
+    - Diamond Crossover
+    - Scissors Crossover
+    - Double Junction 
 ![](image/2025-12-28-19-23-00.png)
 
 
@@ -494,11 +494,11 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 2.17: Conductor Rails at Points
 
 - **Positive Splays / pick-up ramp**:
-  - Guide collector shoes in the crossing areas.
+    - Guide collector shoes in the crossing areas.
 - **Negative Splays**:
-  - To prevent collector shoes falling and jamming between the main and lean-to rail.
+    - To prevent collector shoes falling and jamming between the main and lean-to rail.
 - **Slipper Run Boards**:
-  - Designed to carry low or hanging negative shoes over lead rails
+    - Designed to carry low or hanging negative shoes over lead rails
 
 
 ![](image/2025-12-28-20-03-07.png)
@@ -519,15 +519,15 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - All cylinders used for welding contain gas under pressure and are sealed.
 - All cylinders are colour coded to a recognised standard to indetify contents.
 - **Three main gases**:
-  - *Oxygen*
-  - *Acetylene*
-    - Garlic odour
-    - Highly flammable and ignites very easily in air.
-    - **Can be used in all areas.**
-  - *Propane*
-    - Heavier than air, fish like odour
-    - Flammable and makes it a high fire and explosion hazard.
-    - **Open section only.**
+    - *Oxygen*
+    - *Acetylene*
+        - Garlic odour
+        - Highly flammable and ignites very easily in air.
+        - **Can be used in all areas.**
+    - *Propane*
+        - Heavier than air, fish like odour
+        - Flammable and makes it a high fire and explosion hazard.
+        - **Open section only.**
 
 ![](image/2025-12-28-20-48-26.png)
 
@@ -538,35 +538,35 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Following second word war - very small amount of welding via old Thermit
 - 1949/50 - SmW was introduced.
 - 1976/77 - SkV process was introduced.
-  - Stronger welds
-  - Welding process with short preheat
-  - Reduction in process failures
-  - Main Thermit weld used in LU / NR
-  - Enhancements: SKV-E
+    - Stronger welds
+    - Welding process with short preheat
+    - Reduction in process failures
+    - Main Thermit weld used in LU / NR
+    - Enhancements: SKV-E
 
 - **Standard method for all Thermic process**:
-  - 1: Rail gaps are produced either by flame cutting or mechanical saw. Checked squareness and verticality.
-  - 2: Align the rail.
-  - 3: Moulds are fitted and checked for position relative to the gap.
+    - 1: Rail gaps are produced either by flame cutting or mechanical saw. Checked squareness and verticality.
+    - 2: Align the rail.
+    - 3: Moulds are fitted and checked for position relative to the gap.
 ![](image/2025-12-28-21-25-55.png)
 
-  - 4: Add welding portions (4 main ingredients)
-    - Aluminium Powder
-    - Ion Oxide
-    - Mild Steel
-    - Ferro-manganese  
-  - 5: Rail ends preheating started when the preheater is locked in the moulds. The sand core is dried in this process.
-  - 6: The crucible is placed into position on top of the moulds and portion ignited. 
-    - Thermit reaction takes place
-    - Weld metal is released into the moulds.
+    - 4: Add welding portions (4 main ingredients)
+        - Aluminium Powder
+        - Ion Oxide
+        - Mild Steel
+        - Ferro-manganese  
+    - 5: Rail ends preheating started when the preheater is locked in the moulds. The sand core is dried in this process.
+    - 6: The crucible is placed into position on top of the moulds and portion ignited. 
+        - Thermit reaction takes place
+        - Weld metal is released into the moulds.
 
 ![](image/2025-12-28-21-49-23.png)
 
-  - 7: Remove all the support equipment at the set time following pouring.
-  - 8: At prescribed time:
-    - Weld debris is removed
-    - Fastenings are replaced
-    - Weld is ground within 25 mins to profile.
+    - 7: Remove all the support equipment at the set time following pouring.
+    - 8: At prescribed time:
+        - Weld debris is removed
+        - Fastenings are replaced
+        - Weld is ground within 25 mins to profile.
 
 ### 3.4: Manual Metal Arcing (MMA) Welding Processes
 
@@ -607,10 +607,10 @@ LU PWay standards mandate a suite of inspections that provide information about 
 
 - For passenger comfort and Asset life
 - The dynamically measure benifits:
-  - True reflection of maximum deflection under load
-  - Record movement because of voids under sleepers
-  - Ability to record large section of track in short time
-  - Eliminate human errors
+    - True reflection of maximum deflection under load
+    - Record movement because of voids under sleepers
+    - Ability to record large section of track in short time
+    - Eliminate human errors
 
 ### 4.2: Measurement Principles
 
@@ -621,11 +621,11 @@ LU PWay standards mandate a suite of inspections that provide information about 
 #### 4.2.2: Measurement Parametres
 
 - Track Geometry:
-  - Gauge (mm)
-  - Cant / Crosslevel (mm)
-  - Twist (2m and 10m) (mm)
-  - Top (Vertical Profile) (mm)
-  - Alignment (Lateral) (mm)
+    - Gauge (mm)
+    - Cant / Crosslevel (mm)
+    - Twist (2m and 10m) (mm)
+    - Top (Vertical Profile) (mm)
+    - Alignment (Lateral) (mm)
 
 - Dynamic cross-level (no longer required in S1159)
 - Wheel unload 
@@ -633,45 +633,45 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Corrugation (or Equivalent Rail Roughness)
 
 - **Gauge**:
-  - Distance between the two rails measured 14 mm below the crown of the rail.
-  - Norminal gauge is 1435 mm.
+    - Distance between the two rails measured 14 mm below the crown of the rail.
+    - Norminal gauge is 1435 mm.
 
 ![](image/2025-12-29-17-02-17.png)
 
 - **Vertical Profile (TOP)**
-  - The difference of rail height.
-  - With 25m filter fitted.
+    - The difference of rail height.
+    - With 25m filter fitted.
 
 ![](image/2025-12-29-20-43-51.png)
 
 - **Cant and Twist**:
-  - *Cant*: Difference in height of two rails (the outer rail is normally higher than inner one in curves)
-  - *Twist*: Difference in Cant over a set distance, e.g. 2m between wheel centres and 10m between two bogie centres.
+    - *Cant*: Difference in height of two rails (the outer rail is normally higher than inner one in curves)
+    - *Twist*: Difference in Cant over a set distance, e.g. 2m between wheel centres and 10m between two bogie centres.
 
 ![](image/2025-12-29-20-49-31.png)
 
 - **Wheel Unload**
-  - Wheel unload is a conbination of 2m and 10m twist on LU passenger stock.
-  - 100% wheel unload will lead to o downward force being applied from wheel to the rail.
-  - General wheel unload parameters are set so that rains experience less than 60% Wheel unload. 
+    - Wheel unload is a conbination of 2m and 10m twist on LU passenger stock.
+    - 100% wheel unload will lead to o downward force being applied from wheel to the rail.
+    - General wheel unload parameters are set so that rains experience less than 60% Wheel unload. 
 
 ![](image/2025-12-29-21-10-07.png)
 
 
 - **Alignment**
-  - Alignment measures the difference along the running rails.
-  - A perfect continuous curve gives zero reading.
+    - Alignment measures the difference along the running rails.
+    - A perfect continuous curve gives zero reading.
 
 ![](image/2025-12-29-21-19-49.png)
 
 
 - **3 main causes of Geometry fault related derailment**:
-  - Loss of gauge
-  - Twist fault resulting in wheel unload
-  - Cyclic Top 
+    - Loss of gauge
+    - Twist fault resulting in wheel unload
+    - Cyclic Top 
 
 - **Noise and vehicle / track damage**:
-  - Rail Roughness or Corrugation
+    - Rail Roughness or Corrugation
 
 ### 4.3: TRV and ATMS Data Collection 
 
@@ -687,9 +687,9 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - ATMS could find faults not seen by legacy systems including TRV
 
 - **Benefits**:
-  - Proven unattended data collection
-  - Next day data processing
-  - Additional data - Noise and Vibration, and video
+    - Proven unattended data collection
+    - Next day data processing
+    - Additional data - Noise and Vibration, and video
 
 ![](image/2025-12-30-06-33-39.png)
 
@@ -697,107 +697,107 @@ LU PWay standards mandate a suite of inspections that provide information about 
 #### 4.3.3: Comparison between ATMS and TRV
 
 - *TRV does well*:
-  - Transducer on axles for vertical measurement. ATMS beam is offset from the axle, which can under report faults, e.g. twist.
-  - TRV covers low speed areas where ATMS laser shuts down for safety reasons.
-  - Dedcated vehicle gives pro=iority access to the train.
+    - Transducer on axles for vertical measurement. ATMS beam is offset from the axle, which can under report faults, e.g. twist.
+    - TRV covers low speed areas where ATMS laser shuts down for safety reasons.
+    - Dedcated vehicle gives pro=iority access to the train.
 - *ATMS deos well*:
-  - ATMS does not smooth out Top faults like TRV.
-  - ATMS laser based system is better than TRV white light system.
-  - Higher recording frequency.
-  - Location accuracy from RFID tags compared with manual sync on TRV.
+    - ATMS does not smooth out Top faults like TRV.
+    - ATMS laser based system is better than TRV white light system.
+    - Higher recording frequency.
+    - Location accuracy from RFID tags compared with manual sync on TRV.
 
 #### 4.3.3: Data Outputs
 
 - **Discrete Exceedences**:
-  - Safety Standard (SS)
-    - Need to be inspected within 24 hours
-  - Maintenance Limit (ML)
-  - Maintenance Target (MT)
-  - Can pose a risk of derailment and may require immediate action (e.g. speed restriction)
+    - Safety Standard (SS)
+        - Need to be inspected within 24 hours
+    - Maintenance Limit (ML)
+    - Maintenance Target (MT)
+    - Can pose a risk of derailment and may require immediate action (e.g. speed restriction)
 
 ![](image/2025-12-30-09-25-05.png)
 
 - **ISSE Process**
-  - Inspection fo Safety Standard Exceedence (ISSE)
-  - SS Fault must be inspected with 24 hours.
-  - Inspection now only has to be visual to check ok for traffic wholst repair is arranged
-  - Fault combination should follow S1159.
+    - Inspection fo Safety Standard Exceedence (ISSE)
+    - SS Fault must be inspected with 24 hours.
+    - Inspection now only has to be visual to check ok for traffic wholst repair is arranged
+    - Fault combination should follow S1159.
 - **Standard Deviation**
-  - A quantitative representation of ride quality, allowing every 100m of track to be assigned a value for a parameter.
-  - Good indication of overall Track condition
-  - SD data can be used to plan maintenance activities like tamping and access degradation.
+    - A quantitative representation of ride quality, allowing every 100m of track to be assigned a value for a parameter.
+    - Good indication of overall Track condition
+    - SD data can be used to plan maintenance activities like tamping and access degradation.
 
 ![](image/2025-12-30-09-41-10.png)
 
 - **DataMap Application**
-  - Notification of new / rapidly degrading faults
-  - Trendin of faults with predicted timescale to fix
-  - Fault priority based in degradation rates not just the current value.
+    - Notification of new / rapidly degrading faults
+    - Trendin of faults with predicted timescale to fix
+    - Fault priority based in degradation rates not just the current value.
 - **Spurious Data**
-  - Readings from Dynamic system do not match site static readings.
-  - Readings can be confirmed as spurious by a competent track recording engineer.
+    - Readings from Dynamic system do not match site static readings.
+    - Readings can be confirmed as spurious by a competent track recording engineer.
 - **Inherent Gepmetry**
-  - Inherent geometry is valid reading, but the nature of track alignment / construction cause an inherent fault.
-  - Must be recorded on a centrally held register.
+    - Inherent geometry is valid reading, but the nature of track alignment / construction cause an inherent fault.
+    - Must be recorded on a centrally held register.
 - **Recording Frequency** 
-  - **TRV:** 8 weeks Cat A and B track where ATMS does not run.
-  - **ATMS**: Minimum once every 28 days in areas covered by ATMS.
+    - **TRV:** 8 weeks Cat A and B track where ATMS does not run.
+    - **ATMS**: Minimum once every 28 days in areas covered by ATMS.
 
 -  **Recording Coverage**:
-   -  TRV and ATMS covered A, B and C track.
-   -  Not decalred areas must be inspect by other means.
+    -  TRV and ATMS covered A, B and C track.
+    -  Not decalred areas must be inspect by other means.
 
 ## 5: Managing Buckling
 
 ### 5.1: General Principles of Hot weather Management
 
 - **Stress Free Temperature (SFT)**
-  - The temeprature at which the rail is of the same length as it would be in a natural unrestrained state, which is no thermal force inside the rail.
+    - The temeprature at which the rail is of the same length as it would be in a natural unrestrained state, which is no thermal force inside the rail.
 - **Critical rail temperature**
-  - Is the temeprature to which the rail may be allowed to rise before measures to protect traffic are to be taken.
-  - The amoutn by which ythe CRT exceeds the SFT depends on the configuration and condition of the track.
+    - Is the temeprature to which the rail may be allowed to rise before measures to protect traffic are to be taken.
+    - The amoutn by which ythe CRT exceeds the SFT depends on the configuration and condition of the track.
 
 - **Hot Weather for PWay**
-  - Potential for Buckles or misalignments leading to speed resitrction.
-  - Mitigation / action:
-    - Ensure ballast profile
-    - Install rail at correct temperature
-    - Eliminate all defects.
-    - Short rails / jointed track - allow for expansion
+    - Potential for Buckles or misalignments leading to speed resitrction.
+    - Mitigation / action:
+        - Ensure ballast profile
+        - Install rail at correct temperature
+        - Eliminate all defects.
+        - Short rails / jointed track - allow for expansion
 - **Maintenance work during hot weather**
-  - Tamping and lining (open areas)
-  - Removal of wet beds / ballast disturbance
-  - Fastening /chair / baseplate removal
-  - Resleepering
-  - Rectification of geometry
-  - Rerailing (with no stress restoration)
+      - Tamping and lining (open areas)
+      - Removal of wet beds / ballast disturbance
+      - Fastening /chair / baseplate removal
+      - Resleepering
+      - Rectification of geometry
+      - Rerailing (with no stress restoration)
 - **Ongoing Monitoring**
-  - Ongoing specific temperature monitoring (CRT related)
-  - Overall temeprature monitoring
-  - Consider local condition
+      - Ongoing specific temperature monitoring (CRT related)
+      - Overall temeprature monitoring
+      - Consider local condition
 
 ### 5.2: Rail configurationm rail stress and Rail tenmperatures
 
 - **Rail Configuration**
-  - Short Rail Sites (SR)
-  - Long Welded Rail (LWR)
-  - Continuously Welded Rail (CWR)
+      - Short Rail Sites (SR)
+      - Long Welded Rail (LWR)
+      - Continuously Welded Rail (CWR)
 - **Rail Stressing**
-  - 21-27 Deg C
-  - Hydraulic tensors
+      - 21-27 Deg C
+      - Hydraulic tensors
 
 
 ### 5.3: Buckles - if things don't go as planned
 
 - **Buckle definition**:
-  - *Any track deformation in hot weather which requires emergency remedial work, speed resitrction or emergency closure of the line and must be reported.*
+      - *Any track deformation in hot weather which requires emergency remedial work, speed resitrction or emergency closure of the line and must be reported.*
 - **Causes of Buckle**:
-  - Incorrect SFT
-  - Poor ballast profile
-  - Poor sleeper condition
-  - Incorrectly managed short sections of Plain Line between Point & Cross (P&C).
-  - Unstable embankment.
-  - Sudden change in support
+      - Incorrect SFT
+      - Poor ballast profile
+      - Poor sleeper condition
+      - Incorrectly managed short sections of Plain Line between Point & Cross (P&C).
+      - Unstable embankment.
+      - Sudden change in support
 
 ![](image/2025-12-30-16-08-31.png)
 
@@ -805,17 +805,17 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 5.4: Interfaces with Other Asset areas
 
 - *Signals*:
-  - Interface at P&C
-  - Block joints
+      - Interface at P&C
+      - Block joints
 - *Civils*:
-  - Embankment - loading with ballast and increasing the weight
-  - Slip / Settlement problem - risk of lateral movement is increased.
+      - Embankment - loading with ballast and increasing the weight
+      - Slip / Settlement problem - risk of lateral movement is increased.
 - *Rolling Stock*
-  - Acceleration and Braking rates
-  - Wheel Condition
+      - Acceleration and Braking rates
+      - Wheel Condition
 
 - *Adjustment Switch*:
-  - Allows sliding movement (mm level) when temeprature changed
+      - Allows sliding movement (mm level) when temeprature changed
 
 ![](image/2025-12-30-16-23-34.png)
 
@@ -840,13 +840,13 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Harmonic Filters
 
 - **Cable runs:**
-  - 11kV Cable
-  - Air Main
-  - Pilot Cable
-  - Fibre Optic Cable
-  - Signal Cable
-  - LV Cable
-  - Connect Leaky Feeder
+    - 11kV Cable
+    - Air Main
+    - Pilot Cable
+    - Fibre Optic Cable
+    - Signal Cable
+    - LV Cable
+    - Connect Leaky Feeder
 
 ![](image/2025-12-30-19-32-04.png)
 
@@ -859,13 +859,13 @@ LU PWay standards mandate a suite of inspections that provide information about 
 ### 6.2: CEPS and LEPS
 
 - Central Emergency Power Supplies (CEPS)
-  - Core part of LU stafety certificate.
-  - 7x14MW open cycle Gas Turbine Alternators.
-  - Automated control sequences can re-energise most of LU network within 30 mins for evacuation.
-  - Also used for system support and commercial generation.
+    - Core part of LU stafety certificate.
+    - 7x14MW open cycle Gas Turbine Alternators.
+    - Automated control sequences can re-energise most of LU network within 30 mins for evacuation.
+    - Also used for system support and commercial generation.
 - Local Emergency Power Supplies (LEPS)
-  - Off-line Battery Inverters (OLBIS) feed 25% of station lighting.
-  - Local UPS feeds essentail computer systems, comms and control systems for 1 h.
+    - Off-line Battery Inverters (OLBIS) feed 25% of station lighting.
+    - Local UPS feeds essentail computer systems, comms and control systems for 1 h.
 
 ### 6.3: DC Sectionalisation & Earth Fault Management 
 
@@ -901,8 +901,8 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Separate section when there is a fault
 - Remove ASAP
 - Making larger DC sections
-  - Trade-off between efficiency and risk of earth faults.
-  - Operational instruction to open section switches to trace earth faults and reduce risks.
+    - Trade-off between efficiency and risk of earth faults.
+    - Operational instruction to open section switches to trace earth faults and reduce risks.
 
 ### 6.4: Power Quality 
 
@@ -960,13 +960,13 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - **ATP**: Tripcock replaced with ATP in modern trains.
 
 - **LU Brake system**:
-  - Service Brake - pneumatic / electric
-  - Emergency Brake - peumatic only
-  - Parking Brake - mechanical
+    - Service Brake - pneumatic / electric
+    - Emergency Brake - peumatic only
+    - Parking Brake - mechanical
 - **Wheel Slide Protection (WSP)**
-  - Deliever the optimum pratical braking force in poor adhesion conditions
-  - Respond to speed information from each wheelset
-  - When it deteced wheel lock-up, WSP operates a dump valve to release the brake on that wheelset and closes the valve when wheel picks up again.
+    - Deliever the optimum pratical braking force in poor adhesion conditions
+    - Respond to speed information from each wheelset
+    - When it deteced wheel lock-up, WSP operates a dump valve to release the brake on that wheelset and closes the valve when wheel picks up again.
 
 ### 7.7: RS Maintenance
 
