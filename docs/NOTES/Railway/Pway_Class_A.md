@@ -977,6 +977,127 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Controlled via Work Orders
 - Changed authorised via CRS
 
+## 8: Prevention of Derailments 
+
+### 8.1: Common Causes of derailments
+
+- Collisions
+- Obstructructions
+- Overturn
+- Broken rails / fishplates
+- Running Rail Gauge Spread
+- Wheel Flmage Climb
+- Reversed Switch (Short Shunt)
+- Points and Crossing (P&C) Derailments
+    - Suddeen change of direction - highest forces with assocaited wear
+    - Moveable parts - Multiple components / failure modes
+    - Multiple departments - Mainenance regimes
+- Track Geometry 
+- Track Twist
+
+### 8.2: Major derailments
+
+#### 8.2.1: Quintishill
+
+- Primary Cause:
+    - Shift Change Irregularity
+    - Block Signalling Omissions
+    - Unauthorised persons in signalbox
+    - Forgetfulness
+- Industry Change:
+    - Electricity Interlocking Signals
+
+
+![](image/2026-01-11-08-55-51.png)
+
+
+#### 8.2.2: Hither Green
+
+- Primary Cause:
+    - Broken Rail at a fishplate 
+    - New joint but ballast insufficient when wooden sleeper replaced with concrete
+    - Train travelling at 70mph
+- Industry Changes:
+    - Accelerated plans to remove jointed track to CWR.
+
+![](image/2026-01-11-09-02-41.png)
+
+
+#### 8.2.3: Moorgate
+
+- Primary Cause:
+    - Train driven into buffer stop at 40mph
+    - Driver error
+- Industry Changes:
+    - Draw up signals at terminal stations
+
+### 8.3: London Underground Derailment
+
+![](image/2026-01-13-07-15-25.png)
+
+### 8.4: How do we manage the derailment risk
+
+#### 8.5: Understanding the risks
+
+- Investigations into previous incidents and developments in how we can assess risj has allowed us ti gain a better understanding of our derailment risks.
+
+![](image/2026-01-13-07-20-56.png)
+
+### 8.6: Removing the Risk
+
+- **Speed restrictions**:
+    - Permanently or temporaily limiting the speed through an area or sectionof track to reduce the know risk or due to a newly identified fault or risk.
+- **Check rails**:
+    - Additional rails installed alongside the low rail on a tight radius curve to prevent derialment.
+    - Check rails can be found in P&C often called cover checck rauks to ensure the wheels taske the correct path at crossing.
+- **Lubrication**:
+    - Rail lubrication is used to decrease the friction between the running rails and th train wheels (devices installed on High rails)
+
+![](image/2026-01-13-07-27-35.png)
+
+
+### 8.7: Controlling the risks
+
+- Inspection and preventive maintenance regimes
+    - We inspect our track assets and compoenents regularly through our various inspection regimes all designed to reduce the risk of derailments by early identification of faults adn subsequent intervention.
+    - PM1 - Basic visual inspection
+    - PM3 - Measured plain line inspection
+    - PM4 - Measured P&C Inspection
+    - TRV/ATMS - Train based dynamic measurements
+    - Ultrasonic Inspections
+    - Rail Surface Crack Management Inspections
+- Specific derailment hazard inspections:
+    - S1176 - Inspection and repair to reduce the risk of derailment at switches was deceloped from thr SO53 inspection undertaken on NR.
+
+
+### 8.8: Managing the risk
+
+- How we manage controlled switches:
+    - Clear guidance via central documentation 
+    - Clear signage on site
+    - Tighter inspection intervals
+    - Tighter maintenance thresholds
+    - Restrictive maintenance
+
+### 8.9: Railway Accident Investigation Branch (RAIB)
+
+- The RAIB independently investigates accidents to improve railway safety, and inform the industry and public.
+
+
+### 8.10: Conclusions
+
+- Derailment are an industry wide issue
+- LU faces some unique challanges
+- Track is the only fail unsafe asset
+- Risk of derailment can never fully be removed 
+- Understanding the risks is the first step in removing, reducing and managing the risk.
+- Derailment are normally a result of more than one failure within a system of risk
+
+
+
+
+
+
 
 
 
