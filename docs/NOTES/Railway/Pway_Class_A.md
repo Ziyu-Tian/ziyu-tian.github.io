@@ -1094,6 +1094,86 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Derailment are normally a result of more than one failure within a system of risk
 
 
+## 9: Signalling System
+
+### 9.1: What is a Signalling System
+
+- Signalling system is used on the railway to maintain a safe distance between trains and to control and regulate their movements.
+- The number of signals in agiven area is dependent upon service requiements and varies from site to site.
+- More signals allow for a quicker movement of trains through a given area but a balance mus be achieved between the reqired train frequency and cost.
+
+### 9.2: Hand Signalling / Mechanical Signals
+
+- Appoint a hand Signaler to control movement
+- Mechanical signals operated by cables from long levers in the signal box, which were pulled to clear a signal (proceed) and returned to normal when the train had entered the Block. (**Fully Manual**)
+
+![](image/2026-01-13-15-17-46.png)
+
+### 9.3: Fully Automatic Signal
+
+- Automatic signal checks the section ahead fro trains and if it is unoccupied, it will show a proceed aspect without the intervention of a Signalman.
+
+
+### 9.4: Semi Automatic Signals
+
+- Semi Automatic Signals allowed signals to be automatically returned to Danger (a 'Do not proceed') aspect with the passage of a train. 
+- As the Signalman still has to clear the signals in the first place they can be deemed to be Semi-automatic.
+
+### 9.5: Train Detection with Rails
+
+#### 9.5.1: Track Circuits
+
+- The track can be divided electrically into section by insulated Fishplates, known as Block joints (I.R.J).
+
+![](image/2026-01-13-15-24-44.png)
+
+- The electrical area between two IRJ is called a Track Circuit.
+
+![](image/2026-01-13-15-25-58.png)
+
+
+#### 9.5.2: Signalling Block 
+
+- A, B and C each has a Track Ciruit / Relay. The relay would be 'down' when train occupied.
+- The signal would be green only when both A and B Track Circuit are 'up'(no train).
+
+![](image/2026-01-13-15-34-20.png)
+
+
+#### 9.5.3: Limit of Control (L.O.C)
+
+![](image/2026-01-13-15-35-04.png)
+
+- Block + Overlap ('Safety Margin')
+
+
+### 9.6: Train Stop and Tripcock
+
+- Train Stop is used to stop the train when signal is unsafe.
+- The trainstop head would be raised up and thus hit the tripcock to stop the train.
+
+
+![](image/2026-01-13-15-38-54.png)
+
+
+- Tripcock is installed underframe of the train, which allows it could be triggered by train stop.
+- When the tripcock is triggered, the train brake would be applied to stop the train.
+
+
+![](image/2026-01-13-15-40-59.png)
+
+
+### 9.7: Interlocking Lever Frame
+
+- "N" Style Frame
+- "V" Style Frame
+- Operate one lever will interlock the operation to other conflicting routes.
+
+
+![](image/2026-01-13-15-51-09.png)
+
+- E.g. Point 18 needs to be set as Normal while setting Signal BC15. And Point 18 needs to be Reverse while setting Signal BC16.
+- BC15 and BC16 are **interlocked** to avoid crash.
 
 
 
