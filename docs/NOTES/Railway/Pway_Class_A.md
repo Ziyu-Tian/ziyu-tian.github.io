@@ -1176,12 +1176,234 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - BC15 and BC16 are **interlocked** to avoid crash.
 
 
+## 10: Railway Structures
+
+### 10.1: Interface with PWay 
+
+- Bridge
+- Platform Nosing Overhang
+
+![](image/2026-02-02-07-17-05.png)
+
+- Tunnel Strut
+
+![](image/2026-02-02-07-18-26.png)
+
+- TSR, Engineering Train Restriction 
+
+### 10.2: Example Structures
+
+- Rivetted Plate Underbridge 
+
+- Covered Way
+
+- Plate Girder Covered Way
+
+![](image/2026-02-02-07-23-34.png)
+
+- Precast Prestressed Beams 
+
+![](image/2026-02-02-07-24-13.png)
+
+- Station Girdering:
+
+![](image/2026-02-02-07-27-50.png)
 
 
+- The Brick Arch Tunnel 
+
+![](image/2026-02-02-07-29-36.png)
 
 
+- Subway
+
+![](image/2026-02-02-07-29-57.png)
+
+- Truss (Through Type):
+
+![](image/2026-02-02-07-31-23.png)
 
 
+- Half-bridge Girder Bridge
+
+![](image/2026-02-02-07-32-05.png)
+
+- Longitudinal Timber 
+
+![](image/2026-02-02-07-33-56.png)
+
+![](image/2026-02-02-07-34-13.png)
+
+- Brick Arch Railway Bridge
+
+![](image/2026-02-02-07-35-31.png)
+
+![](image/2026-02-02-07-36-17.png)
 
 
+### 10.3: Asset Management 
 
+- Assessed and Numbered
+- Structurally Assessed (where original cal not available)
+- Inspected:
+    - Principle Inspection (every 4 years)
+    - General Inspection (every year)
+    - Special Inspection
+- Risk registered on STRATA
+- Maintained:
+    - Routie Maintenance 
+    - Corrective maintenance 
+    - Civils Renewals 
+- Asset Condition rated (every year)
+- Inspection / Work info on Maximo
+
+
+### 10.4: Principles of Structural Engineering 
+
+#### 10.4.1: How we Design / Assess structures
+
+- Determine the loads 
+
+![](image/2026-02-03-07-23-45.png)
+
+- Understand the Load Path 
+- Calculate internal forces (Capacity)
+- Evaluate structural capacity
+- Adjust for Condition 
+- Check Demands vs Capacity 
+- Check for Stability 
+
+### 10.5: Tunnels
+
+#### 10.5.1: Definition
+
+- Tunnel: Artificial subterranean passage built to meet requirement of an underground railway, road or utility system.
+- Shaft: A vertical or inclined Access to underground tunnels or chambers.
+
+
+#### 10.5.2: Types of Tunnels & Shafts
+
+- Running tunnels, station tunnels, Cross over tunnels...
+- Lifts shaft, Escalator shafts, Ventilation shafts...
+
+
+#### 10.5.3: Functional requirements
+
+##### 10.5.3.1: Required Duty
+
+- Meet railway operating requirements
+- Ensure support at asset interfaces without undue wear and tear.
+- Match LUL policy in respect of realistic user perceptions.
+- Minimize enviromental impact.
+- Function within legal framework.
+- Provide above within reliability and availability targets.
+
+
+##### 10.5.3.2: Fit for Purpose
+
+- Tunnels must be of sufficient strength and stability to allow safe passage of trains:
+    - Superimposed surface and soil loading.
+    - Permanent way loading.
+    - Adjacent tunnelling or excavation.
+- Tunnels to be maintained to ensure performance measures are achieved:
+    - Kinematic and structure gauge clearances.
+    - Remain watertight.
+    - Security of parts.
+- When these conditions are not met a speed restriction or temporary closure could ensure.
+
+- Provide effective tunnel ventilation
+- Provide effective tunnel light for emergency
+- Keep noise and vibration to a minimum.
+- Fire resistance.
+
+
+#### 10.5.4: Constructure Methods
+
+- Bored tunnels:
+    - Constructed using mechanical excavation techniques within a tunnelling shield
+    - Provision of early ground support system during excavation.
+    - Offers protection to the miners and aids the erection of the tunnel lining.
+    - Requiring the shield be capable of being pushed forward as the work progress thus enable a tunnel lining system to be constrcuted.
+- Subaquaous tunnels:
+    - Shield driven or immersed tube beneath river beds.
+- Cut and cover tunnels:
+    - Open trench construction and backfill.
+- Sprayed Concrete lined tunnels (SCL)
+    - A tunnel construction method using open face excavation techniques with a lining construction within the tunnel using sprayed concrete to provide ground support
+
+
+#### 10.5.5: Mainnenance
+
+- Risks to Tunnel Network:
+    - Big safety risk if we lose a tunnel
+    - Big reputational risk
+    - Prone to occasional brittle failures
+    - Some progressive degradation (e.g. corrosion)
+    - Flood, river protection and flood mitigation capability
+    - Vulnerable to TfL and third party new works
+
+- Performance Measures:
+    - Failure:
+        - Excessive cracking and deformation, failure of structural integrity and over stressing resutling in line closure.
+    - Unacceptable:
+        - Cracking, deformation resulting in speed restriction.
+    - Essential:
+        - Minor defects of a non-structural nature.
+    - Desirable:
+        - Insignificant blemished requiring no further action.
+    - Ideal
+
+- Inspections & Condition Surveys (Concrete Tunnels):
+    - Spalling 
+    - Crazing of concrete surfaces
+    - Chemical deterioration 
+- LU London Clay Tunnels:
+    - 80% of tube tunnels
+    - Suited to mining 
+    - Generally reliable assets 
+
+- Tunnels below the London Clay
+    - Mainly in Lambeth Group 
+    - Relative variable ground conditions
+    - Less predictable engineering behaviour 
+    - Water ingress carrying sand potentially cause operational problems and structural concerns
+    - Solution:
+        - Tunnel joint sealing by injection of arylic grout.
+        - Cementitious back grouting outside the lining 
+        - Temperary dewatering during adjacent works
+        - Monitoring for changes in tunnel shape
+        - Pyrite, Water and Air (Airtight is the only practical way)
+    - Expanded linings in mixed ground
+        - Deep - Thus heabily loaded
+        - Poor Geometry 
+        - Solution (Short-term):
+            - Intensive structure monitoring 
+            - Remedial support
+        - Solution (Long-term):
+            - Reconstruction of affected section using converntional cast iron linings.
+            - Work to be undertaken at night using a besopke machine mounted on a train.
+- LU Civil Asset Management Philosophy 
+    - Inspect condition 
+    - Asset structral capacity 
+    - Catalogue 
+        - Identify all assets
+        - Record their  characterirstics and condition
+    - Recognise asset behaviour 
+    - Plan maintenance interventions based on assets risk
+
+#### 10.5.6: Infrastructure Protection - Keeping the Railway Safe with respect to tunnels
+
+- Influence on existing tunnels
+    - Excavation and tunnelling - generate ground movement 
+    - Demolition & basement construction
+    - Foundation Pilling 
+    - Building Construction 
+        - Increase of applied load 
+        - Ground settlement 
+- External Effects on Tunnels
+    - Deformation
+    - Both unloading and reloading cause plastic deformations around tunnels
+    - Movements cause bending moments in the lining, event when final loads do not increase 
+    - Serious effects on clearances to the kinematic and structure gauge
+- Wireless remote condition monitoring 
+- Monitoring Dashboards
