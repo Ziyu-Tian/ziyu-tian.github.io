@@ -1,0 +1,6268 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ziyu Tian's Website">
+      
+      
+        <meta name="author" content="Ziyu Tian">
+      
+      
+        <link rel="canonical" href="https://ziyu-tian.github.io/NOTES/Railway/Pway_Class_A/">
+      
+      
+        <link rel="prev" href="../../Stage_3/Digital_Signal_Process/">
+      
+      
+        <link rel="next" href="../../../DEV/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>PWay Class A - Nothing except Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../mkdocs/css/no-footer.css">
+    
+      <link rel="stylesheet" href="../../../mkdocs/css/unordered-list-symbols.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pway-class-a-lu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Nothing except Notes" class="md-header__button md-logo" aria-label="Nothing except Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nothing except Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PWay Class A
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="orange"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="orange"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Ziyu-Tian/ziyu-tian.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ziyu-tian.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../DEV/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Dev
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../BLOGS/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Nothing except Notes" class="md-nav__button md-logo" aria-label="Nothing except Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Nothing except Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Ziyu-Tian/ziyu-tian.github.io" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ziyu-tian.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notes
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage1_Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage1_Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_1/1001/EngineeringMath/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering Mathematics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_1/Coding/C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C Programing Basic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_1/Coding/Matlab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MATLAB Basic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_1/Coding/PythonDataAnalysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Data Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Electronics Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electronics/FundamentalElectricCircuits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fundamentals of Electric Circuits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage2_Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage2_Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/semiconductor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semiconductors Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/signalsAndCommunication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Signals and Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/computerSystems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Systems and Microprocessors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/analogElectronic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Analogue Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/microProcessors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microprocessors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/digitalElectronics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/vhdl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VHDL Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/statisticalMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Statistical Method
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/acElectrical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AC Electrical Power
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_2/automaticControl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automatic Control Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stage3_Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Stage3_Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_3/Industrial_Control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Industrial Control and PLC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_3/Introduction_to_Law/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    introduction to Business Law
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Stage_3/Digital_Signal_Process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Signal Processing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Railway Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Railway Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PWay Class A
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PWay Class A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1: Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1: Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-definition-of-permanent-way-and-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1: Definition of Permanent Way and Track
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-main-components-of-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2: Main Components of PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-purpose-of-the-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3: Purpose of the PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-platform-train-interface-pti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4: Platform Train Interface (PTI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-wheel-rail-interface-wri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5: Wheel Rail Interface (WRI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-conductor-rail-shoe-gear-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6: Conductor Rail - Shoe Gear Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-point-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7: Point Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-track-condition-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8: Track Condition Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-plain-line-junctionwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2: Plain Line &amp; Junctionwork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2: Plain Line &amp; Junctionwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-running-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1: Running Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-track-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2: Track Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-running-rail-joints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3: Running Rail Joints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-sleepers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4: Sleepers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4: Sleepers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-sleepers-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1: Sleepers Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-running-rail-supports-and-fastenings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5: Running Rail Supports and Fastenings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5: Running Rail Supports and Fastenings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-bulkhead-track-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1: Bulkhead Track Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-chairscrews-and-ferrules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2: Chairscrews and ferrules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-flatbottom-track-rail-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3: Flatbottom Track - rail clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254-fb-rail-vs-bh-rail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4: FB Rail vs BH Rail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255-resilient-baseplate-composite-with-rubber-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5: Resilient Baseplate - composite with rubber insert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#256-track-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.6: Track Bed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-general-track-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6: General Track Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-check-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7: Check Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-special-trackforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8: Special Trackforms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-conductor-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9: Conductor Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-junctionwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10: Junctionwork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211points-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11：Points (switches)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-common-crossing-obtuse-crossing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13: Common Crossing &amp; Obtuse Crossing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.13: Common Crossing &amp; Obtuse Crossing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2131-unbroken-crossing-common-crossing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13.1: Unbroken Crossing - Common Crossing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2132-obtuse-crossings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13.2: Obtuse Crossings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-cover-check-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.14: Cover Check Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215-concrete-bearers-with-switch-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.15: Concrete Bearers with Switch Panels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216-concrete-track-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.16: Concrete Track Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217-conductor-rails-at-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.17: Conductor Rails at Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-track-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3: Track Welding
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3: Track Welding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-rail-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1: Rail Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fuel-gasses-used-for-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2: Fuel Gasses Used For Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aluminothermic-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3: Aluminothermic Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-manual-metal-arcing-mma-welding-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4: Manual Metal Arcing (MMA) Welding Processes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4: Manual Metal Arcing (MMA) Welding Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-fusion-welding-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.1: Fusion Welding Material
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-mma-welding-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.2: MMA Welding Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343-flash-butt-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.3: Flash Butt Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-future-in-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.4: Future in Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-track-recording-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4: Track Recording and Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4: Track Recording and Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-benifits-of-track-geometry-measurement-static-and-dynamic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1: Benifits of Track Geometry Measurement (Static and Dynamic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-measurement-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2: Measurement Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2: Measurement Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-geometry-system-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1: Geometry System Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-measurement-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2: Measurement Parametres
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-trv-and-atms-data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3: TRV and ATMS Data Collection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3: TRV and ATMS Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-trv-digitisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1: TRV Digitisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-atms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2: ATMS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-comparison-between-atms-and-trv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3: Comparison between ATMS and TRV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-data-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3: Data Outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-managing-buckling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5: Managing Buckling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5: Managing Buckling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-general-principles-of-hot-weather-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1: General Principles of Hot weather Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-rail-configurationm-rail-stress-and-rail-tenmperatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2: Rail configurationm rail stress and Rail tenmperatures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-buckles-if-things-dont-go-as-planned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3: Buckles - if things don't go as planned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-interfaces-with-other-asset-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4: Interfaces with Other Asset areas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-power-distribution-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6: Power Distribution System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6: Power Distribution System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-lu-power-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1: LU Power Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-ceps-and-leps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2: CEPS and LEPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-dc-sectionalisation-earth-fault-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3: DC Sectionalisation &amp; Earth Fault Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3: DC Sectionalisation &amp; Earth Fault Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631-normal-operation-no-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.1: Normal Operation - No Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632-negative-rail-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.2: Negative rail Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633-positive-rail-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.3: Positive rail Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#634-both-rails-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.4: Both rails - Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#635-managing-earth-faults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.5: Managing Earth Faults
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-power-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4: Power Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-security-of-supply-and-winter-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5: Security of Supply and Winter readiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lu-rolling-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7: LU Rolling Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7: LU Rolling Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-features-of-wri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1: Features of WRI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-wheel-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2: Wheel Profile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-vehicle-on-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3: Vehicle on Curves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-wheel-wear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4: Wheel Wear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-rail-lubrication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5: Rail Lubrication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-brakes-lu-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6: Brakes - LU Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-rs-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7: RS Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-prevention-of-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8: Prevention of Derailments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8: Prevention of Derailments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-common-causes-of-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1: Common Causes of derailments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-major-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2: Major derailments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2: Major derailments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-quintishill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1: Quintishill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-hither-green" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2: Hither Green
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-moorgate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3: Moorgate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-london-underground-derailment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3: London Underground Derailment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-how-do-we-manage-the-derailment-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4: How do we manage the derailment risk
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4: How do we manage the derailment risk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#85-understanding-the-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5: Understanding the risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-removing-the-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6: Removing the Risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-controlling-the-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7: Controlling the risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-managing-the-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8: Managing the risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89-railway-accident-investigation-branch-raib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9: Railway Accident Investigation Branch (RAIB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#810-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.10: Conclusions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-signalling-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9: Signalling System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9: Signalling System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-what-is-a-signalling-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1: What is a Signalling System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-hand-signalling-mechanical-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2: Hand Signalling / Mechanical Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-fully-automatic-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3: Fully Automatic Signal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-semi-automatic-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4: Semi Automatic Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-train-detection-with-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5: Train Detection with Rails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5: Train Detection with Rails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951-track-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.1: Track Circuits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#952-signalling-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.2: Signalling Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#953-limit-of-control-loc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.3: Limit of Control (L.O.C)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-train-stop-and-tripcock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6: Train Stop and Tripcock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-interlocking-lever-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7: Interlocking Lever Frame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-railway-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10: Railway Structures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10: Railway Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-interface-with-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1: Interface with PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-example-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2: Example Structures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-asset-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3: Asset Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-principles-of-structural-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4: Principles of Structural Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4: Principles of Structural Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1041-how-we-design-assess-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.1: How we Design / Assess structures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-tunnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5: Tunnels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5: Tunnels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1051-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.1: Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1052-types-of-tunnels-shafts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.2: Types of Tunnels &amp; Shafts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1053-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3: Functional requirements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5.3: Functional requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10531-required-duty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3.1: Required Duty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10532-fit-for-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3.2: Fit for Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1054-constructure-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.4: Constructure Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1055-mainnenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.5: Mainnenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1056-infrastructure-protection-keeping-the-railway-safe-with-respect-to-tunnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.6: Infrastructure Protection - Keeping the Railway Safe with respect to tunnels
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../DEV/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dev
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Dev
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DEV/TimeComplexity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time & Space Complexity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DEV/StaticInC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Static modifier in C
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DEV/ValueRefPass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pass-by-Value & Pass-by-Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DEV/BitOperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bit Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../BLOGS/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1: Introduction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1: Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-definition-of-permanent-way-and-track" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1: Definition of Permanent Way and Track
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-main-components-of-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2: Main Components of PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-purpose-of-the-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3: Purpose of the PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-platform-train-interface-pti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4: Platform Train Interface (PTI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-wheel-rail-interface-wri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5: Wheel Rail Interface (WRI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-conductor-rail-shoe-gear-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.6: Conductor Rail - Shoe Gear Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-point-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.7: Point Systems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-track-condition-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.8: Track Condition Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-plain-line-junctionwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2: Plain Line &amp; Junctionwork
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2: Plain Line &amp; Junctionwork">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-running-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1: Running Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-track-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2: Track Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-running-rail-joints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3: Running Rail Joints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-sleepers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4: Sleepers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4: Sleepers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#241-sleepers-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4.1: Sleepers Type
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-running-rail-supports-and-fastenings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5: Running Rail Supports and Fastenings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.5: Running Rail Supports and Fastenings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#251-bulkhead-track-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.1: Bulkhead Track Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252-chairscrews-and-ferrules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.2: Chairscrews and ferrules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#253-flatbottom-track-rail-clips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.3: Flatbottom Track - rail clips
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#254-fb-rail-vs-bh-rail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.4: FB Rail vs BH Rail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#255-resilient-baseplate-composite-with-rubber-insert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.5: Resilient Baseplate - composite with rubber insert
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#256-track-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5.6: Track Bed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-general-track-construction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.6: General Track Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-check-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.7: Check Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-special-trackforms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.8: Special Trackforms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-conductor-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.9: Conductor Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-junctionwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.10: Junctionwork
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211points-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.11：Points (switches)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-common-crossing-obtuse-crossing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13: Common Crossing &amp; Obtuse Crossing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.13: Common Crossing &amp; Obtuse Crossing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2131-unbroken-crossing-common-crossing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13.1: Unbroken Crossing - Common Crossing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2132-obtuse-crossings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.13.2: Obtuse Crossings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-cover-check-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.14: Cover Check Rails
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215-concrete-bearers-with-switch-panels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.15: Concrete Bearers with Switch Panels
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216-concrete-track-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.16: Concrete Track Form
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217-conductor-rails-at-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.17: Conductor Rails at Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-track-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3: Track Welding
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3: Track Welding">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-rail-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1: Rail Identification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-fuel-gasses-used-for-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2: Fuel Gasses Used For Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-aluminothermic-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3: Aluminothermic Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-manual-metal-arcing-mma-welding-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4: Manual Metal Arcing (MMA) Welding Processes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4: Manual Metal Arcing (MMA) Welding Processes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-fusion-welding-material" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.1: Fusion Welding Material
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-mma-welding-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.2: MMA Welding Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#343-flash-butt-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.3: Flash Butt Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#344-future-in-welding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4.4: Future in Welding
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-track-recording-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4: Track Recording and Analysis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4: Track Recording and Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-benifits-of-track-geometry-measurement-static-and-dynamic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1: Benifits of Track Geometry Measurement (Static and Dynamic)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-measurement-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2: Measurement Principles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2: Measurement Principles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-geometry-system-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1: Geometry System Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-measurement-parametres" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2: Measurement Parametres
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-trv-and-atms-data-collection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3: TRV and ATMS Data Collection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3: TRV and ATMS Data Collection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431-trv-digitisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1: TRV Digitisation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432-atms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2: ATMS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-comparison-between-atms-and-trv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3: Comparison between ATMS and TRV
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433-data-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3: Data Outputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-managing-buckling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5: Managing Buckling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5: Managing Buckling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-general-principles-of-hot-weather-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1: General Principles of Hot weather Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-rail-configurationm-rail-stress-and-rail-tenmperatures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2: Rail configurationm rail stress and Rail tenmperatures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-buckles-if-things-dont-go-as-planned" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3: Buckles - if things don't go as planned
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-interfaces-with-other-asset-areas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4: Interfaces with Other Asset areas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-power-distribution-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6: Power Distribution System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6: Power Distribution System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-lu-power-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1: LU Power Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-ceps-and-leps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2: CEPS and LEPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-dc-sectionalisation-earth-fault-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3: DC Sectionalisation &amp; Earth Fault Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.3: DC Sectionalisation &amp; Earth Fault Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#631-normal-operation-no-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.1: Normal Operation - No Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#632-negative-rail-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.2: Negative rail Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#633-positive-rail-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.3: Positive rail Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#634-both-rails-earth-fault" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.4: Both rails - Earth Fault
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#635-managing-earth-faults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3.5: Managing Earth Faults
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-power-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4: Power Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-security-of-supply-and-winter-readiness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5: Security of Supply and Winter readiness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-lu-rolling-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7: LU Rolling Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7: LU Rolling Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-features-of-wri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1: Features of WRI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-wheel-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2: Wheel Profile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-vehicle-on-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3: Vehicle on Curves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-wheel-wear" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4: Wheel Wear
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-rail-lubrication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5: Rail Lubrication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-brakes-lu-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6: Brakes - LU Principles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#77-rs-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.7: RS Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-prevention-of-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8: Prevention of Derailments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8: Prevention of Derailments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-common-causes-of-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1: Common Causes of derailments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-major-derailments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2: Major derailments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2: Major derailments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-quintishill" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1: Quintishill
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-hither-green" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2: Hither Green
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-moorgate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3: Moorgate
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-london-underground-derailment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3: London Underground Derailment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-how-do-we-manage-the-derailment-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4: How do we manage the derailment risk
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4: How do we manage the derailment risk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#85-understanding-the-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5: Understanding the risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-removing-the-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6: Removing the Risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-controlling-the-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7: Controlling the risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88-managing-the-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8: Managing the risk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89-railway-accident-investigation-branch-raib" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9: Railway Accident Investigation Branch (RAIB)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#810-conclusions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.10: Conclusions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-signalling-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9: Signalling System
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9: Signalling System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-what-is-a-signalling-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1: What is a Signalling System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-hand-signalling-mechanical-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2: Hand Signalling / Mechanical Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-fully-automatic-signal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3: Fully Automatic Signal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-semi-automatic-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4: Semi Automatic Signals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95-train-detection-with-rails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5: Train Detection with Rails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9.5: Train Detection with Rails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#951-track-circuits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.1: Track Circuits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#952-signalling-block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.2: Signalling Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#953-limit-of-control-loc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5.3: Limit of Control (L.O.C)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96-train-stop-and-tripcock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6: Train Stop and Tripcock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97-interlocking-lever-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7: Interlocking Lever Frame
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-railway-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10: Railway Structures
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10: Railway Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-interface-with-pway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1: Interface with PWay
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-example-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2: Example Structures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-asset-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3: Asset Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-principles-of-structural-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4: Principles of Structural Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.4: Principles of Structural Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1041-how-we-design-assess-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4.1: How we Design / Assess structures
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#105-tunnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5: Tunnels
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5: Tunnels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1051-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.1: Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1052-types-of-tunnels-shafts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.2: Types of Tunnels &amp; Shafts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1053-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3: Functional requirements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10.5.3: Functional requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10531-required-duty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3.1: Required Duty
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10532-fit-for-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.3.2: Fit for Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1054-constructure-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.4: Constructure Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1055-mainnenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.5: Mainnenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1056-infrastructure-protection-keeping-the-railway-safe-with-respect-to-tunnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.5.6: Infrastructure Protection - Keeping the Railway Safe with respect to tunnels
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="pway-class-a-lu">Pway Class A - LU<a class="headerlink" href="#pway-class-a-lu" title="Permanent link">&para;</a></h1>
+<h2 id="1-introduction">1: Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h2>
+<h3 id="11-definition-of-permanent-way-and-track">1.1: Definition of Permanent Way and Track<a class="headerlink" href="#11-definition-of-permanent-way-and-track" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Permanent Way</strong>:</p>
+<ul>
+<li>All railway tracks in passenger service, the adjointing depots and sidings mostly electrified, timber / sleepers, cuttings, embankments, drainage and all associated features between and including the operational boundary fences.</li>
+</ul>
+</li>
+<li>
+<p><strong>Track</strong>:</p>
+<ul>
+<li>The permanent way and the ground within 2 m of any running rail, but exlcuing station platforms and areas guarded by physical barriar.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-26-21-07-45.png" /></p>
+<h3 id="12-main-components-of-pway">1.2: Main Components of PWay<a class="headerlink" href="#12-main-components-of-pway" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Running rails &amp; joints</li>
+<li>Switches and corssings</li>
+<li>Rail fastening </li>
+<li>Sleepers and timbers</li>
+<li>Conductor rails and fittings</li>
+<li>Ballast and concrete</li>
+<li>Track Drainage </li>
+<li>Surface vegetation </li>
+<li>Boudndary fences</li>
+<li>Train arresters </li>
+<li>Structure gauge</li>
+</ul>
+<h3 id="13-purpose-of-the-pway">1.3: Purpose of the PWay<a class="headerlink" href="#13-purpose-of-the-pway" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Support and guide the trains</li>
+<li>Provide a suitable running surface for wheels</li>
+<li>Provide adequate space for approved vehicles travelling at authorised speed</li>
+<li>Provide a suitable path for collector shoes</li>
+<li>Provide electrical paths &amp; insulation for power and signalling</li>
+<li>Provide safe walking surface for maintenance / derailment </li>
+<li>Enable drainage of surface water</li>
+</ul>
+<h3 id="14-platform-train-interface-pti">1.4: Platform Train Interface (PTI)<a class="headerlink" href="#14-platform-train-interface-pti" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Important to safety and service performance</li>
+<li>Maybe necessary to use special measures to fix the track position</li>
+<li>Preference is to standardise dimensions between tracks and platform edge, but this can result in sub-optimal solutions</li>
+</ul>
+<h3 id="15-wheel-rail-interface-wri">1.5: Wheel Rail Interface (WRI)<a class="headerlink" href="#15-wheel-rail-interface-wri" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The wheel treads are tapered and the rails are inclined at 1 in 20 to provide self steering.</li>
+<li>The wheels have flanges which on tighter radius curves (radius approximately 400 metres)</li>
+<li>The shape of the rial head and wheel profile are very important, including track gauge and track geometry.</li>
+<li>Lubrication is provided by track lubricators and in some cases also train mounted lubricators.</li>
+</ul>
+<h3 id="16-conductor-rail-shoe-gear-interface">1.6: Conductor Rail - Shoe Gear Interface<a class="headerlink" href="#16-conductor-rail-shoe-gear-interface" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Necessary to have gap in the consuctor rails and ramps to guide shoes on and off the rails.</li>
+<li>Most conductor rails are steel but aluminium rails with a stainless steel top surface are also used for higher conductivity.</li>
+</ul>
+<h3 id="17-point-systems">1.7: Point Systems<a class="headerlink" href="#17-point-systems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Provide motor drives, position detection and locking mechanisms.</li>
+<li>In LU, switch rails and stretcher bars are classfied as PWay assets and the drive, detection and locking system classified as Signal assets.</li>
+</ul>
+<h3 id="18-track-condition-monitoring">1.8: Track Condition Monitoring<a class="headerlink" href="#18-track-condition-monitoring" title="Permanent link">&para;</a></h3>
+<p>Various condition measures are used for each form of degradtion:</p>
+<ul>
+<li>Irreversible Degradation:<ul>
+<li>Running rail wear</li>
+<li>Running rail flaws</li>
+<li>Conductor rail wear</li>
+</ul>
+</li>
+<li>Reversible Degradation:<ul>
+<li>Running rail corrugation</li>
+<li>Loss of track geometry</li>
+<li>Ballast contamination (eg. wet beds)</li>
+</ul>
+</li>
+</ul>
+<p>LU PWay standards mandate a suite of inspections that provide information about track condition:</p>
+<ul>
+<li>Patrolling - visual</li>
+<li>Junctionwork Inspections - visual and measured</li>
+<li>Measured Inspections - work scoping </li>
+<li>Track Recording Vehicle (TRV), ATMS</li>
+<li>Rail Inspections - 'B' scan (ultrasonic), RSCM (magnetic flux)</li>
+<li>Prevention of Bukcling Inspections </li>
+</ul>
+<h2 id="2-plain-line-junctionwork">2: Plain Line &amp; Junctionwork<a class="headerlink" href="#2-plain-line-junctionwork" title="Permanent link">&para;</a></h2>
+<h3 id="21-running-rails">2.1: Running Rails<a class="headerlink" href="#21-running-rails" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Purpose - to carry and guide the train wheels</li>
+<li>Required to distribute significant forces</li>
+<li>Properties:<ul>
+<li>Hardness - to resist wear</li>
+<li>Toughness - to absord load and resist fatigue </li>
+<li>Tensile strength - to withstand thermal forces</li>
+</ul>
+</li>
+<li>Also used to locate signals equipments</li>
+<li>Material Most Used:<ul>
+<li>Normal Grade steel - historical used</li>
+<li>Grade A steel - standard use</li>
+<li>Premium Steels &amp; Head Hardened - wear resistant </li>
+</ul>
+</li>
+</ul>
+<h3 id="22-track-forms">2.2: Track Forms<a class="headerlink" href="#22-track-forms" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Bullhead (BH) - Traditional </p>
+</li>
+<li>
+<p>Flat Bottom (FB) - New Works</p>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-10-30-42.png" /></p>
+<ul>
+<li>General Track Guage:<ul>
+<li>Straight Track: 1435 mm</li>
+<li>Check Rail Curves: 1438 mm</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-running-rail-joints">2.3: Running Rail Joints<a class="headerlink" href="#23-running-rail-joints" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Purpose - to connect together lengths of rail to form a secure path</li>
+<li>Welded Types:<ul>
+<li>Flash butt weld (workshop process)</li>
+<li>Thermic (site welding process)</li>
+</ul>
+</li>
+<li>Fishplated (mechanical connection):<ul>
+<li>Expansion (for short rails)</li>
+<li>Tight</li>
+<li>Junction</li>
+<li>Blockjoint</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-10-51-08.png" /></p>
+<h3 id="24-sleepers">2.4: Sleepers<a class="headerlink" href="#24-sleepers" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Purpose - to maintain gauge<ul>
+<li>Maintain dimension between rails</li>
+<li>Maintain coss level</li>
+<li>Support running and conductor rails</li>
+<li>Distribute dynamic and static loads</li>
+</ul>
+</li>
+</ul>
+<h4 id="241-sleepers-type">2.4.1: Sleepers Type<a class="headerlink" href="#241-sleepers-type" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Softwood</strong> - ballasted track only<ul>
+<li>PRO: inexpensive, lightweight</li>
+<li>AGAINST: Easy to splitting and rotting </li>
+</ul>
+</li>
+<li><strong>Hardwood</strong> - ballasted and mainly concreted track<ul>
+<li>PRO: duarbale, lighter than concrete</li>
+<li>AGAINST: exotic and expensive</li>
+</ul>
+</li>
+<li><strong>Composite</strong><ul>
+<li>FOR: Eco-friendly</li>
+<li>AGAINST: flammable, heat distortion </li>
+</ul>
+</li>
+<li><strong>Prestressed concrete</strong> - ballasted and concreted<ul>
+<li>FOR: inexpensive, strong and stable</li>
+<li>AGAINST: very heavy, difficult to trim, brittle</li>
+</ul>
+</li>
+</ul>
+<h3 id="25-running-rail-supports-and-fastenings">2.5: Running Rail Supports and Fastenings<a class="headerlink" href="#25-running-rail-supports-and-fastenings" title="Permanent link">&para;</a></h3>
+<h4 id="251-bulkhead-track-keys">2.5.1: Bulkhead Track Keys<a class="headerlink" href="#251-bulkhead-track-keys" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Oak Keys</strong>:<ul>
+<li>FOR - Eaasy to install, cheap, light and good electrical insulation </li>
+<li>AGAINST - Tend to shrink and fall out</li>
+</ul>
+</li>
+<li><strong>Steel</strong>:<ul>
+<li>FOR - Wear resistance, easy to install, tight fitting, good creep resistance</li>
+<li>AGAINST - Need to be driven in tight, tendency to crush and fall out, tend to rust poor electricail insulation</li>
+</ul>
+</li>
+<li><strong>PANLOCK KEYS</strong>:<ul>
+<li>FOR - secure location and low maintenance</li>
+<li>AGAINST - need special tool to install, tend to rust, poor electrical resistance</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-18-36-16.png" /></p>
+<h4 id="252-chairscrews-and-ferrules">2.5.2: Chairscrews and ferrules<a class="headerlink" href="#252-chairscrews-and-ferrules" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-27-19-57-07.png" /></p>
+<ul>
+<li><strong>Chairscrews</strong>: to hold the chair or baseplate securely to the sleepers. Restrains the rails and hold the gauge.</li>
+<li><strong>Ferrules</strong> : accommodate casting tolerances in chair and baseplate. Prevent screw and metals to contact.</li>
+</ul>
+<h4 id="253-flatbottom-track-rail-clips">2.5.3: Flatbottom Track - rail clips<a class="headerlink" href="#253-flatbottom-track-rail-clips" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Pandrol Clips</strong></li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-20-03-46.png" /></p>
+<ul>
+<li><strong>Fastclips</strong></li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-20-09-34.png" /></p>
+<h4 id="254-fb-rail-vs-bh-rail">2.5.4: FB Rail vs BH Rail<a class="headerlink" href="#254-fb-rail-vs-bh-rail" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Flat Bottom rail</strong>:<ul>
+<li>Baseplate with chairscrews and ferrules.</li>
+<li>Special baseplate for check rail.</li>
+<li>Pandrol shoulders casted into concrete sleepers.</li>
+<li>Pandrol with insulators and rail seat pad, directly seated on concrete sleepers.</li>
+</ul>
+</li>
+<li><strong>Bull Head Rail</strong>:<ul>
+<li>Chairs with chariscrews, ferrules and keys</li>
+<li>Keys - oak or steel (two types: Mills and Panlock)</li>
+<li>Special Chairs for check rail</li>
+</ul>
+</li>
+</ul>
+<h4 id="255-resilient-baseplate-composite-with-rubber-insert">2.5.5: Resilient Baseplate - composite with rubber insert<a class="headerlink" href="#255-resilient-baseplate-composite-with-rubber-insert" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>PRO</strong>:<ul>
+<li>Reduced noise and vibration</li>
+<li>Longer lifetime </li>
+</ul>
+</li>
+<li><strong>DIS</strong>:<ul>
+<li>Energy dissipation into noise </li>
+<li>Bulky component in space constained area</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-20-19-16.png" /></p>
+<h4 id="256-track-bed">2.5.6: Track Bed<a class="headerlink" href="#256-track-bed" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Ballast</strong>:<ul>
+<li>Purpose:<ul>
+<li>To absorb and disperse track load through track foundations</li>
+<li>Restrain movement of sleepers</li>
+<li>Provide drainage</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Ballast Sleepers</strong>:<ul>
+<li><strong>Granite Ballast - preferred</strong><ul>
+<li>FOR - hard stay sharps, strong abration resistant</li>
+<li>AGAINST - heavy and expensive</li>
+</ul>
+</li>
+<li><strong>Limestone - was most common in LU</strong><ul>
+<li>FOR - cheap, resonable drainage</li>
+<li>AGAINST - scarce resorce in the UK, cannot be used with concrete sleepers</li>
+</ul>
+</li>
+<li><strong>Ash Ballast</strong><ul>
+<li>Waste product from coal power station. Mainly in depot.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Typical Faults</strong>:<ul>
+<li>Wet Spot: Train dynamic movement makes the underkying clay being drawn up into the ballast, thus blocks the drainage and loose the support.</li>
+</ul>
+</li>
+</ul>
+<h3 id="26-general-track-construction">2.6: General Track Construction<a class="headerlink" href="#26-general-track-construction" title="Permanent link">&para;</a></h3>
+<ul>
+<li>1: Geotexile laid on formation </li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-20-52-26.png" /></p>
+<ul>
+<li>2: Bottom Ballast installation </li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-20-52-50.png" /></p>
+<ul>
+<li>3: Concrete sleepers ready to lay</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-21-56-27.png" /></p>
+<ul>
+<li>4: Sleeper laid Pandrol e-clip and fast clip</li>
+</ul>
+<p><img alt="" src="../image/2025-12-27-21-57-06.png" /></p>
+<ul>
+<li>
+<p>5: Rail Installation </p>
+</li>
+<li>
+<p>6: Top Ballast Installation </p>
+</li>
+<li>
+<p>7: Tamping</p>
+</li>
+<li>
+<p>8: Welding and Stressing </p>
+</li>
+</ul>
+<h3 id="27-check-rails">2.7: Check Rails<a class="headerlink" href="#27-check-rails" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Purpose</strong>:</li>
+<li>Installed on curved track of of 200m radius or less ot prevent the ourside wheels to be derailed.</li>
+<li>180 m radius on LU, DLR and trams can be lower than 60 m.</li>
+<li>Also used on some under bridges to constrain train.</li>
+<li>Cover check rails are provided at tripcock tester to correctly align the bogie.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-11-14.png" /></p>
+<h3 id="28-special-trackforms">2.8: Special Trackforms<a class="headerlink" href="#28-special-trackforms" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Long timbers</strong>:<ul>
+<li>Used timbers or more modern composite materials.</li>
+<li>The timber is set into a trough within the bridge.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-15-31.png" /></p>
+<ul>
+<li><strong>Laterial Restraint</strong><ul>
+<li>Laterial resistance plates clamped to sleepers to resist sideway forces.</li>
+<li>Glued ballast spreads the loads and reduces the risk of localised failures.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-22-11.png" /></p>
+<ul>
+<li><strong>Slab Track</strong><ul>
+<li>Track slab is structural construction.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-23-21.png" /></p>
+<ul>
+<li><strong>Resilient Trackform</strong><ul>
+<li>Isolation of forces from supporting structure, need to consider unintended noises.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-25-19.png" /></p>
+<ul>
+<li><strong>Floating Slabtrack</strong><ul>
+<li>Used in noise-critical locations.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-28-32.png" /></p>
+<ul>
+<li><strong>Depot and Sidings - Train Arrestors</strong><ul>
+<li>Energy absorption and need space behind.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-30-37.png" /></p>
+<h3 id="29-conductor-rails">2.9: Conductor Rails<a class="headerlink" href="#29-conductor-rails" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Main Conductor Rail Sections</strong><ul>
+<li>Steel or Aluminium Body with Stainless Steel Cap</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-35-51.png" /></p>
+<ul>
+<li><strong>Rail Lengths - Allowance for thermal expansion</strong><ul>
+<li>400m with cable connection or 600m with one cable end &amp; one Out of Gauge (OOG) rails in open / sub-surface sections.</li>
+<li>800m with all types of connection in tube sections.</li>
+<li>Max lengths are dependent on curvature.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-41-33.png" /></p>
+<ul>
+<li><strong>Joints</strong><ul>
+<li>Purpose - to join together lengths of conductor rail</li>
+<li>Type of joints<ul>
+<li>Welded flash butt in workshop</li>
+<li>Arc welding on site</li>
+<li>Fishplate - two holes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-47-03.png" /></p>
+<ul>
+<li><strong>General Components</strong><ul>
+<li>Insulator, clipsm Coachscrews and Shim</li>
+<li>Anchors</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-51-16.png" /></p>
+<ul>
+<li><strong>Tube station</strong><ul>
+<li>Due to lack of sleepers, the negative conductor rail insulator is supported on a concrete pedstral.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-09-53-18.png" /></p>
+<ul>
+<li><strong>Anchors</strong>:<ul>
+<li>Purpose - to restrain the conductor rail from moving bodily longitudinally. </li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-10-01-28.png" /></p>
+<ul>
+<li><strong>Protection Planking</strong></li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-10-03-45.png" /></p>
+<h3 id="210-junctionwork">2.10: Junctionwork<a class="headerlink" href="#210-junctionwork" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Function of junctionwork</strong>:</p>
+<ul>
+<li>Corss from one running line or route to another</li>
+<li>Gain access to stabling or depot tracks</li>
+<li>Gain access to a particular platform at station</li>
+</ul>
+</li>
+<li>
+<p><strong>Facing and Trailing Crossover</strong>:</p>
+<ul>
+<li>When trains moving towards the <em>switch rail rail head</em>, it will be called <em>Facing Crossover</em>.</li>
+<li>When trains moving from a siding to a mainline (opposite to the switch rail head), it will be called <em>Trailing Crossover</em>.
+  <img alt="" src="../image/2025-12-28-12-03-30.png" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Scissors Crossover</strong></p>
+<ul>
+<li>Two single lead turnout overlapped to fomr a Scissors Crossover.</li>
+<li>Allows trains moving between upstream and downstream.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-12-08-20.png" /></p>
+<ul>
+<li>
+<p><strong>Trap Switches</strong></p>
+<ul>
+<li>Avoid siding trains slipping into mainline by accident.
+<img alt="" src="../image/2025-12-28-12-09-12.png" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Diamond Crossing</strong></p>
+<ul>
+<li>No switches in the trunout, the signalling interlocking is used as protection.</li>
+<li>Only two direction allowed.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-12-39-44.png" /></p>
+<ul>
+<li><strong>Double Slip</strong><ul>
+<li>Similar to Diamond Crossing, but additional swiches allow the movement from one direction to another.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-12-41-04.png" /></p>
+<p><img alt="" src="../image/2025-12-28-16-03-00.png" /></p>
+<h3 id="211points-switches">2.11：Points (switches)<a class="headerlink" href="#211points-switches" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Stretcher Bars &amp; Brackets</strong><ul>
+<li>Purpose:<ul>
+<li>Transmits drive from one rail to another</li>
+<li>Ensure no electrical isolation between switch rails</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Flangeway</strong><ul>
+<li>The space between the switch rail and stock rail (the open side) must be designed to perimit width of wheel flanges.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-16-11-02.png" /></p>
+<ul>
+<li><strong>Straightcut, Undercut and Rail Joggle</strong><ul>
+<li>Undercut / shallow depth / full depth profile provides extra space for flangeway (when switch rail is closed)</li>
+<li>Extra 'joggle' will be provided in stock rail to provide flangeway. Note that point will be facing crossover only.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-16-36-34.png" />
+<img alt="" src="../image/2025-12-28-16-38-40.png" /></p>
+<ul>
+<li>
+<p><strong>Supports and Fastenings</strong></p>
+<ul>
+<li>Switchs could move laterally on slide chairs or baseplates.</li>
+<li>Switch and stock rail are fixed with an anchor at heel.</li>
+</ul>
+</li>
+<li>
+<p><strong>Distance Blocks</strong></p>
+<ul>
+<li>The block retain the swith in the moveable part between the end of planning and fixed heel.
+<img alt="" src="../image/2025-12-28-17-55-46.png" /></li>
+</ul>
+</li>
+<li>
+<p><strong>Soleplates</strong></p>
+<ul>
+<li>To maintain track gauge at the toes of points.</li>
+<li>Fitted on top of the timber under the slide charis/baseplates, and are secured in position by the chariscrews hilding the slide chairs in position.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-18-37-03.png" /></p>
+<ul>
+<li>
+<p><strong>Switch Anchors (Bullhead)</strong></p>
+<ul>
+<li>Purpose - to fix together the switch and stock rails providing:<ul>
+<li>A fixed pivot point for switch rail</li>
+<li>Prevention of longitudinal movement.
+<img alt="" src="../image/2025-12-28-18-38-57.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Heel Blocks (Flat Bottom)</strong></p>
+<ul>
+<li>Purpose - to fix together the switch and stock rails (same as Anchors in BH track)</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-18-40-46.png" /></p>
+<ul>
+<li><strong>Twist Rails</strong><ul>
+<li>Twist the rails to change height of the rails, thus allow smooth transition between different track levels.</li>
+</ul>
+</li>
+<li><strong>Precurving of Rails</strong><ul>
+<li>Ensure corrct curvature of stock and switch rail before installation.</li>
+<li>Balancing of the energy required to normalise or revere points for the correct switch fit and providing a correct flange way.</li>
+</ul>
+</li>
+</ul>
+<h3 id="213-common-crossing-obtuse-crossing">2.13: Common Crossing &amp; Obtuse Crossing<a class="headerlink" href="#213-common-crossing-obtuse-crossing" title="Permanent link">&para;</a></h3>
+<h4 id="2131-unbroken-crossing-common-crossing">2.13.1: Unbroken Crossing - Common Crossing<a class="headerlink" href="#2131-unbroken-crossing-common-crossing" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Using continious rail between the two rails without 'jumping'.</li>
+<li>Fully fabricated</li>
+<li>Used for unsignalled moves, where all traffic is on one route.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-19-15-22.png" /></p>
+<ul>
+<li>
+<p><strong>Types of Construction</strong>:</p>
+<ul>
+<li>Fully fabricated or Part fabricated </li>
+<li>Cast centre block </li>
+</ul>
+</li>
+<li>
+<p><strong>Cast Centre Block Crossings</strong></p>
+<ul>
+<li>Used in congested areas for a smaller footprint.</li>
+<li>Used for bespoke geometry
+<img alt="" src="../image/2025-12-28-19-18-13.png" /></li>
+</ul>
+</li>
+</ul>
+<h4 id="2132-obtuse-crossings">2.13.2: Obtuse Crossings<a class="headerlink" href="#2132-obtuse-crossings" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Obtuse crossings are used in crossing layouts which include a diamond:<ul>
+<li>Diamond Crossover</li>
+<li>Scissors Crossover</li>
+<li>Double Junction 
+<img alt="" src="../image/2025-12-28-19-23-00.png" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="214-cover-check-rails">2.14: Cover Check Rails<a class="headerlink" href="#214-cover-check-rails" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Purpose - to ensure that trains take the correct route when passing discontinuities in junctionwork.</li>
+<li>Opposite common corssing noses.</li>
+<li>Opposite the point rail nose-wing rail-point nose gaps of an obtuse crossings.</li>
+</ul>
+<h3 id="215-concrete-bearers-with-switch-panels">2.15: Concrete Bearers with Switch Panels<a class="headerlink" href="#215-concrete-bearers-with-switch-panels" title="Permanent link">&para;</a></h3>
+<ul>
+<li>All concrete bearers (sleepers) have to be custom cast to take account of the different crossing angles.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-19-38-53.png" /></p>
+<ul>
+<li>
+<p>Switch pannels on concrete bearers include yhe slide base plate and heel charis fixed to the bearer with a rubber pad beneath the baseplate.</p>
+</li>
+<li>
+<p>Beyond the heel the concrete bearers become deeper to maintain a constant construction depth where the rail is directly fixed with cast in Pandrol shoulders.</p>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-19-42-51.png" /></p>
+<ul>
+<li>Composite Bearers (recycled plastic) has been used to provide similar performance.</li>
+</ul>
+<h3 id="216-concrete-track-form">2.16: Concrete Track Form<a class="headerlink" href="#216-concrete-track-form" title="Permanent link">&para;</a></h3>
+<ul>
+<li>LVT Blocks</li>
+<li>Delkor Eggs - Resilient</li>
+</ul>
+<h3 id="217-conductor-rails-at-points">2.17: Conductor Rails at Points<a class="headerlink" href="#217-conductor-rails-at-points" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Positive Splays / pick-up ramp</strong>:<ul>
+<li>Guide collector shoes in the crossing areas.</li>
+</ul>
+</li>
+<li><strong>Negative Splays</strong>:<ul>
+<li>To prevent collector shoes falling and jamming between the main and lean-to rail.</li>
+</ul>
+</li>
+<li><strong>Slipper Run Boards</strong>:<ul>
+<li>Designed to carry low or hanging negative shoes over lead rails</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-20-03-07.png" /></p>
+<h2 id="3-track-welding">3: Track Welding<a class="headerlink" href="#3-track-welding" title="Permanent link">&para;</a></h2>
+<h3 id="31-rail-identification">3.1: Rail Identification<a class="headerlink" href="#31-rail-identification" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rolled or stamped every 1km along the rail net.</li>
+<li>Manufacturer, Type of steel, Year of manugacturing, Approx weight and Rail profile.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-20-35-33.png" /></p>
+<h3 id="32-fuel-gasses-used-for-welding">3.2: Fuel Gasses Used For Welding<a class="headerlink" href="#32-fuel-gasses-used-for-welding" title="Permanent link">&para;</a></h3>
+<ul>
+<li>All cylinders used for welding contain gas under pressure and are sealed.</li>
+<li>All cylinders are colour coded to a recognised standard to indetify contents.</li>
+<li><strong>Three main gases</strong>:<ul>
+<li><em>Oxygen</em></li>
+<li><em>Acetylene</em><ul>
+<li>Garlic odour</li>
+<li>Highly flammable and ignites very easily in air.</li>
+<li><strong>Can be used in all areas.</strong></li>
+</ul>
+</li>
+<li><em>Propane</em><ul>
+<li>Heavier than air, fish like odour</li>
+<li>Flammable and makes it a high fire and explosion hazard.</li>
+<li><strong>Open section only.</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-20-48-26.png" /></p>
+<h3 id="33-aluminothermic-welding">3.3: Aluminothermic Welding<a class="headerlink" href="#33-aluminothermic-welding" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Used for Joining Rails and Defect Removal</p>
+</li>
+<li>
+<p>Following second word war - very small amount of welding via old Thermit</p>
+</li>
+<li>1949/50 - SmW was introduced.</li>
+<li>
+<p>1976/77 - SkV process was introduced.</p>
+<ul>
+<li>Stronger welds</li>
+<li>Welding process with short preheat</li>
+<li>Reduction in process failures</li>
+<li>Main Thermit weld used in LU / NR</li>
+<li>Enhancements: SKV-E</li>
+</ul>
+</li>
+<li>
+<p><strong>Standard method for all Thermic process</strong>:</p>
+<ul>
+<li>1: Rail gaps are produced either by flame cutting or mechanical saw. Checked squareness and verticality.</li>
+<li>2: Align the rail.</li>
+<li>
+<p>3: Moulds are fitted and checked for position relative to the gap.
+<img alt="" src="../image/2025-12-28-21-25-55.png" /></p>
+</li>
+<li>
+<p>4: Add welding portions (4 main ingredients)</p>
+<ul>
+<li>Aluminium Powder</li>
+<li>Ion Oxide</li>
+<li>Mild Steel</li>
+<li>Ferro-manganese  </li>
+</ul>
+</li>
+<li>5: Rail ends preheating started when the preheater is locked in the moulds. The sand core is dried in this process.</li>
+<li>6: The crucible is placed into position on top of the moulds and portion ignited. <ul>
+<li>Thermit reaction takes place</li>
+<li>Weld metal is released into the moulds.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-28-21-49-23.png" /></p>
+<div class="highlight"><pre><span></span><code>- 7: Remove all the support equipment at the set time following pouring.
+- 8: At prescribed time:
+    - Weld debris is removed
+    - Fastenings are replaced
+    - Weld is ground within 25 mins to profile.
+</code></pre></div>
+<h3 id="34-manual-metal-arcing-mma-welding-processes">3.4: Manual Metal Arcing (MMA) Welding Processes<a class="headerlink" href="#34-manual-metal-arcing-mma-welding-processes" title="Permanent link">&para;</a></h3>
+<h4 id="341-fusion-welding-material">3.4.1: Fusion Welding Material<a class="headerlink" href="#341-fusion-welding-material" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-29-09-37-27.png" /></p>
+<h4 id="342-mma-welding-processes">3.4.2: MMA Welding Processes<a class="headerlink" href="#342-mma-welding-processes" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The electrode is preferred method for the weld repair of rails.</li>
+<li>Step 1: When the arc is struck between metal rod (electrode) and the workpiece, both end surface melt to form a weld pool.</li>
+<li>Step 2: Simultaneous melting of the flux coating on the rod will form the sheilding gas to protect the weld pool.</li>
+<li>Step 3: The slag will then solidfy, cool and must be chipped off the weld bead when the welding is completed.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-09-48-45.png" /></p>
+<h4 id="343-flash-butt-welding">3.4.3: Flash Butt Welding<a class="headerlink" href="#343-flash-butt-welding" title="Permanent link">&para;</a></h4>
+<ul>
+<li>To begin, the rails are positioned with a precise gap determined by factors such as materials.</li>
+<li>The rails are clamped, and a high current is applied.</li>
+<li>Once the correct temperature is reached, the current is stopped, and the rails are rapidly pressed together. The action forges the two rails into a single continuous rail.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-10-00-38.png" /></p>
+<h4 id="344-future-in-welding">3.4.4: Future in Welding<a class="headerlink" href="#344-future-in-welding" title="Permanent link">&para;</a></h4>
+<ul>
+<li>HWR / HRW (Hot Weather Rail) Weld process for the removal of defects</li>
+<li>Induction Welding </li>
+<li>Phase Array Weld Inspection </li>
+<li>Mobile Flash Butt Welding</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-10-15-51.png" /></p>
+<h2 id="4-track-recording-and-analysis">4: Track Recording and Analysis<a class="headerlink" href="#4-track-recording-and-analysis" title="Permanent link">&para;</a></h2>
+<h3 id="41-benifits-of-track-geometry-measurement-static-and-dynamic">4.1: Benifits of Track Geometry Measurement (Static and Dynamic)<a class="headerlink" href="#41-benifits-of-track-geometry-measurement-static-and-dynamic" title="Permanent link">&para;</a></h3>
+<ul>
+<li>For passenger comfort and Asset life</li>
+<li>The dynamically measure benifits:<ul>
+<li>True reflection of maximum deflection under load</li>
+<li>Record movement because of voids under sleepers</li>
+<li>Ability to record large section of track in short time</li>
+<li>Eliminate human errors</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-measurement-principles">4.2: Measurement Principles<a class="headerlink" href="#42-measurement-principles" title="Permanent link">&para;</a></h3>
+<h4 id="421-geometry-system-basics">4.2.1: Geometry System Basics<a class="headerlink" href="#421-geometry-system-basics" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-29-10-46-03.png" /></p>
+<h4 id="422-measurement-parametres">4.2.2: Measurement Parametres<a class="headerlink" href="#422-measurement-parametres" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Track Geometry:</p>
+<ul>
+<li>Gauge (mm)</li>
+<li>Cant / Crosslevel (mm)</li>
+<li>Twist (2m and 10m) (mm)</li>
+<li>Top (Vertical Profile) (mm)</li>
+<li>Alignment (Lateral) (mm)</li>
+</ul>
+</li>
+<li>
+<p>Dynamic cross-level (no longer required in S1159)</p>
+</li>
+<li>Wheel unload </li>
+<li>Curvature</li>
+<li>
+<p>Corrugation (or Equivalent Rail Roughness)</p>
+</li>
+<li>
+<p><strong>Gauge</strong>:</p>
+<ul>
+<li>Distance between the two rails measured 14 mm below the crown of the rail.</li>
+<li>Norminal gauge is 1435 mm.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-17-02-17.png" /></p>
+<ul>
+<li><strong>Vertical Profile (TOP)</strong><ul>
+<li>The difference of rail height.</li>
+<li>With 25m filter fitted.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-20-43-51.png" /></p>
+<ul>
+<li><strong>Cant and Twist</strong>:<ul>
+<li><em>Cant</em>: Difference in height of two rails (the outer rail is normally higher than inner one in curves)</li>
+<li><em>Twist</em>: Difference in Cant over a set distance, e.g. 2m between wheel centres and 10m between two bogie centres.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-20-49-31.png" /></p>
+<ul>
+<li><strong>Wheel Unload</strong><ul>
+<li>Wheel unload is a conbination of 2m and 10m twist on LU passenger stock.</li>
+<li>100% wheel unload will lead to o downward force being applied from wheel to the rail.</li>
+<li>General wheel unload parameters are set so that rains experience less than 60% Wheel unload. </li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-21-10-07.png" /></p>
+<ul>
+<li><strong>Alignment</strong><ul>
+<li>Alignment measures the difference along the running rails.</li>
+<li>A perfect continuous curve gives zero reading.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-29-21-19-49.png" /></p>
+<ul>
+<li>
+<p><strong>3 main causes of Geometry fault related derailment</strong>:</p>
+<ul>
+<li>Loss of gauge</li>
+<li>Twist fault resulting in wheel unload</li>
+<li>Cyclic Top </li>
+</ul>
+</li>
+<li>
+<p><strong>Noise and vehicle / track damage</strong>:</p>
+<ul>
+<li>Rail Roughness or Corrugation</li>
+</ul>
+</li>
+</ul>
+<h3 id="43-trv-and-atms-data-collection">4.3: TRV and ATMS Data Collection<a class="headerlink" href="#43-trv-and-atms-data-collection" title="Permanent link">&para;</a></h3>
+<h4 id="431-trv-digitisation">4.3.1: TRV Digitisation<a class="headerlink" href="#431-trv-digitisation" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Digitised TRV output into Excel</li>
+<li>All Data processed off train</li>
+</ul>
+<h4 id="432-atms">4.3.2: ATMS<a class="headerlink" href="#432-atms" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Nince passenger trains fitted with Automated Track Monitoring Systems (ATMS)</li>
+<li>Gives geometry and supporting data when it is in service</li>
+<li>
+<p>ATMS could find faults not seen by legacy systems including TRV</p>
+</li>
+<li>
+<p><strong>Benefits</strong>:</p>
+<ul>
+<li>Proven unattended data collection</li>
+<li>Next day data processing</li>
+<li>Additional data - Noise and Vibration, and video</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-06-33-39.png" /></p>
+<h4 id="433-comparison-between-atms-and-trv">4.3.3: Comparison between ATMS and TRV<a class="headerlink" href="#433-comparison-between-atms-and-trv" title="Permanent link">&para;</a></h4>
+<ul>
+<li><em>TRV does well</em>:<ul>
+<li>Transducer on axles for vertical measurement. ATMS beam is offset from the axle, which can under report faults, e.g. twist.</li>
+<li>TRV covers low speed areas where ATMS laser shuts down for safety reasons.</li>
+<li>Dedcated vehicle gives pro=iority access to the train.</li>
+</ul>
+</li>
+<li><em>ATMS deos well</em>:<ul>
+<li>ATMS does not smooth out Top faults like TRV.</li>
+<li>ATMS laser based system is better than TRV white light system.</li>
+<li>Higher recording frequency.</li>
+<li>Location accuracy from RFID tags compared with manual sync on TRV.</li>
+</ul>
+</li>
+</ul>
+<h4 id="433-data-outputs">4.3.3: Data Outputs<a class="headerlink" href="#433-data-outputs" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Discrete Exceedences</strong>:<ul>
+<li>Safety Standard (SS)<ul>
+<li>Need to be inspected within 24 hours</li>
+</ul>
+</li>
+<li>Maintenance Limit (ML)</li>
+<li>Maintenance Target (MT)</li>
+<li>Can pose a risk of derailment and may require immediate action (e.g. speed restriction)</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-09-25-05.png" /></p>
+<ul>
+<li><strong>ISSE Process</strong><ul>
+<li>Inspection fo Safety Standard Exceedence (ISSE)</li>
+<li>SS Fault must be inspected with 24 hours.</li>
+<li>Inspection now only has to be visual to check ok for traffic wholst repair is arranged</li>
+<li>Fault combination should follow S1159.</li>
+</ul>
+</li>
+<li><strong>Standard Deviation</strong><ul>
+<li>A quantitative representation of ride quality, allowing every 100m of track to be assigned a value for a parameter.</li>
+<li>Good indication of overall Track condition</li>
+<li>SD data can be used to plan maintenance activities like tamping and access degradation.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-09-41-10.png" /></p>
+<ul>
+<li><strong>DataMap Application</strong><ul>
+<li>Notification of new / rapidly degrading faults</li>
+<li>Trendin of faults with predicted timescale to fix</li>
+<li>Fault priority based in degradation rates not just the current value.</li>
+</ul>
+</li>
+<li><strong>Spurious Data</strong><ul>
+<li>Readings from Dynamic system do not match site static readings.</li>
+<li>Readings can be confirmed as spurious by a competent track recording engineer.</li>
+</ul>
+</li>
+<li><strong>Inherent Gepmetry</strong><ul>
+<li>Inherent geometry is valid reading, but the nature of track alignment / construction cause an inherent fault.</li>
+<li>Must be recorded on a centrally held register.</li>
+</ul>
+</li>
+<li>
+<p><strong>Recording Frequency</strong> </p>
+<ul>
+<li><strong>TRV:</strong> 8 weeks Cat A and B track where ATMS does not run.</li>
+<li><strong>ATMS</strong>: Minimum once every 28 days in areas covered by ATMS.</li>
+</ul>
+</li>
+<li>
+<p><strong>Recording Coverage</strong>:</p>
+<ul>
+<li>TRV and ATMS covered A, B and C track.</li>
+<li>Not decalred areas must be inspect by other means.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-managing-buckling">5: Managing Buckling<a class="headerlink" href="#5-managing-buckling" title="Permanent link">&para;</a></h2>
+<h3 id="51-general-principles-of-hot-weather-management">5.1: General Principles of Hot weather Management<a class="headerlink" href="#51-general-principles-of-hot-weather-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Stress Free Temperature (SFT)</strong><ul>
+<li>The temeprature at which the rail is of the same length as it would be in a natural unrestrained state, which is no thermal force inside the rail.</li>
+</ul>
+</li>
+<li>
+<p><strong>Critical rail temperature</strong></p>
+<ul>
+<li>Is the temeprature to which the rail may be allowed to rise before measures to protect traffic are to be taken.</li>
+<li>The amoutn by which ythe CRT exceeds the SFT depends on the configuration and condition of the track.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hot Weather for PWay</strong></p>
+<ul>
+<li>Potential for Buckles or misalignments leading to speed resitrction.</li>
+<li>Mitigation / action:<ul>
+<li>Ensure ballast profile</li>
+<li>Install rail at correct temperature</li>
+<li>Eliminate all defects.</li>
+<li>Short rails / jointed track - allow for expansion</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Maintenance work during hot weather</strong><ul>
+<li>Tamping and lining (open areas)</li>
+<li>Removal of wet beds / ballast disturbance</li>
+<li>Fastening /chair / baseplate removal</li>
+<li>Resleepering</li>
+<li>Rectification of geometry</li>
+<li>Rerailing (with no stress restoration)</li>
+</ul>
+</li>
+<li><strong>Ongoing Monitoring</strong><ul>
+<li>Ongoing specific temperature monitoring (CRT related)</li>
+<li>Overall temeprature monitoring</li>
+<li>Consider local condition</li>
+</ul>
+</li>
+</ul>
+<h3 id="52-rail-configurationm-rail-stress-and-rail-tenmperatures">5.2: Rail configurationm rail stress and Rail tenmperatures<a class="headerlink" href="#52-rail-configurationm-rail-stress-and-rail-tenmperatures" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Rail Configuration</strong><ul>
+<li>Short Rail Sites (SR)</li>
+<li>Long Welded Rail (LWR)</li>
+<li>Continuously Welded Rail (CWR)</li>
+</ul>
+</li>
+<li><strong>Rail Stressing</strong><ul>
+<li>21-27 Deg C</li>
+<li>Hydraulic tensors</li>
+</ul>
+</li>
+</ul>
+<h3 id="53-buckles-if-things-dont-go-as-planned">5.3: Buckles - if things don't go as planned<a class="headerlink" href="#53-buckles-if-things-dont-go-as-planned" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Buckle definition</strong>:<ul>
+<li><em>Any track deformation in hot weather which requires emergency remedial work, speed resitrction or emergency closure of the line and must be reported.</em></li>
+</ul>
+</li>
+<li><strong>Causes of Buckle</strong>:<ul>
+<li>Incorrect SFT</li>
+<li>Poor ballast profile</li>
+<li>Poor sleeper condition</li>
+<li>Incorrectly managed short sections of Plain Line between Point &amp; Cross (P&amp;C).</li>
+<li>Unstable embankment.</li>
+<li>Sudden change in support</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-16-08-31.png" /></p>
+<h3 id="54-interfaces-with-other-asset-areas">5.4: Interfaces with Other Asset areas<a class="headerlink" href="#54-interfaces-with-other-asset-areas" title="Permanent link">&para;</a></h3>
+<ul>
+<li><em>Signals</em>:<ul>
+<li>Interface at P&amp;C</li>
+<li>Block joints</li>
+</ul>
+</li>
+<li><em>Civils</em>:<ul>
+<li>Embankment - loading with ballast and increasing the weight</li>
+<li>Slip / Settlement problem - risk of lateral movement is increased.</li>
+</ul>
+</li>
+<li>
+<p><em>Rolling Stock</em></p>
+<ul>
+<li>Acceleration and Braking rates</li>
+<li>Wheel Condition</li>
+</ul>
+</li>
+<li>
+<p><em>Adjustment Switch</em>:</p>
+<ul>
+<li>Allows sliding movement (mm level) when temeprature changed</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-16-23-34.png" /></p>
+<h2 id="6-power-distribution-system">6: Power Distribution System<a class="headerlink" href="#6-power-distribution-system" title="Permanent link">&para;</a></h2>
+<h3 id="61-lu-power-assets">6.1: LU Power Assets<a class="headerlink" href="#61-lu-power-assets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>LU needs electricity for luminaires, signals, compressed air, trains and ticket systems.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-19-03-18.png" /></p>
+<ul>
+<li>22kV (Bulk Supply Point) and 11kV (Distribution Point) network</li>
+<li>Auxiliary Transformers</li>
+<li>HV and LV CB</li>
+<li>Transformer Rectifier </li>
+<li>DC Traction CB</li>
+<li>Air compressors</li>
+<li>Frequency Changers</li>
+<li>Battery and Charger sets</li>
+<li>VAr Compensators</li>
+<li>
+<p>Harmonic Filters</p>
+</li>
+<li>
+<p><strong>Cable runs:</strong></p>
+<ul>
+<li>11kV Cable</li>
+<li>Air Main</li>
+<li>Pilot Cable</li>
+<li>Fibre Optic Cable</li>
+<li>Signal Cable</li>
+<li>LV Cable</li>
+<li>Connect Leaky Feeder</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-19-32-04.png" /></p>
+<ul>
+<li>11kV from <strong>Substation</strong> will be stepped down and rectified by <strong>Transformer Rectifiers</strong>, and then connect to DC busbar, which provides DC feeds for traction / non-traction DC power.</li>
+<li>Seperate <strong>Aux Transformer</strong> feed LVAC busbar for Station and lighting.</li>
+<li>Additional F<strong>requency Changers</strong> needed to provide required AC power for signalling equipments.</li>
+<li><strong>Air Compressers</strong> are driven from LVAC busbar.</li>
+<li><strong>Greenwich Power Station</strong> provides Central Emergency Power Supply (CEPS)</li>
+</ul>
+<h3 id="62-ceps-and-leps">6.2: CEPS and LEPS<a class="headerlink" href="#62-ceps-and-leps" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Central Emergency Power Supplies (CEPS)<ul>
+<li>Core part of LU stafety certificate.</li>
+<li>7x14MW open cycle Gas Turbine Alternators.</li>
+<li>Automated control sequences can re-energise most of LU network within 30 mins for evacuation.</li>
+<li>Also used for system support and commercial generation.</li>
+</ul>
+</li>
+<li>Local Emergency Power Supplies (LEPS)<ul>
+<li>Off-line Battery Inverters (OLBIS) feed 25% of station lighting.</li>
+<li>Local UPS feeds essentail computer systems, comms and control systems for 1 h.</li>
+</ul>
+</li>
+</ul>
+<h3 id="63-dc-sectionalisation-earth-fault-management">6.3: DC Sectionalisation &amp; Earth Fault Management<a class="headerlink" href="#63-dc-sectionalisation-earth-fault-management" title="Permanent link">&para;</a></h3>
+<h4 id="631-normal-operation-no-earth-fault">6.3.1: Normal Operation - No Earth Fault<a class="headerlink" href="#631-normal-operation-no-earth-fault" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-30-20-34-02.png" /></p>
+<ul>
+<li>Positive track - 420 V ref to GND</li>
+<li>Negative track - 220 V ref to GND</li>
+</ul>
+<h4 id="632-negative-rail-earth-fault">6.3.2: Negative rail Earth Fault<a class="headerlink" href="#632-negative-rail-earth-fault" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-30-20-35-33.png" /></p>
+<ul>
+<li>Negative earth fault - Positive - negative 630 V</li>
+</ul>
+<h4 id="633-positive-rail-earth-fault">6.3.3: Positive rail Earth Fault<a class="headerlink" href="#633-positive-rail-earth-fault" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-30-20-36-30.png" /></p>
+<ul>
+<li>Positive earth fault - Negative - GND 630 V</li>
+</ul>
+<h4 id="634-both-rails-earth-fault">6.3.4: Both rails - Earth Fault<a class="headerlink" href="#634-both-rails-earth-fault" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2025-12-30-20-39-59.png" /></p>
+<ul>
+<li>Low impedance current route lead to overcurrent protection being triggered.</li>
+</ul>
+<h4 id="635-managing-earth-faults">6.3.5: Managing Earth Faults<a class="headerlink" href="#635-managing-earth-faults" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Recuced area affected thrugh sectionalisation </li>
+<li>Separate section when there is a fault</li>
+<li>Remove ASAP</li>
+<li>Making larger DC sections<ul>
+<li>Trade-off between efficiency and risk of earth faults.</li>
+<li>Operational instruction to open section switches to trace earth faults and reduce risks.</li>
+</ul>
+</li>
+</ul>
+<h3 id="64-power-quality">6.4: Power Quality<a class="headerlink" href="#64-power-quality" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Converting AC into DC (via rectifier) will produce <em>harmonics</em>.</li>
+<li>Rapidly accelerating / decelerating trains produces <em>flicker</em> in AC supply.</li>
+<li>Harmonics Filters and Static Var Compensators being used to manage quality.</li>
+</ul>
+<h3 id="65-security-of-supply-and-winter-readiness">6.5: Security of Supply and Winter readiness<a class="headerlink" href="#65-security-of-supply-and-winter-readiness" title="Permanent link">&para;</a></h3>
+<ul>
+<li>National Grid issues alerts if energy supplies are severely constrained and there is a higher risks of power outages.</li>
+<li>TfL have plans in place to react to local and widespread power outages.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-20-49-54.png" /></p>
+<h2 id="7-lu-rolling-stock">7: LU Rolling Stock<a class="headerlink" href="#7-lu-rolling-stock" title="Permanent link">&para;</a></h2>
+<h3 id="71-features-of-wri">7.1: Features of WRI<a class="headerlink" href="#71-features-of-wri" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Profile and Wear management</strong>: wheel, rail profiles and corrugations</li>
+<li><strong>Friction management</strong>: grease contamination and leaf fall.</li>
+<li><strong>Vehicle dynamics</strong>: steerability, suspansion tuning, wheel unloading </li>
+<li><strong>Track geometry</strong>: wheel unloading, Vmax constraint, dynamic gauge</li>
+</ul>
+<h3 id="72-wheel-profile">7.2: Wheel Profile<a class="headerlink" href="#72-wheel-profile" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../image/2025-12-30-20-59-44.png" /></p>
+<h3 id="73-vehicle-on-curves">7.3: Vehicle on Curves<a class="headerlink" href="#73-vehicle-on-curves" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../image/2025-12-30-21-02-36.png" /></p>
+<p><img alt="" src="../image/2025-12-30-21-02-49.png" /></p>
+<h3 id="74-wheel-wear">7.4: Wheel Wear<a class="headerlink" href="#74-wheel-wear" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../image/2025-12-30-21-05-17.png" /></p>
+<ul>
+<li>The wear can be measured by Hand Gauges or MiniProf.</li>
+</ul>
+<p><img alt="" src="../image/2025-12-30-21-05-59.png" /></p>
+<h3 id="75-rail-lubrication">7.5: Rail Lubrication<a class="headerlink" href="#75-rail-lubrication" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Rail side grease spreader</li>
+<li>Undergrame grease lubricators</li>
+</ul>
+<h3 id="76-brakes-lu-principles">7.6: Brakes - LU Principles<a class="headerlink" href="#76-brakes-lu-principles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>The continous brake</strong>: Any accidental separation with a train must result in an EB applied.</li>
+<li><strong>Deadman features</strong>: If it cannot be proved the driver is present and alert on a moving train, then EB would be applied.</li>
+<li><strong>Sufficient Air Supply</strong>: The train must have sufficient air pressure before it can be motored forwards.</li>
+<li><strong>The Tripcock</strong>: Trip the Trainstop and lead to EB applied.</li>
+<li>
+<p><strong>ATP</strong>: Tripcock replaced with ATP in modern trains.</p>
+</li>
+<li>
+<p><strong>LU Brake system</strong>:</p>
+<ul>
+<li>Service Brake - pneumatic / electric</li>
+<li>Emergency Brake - peumatic only</li>
+<li>Parking Brake - mechanical</li>
+</ul>
+</li>
+<li><strong>Wheel Slide Protection (WSP)</strong><ul>
+<li>Deliever the optimum pratical braking force in poor adhesion conditions</li>
+<li>Respond to speed information from each wheelset</li>
+<li>When it deteced wheel lock-up, WSP operates a dump valve to release the brake on that wheelset and closes the valve when wheel picks up again.</li>
+</ul>
+</li>
+</ul>
+<h3 id="77-rs-maintenance">7.7: RS Maintenance<a class="headerlink" href="#77-rs-maintenance" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../image/2025-12-30-21-49-45.png" /></p>
+<ul>
+<li>Maintenance activities described by WI</li>
+<li>Measured by MACS</li>
+<li>Controlled via Work Orders</li>
+<li>Changed authorised via CRS</li>
+</ul>
+<h2 id="8-prevention-of-derailments">8: Prevention of Derailments<a class="headerlink" href="#8-prevention-of-derailments" title="Permanent link">&para;</a></h2>
+<h3 id="81-common-causes-of-derailments">8.1: Common Causes of derailments<a class="headerlink" href="#81-common-causes-of-derailments" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Collisions</li>
+<li>Obstructructions</li>
+<li>Overturn</li>
+<li>Broken rails / fishplates</li>
+<li>Running Rail Gauge Spread</li>
+<li>Wheel Flmage Climb</li>
+<li>Reversed Switch (Short Shunt)</li>
+<li>Points and Crossing (P&amp;C) Derailments<ul>
+<li>Suddeen change of direction - highest forces with assocaited wear</li>
+<li>Moveable parts - Multiple components / failure modes</li>
+<li>Multiple departments - Mainenance regimes</li>
+</ul>
+</li>
+<li>Track Geometry </li>
+<li>Track Twist</li>
+</ul>
+<h3 id="82-major-derailments">8.2: Major derailments<a class="headerlink" href="#82-major-derailments" title="Permanent link">&para;</a></h3>
+<h4 id="821-quintishill">8.2.1: Quintishill<a class="headerlink" href="#821-quintishill" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Primary Cause:<ul>
+<li>Shift Change Irregularity</li>
+<li>Block Signalling Omissions</li>
+<li>Unauthorised persons in signalbox</li>
+<li>Forgetfulness</li>
+</ul>
+</li>
+<li>Industry Change:<ul>
+<li>Electricity Interlocking Signals</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2026-01-11-08-55-51.png" /></p>
+<h4 id="822-hither-green">8.2.2: Hither Green<a class="headerlink" href="#822-hither-green" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Primary Cause:<ul>
+<li>Broken Rail at a fishplate </li>
+<li>New joint but ballast insufficient when wooden sleeper replaced with concrete</li>
+<li>Train travelling at 70mph</li>
+</ul>
+</li>
+<li>Industry Changes:<ul>
+<li>Accelerated plans to remove jointed track to CWR.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2026-01-11-09-02-41.png" /></p>
+<h4 id="823-moorgate">8.2.3: Moorgate<a class="headerlink" href="#823-moorgate" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Primary Cause:<ul>
+<li>Train driven into buffer stop at 40mph</li>
+<li>Driver error</li>
+</ul>
+</li>
+<li>Industry Changes:<ul>
+<li>Draw up signals at terminal stations</li>
+</ul>
+</li>
+</ul>
+<h3 id="83-london-underground-derailment">8.3: London Underground Derailment<a class="headerlink" href="#83-london-underground-derailment" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../image/2026-01-13-07-15-25.png" /></p>
+<h3 id="84-how-do-we-manage-the-derailment-risk">8.4: How do we manage the derailment risk<a class="headerlink" href="#84-how-do-we-manage-the-derailment-risk" title="Permanent link">&para;</a></h3>
+<h4 id="85-understanding-the-risks">8.5: Understanding the risks<a class="headerlink" href="#85-understanding-the-risks" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Investigations into previous incidents and developments in how we can assess risj has allowed us ti gain a better understanding of our derailment risks.</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-07-20-56.png" /></p>
+<h3 id="86-removing-the-risk">8.6: Removing the Risk<a class="headerlink" href="#86-removing-the-risk" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Speed restrictions</strong>:<ul>
+<li>Permanently or temporaily limiting the speed through an area or sectionof track to reduce the know risk or due to a newly identified fault or risk.</li>
+</ul>
+</li>
+<li><strong>Check rails</strong>:<ul>
+<li>Additional rails installed alongside the low rail on a tight radius curve to prevent derialment.</li>
+<li>Check rails can be found in P&amp;C often called cover checck rauks to ensure the wheels taske the correct path at crossing.</li>
+</ul>
+</li>
+<li><strong>Lubrication</strong>:<ul>
+<li>Rail lubrication is used to decrease the friction between the running rails and th train wheels (devices installed on High rails)</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-07-27-35.png" /></p>
+<h3 id="87-controlling-the-risks">8.7: Controlling the risks<a class="headerlink" href="#87-controlling-the-risks" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Inspection and preventive maintenance regimes<ul>
+<li>We inspect our track assets and compoenents regularly through our various inspection regimes all designed to reduce the risk of derailments by early identification of faults adn subsequent intervention.</li>
+<li>PM1 - Basic visual inspection</li>
+<li>PM3 - Measured plain line inspection</li>
+<li>PM4 - Measured P&amp;C Inspection</li>
+<li>TRV/ATMS - Train based dynamic measurements</li>
+<li>Ultrasonic Inspections</li>
+<li>Rail Surface Crack Management Inspections</li>
+</ul>
+</li>
+<li>Specific derailment hazard inspections:<ul>
+<li>S1176 - Inspection and repair to reduce the risk of derailment at switches was deceloped from thr SO53 inspection undertaken on NR.</li>
+</ul>
+</li>
+</ul>
+<h3 id="88-managing-the-risk">8.8: Managing the risk<a class="headerlink" href="#88-managing-the-risk" title="Permanent link">&para;</a></h3>
+<ul>
+<li>How we manage controlled switches:<ul>
+<li>Clear guidance via central documentation </li>
+<li>Clear signage on site</li>
+<li>Tighter inspection intervals</li>
+<li>Tighter maintenance thresholds</li>
+<li>Restrictive maintenance</li>
+</ul>
+</li>
+</ul>
+<h3 id="89-railway-accident-investigation-branch-raib">8.9: Railway Accident Investigation Branch (RAIB)<a class="headerlink" href="#89-railway-accident-investigation-branch-raib" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The RAIB independently investigates accidents to improve railway safety, and inform the industry and public.</li>
+</ul>
+<h3 id="810-conclusions">8.10: Conclusions<a class="headerlink" href="#810-conclusions" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Derailment are an industry wide issue</li>
+<li>LU faces some unique challanges</li>
+<li>Track is the only fail unsafe asset</li>
+<li>Risk of derailment can never fully be removed </li>
+<li>Understanding the risks is the first step in removing, reducing and managing the risk.</li>
+<li>Derailment are normally a result of more than one failure within a system of risk</li>
+</ul>
+<h2 id="9-signalling-system">9: Signalling System<a class="headerlink" href="#9-signalling-system" title="Permanent link">&para;</a></h2>
+<h3 id="91-what-is-a-signalling-system">9.1: What is a Signalling System<a class="headerlink" href="#91-what-is-a-signalling-system" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Signalling system is used on the railway to maintain a safe distance between trains and to control and regulate their movements.</li>
+<li>The number of signals in agiven area is dependent upon service requiements and varies from site to site.</li>
+<li>More signals allow for a quicker movement of trains through a given area but a balance mus be achieved between the reqired train frequency and cost.</li>
+</ul>
+<h3 id="92-hand-signalling-mechanical-signals">9.2: Hand Signalling / Mechanical Signals<a class="headerlink" href="#92-hand-signalling-mechanical-signals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Appoint a hand Signaler to control movement</li>
+<li>Mechanical signals operated by cables from long levers in the signal box, which were pulled to clear a signal (proceed) and returned to normal when the train had entered the Block. (<strong>Fully Manual</strong>)</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-17-46.png" /></p>
+<h3 id="93-fully-automatic-signal">9.3: Fully Automatic Signal<a class="headerlink" href="#93-fully-automatic-signal" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Automatic signal checks the section ahead fro trains and if it is unoccupied, it will show a proceed aspect without the intervention of a Signalman.</li>
+</ul>
+<h3 id="94-semi-automatic-signals">9.4: Semi Automatic Signals<a class="headerlink" href="#94-semi-automatic-signals" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Semi Automatic Signals allowed signals to be automatically returned to Danger (a 'Do not proceed') aspect with the passage of a train. </li>
+<li>As the Signalman still has to clear the signals in the first place they can be deemed to be Semi-automatic.</li>
+</ul>
+<h3 id="95-train-detection-with-rails">9.5: Train Detection with Rails<a class="headerlink" href="#95-train-detection-with-rails" title="Permanent link">&para;</a></h3>
+<h4 id="951-track-circuits">9.5.1: Track Circuits<a class="headerlink" href="#951-track-circuits" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The track can be divided electrically into section by insulated Fishplates, known as Block joints (I.R.J).</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-24-44.png" /></p>
+<ul>
+<li>The electrical area between two IRJ is called a Track Circuit.</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-25-58.png" /></p>
+<h4 id="952-signalling-block">9.5.2: Signalling Block<a class="headerlink" href="#952-signalling-block" title="Permanent link">&para;</a></h4>
+<ul>
+<li>A, B and C each has a Track Ciruit / Relay. The relay would be 'down' when train occupied.</li>
+<li>The signal would be green only when both A and B Track Circuit are 'up'(no train).</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-34-20.png" /></p>
+<h4 id="953-limit-of-control-loc">9.5.3: Limit of Control (L.O.C)<a class="headerlink" href="#953-limit-of-control-loc" title="Permanent link">&para;</a></h4>
+<p><img alt="" src="../image/2026-01-13-15-35-04.png" /></p>
+<ul>
+<li>Block + Overlap ('Safety Margin')</li>
+</ul>
+<h3 id="96-train-stop-and-tripcock">9.6: Train Stop and Tripcock<a class="headerlink" href="#96-train-stop-and-tripcock" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Train Stop is used to stop the train when signal is unsafe.</li>
+<li>The trainstop head would be raised up and thus hit the tripcock to stop the train.</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-38-54.png" /></p>
+<ul>
+<li>Tripcock is installed underframe of the train, which allows it could be triggered by train stop.</li>
+<li>When the tripcock is triggered, the train brake would be applied to stop the train.</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-40-59.png" /></p>
+<h3 id="97-interlocking-lever-frame">9.7: Interlocking Lever Frame<a class="headerlink" href="#97-interlocking-lever-frame" title="Permanent link">&para;</a></h3>
+<ul>
+<li>"N" Style Frame</li>
+<li>"V" Style Frame</li>
+<li>Operate one lever will interlock the operation to other conflicting routes.</li>
+</ul>
+<p><img alt="" src="../image/2026-01-13-15-51-09.png" /></p>
+<ul>
+<li>E.g. Point 18 needs to be set as Normal while setting Signal BC15. And Point 18 needs to be Reverse while setting Signal BC16.</li>
+<li>BC15 and BC16 are <strong>interlocked</strong> to avoid crash.</li>
+</ul>
+<h2 id="10-railway-structures">10: Railway Structures<a class="headerlink" href="#10-railway-structures" title="Permanent link">&para;</a></h2>
+<h3 id="101-interface-with-pway">10.1: Interface with PWay<a class="headerlink" href="#101-interface-with-pway" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Bridge</li>
+<li>Platform Nosing Overhang</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-17-05.png" /></p>
+<ul>
+<li>Tunnel Strut</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-18-26.png" /></p>
+<ul>
+<li>TSR, Engineering Train Restriction </li>
+</ul>
+<h3 id="102-example-structures">10.2: Example Structures<a class="headerlink" href="#102-example-structures" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Rivetted Plate Underbridge </p>
+</li>
+<li>
+<p>Covered Way</p>
+</li>
+<li>
+<p>Plate Girder Covered Way</p>
+</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-23-34.png" /></p>
+<ul>
+<li>Precast Prestressed Beams </li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-24-13.png" /></p>
+<ul>
+<li>Station Girdering:</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-27-50.png" /></p>
+<ul>
+<li>The Brick Arch Tunnel </li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-29-36.png" /></p>
+<ul>
+<li>Subway</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-29-57.png" /></p>
+<ul>
+<li>Truss (Through Type):</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-31-23.png" /></p>
+<ul>
+<li>Half-bridge Girder Bridge</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-32-05.png" /></p>
+<ul>
+<li>Longitudinal Timber </li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-33-56.png" /></p>
+<p><img alt="" src="../image/2026-02-02-07-34-13.png" /></p>
+<ul>
+<li>Brick Arch Railway Bridge</li>
+</ul>
+<p><img alt="" src="../image/2026-02-02-07-35-31.png" /></p>
+<p><img alt="" src="../image/2026-02-02-07-36-17.png" /></p>
+<h3 id="103-asset-management">10.3: Asset Management<a class="headerlink" href="#103-asset-management" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Assessed and Numbered</li>
+<li>Structurally Assessed (where original cal not available)</li>
+<li>Inspected:<ul>
+<li>Principle Inspection (every 4 years)</li>
+<li>General Inspection (every year)</li>
+<li>Special Inspection</li>
+</ul>
+</li>
+<li>Risk registered on STRATA</li>
+<li>Maintained:<ul>
+<li>Routie Maintenance </li>
+<li>Corrective maintenance </li>
+<li>Civils Renewals </li>
+</ul>
+</li>
+<li>Asset Condition rated (every year)</li>
+<li>Inspection / Work info on Maximo</li>
+</ul>
+<h3 id="104-principles-of-structural-engineering">10.4: Principles of Structural Engineering<a class="headerlink" href="#104-principles-of-structural-engineering" title="Permanent link">&para;</a></h3>
+<h4 id="1041-how-we-design-assess-structures">10.4.1: How we Design / Assess structures<a class="headerlink" href="#1041-how-we-design-assess-structures" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Determine the loads </li>
+</ul>
+<p><img alt="" src="../image/2026-02-03-07-23-45.png" /></p>
+<ul>
+<li>Understand the Load Path </li>
+<li>Calculate internal forces (Capacity)</li>
+<li>Evaluate structural capacity</li>
+<li>Adjust for Condition </li>
+<li>Check Demands vs Capacity </li>
+<li>Check for Stability </li>
+</ul>
+<h3 id="105-tunnels">10.5: Tunnels<a class="headerlink" href="#105-tunnels" title="Permanent link">&para;</a></h3>
+<h4 id="1051-definition">10.5.1: Definition<a class="headerlink" href="#1051-definition" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Tunnel: Artificial subterranean passage built to meet requirement of an underground railway, road or utility system.</li>
+<li>Shaft: A vertical or inclined Access to underground tunnels or chambers.</li>
+</ul>
+<h4 id="1052-types-of-tunnels-shafts">10.5.2: Types of Tunnels &amp; Shafts<a class="headerlink" href="#1052-types-of-tunnels-shafts" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Running tunnels, station tunnels, Cross over tunnels...</li>
+<li>Lifts shaft, Escalator shafts, Ventilation shafts...</li>
+</ul>
+<h4 id="1053-functional-requirements">10.5.3: Functional requirements<a class="headerlink" href="#1053-functional-requirements" title="Permanent link">&para;</a></h4>
+<h5 id="10531-required-duty">10.5.3.1: Required Duty<a class="headerlink" href="#10531-required-duty" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Meet railway operating requirements</li>
+<li>Ensure support at asset interfaces without undue wear and tear.</li>
+<li>Match LUL policy in respect of realistic user perceptions.</li>
+<li>Minimize enviromental impact.</li>
+<li>Function within legal framework.</li>
+<li>Provide above within reliability and availability targets.</li>
+</ul>
+<h5 id="10532-fit-for-purpose">10.5.3.2: Fit for Purpose<a class="headerlink" href="#10532-fit-for-purpose" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Tunnels must be of sufficient strength and stability to allow safe passage of trains:<ul>
+<li>Superimposed surface and soil loading.</li>
+<li>Permanent way loading.</li>
+<li>Adjacent tunnelling or excavation.</li>
+</ul>
+</li>
+<li>Tunnels to be maintained to ensure performance measures are achieved:<ul>
+<li>Kinematic and structure gauge clearances.</li>
+<li>Remain watertight.</li>
+<li>Security of parts.</li>
+</ul>
+</li>
+<li>
+<p>When these conditions are not met a speed restriction or temporary closure could ensure.</p>
+</li>
+<li>
+<p>Provide effective tunnel ventilation</p>
+</li>
+<li>Provide effective tunnel light for emergency</li>
+<li>Keep noise and vibration to a minimum.</li>
+<li>Fire resistance.</li>
+</ul>
+<h4 id="1054-constructure-methods">10.5.4: Constructure Methods<a class="headerlink" href="#1054-constructure-methods" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Bored tunnels:<ul>
+<li>Constructed using mechanical excavation techniques within a tunnelling shield</li>
+<li>Provision of early ground support system during excavation.</li>
+<li>Offers protection to the miners and aids the erection of the tunnel lining.</li>
+<li>Requiring the shield be capable of being pushed forward as the work progress thus enable a tunnel lining system to be constrcuted.</li>
+</ul>
+</li>
+<li>Subaquaous tunnels:<ul>
+<li>Shield driven or immersed tube beneath river beds.</li>
+</ul>
+</li>
+<li>Cut and cover tunnels:<ul>
+<li>Open trench construction and backfill.</li>
+</ul>
+</li>
+<li>Sprayed Concrete lined tunnels (SCL)<ul>
+<li>A tunnel construction method using open face excavation techniques with a lining construction within the tunnel using sprayed concrete to provide ground support</li>
+</ul>
+</li>
+</ul>
+<h4 id="1055-mainnenance">10.5.5: Mainnenance<a class="headerlink" href="#1055-mainnenance" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Risks to Tunnel Network:</p>
+<ul>
+<li>Big safety risk if we lose a tunnel</li>
+<li>Big reputational risk</li>
+<li>Prone to occasional brittle failures</li>
+<li>Some progressive degradation (e.g. corrosion)</li>
+<li>Flood, river protection and flood mitigation capability</li>
+<li>Vulnerable to TfL and third party new works</li>
+</ul>
+</li>
+<li>
+<p>Performance Measures:</p>
+<ul>
+<li>Failure:<ul>
+<li>Excessive cracking and deformation, failure of structural integrity and over stressing resutling in line closure.</li>
+</ul>
+</li>
+<li>Unacceptable:<ul>
+<li>Cracking, deformation resulting in speed restriction.</li>
+</ul>
+</li>
+<li>Essential:<ul>
+<li>Minor defects of a non-structural nature.</li>
+</ul>
+</li>
+<li>Desirable:<ul>
+<li>Insignificant blemished requiring no further action.</li>
+</ul>
+</li>
+<li>Ideal</li>
+</ul>
+</li>
+<li>
+<p>Inspections &amp; Condition Surveys (Concrete Tunnels):</p>
+<ul>
+<li>Spalling </li>
+<li>Crazing of concrete surfaces</li>
+<li>Chemical deterioration </li>
+</ul>
+</li>
+<li>
+<p>LU London Clay Tunnels:</p>
+<ul>
+<li>80% of tube tunnels</li>
+<li>Suited to mining </li>
+<li>Generally reliable assets </li>
+</ul>
+</li>
+<li>
+<p>Tunnels below the London Clay</p>
+<ul>
+<li>Mainly in Lambeth Group </li>
+<li>Relative variable ground conditions</li>
+<li>Less predictable engineering behaviour </li>
+<li>Water ingress carrying sand potentially cause operational problems and structural concerns</li>
+<li>Solution:<ul>
+<li>Tunnel joint sealing by injection of arylic grout.</li>
+<li>Cementitious back grouting outside the lining </li>
+<li>Temperary dewatering during adjacent works</li>
+<li>Monitoring for changes in tunnel shape</li>
+<li>Pyrite, Water and Air (Airtight is the only practical way)</li>
+</ul>
+</li>
+<li>Expanded linings in mixed ground<ul>
+<li>Deep - Thus heabily loaded</li>
+<li>Poor Geometry </li>
+<li>Solution (Short-term):<ul>
+<li>Intensive structure monitoring </li>
+<li>Remedial support</li>
+</ul>
+</li>
+<li>Solution (Long-term):<ul>
+<li>Reconstruction of affected section using converntional cast iron linings.</li>
+<li>Work to be undertaken at night using a besopke machine mounted on a train.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>LU Civil Asset Management Philosophy <ul>
+<li>Inspect condition </li>
+<li>Asset structral capacity </li>
+<li>Catalogue <ul>
+<li>Identify all assets</li>
+<li>Record their  characterirstics and condition</li>
+</ul>
+</li>
+<li>Recognise asset behaviour </li>
+<li>Plan maintenance interventions based on assets risk</li>
+</ul>
+</li>
+</ul>
+<h4 id="1056-infrastructure-protection-keeping-the-railway-safe-with-respect-to-tunnels">10.5.6: Infrastructure Protection - Keeping the Railway Safe with respect to tunnels<a class="headerlink" href="#1056-infrastructure-protection-keeping-the-railway-safe-with-respect-to-tunnels" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Influence on existing tunnels<ul>
+<li>Excavation and tunnelling - generate ground movement </li>
+<li>Demolition &amp; basement construction</li>
+<li>Foundation Pilling </li>
+<li>Building Construction <ul>
+<li>Increase of applied load </li>
+<li>Ground settlement </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>External Effects on Tunnels<ul>
+<li>Deformation</li>
+<li>Both unloading and reloading cause plastic deformations around tunnels</li>
+<li>Movements cause bending moments in the lining, event when final loads do not increase </li>
+<li>Serious effects on clearances to the kinematic and structure gauge</li>
+</ul>
+</li>
+<li>Wireless remote condition monitoring </li>
+<li>Monitoring Dashboards</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Ziyu Tian
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.top", "navigation.indexes", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../mkdocs/javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../live2d-widget/dist/autoload.js"></script>
+      
+    
+  </body>
+</html>
