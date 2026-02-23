@@ -1406,4 +1406,29 @@ LU PWay standards mandate a suite of inspections that provide information about 
     - Movements cause bending moments in the lining, event when final loads do not increase 
     - Serious effects on clearances to the kinematic and structure gauge
 - Wireless remote condition monitoring 
-- Monitoring Dashboards
+- Monitoring Dashboards 
+
+## 11: Drainage 
+
+### 11.1: Safety Risks
+
+- Weils disease caused by rodent (e.g. mice) urine
+- Sewage contaminants (E Coli Bactrtia)
+- Drowning 
+- Confined Spaces
+- Mechanical Equipment
+
+- PPE for footwear, gloves and eye protection
+
+- Wash hands before eating 
+
+### 11.2: Terms
+
+- Track drainage - any drain within 2m of the track 
+- Off track drainage - serves track but > 2m away
+- Sub surface - cut and cover sections of the network 
+- Tube sara - cast iron and concrete segment tunnel
+- Positive drainage - physical infrastructure 
+- Natural drainage - no infrastructure 
+- SuDS - sustainable drainage systems 
+- 
