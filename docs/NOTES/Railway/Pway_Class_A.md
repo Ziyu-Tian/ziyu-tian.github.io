@@ -1,3 +1,6 @@
+---
+password: KeepLondonMoving
+---
 # Pway Class A - LU
 
 ## 1: Introduction 
@@ -549,7 +552,6 @@ LU PWay standards mandate a suite of inspections that provide information about 
     - 2: Align the rail.
     - 3: Moulds are fitted and checked for position relative to the gap.
 ![](image/2025-12-28-21-25-55.png)
-
     - 4: Add welding portions (4 main ingredients)
         - Aluminium Powder
         - Ion Oxide
