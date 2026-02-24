@@ -1,6 +1,4 @@
----
-password: mypassword123
----
+
 # Pway Class A - LU
 
 ## 1: Introduction 
