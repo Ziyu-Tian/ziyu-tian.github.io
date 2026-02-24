@@ -1,6 +1,4 @@
----
-password: KeepLondonMoving
----
+
 # Pway Class A - LU
 
 ## 1: Introduction 
