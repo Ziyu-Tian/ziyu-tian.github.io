@@ -1432,4 +1432,5 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Positive drainage - physical infrastructure 
 - Natural drainage - no infrastructure 
 - SuDS - sustainable drainage systems 
-- 
+
+![](image/terms.png)
