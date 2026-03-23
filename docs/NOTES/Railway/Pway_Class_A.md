@@ -561,13 +561,15 @@ LU PWay standards mandate a suite of inspections that provide information about 
         - Thermit reaction takes place
         - Weld metal is released into the moulds.
 
-![](image/2025-12-28-21-49-23.png)
+
 
     - 7: Remove all the support equipment at the set time following pouring.
     - 8: At prescribed time:
         - Weld debris is removed
         - Fastenings are replaced
         - Weld is ground within 25 mins to profile.
+![](image/2025-12-28-21-49-23.png)
+
 
 ### 3.4: Manual Metal Arcing (MMA) Welding Processes
 
@@ -1433,4 +1435,192 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Natural drainage - no infrastructure 
 - SuDS - sustainable drainage systems 
 
-![](image/terms.png)
+### 11.3: Drainage Type 
+
+- **Track drainage**: In 4 foot, 6 foot, 10 foot, Cess areas, tunnel drainage.
+- **Off Track Drainage**: drainage that serves tge track but greater than 2m from the running rail
+- **Earthworks Drainage**: Embankments, Cuttings
+- **Building drainage**: Stations, depot, and operational buildings
+
+### 11.4: Drainage Elements
+
+- Pipe
+- Channel
+- Catchpit
+- Building roof drinage
+- Sump and pumps
+
+### 11.5: SuDs - Sustainable Drainage System 
+
+- **Principle**:
+    - Mimic the matural cycle of water management
+    - Usually include greening
+- **Benefits**:
+    - Water Quantity (reduce risk of flooding)
+    - Wter Quality (Filteration)
+    - Biodiversity 
+
+- **Types of SuDs**:
+    - Soakway
+    - Swale
+    - Blue/green roof
+    - Pond
+
+### 11.6: Drainage Concpet of Open Track
+
+- Rain falls on the track and surrounding ground
+- It percolates downwards into the ballast 
+- It reaches the track formation and runs along the pipe trench.
+
+![](image/2026-03-22-07-31-21.png)
+
+
+### 11.7: Drainage Concept in Tunnel 
+
+- Sources in the Tunnel Section:
+    - Rain from open sections, vent shafts.
+    - Windblown rain 
+    - Seepages through tunnel linings
+    - Ground water
+
+### 11.8: Drainage in Buildings
+
+- Rainwater on roof though gutter and down pipes
+- Foul water from WC, sinks
+- Discharge into water company sewer or in pumping station.
+
+### 11.9: Drainage System - Catchment 
+
+- A series of interconnected drainage elements serving a catchment, which extend from upstream to downstream , could include any drainage elements as track, off-track and earthworks.
+
+
+### 11.10: Benefit of track drainage
+
+- To maintain he integrity and cleanse of the track bed.
+- To ensure that rainwater is effectively removed from the track in open sections.
+- To ensure that water arising thorugh seepage and infiltration are effectiively removed.
+
+
+### 11.11: Benefits of Positive Drainage
+
+- Positive drainage is required when:
+    - Solid invert  (bridge and tunnel)
+    - The subgrade is impermeable (London clay)
+    - The capacity of the subgrade to accept the water is poor
+    - Flow from upstream is required to pass through an area on its way to an outfall.
+- Water in track bed may result in:
+    - Loss of soil strength and stability 
+    - Migration of fines under pressure leading to a complete bloage of drainage path 
+    - Failure of signals
+
+### 11.12: Channel vs Pipe
+
+- Channels:
+    - Easy to maintain
+    - Can be laid to very low gradient 
+    - Large volume attenuation 
+    - Improves hydraulic performance
+
+- Ditch:
+    - Concrete Canvas: concrete filled fabric
+    - Flexible 
+    - Thin an durable 
+    - 10-times faster to install than conventional concrete solutions.
+
+
+### 11.13: Methods of Construction
+
+![](image/2026-03-22-07-54-12.png)
+
+
+### 11.14: Maintenance of Drainage
+
+- Pipes are normally cleaned by rodding or high pressure water jetting
+- Pipes are internally inspected by CCTV camera 
+- Catchpit and channels have regular visual inspected
+
+
+## 12: Earthwork Structures
+
+### 12.1: Introduction to Earth Structures
+
+- Comprise of cuttings and embankments, which required to convey the railway on a level path, or acceptable gradients through terrrain.
+
+![](image/2026-03-22-08-02-49.png)
+
+### 12.2: Cuttings
+
+- A cutting is used to carry the railway through ground with a natural level above the line of the railway.
+- The cutting length generally far exceed the width.
+
+
+### 12.3: Embankment
+
+- An embankment consists of an enigneered bank of earth that carries the railway above the natural ground level.
+- Length far exceeds tge cutting width.
+
+### 12.4: Earth Structures
+
+- Deterioration
+- Slope Failures
+
+### 12.5: London Geology and Soil Properties
+
+- London Basin Geology:
+    - River Terrace Gravaels
+    - Silt and sand 
+    - Glacial deposits
+
+### 12.6: Stability of Earth Structures
+
+![](image/2026-03-23-07-04-24.png)
+
+- Computer software now regularly used to clculate FoS (stability) considering variable such as:
+    - Soil Paremeters
+    - Groundwater
+    - Tension Cracks
+    - Pre-existing weakness
+- Type of slope instability:
+    - Failure through crest
+    - Failure through slope
+    - Failure through shoulder
+    - Seasonal shrink-well movements
+
+### 12.7: Impact of Vegetation on Earth Structures
+
+- A balancing Act
+- Benefits:
+    - Green corridors providing habitats and enviromental benefits
+    - Visually more pleasing.
+    - Noise screning a visual barrier.
+    - Reducing pore pressures.
+    - Stabilising slopes through root reinforcement.
+- Impact:
+    - Seasonal Track movement
+    - Leaf fall
+    - Loss of visibility
+    - Fires
+    - Damage to drainage and adjacent structures
+
+### 12.8: Inclement Weather and Climate Change
+
+- Flow Failure
+- Prolonged Rainfall
+- Flooding 
+- Seasonal Shrink Swell
+- Frost Shattering 
+
+
+### 12.9: Earth Structure Asset Management 
+
+- Condition data
+- Deformation and failure mechanisms.
+- Priority sites selected for site investigation, assessment and remedial works.
+
+### 12.10: Earth Structures Remediation
+
+- Discrete bored oiles
+- King-post wall
+- Sheet pile wall / gravity retaining wall
+- Earthwork with more stable gradients
+
