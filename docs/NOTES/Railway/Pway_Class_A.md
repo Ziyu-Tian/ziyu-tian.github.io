@@ -1276,6 +1276,16 @@ LU PWay standards mandate a suite of inspections that provide information about 
 - Check Demands vs Capacity 
 - Check for Stability 
 
+#### 10.4.2: Challanges to building & maintaining bridges and structures
+
+- Water Seepage
+- Cast Iron structures
+- Cable run
+- Vehicle incursion
+- Falling elements
+- Longitudinal timbered bridges
+- Overloaded failure
+
 ### 10.5: Tunnels
 
 #### 10.5.1: Definition
